@@ -1,0 +1,183 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/afs/unity.ncsu.edu/users/z/zwang79/564/Project/verilog
+vControl
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1541781062
+!i10b 1
+!s100 zV1MUeOLNOcN@Ld>[VRJ^2
+I:]1h^>@AzZmOB=gjR[c][3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Control_v_unit
+S1
+Z3 d/afs/unity.ncsu.edu/users/z/zwang79/564/test
+w1541780401
+8Control.v
+FControl.v
+L0 1
+Z4 OL;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1541781062.000000
+!s107 Control.v|
+!s90 -sv|Control.v|
+!i113 1
+o-sv
+Z5 tCvgOpt 0
+n@control
+vH
+R1
+!s110 1541781056
+!i10b 1
+!s100 cLVU]4PS_[B__8mH?C8i:1
+I08m>V`:T@h<Mh==EEWHcb1
+R2
+!s105 H_v_unit
+S1
+R3
+w1541716381
+8H.v
+FH.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1541781056.000000
+!s107 H.v|
+!s90 -sv|H.v|
+!i113 1
+o-sv
+R5
+n@h
+vM
+R1
+!s110 1541781049
+!i10b 1
+!s100 U>kL1RfGI`>R@X^M1BP>80
+I6gM[LTW9[C=I29O;WQDHi3
+R2
+!s105 M_v_unit
+S1
+R3
+w1541439465
+8M.v
+FM.v
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1541781049.000000
+!s107 M.v|
+!s90 -sv|M.v|
+!i113 1
+o-sv
+R5
+n@m
+vMyDesign
+R1
+!s110 1541781119
+!i10b 1
+!s100 21lNYIFn@^FLdhiR]UZol1
+Ih@84TFNJn]jAGThf3NlJ30
+R2
+!s105 MyDesign_v_unit
+S1
+R3
+w1541716432
+8MyDesign.v
+FMyDesign.v
+L0 8
+R4
+r1
+!s85 0
+31
+!s108 1541781119.000000
+!s107 MyDesign.v|
+!s90 -sv|MyDesign.v|
+!i113 1
+o-sv
+R5
+n@my@design
+vsram
+R1
+!s110 1541381725
+!i10b 1
+!s100 czoUbC=IBRBfdC6N0AR`:2
+Ik<mAKBmoA`Ekf^F1JZOTS0
+R2
+!s105 sram_v_unit
+S1
+R0
+w1541380500
+8sram.v
+Fsram.v
+L0 16
+R4
+r1
+!s85 0
+31
+!s108 1541381725.000000
+!s107 sram.v|
+!s90 -sv|sram.v|
+!i113 1
+o-sv
+R5
+vtb_top
+R1
+!s110 1541781127
+!i10b 1
+!s100 @_fdodoB7oDj4KE<l6>231
+IjSE6X4Tch:O:_[?f0;g:m3
+R2
+!s105 tb_top_v_unit
+S1
+R3
+w1541439662
+8tb_top.v
+Ftb_top.v
+L0 39
+R4
+r1
+!s85 0
+31
+!s108 1541781127.000000
+!s107 tb_top.v|
+!s90 -sv|tb_top.v|
+!i113 1
+o-sv
+R5
+vW
+R1
+!s110 1541781122
+!i10b 1
+!s100 GS^GBPljKL]dOio5h5^cT1
+I=f6bS@5W8_]4M@;^[NTZW3
+R2
+!s105 W_v_unit
+S1
+R3
+w1541781113
+8W.v
+FW.v
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1541781121.000000
+!s107 W.v|
+!s90 -sv|W.v|
+!i113 1
+o-sv
+R5
+n@w

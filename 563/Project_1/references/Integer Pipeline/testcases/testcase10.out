@@ -1,0 +1,99 @@
+
+BEFORE PROGRAM EXECUTION...
+======================================================================
+
+Special purpose registers:
+Stage: IF
+PC = 268435456 / 0x10000000
+Stage: ID
+Stage: EX
+Stage: MEM
+Stage: WB
+General purpose registers:
+data_memory[0x0000a000:0x0000a030]
+0x0000a000: 0f 00 00 00 
+0x0000a004: 03 00 00 00 
+0x0000a008: 17 00 00 00 
+0x0000a00c: 01 00 00 00 
+0x0000a010: 04 00 00 00 
+0x0000a014: 0c 00 00 00 
+0x0000a018: 00 00 00 00 
+0x0000a01c: 0c 00 00 00 
+0x0000a020: 1e 00 00 00 
+0x0000a024: 2c 00 00 00 
+0x0000a028: 29 00 00 00 
+0x0000a02c: 0a 00 00 00 
+data_memory[0x0000b000:0x0000b030]
+0x0000b000: ff ff ff ff 
+0x0000b004: ff ff ff ff 
+0x0000b008: ff ff ff ff 
+0x0000b00c: ff ff ff ff 
+0x0000b010: ff ff ff ff 
+0x0000b014: ff ff ff ff 
+0x0000b018: ff ff ff ff 
+0x0000b01c: ff ff ff ff 
+0x0000b020: ff ff ff ff 
+0x0000b024: ff ff ff ff 
+0x0000b028: ff ff ff ff 
+0x0000b02c: ff ff ff ff 
+
+*****************************
+STARTING THE PROGRAM...
+*****************************
+
+EXECUTING PROGRAM TO COMPLETION...
+
+PROGRAM TERMINATED
+===================
+
+Special purpose registers:
+Stage: IF
+PC = 268435576 / 0x10000078
+Stage: ID
+NPC = 268435576 / 0x10000078
+Stage: EX
+NPC = 268435576 / 0x10000078
+Stage: MEM
+Stage: WB
+General purpose registers:
+R0 = 0 / 0x0
+R1 = 9 / 0x9
+R2 = 10 / 0xa
+R3 = 30 / 0x1e
+R4 = 45092 / 0xb024
+R5 = 44 / 0x2c
+R6 = 45096 / 0xb028
+R8 = -14 / 0xfffffff2
+R9 = 0 / 0x0
+R10 = 0 / 0x0
+data_memory[0x0000a000:0x0000a030]
+0x0000a000: 0f 00 00 00 
+0x0000a004: 03 00 00 00 
+0x0000a008: 17 00 00 00 
+0x0000a00c: 01 00 00 00 
+0x0000a010: 04 00 00 00 
+0x0000a014: 0c 00 00 00 
+0x0000a018: 00 00 00 00 
+0x0000a01c: 0c 00 00 00 
+0x0000a020: 1e 00 00 00 
+0x0000a024: 2c 00 00 00 
+0x0000a028: 29 00 00 00 
+0x0000a02c: 0a 00 00 00 
+data_memory[0x0000b000:0x0000b030]
+0x0000b000: 00 00 00 00 
+0x0000b004: 01 00 00 00 
+0x0000b008: 03 00 00 00 
+0x0000b00c: 04 00 00 00 
+0x0000b010: 0c 00 00 00 
+0x0000b014: 0c 00 00 00 
+0x0000b018: 0f 00 00 00 
+0x0000b01c: 17 00 00 00 
+0x0000b020: 1e 00 00 00 
+0x0000b024: 2c 00 00 00 
+0x0000b028: ff ff ff ff 
+0x0000b02c: ff ff ff ff 
+
+Instruction executed = 502
+Clock cycles = 1202
+Stall inserted = 696
+IPC = 0.417637

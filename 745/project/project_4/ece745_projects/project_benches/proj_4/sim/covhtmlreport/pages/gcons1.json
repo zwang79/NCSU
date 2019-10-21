@@ -1,0 +1,8 @@
+var g_db_data = [
+{dummy:0},
+{name:'i2c_configuration_cg',f:1,type:6,id:953,tb:'130',h:'3',m:'127',hp:'2.30%',cov:['17.70%','R'],g:'100.00%',gp:['17.70%','R'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/i2c_pkg/i2c_configuration',parent:'952'},
+{name:'wb_configuration_cg',f:1,type:6,id:967,tb:'130',h:'3',m:'127',hp:'2.30%',cov:['17.70%','R'],g:'100.00%',gp:['17.70%','R'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/wb_pkg/wb_configuration',parent:'966'},
+{name:'wb_transaction_cg',f:1,type:6,id:978,tb:'11',h:'3',m:'8',hp:'27.27%',cov:['27.77%','R'],g:'100.00%',gp:['27.77%','R'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/wb_pkg/wb_coverage',parent:'977'},
+{name:'i2cmb_env_configuration_cg',f:1,type:6,id:1000,tb:'20',h:'3',m:'17',hp:'15.00%',cov:['35.41%','R'],g:'100.00%',gp:['35.41%','R'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/i2cmb_env_pkg/i2cmb_env_configuration',parent:'999'},
+{name:'coverage_cg',f:1,type:6,id:1010,tb:'4',h:'2',m:'2',hp:'50.00%',cov:['50.00%','Y'],g:'100.00%',gp:['50.00%','Y'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/i2cmb_env_pkg/i2cmb_coverage',parent:'1009'}];
+processConsCovergroupsData(g_db_data);

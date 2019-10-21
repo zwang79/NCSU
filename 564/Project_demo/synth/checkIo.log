@@ -1,0 +1,25 @@
+Warning: Can't find port 'address[0]' in design 'MyDesign'. (UID-95)
+Port dut__xxx__finish connected to more than 1 cell
+control_dut__xxx__finish_reg/Q
+dut__xxx__finish
+U3523/A
+Port dut__msg__enable connected to more than 1 cell
+control_dut__msg__enable_reg/Q
+dut__msg__enable
+m_dut__msg__enable_r_reg/D
+Output port dut__msg__write is not driven by a register
+dut__msg__write
+U9039
+**logic_0**
+Output port dut__kmem__write is not driven by a register
+dut__kmem__write
+U9038
+**logic_0**
+Output port dut__hmem__write is not driven by a register
+dut__hmem__write
+U9037
+**logic_0**
+Input port reset does not go to a register
+reset
+U3771
+INV_X4

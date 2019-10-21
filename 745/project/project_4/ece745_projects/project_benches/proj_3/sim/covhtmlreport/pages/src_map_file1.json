@@ -1,0 +1,10 @@
+var g_data = {'dummy':null,
+'8':'../../../verification_ip/environment_packages/i2cmb_env_pkg/i2cmb_env_pkg.sv',
+'7':'../../../verification_ip/environment_packages/i2cmb_env_pkg/src/i2cmb_coverage.svh',
+'6':'../../../verification_ip/environment_packages/i2cmb_env_pkg/src/i2cmb_env_configuration.svh',
+'2':'../../../verification_ip/interface_packages/i2c_pkg/i2c_pkg.sv',
+'1':'../../../verification_ip/interface_packages/i2c_pkg/src/i2c_configuration.svh',
+'3':'../../../verification_ip/interface_packages/wb_pkg/src/wb_configuration.svh',
+'4':'../../../verification_ip/interface_packages/wb_pkg/src/wb_coverage.svh',
+'5':'../../../verification_ip/interface_packages/wb_pkg/wb_pkg.sv',
+'9':'../testbench/top.sv'};

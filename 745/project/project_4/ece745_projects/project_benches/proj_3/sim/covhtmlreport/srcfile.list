@@ -1,0 +1,9 @@
+../../../verification_ip/environment_packages/i2cmb_env_pkg/i2cmb_env_pkg.sv
+../../../verification_ip/environment_packages/i2cmb_env_pkg/src/i2cmb_coverage.svh
+../../../verification_ip/environment_packages/i2cmb_env_pkg/src/i2cmb_env_configuration.svh
+../../../verification_ip/interface_packages/i2c_pkg/i2c_pkg.sv
+../../../verification_ip/interface_packages/i2c_pkg/src/i2c_configuration.svh
+../../../verification_ip/interface_packages/wb_pkg/src/wb_configuration.svh
+../../../verification_ip/interface_packages/wb_pkg/src/wb_coverage.svh
+../../../verification_ip/interface_packages/wb_pkg/wb_pkg.sv
+../testbench/top.sv

@@ -1,0 +1,183 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/afs/unity.ncsu.edu/users/z/zwang79/564/Project/verilog
+vControl
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1543277132
+!i10b 1
+!s100 OTJ5hZag2W0UPeJSZl<]21
+IUCI:^SF672n^i64M5@RaH2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Control_v_unit
+S1
+Z3 d/afs/unity.ncsu.edu/users/z/zwang79/564/Project_final/v
+w1542835041
+8Control.v
+FControl.v
+L0 1
+Z4 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z5 !s108 1543277132.000000
+!s107 sram.v|tb_top.v|MyDesign.v|Control.v|H.v|W.v|M.v|
+Z6 !s90 -sv|M.v|W.v|H.v|Control.v|MyDesign.v|tb_top.v|sram.v|
+!i113 1
+o-sv
+Z7 tCvgOpt 0
+n@control
+vH
+R0
+R1
+!i10b 1
+!s100 Gd=OceIRzWZ]ADLD2ACeJ0
+Ie=c51Y:J^E5CHDN:BL3FK1
+R2
+!s105 H_v_unit
+S1
+R3
+Z8 w1542833194
+8H.v
+FH.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+Z9 !s107 sram.v|tb_top.v|MyDesign.v|Control.v|H.v|W.v|M.v|
+R6
+!i113 1
+o-sv
+R7
+n@h
+vM
+R0
+R1
+!i10b 1
+!s100 Yn=RDa:CZIZDkJ:nAXnF?2
+IYNmNhB[`67cBTQY7QmFC61
+R2
+!s105 M_v_unit
+S1
+R3
+w1543001714
+8M.v
+FM.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+o-sv
+R7
+n@m
+vMyDesign
+R0
+R1
+!i10b 1
+!s100 [Pb_fnMN@:RAMW1h^R>cW3
+I=jokYkkE3ocWe[9QJn?YT1
+R2
+!s105 MyDesign_v_unit
+S1
+R3
+R8
+8MyDesign.v
+FMyDesign.v
+L0 8
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+o-sv
+R7
+n@my@design
+vsram
+R0
+R1
+!i10b 1
+!s100 czoUbC=IBRBfdC6N0AR`:2
+Ik<mAKBmoA`Ekf^F1JZOTS0
+R2
+!s105 sram_v_unit
+S1
+R3
+w1541380500
+8sram.v
+Fsram.v
+L0 16
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+o-sv
+R7
+vtb_top
+R0
+R1
+!i10b 1
+!s100 <4MISYG0MdbIimJjJ_oX02
+I@576Yn?J5A4Snkn?c9m`O1
+R2
+!s105 tb_top_v_unit
+S1
+R3
+w1543000020
+8tb_top.v
+Ftb_top.v
+L0 38
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+o-sv
+R7
+vW
+R0
+R1
+!i10b 1
+!s100 GS^GBPljKL]dOio5h5^cT1
+I=f6bS@5W8_]4M@;^[NTZW3
+R2
+!s105 W_v_unit
+S1
+R3
+R8
+8W.v
+FW.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+o-sv
+R7
+n@w

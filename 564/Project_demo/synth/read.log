@@ -1,0 +1,327 @@
+Loading sverilog file '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/M.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/M.v
+
+Inferred memory devices in process
+	in routine M line 16 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/M.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+|  msg__dut__data_r_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| dut__msg__enable_r_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine M line 21 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/M.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     counter_reg     | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine M line 27 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/M.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        M_reg        | Flip-flop |  512  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/M.db:M'
+Loaded 1 design.
+Current design is 'M'.
+Loading sverilog file '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/W.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/W.v
+
+Statistics for case statements in always block at line 33 in file
+	'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/W.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            34            |    auto/auto     |
+|            37            |    auto/auto     |
+|            44            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 67 in file
+	'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/W.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            68            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine W line 28 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/W.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine W line 53 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/W.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     counter_reg     | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine W line 67 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/W.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        W_reg        | Flip-flop |  512  |  Y  | N  | N  | N  | N  | N  | N  |
+|      sig0_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      sig1_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine W line 87 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/W.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    W_H_data_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|       W/79       |   16   |    7    |      4       | N  |
+|       W/79       |   16   |   25    |      4       | N  |
+|       W/79       |   16   |   18    |      4       | N  |
+|       W/79       |   16   |   14    |      4       | N  |
+|       W/79       |   16   |   29    |      4       | N  |
+|       W/80       |   16   |   17    |      4       | N  |
+|       W/80       |   16   |   15    |      4       | N  |
+|       W/80       |   16   |   19    |      4       | N  |
+|       W/80       |   16   |   13    |      4       | N  |
+|       W/80       |   16   |   22    |      4       | N  |
+|       W/81       |   16   |   32    |      4       | N  |
+|       W/81       |   16   |   32    |      4       | N  |
+===========================================================
+Presto compilation completed successfully.
+Current design is now '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/W.db:W'
+Loaded 1 design.
+Current design is 'W'.
+Loading sverilog file '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.v
+
+Statistics for case statements in always block at line 44 in file
+	'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            45            |     no/auto      |
+|            48            |    auto/auto     |
+|            54            |    auto/auto     |
+|            60            |    auto/auto     |
+|            66            |    auto/auto     |
+|            72            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 85 in file
+	'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            86            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine H line 32 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| kmem__dut__data_r_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+| hmem__dut__data_r_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|  dut__dom__data_reg   | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine H line 38 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine H line 44 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|   next_state_reg    | Latch |   3   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine H line 80 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     counter_reg     | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine H line 85 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        H_reg        | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine H line 124 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| dut__dom__data_r_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+================================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|      H/125       |   8    |   32    |      3       | N  |
+===========================================================
+Presto compilation completed successfully.
+Current design is now '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/H.db:H'
+Loaded 1 design.
+Current design is 'H'.
+Loading sverilog file '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v
+Warning:  /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v:34: Parameter keyword used in local parameter declaration. (VER-329)
+Warning:  /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v:114: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v:117: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v:121: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v:125: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v:127: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v:130: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v:131: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v:132: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v:134: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 91 in file
+	'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            92            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine Control line 56 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v'.
+======================================================================================
+|       Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+======================================================================================
+|     xxx__dut__go_r_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| xxx__dut__msg_length_r_reg | Flip-flop |   7   |  Y  | N  | N  | N  | N  | N  | N  |
+|   dut__msg__address_reg    | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|   dut__kmem__address_reg   | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|   dut__hmem__address_reg   | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|   dut__dom__address_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|    dut__msg__enable_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   dut__kmem__enable_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   dut__hmem__enable_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    dut__dom__enable_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    dut__msg__write_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    dut__kmem__write_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    dut__hmem__write_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    dut__dom__write_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    dut__xxx__finish_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+======================================================================================
+
+Inferred memory devices in process
+	in routine Control line 78 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  current_state_reg  | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Control line 159 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     counter_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Control line 165 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| dut__msg__address_r_reg | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine Control line 170 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| dut__hmem__address_r_reg | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine Control line 175 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| dut__kmem__address_r_reg | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine Control line 180 in file
+		'/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| dut__dom__address_r_reg | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===================================================================================
+Presto compilation completed successfully.
+Current design is now '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/Control.db:Control'
+Loaded 1 design.
+Current design is 'Control'.
+Loading sverilog file '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/MyDesign.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/MyDesign.v
+Presto compilation completed successfully.
+Current design is now '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/MyDesign.db:MyDesign'
+Warning: Overwriting design file '/afs/unity.ncsu.edu/users/z/zwang79/564/Project_demo/MyDesign.db'. (DDB-24)
+Loaded 1 design.
+Current design is 'MyDesign'.
+MyDesign

@@ -1,0 +1,81 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MyDesign
+Version: K-2015.06-SP1
+Date   : Mon Nov 26 19:18:34 2018
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm
+Wire Load Model Mode: top
+
+  Startpoint: w/counter_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: w/W_reg[1][28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                 0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  w/counter_reg[2]/CK (DFF_X2)                          0.0000 #   0.0000 r
+  w/counter_reg[2]/Q (DFF_X2)                           0.6351     0.6351 f
+  U5868/ZN (NAND2_X1)                                   0.2904     0.9255 r
+  U5871/ZN (NOR2_X1)                                    0.0956     1.0212 f
+  U3456/ZN (OR2_X1)                                     0.2227     1.2439 f
+  U3458/ZN (NAND2_X2)                                   0.2408     1.4847 r
+  U3506/ZN (INV_X4)                                     0.0871     1.5718 f
+  U3376/ZN (AND2_X4)                                    0.3752     1.9470 f
+  U4514/ZN (NAND2_X2)                                   0.1542     2.1013 r
+  U4513/ZN (NAND2_X2)                                   0.0781     2.1794 f
+  U3256/ZN (AOI221_X4)                                  0.4716     2.6509 r
+  U4500/ZN (NAND4_X2)                                   0.1191     2.7701 f
+  add_1_root_add_0_root_w/add_81_3/B[11] (MyDesign_DW01_add_42)
+                                                        0.0000     2.7701 f
+  add_1_root_add_0_root_w/add_81_3/U349/ZN (NOR2_X2)    0.2438     3.0139 r
+  add_1_root_add_0_root_w/add_81_3/U471/ZN (OAI21_X2)   0.1083     3.1222 f
+  add_1_root_add_0_root_w/add_81_3/U348/ZN (AOI21_X2)   0.4061     3.5283 r
+  add_1_root_add_0_root_w/add_81_3/U458/ZN (OAI21_X2)   0.1236     3.6519 f
+  add_1_root_add_0_root_w/add_81_3/U464/ZN (AOI21_X2)   0.2997     3.9516 r
+  add_1_root_add_0_root_w/add_81_3/U342/Z (BUF_X4)      0.2643     4.2159 r
+  add_1_root_add_0_root_w/add_81_3/U343/ZN (OAI21_X2)   0.1034     4.3193 f
+  add_1_root_add_0_root_w/add_81_3/U159/ZN (XNOR2_X2)   0.2645     4.5839 f
+  add_1_root_add_0_root_w/add_81_3/SUM[17] (MyDesign_DW01_add_42)
+                                                        0.0000     4.5839 f
+  add_0_root_add_0_root_w/add_81_3/B[17] (MyDesign_DW01_add_43)
+                                                        0.0000     4.5839 f
+  add_0_root_add_0_root_w/add_81_3/U393/ZN (OR2_X2)     0.2559     4.8398 f
+  add_0_root_add_0_root_w/add_81_3/U343/ZN (AOI21_X2)   0.2097     5.0495 r
+  add_0_root_add_0_root_w/add_81_3/U494/ZN (OAI21_X2)   0.1450     5.1946 f
+  add_0_root_add_0_root_w/add_81_3/U492/ZN (AOI21_X2)   0.3841     5.5787 r
+  add_0_root_add_0_root_w/add_81_3/U357/ZN (OAI21_X2)   0.1905     5.7692 f
+  add_0_root_add_0_root_w/add_81_3/U342/ZN (AOI21_X4)   0.1767     5.9460 r
+  add_0_root_add_0_root_w/add_81_3/U363/Z (XOR2_X2)     0.8304     6.7764 r
+  add_0_root_add_0_root_w/add_81_3/SUM[28] (MyDesign_DW01_add_43)
+                                                        0.0000     6.7764 r
+  U7617/ZN (NAND2_X2)                                   0.1322     6.9086 f
+  U7618/ZN (OAI221_X2)                                  0.2413     7.1499 r
+  w/W_reg[1][28]/D (DFF_X2)                             0.0000     7.1499 r
+  data arrival time                                                7.1499
+
+  clock clk (rise edge)                                 7.5000     7.5000
+  clock network delay (ideal)                           0.0000     7.5000
+  clock uncertainty                                    -0.0500     7.4500
+  w/W_reg[1][28]/CK (DFF_X2)                            0.0000     7.4500 r
+  library setup time                                   -0.2895     7.1605
+  data required time                                               7.1605
+  --------------------------------------------------------------------------
+  data required time                                               7.1605
+  data arrival time                                               -7.1499
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0105
+
+
+1
