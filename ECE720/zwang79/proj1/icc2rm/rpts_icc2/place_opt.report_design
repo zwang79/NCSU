@@ -1,0 +1,312 @@
+****************************************
+Report : design
+        -library
+        -netlist
+        -floorplan
+        -nosplit
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:46:13 2019
+****************************************
+--------------------------------------------------------------------------------
+                              LIBRARY INFORMATION
+--------------------------------------------------------------------------------
+
+Search path : ./rm_icc2_pnr_scripts ./rm_setup ./templates {} .
+
+Units : 
+    time                : 1.00ps
+    resistance          : 1.00kOhm
+    capacitance         : 1.00fF
+    voltage             : 1.00V
+    current             : 1.00uA
+    power               : 1.00pW
+
+Tech file : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/Nangate_15nm_OCL_Milkyway_v2014_06/FreePDK15.tf
+
+Number of active scenarios 	= 6
+Number of inactive scenarios 	= 0
+
+Total number of standard cells 	= 76
+
+Total number of dont_use lib cells 	= 9
+Total number of dont_touch lib cells 	= 9
+
+Total number of buffers 	= 12
+Total number of inverters 	= 6
+Total number of flip-flops 	= 4
+Total number of latches 	= 1
+Total number of ICGs 		= 1
+
+
+Library : NanGate_15nm_OCL
+  File path : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/Nangate_15nm_OCL_ICC2_LibPrep_v2014_06/icc2_cell_lib/NanGate_15nm_OCL.ndm
+  Source .db libs :
+    NanGate_15nm_OCL : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_fast_conditional_ccs.db
+    NanGate_15nm_OCL : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_slow_conditional_ccs.db
+    NanGate_15nm_OCL : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_typical_conditional_ccs.db
+    NanGate_15nm_OCL : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_worst_low_conditional_ccs.db
+    NanGate_15nm_OCL : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_low_temp_conditional_ccs.db
+
+--------------------------------------------------------------------------------
+                              NETLIST INFORMATION
+--------------------------------------------------------------------------------
+
+CELL INSTANCE INFORMATION
+-----------------------------------------------------------------------------
+Cell Instance Type          Count % of         Area  % of siteAreaPerSite
+                                  total             total
+-----------------------------------------------------------------------------
+TOTAL LEAF CELLS             5202  100     1962.738   100 unit:39932  
+
+  Standard cells             5202  100     1962.738   100 unit:39932  
+  Filler cells                  0    0        0.000     0 
+  Diode cells                   0    0        0.000     0 
+  Hard macro cells              0    0        0.000     0 
+  Soft macro cells              0    0        0.000     0 
+    Black box cells             0    0        0.000     0 
+  Analog block cells            0    0        0.000     0 
+  Pad cells                     0    0        0.000     0 
+    Flip-chip pad cells         0    0        0.000     0 
+  Cover cells                   0    0        0.000     0 
+  Flip-chip driver cells        0    0        0.000     0 
+  Corner pad cells              0    0        0.000     0 
+  Pad spacer cells              0    0        0.000     0 
+  Others                        0    0        0.000     0 
+
+Special cells                   0    0        0.000     0 
+  Level shifter                 0    0        0.000     0 
+  Isolation                     0    0        0.000     0 
+  Switch                        0    0        0.000     0 
+  Always on                     0    0        0.000     0 
+  Retention                     0    0        0.000     0 
+  Tie off                       0    0        0.000     0 
+
+LVT                             0    0        0.000     0 
+HVT                             0    0        0.000     0 
+Normal VT                       0    0        0.000     0 
+Others                       5202  100     1962.738   100 unit:39932  
+
+Netlist cells                5202  100     1962.738   100 unit:39932  
+Physical only                   0    0        0.000     0 
+
+Fixed cells                     0    0        0.000     0 
+Moveable cells               5202  100     1962.738   100 unit:39932  
+
+Combinational                4983   95     1643.004    83 unit:33427  
+Sequential                    219    4      319.734    16 unit:6505  
+Others                          0    0        0.000     0 
+
+Buffer                         43    0       12.337     0 unit:251  
+Inverter                      744   14      111.575     5 unit:2270  
+Buffer/inverter               787   15      123.912     6 unit:2521  
+
+Spare cells                     0    0        0.000     0 
+ICG cells                       5    0        4.178     0 unit:85  
+Flip-flop cells               214    4      315.556    16 unit:6420  
+Latch cells                     0    0        0.000     0 
+Antenna cells                   0    0        0.000     0 
+
+Mux logic                       0    0        0.000     0 
+Double height                   0    0        0.000     0 
+Triple height                   0    0        0.000     0 
+More than triple height         0    0        0.000     0 
+
+Logic Hierarchies          5
+
+REFERENCE DESIGN INFORMATION
+----------------------------------------------------------------------------------------------
+Number of reference designs used:36   
+----------------------------------------------------------------------------------------------
+Name           Type          Count     Width    Height        Area   PinDens SiteName siteArea
+----------------------------------------------------------------------------------------------
+NAND2_X1       lib_cell        866      0.26      0.77       0.197    35.604 unit            4
+INV_X1         lib_cell        724      0.19      0.77       0.147    40.690 unit            3
+OAI22_X1       lib_cell        537      0.45      0.77       0.344    26.158 unit            7
+XNOR2_X1       lib_cell        439      0.58      0.77       0.442    15.824 unit            9
+NOR2_X1        lib_cell        413      0.26      0.77       0.197    35.604 unit            4
+OAI21_X1       lib_cell        399      0.38      0.77       0.295    27.127 unit            6
+AOI22_X1       lib_cell        381      0.45      0.77       0.344    26.158 unit            7
+AOI21_X1       lib_cell        295      0.38      0.77       0.295    27.127 unit            6
+FA_X1          lib_cell        287      1.54      0.77       1.180     7.629 unit           24
+SDFFSNQ_X1     lib_cell        214      1.92      0.77       1.475     6.782 unit           30
+XOR2_X1        lib_cell        155      0.58      0.77       0.442    15.824 unit            9
+NAND4_X1       lib_cell        120      0.45      0.77       0.344    26.158 unit            7
+OR2_X1         lib_cell        113      0.38      0.77       0.295    23.736 unit            6
+NAND3_X1       lib_cell         59      0.38      0.77       0.295    27.127 unit            6
+NOR4_X1        lib_cell         32      0.45      0.77       0.344    26.158 unit            7
+HA_X1          lib_cell         20      0.83      0.77       0.639    12.520 unit           13
+NOR3_X1        lib_cell         16      0.38      0.77       0.295    27.127 unit            6
+OAI21_X2       lib_cell         16      0.58      0.77       0.442    18.084 unit            9
+AOI21_X2       lib_cell         15      0.58      0.77       0.442    18.084 unit            9
+CLKBUF_X2      lib_cell         13      0.32      0.77       0.246    24.414 unit            5
+AND2_X1        lib_cell         11      0.38      0.77       0.295    23.736 unit            6
+INV_X2         lib_cell         11      0.26      0.77       0.197    30.518 unit            4
+NAND2_X2       lib_cell         10      0.38      0.77       0.295    23.736 unit            6
+CLKBUF_X1      lib_cell          9      0.32      0.77       0.246    24.414 unit            5
+INV_X4         lib_cell          9      0.38      0.77       0.295    20.345 unit            6
+BUF_X2         lib_cell          8      0.32      0.77       0.246    24.414 unit            5
+BUF_X1         lib_cell          7      0.32      0.77       0.246    24.414 unit            5
+CLKGATETST_X1  lib_cell          5      1.09      0.77       0.836    10.771 unit           17
+OR4_X1         lib_cell          4      0.58      0.77       0.442    20.345 unit            9
+CLKBUF_X4      lib_cell          4      0.51      0.77       0.393    15.259 unit            8
+AOI22_X2       lib_cell          3      0.77      0.77       0.590    15.259 unit           12
+NOR2_X2        lib_cell          3      0.38      0.77       0.295    23.736 unit            6
+NAND4_X2       lib_cell          1      0.70      0.77       0.541    16.646 unit           11
+AND3_X1        lib_cell          1      0.51      0.77       0.393    20.345 unit            8
+CLKBUF_X12     lib_cell          1      1.28      0.77       0.983     6.104 unit           20
+CLKBUF_X8      lib_cell          1      0.90      0.77       0.688     8.719 unit           14
+
+NET INFORMATION
+------------------------------------------------------------------
+NetType                 Count FloatingNets         Vias Nets/Cells
+------------------------------------------------------------------
+Total                    5656            1        11275      1.087
+Signal                   5654            1            0      1.087
+Power                       1            0         5920      0.000
+Ground                      1            0         5355      0.000
+Analog Signal               0            0            0      0.000
+Analog Ground               0            0            0      0.000
+Analog Power                0            0            0      0.000
+Clock                       0            0            0      0.000
+Tie Low                     0            0            0      0.000
+Tie High                    0            0            0      0.000
+Others                      0            0            0      0.000
+
+NET FANOUT AND PIN COUNT INFORMATION
+---------------------------------------------------
+Fanout        Netcount     netPinCount     NetCount
+---------------------------------------------------
+<2                3654     <2                     1
+2                 1030     2                   3653
+3                  285     3                   1030
+4                  176     4                    285
+5                   74     5                    176
+6-10               263     6-10                 270
+11-20               96     11-20                161
+21-30               41     21-30                 38
+31-50               33     31-50                 38
+51-100               1     51-100                 1
+101-500              1     101-500                1
+501-1000             0     501-1000               0
+>1000                2     >1000                  2
+
+PORT AND PIN INFORMATION
+------------------------------------------------------------------------------
+Type         Total     Input    Output     Inout      3-st     Power    Ground
+------------------------------------------------------------------------------
+Total        39830     34316     15913     10404         0      5202      5202
+Macro            0         0         0         0         0         0         0
+Ports          218       147        71         0         0         1         1
+------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                              FLOORPLAN INFORMATION
+--------------------------------------------------------------------------------
+
+CORE AND CHIP AREA INFORMATION
+---------------------------
+Core Area is :     3901.686
+Chip Area is :     4030.661
+---------------------------
+
+SITE ROW INFORMATION
+-----------------------------------------------------------------------
+Site Name    Width    Height   Total Rows     Total Tiles          Area
+-----------------------------------------------------------------------
+unit          0.06      0.77           81           79380      3901.686
+-----------------------------------------------------------------------
+
+BLOCKAGE INFORMATION
+------------------------------------------------
+Blockage Type                Count          Area
+------------------------------------------------
+Hard placement                   0         0.000
+Soft placement                   0         0.000
+Hard macro                       0         0.000
+Partial placement                0         0.000
+Register                         0         0.000
+Placement allow Buffer Only      0         0.000
+Placement allow RP Group Only    0         0.000
+RP Group                         0         0.000
+Category                         0         0.000
+Routing                          0         0.000
+Routing for Top                  0         0.000
+Routing For Design Rule          0         0.000
+Shaping                          0         0.000
+------------------------------------------------
+
+POWER DOMAIN INFORMATION
+--------------------------------------------------------------------
+Power Domain Name    VA Name         Primary Power Net Primary Ground Net
+--------------------------------------------------------------------
+DEFAULT_POWER_DOMAIN DEFAULT_VA      VDD               VSS
+--------------------------------------------------------------------
+
+VOLTAGE AREA INFORMATION
+-------------------------------------------------------------------------------------
+VA Name          Number             Area       Target    bbox    bbox    bbox    bbox
+              of shapes                   Utilization     llx     lly     urx     ury
+-------------------------------------------------------------------------------------
+DEFAULT_VA            1         3901.686         1.00    0.26    0.77   62.98   62.98
+-------------------------------------------------------------------------------------
+
+GROUP BOUND INFORMATION
+----------------------------------------
+No Group Bound exists
+
+EXCLUSIVE MOVEBOUND INFORMATION
+----------------------------------------
+No Exclusive MoveBound exists.
+
+HARD AND SOFT MOVEBOUND INFORMATION
+----------------------------------------
+No Hard Or Soft MoveBound exists.
+
+ROUTE GUIDE INFORMATION
+------------------------------------------------
+Route Guide Type             Count          Area
+------------------------------------------------
+Extra Detour Region              0         0.000
+Over icovl CellLayers            0         0.000
+River Routing                    0         0.000
+Area Double Via                  0         0.000
+Access Preference                0         0.000
+Default                          0         0.000
+Switched Direction Only          0         0.000
+Max Patterns                     0         0.000
+Others                           0         0.000
+------------------------------------------------
+
+MULTIBIT REGISTER INFORMATION
+-----------------------------------------------
+No Multibit cells exist
+
+MULTIBIT LS/ISO CELLS INFORMATION
+-----------------------------------------------
+No Multibit cells exist
+
+RP GROUP INFORMATION
+----------------------------------------
+No RP Group exists
+
+LAYER INFORMATION
+--------------------------------------------------------------------------
+Layer Name Direction Ignored Pitch  default minWidth minSpacing    sameNet
+                                      Width                     MinSpacing
+--------------------------------------------------------------------------
+M1         Ver       NO       0.06     0.03     0.03       0.04       0.04
+MINT1      Hor       NO       0.06     0.03     0.03       0.04       0.00
+MINT2      Ver       NO       0.06     0.03     0.03       0.04       0.04
+MINT3      Hor       NO       0.06     0.03     0.03       0.04       0.04
+MINT4      Ver       NO       0.06     0.03     0.03       0.04       0.04
+MINT5      Hor       NO       0.06     0.03     0.03       0.04       0.04
+MSMG1      Ver       NO       0.11     0.06     0.06       0.06       0.00
+MSMG2      Hor       NO       0.11     0.06     0.06       0.06       0.00
+MSMG3      Ver       NO       0.11     0.06     0.06       0.06       0.00
+MSMG4      Hor       NO       0.11     0.06     0.06       0.06       0.00
+MSMG5      Ver       NO       0.11     0.06     0.06       0.06       0.00
+MG1        Hor       YES      0.22     0.11     0.11       0.11       0.00
+MG2        Ver       YES      0.22     0.11     0.11       0.11       0.00
+--------------------------------------------------------------------------
+1

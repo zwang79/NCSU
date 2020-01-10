@@ -1,0 +1,19 @@
+ECE720 hw02 Feedback for Wang,Zhiping
+
+(20/40) (viol) Was the xbar design routed with no violations?
+Got error when attempting to open design ""Library xbar has no reference libraries
+
+(20/20) (util) Was the utilization as large as possible?
+CSV file shows iterations that were well-optimized.
+
+(20/20) (csv) Was the CSV file submitted?  Does it look correct?
+Last line of CSV file was incomplete.  No penalty this time, but please correct in the future.
+
+(20/20) (script) Were the Makefile and scripts submitted?  Do they look original?
+Submitted flow appears complete.
+
+
+Total:
+(0/0) Late Penalty
+(80/100) Total
+

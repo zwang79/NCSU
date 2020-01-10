@@ -1,0 +1,26 @@
+****************************************
+Report : Data Mismatches
+Version: P-2019.03-SP1
+Date   : Sat Oct  5 13:40:04 2019
+****************************************
+No mismatches exist on the design.
+1
+****************************************
+Report : SCANDEF check
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Sat Oct  5 13:40:04 2019
+****************************************
+  Checking between SCANDEF file and design:
+
+  Total PARTITION group count: 1
+  Total SCANCHAINS checked: 1
+  VALIDATED :  1
+  FAILED    :  0
+
+  Chain name     Status    #cells    #bits     PARTITION      Scan in        Scan out
+  1              V         213       213       clock_45_45_0.720000 test_si  req_tag_reg_4_/SI
+1
+Information: There are no relative placement groups in the design. (NDMUI-173)
+1
+1

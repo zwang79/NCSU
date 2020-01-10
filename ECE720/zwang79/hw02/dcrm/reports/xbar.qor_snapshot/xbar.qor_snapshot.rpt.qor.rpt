@@ -1,0 +1,166 @@
+ 
+****************************************
+Report : qor
+Design : xbar
+Scenario(s): mode_norm.slow.RCmax mode_norm.worst_low.RCmax mode_norm.fast.RCmin
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:02:38 2019
+****************************************
+
+
+  Scenario 'mode_norm.slow.RCmax'
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:              5.000
+  Critical Path Length:       234.114
+  Critical Path Slack:       4580.566
+  Critical Path Clk Period:  5000.000
+  Total Negative Slack:         0.000
+  No. of Violating Paths:       0.000
+  Worst Hold Violation:         0.000
+  Total Hold Violation:         0.000
+  No. of Hold Violations:       0.000
+  -----------------------------------
+
+  Scenario 'mode_norm.slow.RCmax'
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:              0.000
+  Critical Path Length:        25.632
+  Critical Path Slack:       4804.368
+  Critical Path Clk Period:  5000.000
+  Total Negative Slack:         0.000
+  No. of Violating Paths:       0.000
+  Worst Hold Violation:         0.000
+  Total Hold Violation:         0.000
+  No. of Hold Violations:       0.000
+  -----------------------------------
+
+
+  Scenario 'mode_norm.worst_low.RCmax'
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:              5.000
+  Critical Path Length:       293.026
+  Critical Path Slack:       4519.119
+  Critical Path Clk Period:  5000.000
+  Total Negative Slack:         0.000
+  No. of Violating Paths:       0.000
+  Worst Hold Violation:         0.000
+  Total Hold Violation:         0.000
+  No. of Hold Violations:       0.000
+  -----------------------------------
+
+  Scenario 'mode_norm.worst_low.RCmax'
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:              0.000
+  Critical Path Length:        30.484
+  Critical Path Slack:       4799.516
+  Critical Path Clk Period:  5000.000
+  Total Negative Slack:         0.000
+  No. of Violating Paths:       0.000
+  Worst Hold Violation:         0.000
+  Total Hold Violation:         0.000
+  No. of Hold Violations:       0.000
+  -----------------------------------
+
+
+  Scenario 'mode_norm.fast.RCmin'
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:              5.000
+  Critical Path Length:       220.483
+  Critical Path Slack:       4595.034
+  Critical Path Clk Period:  5000.000
+  Total Negative Slack:         0.000
+  No. of Violating Paths:       0.000
+  Worst Hold Violation:         0.000
+  Total Hold Violation:         0.000
+  No. of Hold Violations:       0.000
+  -----------------------------------
+
+  Scenario 'mode_norm.fast.RCmin'
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:              0.000
+  Critical Path Length:        23.738
+  Critical Path Slack:       4806.262
+  Critical Path Clk Period:  5000.000
+  Total Negative Slack:         0.000
+  No. of Violating Paths:       0.000
+  Worst Hold Violation:         0.000
+  Total Hold Violation:         0.000
+  No. of Hold Violations:       0.000
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         12
+  Hierarchical Port Count:         48
+  Leaf Cell Count:               3951
+  Buf/Inv Cell Count:             255
+  Buf Cell Count:                   0
+  Inv Cell Count:                 255
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      3543
+  Sequential Cell Count:          408
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:        1129.366
+  Noncombinational Area:      652.345
+  Buf/Inv Area:                37.601
+  Total Buffer Area:            0.000
+  Total Inverter Area:         37.601
+  Macro/Black Box Area:         0.000
+  Net Area:                     0.000
+  Net XLength        :      24691.484
+  Net YLength        :      28495.215
+  -----------------------------------
+  Cell Area:                 1781.711
+  Design Area:               1781.711
+  Net Length        :       53186.699
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          4483
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: eb3-2108-159-l.eos.ncsu.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                   0.000
+  Logic Optimization:                 0.000
+  Mapping Optimization:              11.447
+  -----------------------------------------
+  Overall Compile Time:              18.706
+  Overall Compile Wall Clock Time:   11.124
+
+  --------------------------------------------------------------------
+
+  Scenario: mode_norm.slow.RCmax   WNS: 0.000  TNS: 0.000  Number of Violating Paths: 0
+  Scenario: mode_norm.worst_low.RCmax   WNS: 0.000  TNS: 0.000  Number of Violating Paths: 0
+  Scenario: mode_norm.fast.RCmin   WNS: 0.000  TNS: 0.000  Number of Violating Paths: 0
+  Design  WNS: 0.000  TNS: 0.000  Number of Violating Paths: 0
+
+
+  Scenario: mode_norm.slow.RCmax  (Hold)  WNS: 0.000  TNS: 0.000  Number of Violating Paths: 0
+  Scenario: mode_norm.worst_low.RCmax  (Hold)  WNS: 0.000  TNS: 0.000  Number of Violating Paths: 0
+  Scenario: mode_norm.fast.RCmin  (Hold)  WNS: 0.000  TNS: 0.000  Number of Violating Paths: 0
+  Design (Hold)  WNS: 0.000  TNS: 0.000  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

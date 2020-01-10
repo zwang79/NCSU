@@ -1,0 +1,23 @@
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
+****************************************
+Report : global timing
+        -format { narrow }
+        -report_by design
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:50:48 2019
+****************************************
+
+No setup violations found.
+
+
+Hold violations
+--------------------------------------------------------------
+          Total   reg->reg    in->reg   reg->out    in->out
+--------------------------------------------------------------
+WNS       -0.03      -0.03       0.00       0.00       0.00
+TNS       -0.03      -0.03       0.00       0.00       0.00
+NUM           1          1          0          0          0
+--------------------------------------------------------------
+
+1

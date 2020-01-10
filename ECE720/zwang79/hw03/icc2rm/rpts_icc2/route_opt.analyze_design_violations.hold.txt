@@ -1,0 +1,445 @@
+****************************************
+Report : Violation analysis
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:34:51 2019
+****************************************
+
+  Detect 32 violating paths.
+      Worst: -6.580      Total: -8.815      Average: -0.275
+  0 violating paths are categorized.
+      Worst: 0.000      Total: 0.000      Average: 0.000
+  32 violating paths are uncategorized.
+      Worst: -6.580      Total: -8.815      Average: -0.275
+
+****** Summary of Path Analysis ******
+
+  ****** Hold timing categories ******
+  category                                                      Count      Worst      Total   Percentage
+  -----------------                                            -------    -------    -------    ----- 
+  * category  H1: Large clock skew(LCS)                              0
+  * category  H2: Large clock uncertainty(LCU)                       0
+  * category  H3: Large hold time of end point(LLH)                  0
+  * category  H4: Large external output delay(LOD)                   0
+  * category  H5: Delay setting is illegal(ID)                       0
+  * category  H6: Conflict with setup at endpoint(CSE)               0
+  * category  H7: Small violations(SM)                              31     -0.419     -2.235   25.36%
+  * category  H8: Remaining violating paths(OT)                      1     -6.580     -6.580   74.64%
+
+  ****** Remaining violations distributed by slack ******
+  -0.100 >= slack > -~                                               1     -6.580     -6.580   74.64%
+
+  ****** Net analysis categories ******
+
+### Following metrics will be used for net based analysis. ###
+  * category  H1: Entire net is dont_touch(D)                        0
+  * category  H2: Net between pad cell and port(PAD)                 0
+  * category  H3: Tristate nets(TR)                                  0
+  * category  H4: Nets with multiple drivers(MD)                     0
+  * category  H5: Nets in read-only sub blocks(RO)                   0
+  * category  H6: Nets are highly blocked(BLK)                       0
+  * category  H7: Nets with port far from the core area(FP)          0
+  * category  H8: Nets with setup violation(CS)                      0
+  * category  H9: Nets with max_trans violation(CT)                  0
+  * category  H10: High fanout nets(> 1000)(HFR)                     0
+
+  ****** Clock network ******
+  * category  H11: Nets on clock network(CK)                         0
+
+  ****** Remaining uncategorized fixable violations ******
+  * category  H12: Net is crossing high density area(DEN)            0
+  * category  H13: Net is partially blocked(PB)                      0
+  * category  H14: Connect to excluded cell of XMB(XME)              0
+  * category  H15: Connect to excluded cell of HMB(HME)              0
+  * category  H16: Nets across different exclusive MBs(DXM)          0
+  * category  H17: Nets across different hard MBs(DHM)               0
+  * category  H18: Some segments of net are dont_touch(PD)           0
+  * category  H19: Nets crossing different voltage areas(MV)         0
+  * category  H20: Nets are too short(TS)                            0
+  * category  H21: Nets are long(> 400.0um)(LN)                      0
+  * category  H22: Net with new generated violation after fix(NEW)       0
+  * category  H23: Other violations(OV)                              0
+
+
+### Detailed analysis results ###
+
+***************************************************************************
+  # 1:EP-u_logic_C4b3z4_reg/D, -6.580,(OT)
+  Startpoint: u_logic_F2o2z4_reg/CLK
+  Endpoint: u_logic_C4b3z4_reg/D
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -6.580,  Require Time: 92.372, Num of Nets: 5
+  Path analysis result: Remaining violating paths
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+  
+* category  H11: Nets on clock network(CK)                  1 net
+    u_logic_net7528
+  
+* category  H20: Nets are too short(TS)                        4 nets
+    n11115
+    ropt_net_15605
+    n9998
+    u_logic_Irh2z4[0]
+
+***************************************************************************
+  # 2:EP-u_logic_Ztc3z4_reg/D, -0.419,(SM)
+  Startpoint: u_logic_Ztc3z4_reg/CLK
+  Endpoint: u_logic_Ztc3z4_reg/D
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.419,  Require Time: 89.721, Num of Nets: 6
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 3:EP-u_logic_Bqf3z4_reg/SI, -0.366,(SM)
+  Startpoint: u_logic_Xmf3z4_reg/CLK
+  Endpoint: u_logic_Bqf3z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.366,  Require Time: 74.753, Num of Nets: 5
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 4:EP-u_logic_V1l2z4_reg/D, -0.192,(SM)
+  Startpoint: u_logic_Gci2z4_reg/CLK
+  Endpoint: u_logic_V1l2z4_reg/D
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.192,  Require Time: 105.192, Num of Nets: 11
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 5:EP-u_logic_W3f3z4_reg/D, -0.139,(SM)
+  Startpoint: u_logic_Rvv2z4_reg/CLK
+  Endpoint: u_logic_W3f3z4_reg/D
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.139,  Require Time: 104.719, Num of Nets: 6
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 6:EP-u_logic_M743z4_reg/SI, -0.084,(SM)
+  Startpoint: u_logic_Csz2z4_reg/CLK
+  Endpoint: u_logic_M743z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.084,  Require Time: 69.741, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 7:EP-u_logic_Td33z4_reg/SI, -0.082,(SM)
+  Startpoint: u_logic_Bk33z4_reg/CLK
+  Endpoint: u_logic_Td33z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.082,  Require Time: 68.194, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 8:EP-u_logic_Gf63z4_reg/SI, -0.079,(SM)
+  Startpoint: u_logic_K0u2z4_reg/CLK
+  Endpoint: u_logic_Gf63z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.079,  Require Time: 67.561, Num of Nets: 2
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 9:EP-u_logic_Yr13z4_reg/SI, -0.077,(SM)
+  Startpoint: u_logic_Mvm2z4_reg/CLK
+  Endpoint: u_logic_Yr13z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.077,  Require Time: 67.291, Num of Nets: 4
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  #10:EP-u_logic_Xx93z4_reg/D, -0.075,(SM)
+  Startpoint: u_logic_Cam2z4_reg/CLK
+  Endpoint: u_logic_Xx93z4_reg/D
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.075,  Require Time: 112.552, Num of Nets: 9
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  #11:EP-u_logic_R283z4_reg/SI, -0.070,(SM)
+  Startpoint: u_logic_Wyt2z4_reg/CLK
+  Endpoint: u_logic_R283z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.070,  Require Time: 77.986, Num of Nets: 5
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #12:EP-u_logic_Ek03z4_reg/SI, -0.070,(SM)
+  Startpoint: u_logic_Nt03z4_reg/CLK
+  Endpoint: u_logic_Ek03z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.070,  Require Time: 64.538, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #13:EP-u_logic_Ecp2z4_reg/SI, -0.064,(SM)
+  Startpoint: u_logic_Pap2z4_reg/CLK
+  Endpoint: u_logic_Ecp2z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.064,  Require Time: 69.968, Num of Nets: 2
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #14:EP-u_logic_D923z4_reg/SI, -0.060,(SM)
+  Startpoint: u_logic_O2g3z4_reg/CLK
+  Endpoint: u_logic_D923z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.060,  Require Time: 65.673, Num of Nets: 6
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #15:EP-u_logic_Cma3z4_reg/SI, -0.050,(SM)
+  Startpoint: u_logic_J6i2z4_reg/CLK
+  Endpoint: u_logic_Cma3z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.050,  Require Time: 85.843, Num of Nets: 4
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #16:EP-u_logic_Eqq2z4_reg/SI, -0.048,(SM)
+  Startpoint: u_logic_X1e3z4_reg/CLK
+  Endpoint: u_logic_Eqq2z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.048,  Require Time: 70.086, Num of Nets: 2
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #17:EP-u_logic_L7p2z4_reg/SI, -0.048,(SM)
+  Startpoint: u_logic_Llq2z4_reg/CLK
+  Endpoint: u_logic_L7p2z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.048,  Require Time: 79.584, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #18:EP-u_logic_Ft73z4_reg/SI, -0.046,(SM)
+  Startpoint: u_logic_Uu83z4_reg/CLK
+  Endpoint: u_logic_Ft73z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.046,  Require Time: 73.116, Num of Nets: 5
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #19:EP-u_logic_Bf93z4_reg/SI, -0.043,(SM)
+  Startpoint: u_logic_Rdg3z4_reg/CLK
+  Endpoint: u_logic_Bf93z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.043,  Require Time: 73.953, Num of Nets: 4
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #20:EP-u_logic_U573z4_reg/SI, -0.042,(SM)
+  Startpoint: u_logic_Gcr2z4_reg/CLK
+  Endpoint: u_logic_U573z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.042,  Require Time: 75.058, Num of Nets: 5
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #21:EP-u_logic_A933z4_reg/SI, -0.034,(SM)
+  Startpoint: u_logic_Anq2z4_reg/CLK
+  Endpoint: u_logic_A933z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.034,  Require Time: 73.315, Num of Nets: 5
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #22:EP-u_logic_W5p2z4_reg/SI, -0.026,(SM)
+  Startpoint: u_logic_H4p2z4_reg/CLK
+  Endpoint: u_logic_W5p2z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.026,  Require Time: 79.543, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #23:EP-u_logic_Sa23z4_reg/SI, -0.025,(SM)
+  Startpoint: u_logic_Ilf3z4_reg/CLK
+  Endpoint: u_logic_Sa23z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.025,  Require Time: 65.295, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #24:EP-u_logic_Psh3z4_reg/SI, -0.025,(SM)
+  Startpoint: u_logic_Ec33z4_reg/CLK
+  Endpoint: u_logic_Psh3z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.025,  Require Time: 68.975, Num of Nets: 4
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #25:EP-u_logic_Av13z4_reg/SI, -0.020,(SM)
+  Startpoint: u_logic_Hq23z4_reg/CLK
+  Endpoint: u_logic_Av13z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.020,  Require Time: 68.437, Num of Nets: 4
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #26:EP-u_logic_Taa3z4_reg/SI, -0.014,(SM)
+  Startpoint: u_logic_J7b3z4_reg/CLK
+  Endpoint: u_logic_Taa3z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.014,  Require Time: 78.273, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #27:EP-u_logic_Gf43z4_reg/D, -0.014,(SM)
+  Startpoint: u_logic_X533z4_reg/CLK
+  Endpoint: u_logic_Gf43z4_reg/D
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.014,  Require Time: 109.153, Num of Nets: 12
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #28:EP-u_logic_Zu43z4_reg/SI, -0.010,(SM)
+  Startpoint: u_logic_Qz43z4_reg/CLK
+  Endpoint: u_logic_Zu43z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.010,  Require Time: 78.268, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #29:EP-u_logic_Rbi3z4_reg/D, -0.003,(SM)
+  Startpoint: u_logic_Rbi3z4_reg/CLK
+  Endpoint: u_logic_Rbi3z4_reg/D
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.003,  Require Time: 82.419, Num of Nets: 6
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #30:EP-u_logic_X533z4_reg/SI, -0.003,(SM)
+  Startpoint: u_logic_To23z4_reg/CLK
+  Endpoint: u_logic_X533z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.003,  Require Time: 64.910, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #31:EP-u_logic_Sg83z4_reg/SI, -0.003,(SM)
+  Startpoint: u_logic_Yx73z4_reg/CLK
+  Endpoint: u_logic_Sg83z4_reg/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.003,  Require Time: 64.872, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: None.
+
+***************************************************************************
+  #32:EP-u_logic_Psn2z4_reg/D, -0.002,(SM)
+  Startpoint: u_logic_V223z4_reg/CLK
+  Endpoint: u_logic_Psn2z4_reg/D
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Slack: -0.002,  Require Time: 115.759, Num of Nets: 13
+  Path analysis result: Small violations
+
+  Nets analysis result: None.

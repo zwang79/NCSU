@@ -1,0 +1,20 @@
+ECE720 proj2 Feedback for Wang,Zhiping
+
+(20/20) (completeness) Were all requirements met?
+(20/20) (writing) Was the report clear and easy to understand?
+Report was clear and explained the delays well enough to follow the calculation.
+
+(20/20) (execution) Did the simulation execute the provided transaction-file correctly?
+correct
+
+(20/20) (delays) Were the simulated delays realistic?
+Realistic delays modeled
+
+(20/20) (secret xact) Did the simulation execute the secret transaction-file correctly?
+correct
+
+
+Total:
+(0/0) Late Penalty
+(100/100) Total
+

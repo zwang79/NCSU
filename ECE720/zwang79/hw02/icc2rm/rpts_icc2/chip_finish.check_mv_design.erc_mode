@@ -1,0 +1,105 @@
+****************************************
+Report : check_mv_design
+        -erc_mode
+        -voltage_threshold 0
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:05:14 2019
+****************************************
+
+---------- Power domain rule ----------
+No errors or warnings.
+
+---------- Supply set rule ----------
+No errors or warnings.
+
+---------- Supply net rule ----------
+No errors or warnings.
+
+---------- Supply port rule ----------
+No errors or warnings.
+
+---------- Isolation strategy rule ----------
+No errors or warnings.
+
+---------- Level shifter strategy rule ----------
+No errors or warnings.
+
+---------- Retention strategy rule ----------
+No errors or warnings.
+
+---------- Power switch strategy rule ----------
+No errors or warnings.
+
+---------- Repeater rule ----------
+No errors or warnings.
+
+---------- Terminal boundary rule ----------
+No errors or warnings.
+
+---------- Isolation cell rule ----------
+No errors or warnings.
+
+---------- Level shifter cell rule ----------
+No errors or warnings.
+
+---------- Retention cell rule ----------
+No errors or warnings.
+
+---------- Switch cell rule ----------
+No errors or warnings.
+
+---------- PGMUX rule ----------
+No errors or warnings.
+
+---------- Diode cell rule ----------
+No errors or warnings.
+
+---------- Model rule ----------
+No errors or warnings.
+
+---------- Isolation rule ----------
+No errors or warnings.
+
+---------- Voltage shifting rule ----------
+No errors or warnings.
+
+---------- Tie-off connection rule ----------
+No errors or warnings.
+
+---------- Analog net rule ----------
+No errors or warnings.
+
+---------- Physical block pin rule ----------
+No errors or warnings.
+
+---------- PG pin rule ----------
+No errors or warnings.
+
+---------- Signal pin rule ----------
+Error: Power and ground related supply net(s) of signal pin 'valid_reg_0_/D' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'valid_reg_0_/SI' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'valid_reg_0_/SE' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'valid_reg_0_/CLK' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'valid_reg_0_/SN' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'valid_reg_0_/Q' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_31_/D' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_31_/SI' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_31_/SE' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_31_/CLK' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_31_/SN' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_31_/Q' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_30_/D' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_30_/SI' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_30_/SE' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_30_/CLK' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_30_/SN' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_30_/Q' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_29_/D' cannot be determined. (MV-050)
+Error: Power and ground related supply net(s) of signal pin 'out_reg_29_/SI' cannot be determined. (MV-050)
+Information: Message 'MV-050' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 18642 MV-050 violations. (MV-080)
+
+---------- Summary ----------
+Information: Total 18642 error(s) and 0 warning(s) from check_mv_design. (MV-082)
+0

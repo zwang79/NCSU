@@ -1,0 +1,5 @@
+date,tgt_util,tgt_max_layer,tgt_max_trans,clk_uncert,route_opt_wnhs,route_opt_tnhs,route_opt_max_trans,route_opt_util,pnr_time
+Thu Sep 26 22:40:24 EDT 2019,0.5,MINT5,500,20,-64.96,-26313.93,88.10,0.6138,870.0
+Thu Sep 26 22:59:48 EDT 2019,0.6,MINT5,500,20,-76.53,-20287.01,203.11,0.7583,526.0
+Thu Sep 26 23:18:01 EDT 2019,0.5,MINT5,500,17,-61.92,-21911.53,87.20,0.5831,501.0
+Thu Sep 26 23:36:18 EDT 2019,0.5,MINT5,10,17,-2.95,-3.79,9.44,0.5830,543.0

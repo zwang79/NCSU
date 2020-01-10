@@ -1,0 +1,25 @@
+ 
+****************************************
+Report : clock_gating
+        -nosplit
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:17 2019
+****************************************
+
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |       36         |
+          |                                       |                  |
+          |    Number of Gated registers          |   793 (94.29%)   |
+          |                                       |                  |
+          |    Number of Ungated registers        |    48 (5.71%)    |
+          |                                       |                  |
+          |    Total number of registers          |      841         |
+          ------------------------------------------------------------
+
+
+
+1

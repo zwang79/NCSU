@@ -1,0 +1,78 @@
+****************************************
+Report : qor
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:05:35 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
+
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:             12
+Hierarchical Port Count:             48
+Leaf Cell Count:                      0
+Buf/Inv Cell Count:                   0
+Buf Cell Count:                       0
+Inv Cell Count:                       0
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:             0
+Sequential Cell Count:                0
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:                0.00
+Noncombinational Area:             0.00
+Buf/Inv Area:                      0.00
+Total Buffer Area:                 0.00
+Total Inverter Area:               0.00
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                              0.00
+Cell Area (netlist and physical only):            0.00
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              4483
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:05:35 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+mode_norm.slow.RCmax (Setup)             --           0.00              0
+mode_norm.worst_low.RCmax (Setup)             --           0.00              0
+Design             (Setup)               --           0.00              0
+
+mode_norm.fast.RCmin_bc (Hold)             --           0.00              0
+Design             (Hold)                --           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                              0.00
+Cell Area (netlist and physical only):            0.00
+Nets with DRC Violations:        0
+1

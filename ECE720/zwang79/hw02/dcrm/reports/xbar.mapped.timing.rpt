@@ -1,0 +1,273 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : xbar
+Scenario(s): mode_norm.slow.RCmax mode_norm.worst_low.RCmax mode_norm.fast.RCmin
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:02:38 2019
+****************************************
+
+ * Some/all delay information is back-annotated.
+Wire Load Model Mode: Inactive.
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: out_reg_219_
+            (rising edge-triggered flip-flop clocked by clk)
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGIN
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes     Voltage
+  ----------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00                     
+  clock network delay (ideal)                        0.00       0.00                     
+  input external delay                             120.00     120.00 r                   
+  reset (in)                             101.98     49.40     169.40 r                   
+  reset (net)                   43                   0.00     169.40 r                   
+  U3712/ZN (INV_X1)                       73.28     56.80 *   226.20 f                   0.72
+  n6791 (net)                   34                   0.00     226.20 f                   
+  U4229/ZN (NAND2_X1)                     76.27     48.45 *   274.66 r                   0.72
+  n6874 (net)                   32                   0.00     274.66 r                   
+  U5735/ZN (OAI22_X1)                     27.58     38.95 *   313.61 f                   0.72
+  n4888 (net)                    1                   0.00     313.61 f                   
+  U5738/ZN (NOR3_X1)                      24.88     15.51 *   329.12 r                   0.72
+  n4889 (net)                    1                   0.00     329.12 r                   
+  U5739/ZN (NAND4_X1)                     34.85     20.18 *   349.30 f                   0.72
+  N235 (net)                     1                   0.00     349.30 f                   
+  out_reg_219_/D (SDFFSNQ_X1)             35.73      4.82 *   354.11 f                   0.72
+  data arrival time                                           354.11                     
+
+  clock clk (rise edge)                           5000.00    5000.00                     
+  clock network delay (ideal)                        0.00    5000.00                     
+  clock uncertainty                                -50.00    4950.00                     
+  out_reg_219_/CLK (SDFFSNQ_X1)                      0.00    4950.00 r                   
+  library setup time                               -15.32    4934.68                     
+  data required time                                         4934.68                     
+  ----------------------------------------------------------------------------------------------------
+  data required time                                         4934.68                     
+  data arrival time                                          -354.11                     
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                4580.57                     
+
+
+  Startpoint: out_reg_200_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[200] (output port clocked by clk)
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGOUT
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes     Voltage
+  ----------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00                     
+  clock network delay (ideal)                        0.00       0.00                     
+  out_reg_200_/CLK (SDFFSNQ_X1)            0.00      0.00       0.00 r                   0.72
+  out_reg_200_/Q (SDFFSNQ_X1)             13.41     16.09      16.09 f                   0.72
+  out[200] (net)                 1                   0.00      16.09 f                   
+  out[200] (out)                          25.27      9.54 *    25.63 f                   
+  data arrival time                                            25.63                     
+
+  clock clk (rise edge)                           5000.00    5000.00                     
+  clock network delay (ideal)                        0.00    5000.00                     
+  clock uncertainty                                -50.00    4950.00                     
+  output external delay                           -120.00    4830.00                     
+  data required time                                         4830.00                     
+  ----------------------------------------------------------------------------------------------------
+  data required time                                         4830.00                     
+  data arrival time                                           -25.63                     
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                4804.37                     
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: out_reg_219_
+            (rising edge-triggered flip-flop clocked by clk)
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGIN
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes     Voltage
+  ----------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00                     
+  clock network delay (ideal)                        0.00       0.00                     
+  input external delay                             120.00     120.00 r                   
+  reset (in)                             120.37     66.70     186.70 r                   
+  reset (net)                   43                   0.00     186.70 r                   
+  U3712/ZN (INV_X1)                       77.65     72.39 *   259.09 f                   0.72
+  n6791 (net)                   34                   0.00     259.09 f                   
+  U5490/ZN (NAND2_X1)                     87.56     73.25 *   332.33 r                   0.72
+  n4834 (net)                   32                   0.00     332.33 r                   
+  U5736/ZN (OAI22_X1)                     18.54     35.66 *   367.99 f                   0.72
+  n4887 (net)                    1                   0.00     367.99 f                   
+  U5738/ZN (NOR3_X1)                      22.35     16.79 *   384.78 r                   0.72
+  n4889 (net)                    1                   0.00     384.78 r                   
+  U5739/ZN (NAND4_X1)                     30.32     23.49 *   408.27 f                   0.72
+  N235 (net)                     1                   0.00     408.27 f                   
+  out_reg_219_/D (SDFFSNQ_X1)             31.40      4.76 *   413.03 f                   0.72
+  data arrival time                                           413.03                     
+
+  clock clk (rise edge)                           5000.00    5000.00                     
+  clock network delay (ideal)                        0.00    5000.00                     
+  clock uncertainty                                -50.00    4950.00                     
+  out_reg_219_/CLK (SDFFSNQ_X1)                      0.00    4950.00 r                   
+  library setup time                               -17.86    4932.14                     
+  data required time                                         4932.14                     
+  ----------------------------------------------------------------------------------------------------
+  data required time                                         4932.14                     
+  data arrival time                                          -413.03                     
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                4519.12                     
+
+
+  Startpoint: out_reg_200_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[200] (output port clocked by clk)
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGOUT
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes     Voltage
+  ----------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00                     
+  clock network delay (ideal)                        0.00       0.00                     
+  out_reg_200_/CLK (SDFFSNQ_X1)            0.00      0.00       0.00 r                   0.72
+  out_reg_200_/Q (SDFFSNQ_X1)             14.95     20.94      20.94 f                   0.72
+  out[200] (net)                 1                   0.00      20.94 f                   
+  out[200] (out)                          26.12      9.54 *    30.48 f                   
+  data arrival time                                            30.48                     
+
+  clock clk (rise edge)                           5000.00    5000.00                     
+  clock network delay (ideal)                        0.00    5000.00                     
+  clock uncertainty                                -50.00    4950.00                     
+  output external delay                           -120.00    4830.00                     
+  data required time                                         4830.00                     
+  ----------------------------------------------------------------------------------------------------
+  data required time                                         4830.00                     
+  data arrival time                                           -30.48                     
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                4799.52                     
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: out_reg_219_
+            (rising edge-triggered flip-flop clocked by clk)
+  Scenario: mode_norm.fast.RCmin
+  Path Group: REGIN
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes     Voltage
+  ----------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00                     
+  clock network delay (ideal)                        0.00       0.00                     
+  input external delay                             120.00     120.00 r                   
+  reset (in)                              95.87     49.93     169.93 r                   
+  reset (net)                   43                   0.00     169.93 r                   
+  U3712/ZN (INV_X1)                       66.44     53.77 *   223.70 f                   0.88
+  n6791 (net)                   34                   0.00     223.70 f                   
+  U5490/ZN (NAND2_X1)                     72.23     54.68 *   278.37 r                   0.88
+  n4834 (net)                   32                   0.00     278.37 r                   
+  U5736/ZN (OAI22_X1)                     18.13     29.29 *   307.67 f                   0.88
+  n4887 (net)                    1                   0.00     307.67 f                   
+  U5738/ZN (NOR3_X1)                      18.73     12.21 *   319.88 r                   0.88
+  n4889 (net)                    1                   0.00     319.88 r                   
+  U5739/ZN (NAND4_X1)                     26.24     16.69 *   336.57 f                   0.88
+  N235 (net)                     1                   0.00     336.57 f                   
+  out_reg_219_/D (SDFFSNQ_X1)             27.05      3.91 *   340.48 f                   0.88
+  data arrival time                                           340.48                     
+
+  clock clk (rise edge)                           5000.00    5000.00                     
+  clock network delay (ideal)                        0.00    5000.00                     
+  clock uncertainty                                -50.00    4950.00                     
+  out_reg_219_/CLK (SDFFSNQ_X1)                      0.00    4950.00 r                   
+  library setup time                               -14.48    4935.52                     
+  data required time                                         4935.52                     
+  ----------------------------------------------------------------------------------------------------
+  data required time                                         4935.52                     
+  data arrival time                                          -340.48                     
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                4595.03                     
+
+
+  Startpoint: out_reg_200_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[200] (output port clocked by clk)
+  Scenario: mode_norm.fast.RCmin
+  Path Group: REGOUT
+  Path Type: max
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes     Voltage
+  ----------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00                     
+  clock network delay (ideal)                        0.00       0.00                     
+  out_reg_200_/CLK (SDFFSNQ_X1)            0.00      0.00       0.00 r                   0.88
+  out_reg_200_/Q (SDFFSNQ_X1)             11.50     15.66      15.66 f                   0.88
+  out[200] (net)                 1                   0.00      15.66 f                   
+  out[200] (out)                          21.49      8.08 *    23.74 f                   
+  data arrival time                                            23.74                     
+
+  clock clk (rise edge)                           5000.00    5000.00                     
+  clock network delay (ideal)                        0.00    5000.00                     
+  clock uncertainty                                -50.00    4950.00                     
+  output external delay                           -120.00    4830.00                     
+  data required time                                         4830.00                     
+  ----------------------------------------------------------------------------------------------------
+  data required time                                         4830.00                     
+  data arrival time                                           -23.74                     
+  ----------------------------------------------------------------------------------------------------
+  slack (MET)                                                4806.26                     
+
+
+1

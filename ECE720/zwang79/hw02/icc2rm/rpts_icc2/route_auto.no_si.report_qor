@@ -1,0 +1,187 @@
+****************************************
+Report : qor
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:00:40 2019
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'xbar:xbar/route_auto.design'. (TIM-125)
+Information: Design xbar has 4484 nets, 0 global routed, 4482 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'xbar'. (NEX-022)
+---extraction options---
+Corner: mode_norm.slow.RCmax
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: mode_norm.slow.RCmax_bc
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: mode_norm.worst_low.RCmax
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: mode_norm.worst_low.RCmax_bc
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: mode_norm.fast.RCmin
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: mode_norm.fast.RCmin_bc
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 8
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : false
+Extracting design: xbar 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 4482 nets are successfully extracted. (NEX-028)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 4482, routed nets = 4482, across physical hierarchy nets = 0, parasitics cached nets = 4482, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Information: Update timing is using PrimeTime delay calculation. (TIM-201)
+Information: Timer using 'PrimeTime Delay Calculation, AWP, CRPR'. (TIM-050)
+
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      4
+Critical Path Length:            386.64
+Critical Path Slack:             110.14
+Critical Path Clk Period:        500.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:             33.44
+Critical Path Slack:             293.64
+Critical Path Clk Period:        500.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      5
+Critical Path Length:            429.42
+Critical Path Slack:              58.34
+Critical Path Clk Period:        500.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      0
+Critical Path Length:             37.25
+Critical Path Slack:             289.20
+Critical Path Clk Period:        500.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:             12
+Hierarchical Port Count:             72
+Leaf Cell Count:                   3952
+Buf/Inv Cell Count:                 256
+Buf Cell Count:                       1
+Inv Cell Count:                     255
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          3544
+Sequential Cell Count:              408
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             1129.61
+Noncombinational Area:           593.95
+Buf/Inv Area:                     37.85
+Total Buffer Area:                 0.25
+Total Inverter Area:              37.60
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                           1723.56
+Cell Area (netlist and physical only):         1723.56
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              4484
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:00:42 2019
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, AWP, CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+mode_norm.slow.RCmax (Setup)         110.14           0.00              0
+mode_norm.worst_low.RCmax (Setup)          58.34           0.00              0
+Design             (Setup)            58.34           0.00              0
+
+mode_norm.fast.RCmin_bc (Hold)          46.61           0.00              0
+Design             (Hold)             46.61           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                           1723.56
+Cell Area (netlist and physical only):         1723.56
+Nets with DRC Violations:        0
+1

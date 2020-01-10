@@ -1,0 +1,37 @@
+ 
+****************************************
+Report : resources
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:15 2019
+****************************************
+
+
+Resource Report for this hierarchy in file
+        ../src/rtl/cortexm0ds/cortexm0ds_logic.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| sub_x_1        | DW01_dec       | width=24   | u_logic/sub_2068 (cortexm0ds_logic.v:2068) |
+| sub_x_2        | DW01_dec       | width=9    | u_logic/sub_2069 (cortexm0ds_logic.v:2069) |
+| add_x_3        | DW01_inc       | width=31   | u_logic/add_2071 (cortexm0ds_logic.v:2071) |
+| add_x_4        | DW01_inc       | width=30   | u_logic/add_2072 (cortexm0ds_logic.v:2072) |
+| add_x_5        | DW01_add       | width=34   | u_logic/add_2073 (cortexm0ds_logic.v:2073) |
+| add_x_6        | DW01_add       | width=34   | u_logic/add_2082 (cortexm0ds_logic.v:2082) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_x_1            | DW01_dec         | apparch (area)     |                |
+| sub_x_2            | DW01_dec         | apparch (area)     |                |
+| add_x_3            | DW01_inc         | apparch (area)     |                |
+| add_x_4            | DW01_inc         | apparch (area)     |                |
+| add_x_5            | DW01_add         | pparch (area,speed)                 |
+| add_x_6            | DW01_add         | pparch (area,speed)                 |
+===============================================================================
+
+1

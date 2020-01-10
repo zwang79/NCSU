@@ -1,0 +1,139 @@
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MSMG5
+Skipping 1 internal pins that are not physical. Set route.common.verbose_level to > 0 and run routing command to get skipped pin names.
+Info: number of net_type_blockage: 0 
+Printing options for 'route.common.*'
+common.debug_remove_extension_floating_shapes           :	 false               
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.eco_max_number_of_iterations                     :	 10                  
+detail.force_end_on_preferred_grid                      :	 true                
+detail.timing_driven                                    :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin full DRC check ...
+
+Information: Using 8 threads for routing. (ZRT-444)
+Checked	1/4 Partitions, Violations =	0
+Checked	2/4 Partitions, Violations =	0
+Checked	3/4 Partitions, Violations =	0
+Checked	4/4 Partitions, Violations =	0
+[DRC CHECK] Elapsed real time: 0:00:00 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:01
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc   30 
+[DRC CHECK] Total (MB): Used  169  Alloctr  170  Proc 2444 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	0
+
+
+Total Wire Length =                    1017 micron
+Total Number of Contacts =             1087
+Total Number of Wires =                761
+Total Number of PtConns =              0
+Total Number of Routed Wires =       761
+Total Routed Wire Length =           1017 micron
+Total Number of Routed Contacts =       1087
+	Layer        M1 :          2 micron
+	Layer     MINT1 :         55 micron
+	Layer     MINT2 :        452 micron
+	Layer     MINT3 :        437 micron
+	Layer     MINT4 :          7 micron
+	Layer     MINT5 :          0 micron
+	Layer     MSMG1 :         42 micron
+	Layer     MSMG2 :         21 micron
+	Layer     MSMG3 :          0 micron
+	Layer     MSMG4 :          0 micron
+	Layer     MSMG5 :          0 micron
+	Layer       MG1 :          0 micron
+	Layer       MG2 :          0 micron
+	Via     VSMG1_0 :          4
+	Via     VINT5_0 :          6
+	Via     VINT4_0 :          6
+	Via     VINT3_0 :         12
+	Via     VINT2_0 :        326
+	Via     VINT1_0 :        370
+	Via        V1_0 :        359
+	Via   V1_0(rot) :          4
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.00% (0 / 1087 vias)
+ 
+    Layer V1         =  0.00% (0      / 363     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (363     vias)
+    Layer VINT1      =  0.00% (0      / 370     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (370     vias)
+    Layer VINT2      =  0.00% (0      / 326     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (326     vias)
+    Layer VINT3      =  0.00% (0      / 12      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12      vias)
+    Layer VINT4      =  0.00% (0      / 6       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6       vias)
+    Layer VINT5      =  0.00% (0      / 6       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6       vias)
+    Layer VSMG1      =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+  Total double via conversion rate    =  0.00% (0 / 1087 vias)
+ 
+    Layer V1         =  0.00% (0      / 363     vias)
+    Layer VINT1      =  0.00% (0      / 370     vias)
+    Layer VINT2      =  0.00% (0      / 326     vias)
+    Layer VINT3      =  0.00% (0      / 12      vias)
+    Layer VINT4      =  0.00% (0      / 6       vias)
+    Layer VINT5      =  0.00% (0      / 6       vias)
+    Layer VSMG1      =  0.00% (0      / 4       vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.00% (0 / 1087 vias)
+ 
+    Layer V1         =  0.00% (0      / 363     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (363     vias)
+    Layer VINT1      =  0.00% (0      / 370     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (370     vias)
+    Layer VINT2      =  0.00% (0      / 326     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (326     vias)
+    Layer VINT3      =  0.00% (0      / 12      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (12      vias)
+    Layer VINT4      =  0.00% (0      / 6       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6       vias)
+    Layer VINT5      =  0.00% (0      / 6       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (6       vias)
+    Layer VSMG1      =  0.00% (0      / 4       vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (4       vias)
+ 
+
+
+Verify Summary:
+
+Total number of open nets = not checked
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+

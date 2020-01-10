@@ -1,0 +1,168 @@
+Warning: Scenario mode_norm.fast.RCmin is not configured for hold analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.slow.RCmax is not configured for hold analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.slow.RCmax_bc is not configured for hold analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.worst_low.RCmax is not configured for hold analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.worst_low.RCmax_bc is not configured for hold analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by group
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+        -derate
+        -attributes
+        -physical
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:29:47 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+  Startpoint: u_logic_Dvy2z4_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_logic_Swy2z4_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Mode: mode_norm.fast.RCmin_bc
+  Corner: mode_norm.fast.RCmin_bc
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: HCLK
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                 0.00      0.00
+  clock network delay (propagated)                                                      77.40     77.40
+
+  u_logic_Dvy2z4_reg/CLK (SDFFSNQ_X1)                                6.01      1.00      0.00     77.40 r    (28.61,75.64)     s, n
+  u_logic_Dvy2z4_reg/Q (SDFFSNQ_X1)                                 52.13      1.00     12.32     89.72 r    (30.40,75.65)     s, n
+  u_logic_Mc9vx4 (net)                             22     25.12
+  u_logic_Swy2z4_reg/SI (SDFFSNQ_X1)                                57.39      1.00      0.86     90.58 r    (28.93,74.93)     s, n
+  data arrival time                                                                               90.58
+
+  clock HCLK (rise edge)                                                                 0.00      0.00
+  clock network delay (propagated)                                                      78.53     78.53
+  clock reconvergence pessimism                                                         -1.13     77.40
+  u_logic_Swy2z4_reg/CLK (SDFFSNQ_X1)                                6.18      1.00      0.00     77.40 r    (28.61,74.89)     s, n
+  clock uncertainty                                                                     17.00     94.40
+  library hold time                                                            1.00     40.01    134.41
+  data required time                                                                             134.41
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             134.41
+  data arrival time                                                                              -90.58
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                               -43.83
+
+
+
+  Startpoint: HREADY (input port clocked by HCLK)
+  Endpoint: u_logic_clk_gate_J6i2z4_reg/latch (rising clock gating-check end-point clocked by HCLK)
+  Mode: mode_norm.fast.RCmin_bc
+  Corner: mode_norm.fast.RCmin_bc
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: REGIN
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                       0.00      0.00
+  clock network delay (ideal)                                                                143.48    143.48
+  input external delay                                                                       120.00    263.48
+
+  HREADY (in)                                                             69.07      1.00      4.69    268.17 r    (0.01,46.59)
+  HREADY (net)                                           26     32.43
+  u_logic_clk_gate_J6i2z4_reg/latch/E (CLKGATETST_X1)                    127.35      1.00     41.64    309.80 r    (41.09,51.92)     n
+  data arrival time                                                                                    309.80
+
+  clock HCLK (rise edge)                                                                       0.00      0.00
+  clock network delay (propagated)                                                            37.50     37.50
+  clock reconvergence pessimism                                                               -0.00     37.50
+  u_logic_clk_gate_J6i2z4_reg/latch/CLK (CLKGATETST_X1)                    6.12      1.00      0.00     37.50 r    (41.66,51.83)     n
+  clock uncertainty                                                                           17.00     54.50
+  library hold time                                                                  1.00    108.44    162.94
+  data required time                                                                                   162.94
+  ----------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   162.94
+  data arrival time                                                                                    -309.80
+  ----------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                          146.87
+
+
+
+  Startpoint: u_logic_Ypi3z4_reg (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: SYSRESETREQ (output port clocked by HCLK)
+  Mode: mode_norm.fast.RCmin_bc
+  Corner: mode_norm.fast.RCmin_bc
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: REGOUT
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                       0.00      0.00
+  clock network delay (propagated)                                                            55.22     55.22
+
+  u_logic_Ypi3z4_reg/CLK (SDFFRNQ_X1)                                      8.14      1.00      0.00     55.22 r    (65.28,50.32)     s, n
+  u_logic_Ypi3z4_reg/Q (SDFFRNQ_X1)                                        6.43      1.00     14.27     69.48 f    (67.07,50.30)     s, n
+  SYSRESETREQ (net)                                       2      4.49
+  SYSRESETREQ (out)                                                        7.17      1.00      1.56     71.05 f    (76.72,49.86)
+  data arrival time                                                                                     71.05
+
+  clock HCLK (rise edge)                                                                       0.00      0.00
+  clock network delay (ideal)                                                                144.51    144.51
+  clock reconvergence pessimism                                                               -0.00    144.51
+  clock uncertainty                                                                           17.00    161.51
+  output external delay                                                                      -120.00    41.51
+  data required time                                                                                    41.50
+  ----------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                    41.50
+  data arrival time                                                                                    -71.05
+  ----------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                           29.54
+
+
+1

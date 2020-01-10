@@ -1,0 +1,23 @@
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+****************************************
+Report : global timing
+        -format { narrow }
+        -report_by design
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:46:12 2019
+****************************************
+
+No setup violations found.
+
+
+Hold violations
+--------------------------------------------------------------
+          Total   reg->reg    in->reg   reg->out    in->out
+--------------------------------------------------------------
+WNS      -68.45     -68.45       0.00       0.00       0.00
+TNS    -3779.49   -3779.49       0.00       0.00       0.00
+NUM         228        228          0          0          0
+--------------------------------------------------------------
+
+1

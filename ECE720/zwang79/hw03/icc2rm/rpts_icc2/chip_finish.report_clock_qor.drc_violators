@@ -1,0 +1,365 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Warning: The scenario mode_norm.fast.RCmin has max transition DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+Warning: The scenario mode_norm.fast.RCmin has max capacitance DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+****************************************
+Report : clock qor
+        -type drc_violators
+        -all
+        -nosplit
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:35:10 2019
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+=======================================================
+==== DRC Reporting for Corner mode_norm.fast.RCmin ====
+=======================================================
+
+================================================================ Summary Table for Corner mode_norm.fast.RCmin =================================================================
+Clock /                               Attrs      Sink  DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack
+Skew Group                                      Count     Trans     Trans     Trans       Cap       Cap       Cap    Fanout    Fanout    Fanout  Netlength Netlength Netlength
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+HCLK                                      M       841         0        --        --         0        --        --         0        --        --         0        --        --
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        841         0        --      0.00         0        --      0.00         0        --      0.00         0        --      0.00
+
+
+Legends for CTS Tags Column
+===========================
+
+clk        =  master clock source point
+gclk       =  generated clock source point
+sink       =  default sinks of clock for CTS, not user defined balance points
+icg        =  input of an ICG
+bal        =  user defined clock balance point
+e_ign      =  user defined explicit ignore point
+i_ign      =  CTS derived implicit ignore point
+trans      =  transition violation
+cap        =  capacitance violation
+dt_lib     =  library specified dont_touch on cell
+dt_cell    =  set_dont_touch on cell
+dt_net     =  set_dont_touch on net
+dt_mv_cell =  MV derived dont_touch on cell
+dt_mv_net  =  MV derived dont_touch on net
+dt_subtree =  dont_touch_subtree derived dont_touch
+hier       =  on hierarchy boundary or inside physical hierarchy
+
+
+Showing all datapoints per clock / skew group
+====================== Transition Violation Details Table for Corner mode_norm.fast.RCmin =======================
+Clock /                                Net Name/           Trans DRC    Trans     Trans     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+
+
+
+Showing all datapoints per clock / skew group
+====================== Capacitance Violation Details Table for Corner mode_norm.fast.RCmin ======================
+Clock /                                Net Name/            Cap DRC       Cap       Cap     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+
+
+
+Showing all datapoints per clock / skew group
+======================== Fanout Violation Details Table for Corner mode_norm.fast.RCmin =========================
+Clock /                                Net Name/           Fanout DRC   Fanout   Fanout     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+
+
+
+Showing all datapoints per clock / skew group
+====================== Net Length Violation Details Table for Corner mode_norm.fast.RCmin =======================
+Clock /                                Net Name/           Netlength DRC Netlength Netlength    Limit  CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+
+
+Warning: The scenario mode_norm.fast.RCmin_bc has max transition DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+Warning: The scenario mode_norm.fast.RCmin_bc has max capacitance DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+==========================================================
+==== DRC Reporting for Corner mode_norm.fast.RCmin_bc ====
+==========================================================
+
+=============================================================== Summary Table for Corner mode_norm.fast.RCmin_bc ===============================================================
+Clock /                               Attrs      Sink  DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack
+Skew Group                                      Count     Trans     Trans     Trans       Cap       Cap       Cap    Fanout    Fanout    Fanout  Netlength Netlength Netlength
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+HCLK                                      M       841         0        --        --         0        --        --         0        --        --         0        --        --
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        841         0        --      0.00         0        --      0.00         0        --      0.00         0        --      0.00
+
+
+Legends for CTS Tags Column
+===========================
+
+clk        =  master clock source point
+gclk       =  generated clock source point
+sink       =  default sinks of clock for CTS, not user defined balance points
+icg        =  input of an ICG
+bal        =  user defined clock balance point
+e_ign      =  user defined explicit ignore point
+i_ign      =  CTS derived implicit ignore point
+trans      =  transition violation
+cap        =  capacitance violation
+dt_lib     =  library specified dont_touch on cell
+dt_cell    =  set_dont_touch on cell
+dt_net     =  set_dont_touch on net
+dt_mv_cell =  MV derived dont_touch on cell
+dt_mv_net  =  MV derived dont_touch on net
+dt_subtree =  dont_touch_subtree derived dont_touch
+hier       =  on hierarchy boundary or inside physical hierarchy
+
+
+Showing all datapoints per clock / skew group
+===================== Transition Violation Details Table for Corner mode_norm.fast.RCmin_bc =====================
+Clock /                                Net Name/           Trans DRC    Trans     Trans     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+
+
+
+Showing all datapoints per clock / skew group
+==================== Capacitance Violation Details Table for Corner mode_norm.fast.RCmin_bc =====================
+Clock /                                Net Name/            Cap DRC       Cap       Cap     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+
+
+
+Showing all datapoints per clock / skew group
+======================= Fanout Violation Details Table for Corner mode_norm.fast.RCmin_bc =======================
+Clock /                                Net Name/           Fanout DRC   Fanout   Fanout     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+
+
+
+Showing all datapoints per clock / skew group
+===================== Net Length Violation Details Table for Corner mode_norm.fast.RCmin_bc =====================
+Clock /                                Net Name/           Netlength DRC Netlength Netlength    Limit  CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+
+
+=======================================================
+==== DRC Reporting for Corner mode_norm.slow.RCmax ====
+=======================================================
+
+================================================================ Summary Table for Corner mode_norm.slow.RCmax =================================================================
+Clock /                               Attrs      Sink  DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack
+Skew Group                                      Count     Trans     Trans     Trans       Cap       Cap       Cap    Fanout    Fanout    Fanout  Netlength Netlength Netlength
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+HCLK                                      M       841         5     -2.29     -4.25         0        --        --         0        --        --         0        --        --
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        841         5     -2.29     -4.25         0        --      0.00         0        --      0.00         0        --      0.00
+
+
+Legends for CTS Tags Column
+===========================
+
+clk        =  master clock source point
+gclk       =  generated clock source point
+sink       =  default sinks of clock for CTS, not user defined balance points
+icg        =  input of an ICG
+bal        =  user defined clock balance point
+e_ign      =  user defined explicit ignore point
+i_ign      =  CTS derived implicit ignore point
+trans      =  transition violation
+cap        =  capacitance violation
+dt_lib     =  library specified dont_touch on cell
+dt_cell    =  set_dont_touch on cell
+dt_net     =  set_dont_touch on net
+dt_mv_cell =  MV derived dont_touch on cell
+dt_mv_net  =  MV derived dont_touch on net
+dt_subtree =  dont_touch_subtree derived dont_touch
+hier       =  on hierarchy boundary or inside physical hierarchy
+
+
+Showing all datapoints per clock / skew group
+====================== Transition Violation Details Table for Corner mode_norm.slow.RCmax =======================
+Clock /                                Net Name/           Trans DRC    Trans     Trans     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+HCLK
+                               --(N)   u_logic_clk_gate_J6i2z4_reg/ctsbuf_net_11310370    -2.29    12.28    10.00
+                               --  (P)   u_logic_clk_gate_J6i2z4_reg/cts_inv_234613989/I    -2.29    12.28    10.00 trans
+                               --(N)   cts120                 -1.03     11.02     10.00                
+                               --  (P)   u_logic_M3e3z4_reg/CLK    -1.03    11.02    10.00             bal,trans
+                               --  (P)   u_logic_B5u2z4_reg/CLK    -1.03    11.02    10.00             bal,trans
+                               --  (P)   u_logic_Hqg3z4_reg/CLK    -0.92    10.91    10.00             bal,trans
+                               --  (P)   ccd_drc_inst_21659/I    -0.86    10.85    10.00               trans
+                               --  (P)   u_logic_Q6u2z4_reg/CLK    -0.82    10.81    10.00             bal,trans
+                               --  (P)   u_logic_M3u2z4_reg/CLK    -0.80    10.80    10.00             bal,trans
+                               --(N)   ccd_drc_8              -0.90     10.89     10.00                
+                               --  (P)   u_logic_Ieh3z4_reg/CLK    -0.90    10.89    10.00             bal,trans
+                               --  (P)   u_logic_Jca3z4_reg/CLK    -0.90    10.89    10.00             bal,trans
+                               --  (P)   u_logic_Aea3z4_reg/CLK    -0.90    10.89    10.00             bal,trans
+                               --  (P)   u_logic_Bge3z4_reg/CLK    -0.90    10.89    10.00             bal,trans
+                               --  (P)   u_logic_D4a3z4_reg/CLK    -0.90    10.89    10.00             bal,trans
+                               --  (P)   u_logic_Cma3z4_reg/CLK    -0.90    10.89    10.00             bal,trans
+                               --  (P)   u_logic_Qfa3z4_reg/CLK    -0.88    10.87    10.00             bal,trans
+                               --  (P)   u_logic_I1h3z4_reg/CLK    -0.38    10.38    10.00             bal,trans
+                               --  (P)   u_logic_Xyn2z4_reg/CLK    -0.34    10.34    10.00             bal,trans
+                               --  (P)   u_logic_B2i3z4_reg/CLK    -0.31    10.30    10.00             bal,trans
+                               --  (P)   u_logic_C9a3z4_reg/CLK    -0.17    10.17    10.00             bal,trans
+                               --(N)   p_abuf0                -0.02     10.01     10.00                
+                               --  (P)   u_logic_Ay53z4_reg/CLK    -0.02    10.01    10.00             bal,trans
+                               --(N)   cts26                  -0.02     10.01     10.00                
+                               --  (P)   u_logic_Po83z4_reg/CLK    -0.02    10.01    10.00             bal,trans
+
+
+
+Showing all datapoints per clock / skew group
+====================== Capacitance Violation Details Table for Corner mode_norm.slow.RCmax ======================
+Clock /                                Net Name/            Cap DRC       Cap       Cap     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+
+
+
+Showing all datapoints per clock / skew group
+======================== Fanout Violation Details Table for Corner mode_norm.slow.RCmax =========================
+Clock /                                Net Name/           Fanout DRC   Fanout   Fanout     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+
+
+
+Showing all datapoints per clock / skew group
+====================== Net Length Violation Details Table for Corner mode_norm.slow.RCmax =======================
+Clock /                                Net Name/           Netlength DRC Netlength Netlength    Limit  CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+
+
+============================================================
+==== DRC Reporting for Corner mode_norm.worst_low.RCmax ====
+============================================================
+
+============================================================== Summary Table for Corner mode_norm.worst_low.RCmax ==============================================================
+Clock /                               Attrs      Sink  DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack
+Skew Group                                      Count     Trans     Trans     Trans       Cap       Cap       Cap    Fanout    Fanout    Fanout  Netlength Netlength Netlength
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+HCLK                                      M       841         7     -1.81     -3.09         0        --        --         0        --        --         0        --        --
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        841         7     -1.81     -3.09         0        --      0.00         0        --      0.00         0        --      0.00
+
+
+Legends for CTS Tags Column
+===========================
+
+clk        =  master clock source point
+gclk       =  generated clock source point
+sink       =  default sinks of clock for CTS, not user defined balance points
+icg        =  input of an ICG
+bal        =  user defined clock balance point
+e_ign      =  user defined explicit ignore point
+i_ign      =  CTS derived implicit ignore point
+trans      =  transition violation
+cap        =  capacitance violation
+dt_lib     =  library specified dont_touch on cell
+dt_cell    =  set_dont_touch on cell
+dt_net     =  set_dont_touch on net
+dt_mv_cell =  MV derived dont_touch on cell
+dt_mv_net  =  MV derived dont_touch on net
+dt_subtree =  dont_touch_subtree derived dont_touch
+hier       =  on hierarchy boundary or inside physical hierarchy
+
+
+Showing all datapoints per clock / skew group
+==================== Transition Violation Details Table for Corner mode_norm.worst_low.RCmax ====================
+Clock /                                Net Name/           Trans DRC    Trans     Trans     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+HCLK
+                               --(N)   u_logic_clk_gate_J6i2z4_reg/ctsbuf_net_11310370    -1.81    11.81    10.00
+                               --  (P)   u_logic_clk_gate_J6i2z4_reg/cts_inv_234613989/I    -1.81    11.81    10.00 trans
+                               --(N)   cts120                 -0.57     10.57     10.00                
+                               --  (P)   u_logic_M3e3z4_reg/CLK    -0.57    10.57    10.00             sink,trans
+                               --  (P)   u_logic_B5u2z4_reg/CLK    -0.57    10.57    10.00             sink,trans
+                               --  (P)   u_logic_Hqg3z4_reg/CLK    -0.50    10.49    10.00             sink,trans
+                               --  (P)   ccd_drc_inst_21659/I    -0.38    10.38    10.00               trans
+                               --  (P)   u_logic_M3u2z4_reg/CLK    -0.34    10.34    10.00             sink,trans
+                               --  (P)   u_logic_Q6u2z4_reg/CLK    -0.32    10.32    10.00             sink,trans
+                               --(N)   ccd_drc_8              -0.21     10.20     10.00                
+                               --  (P)   u_logic_Aea3z4_reg/CLK    -0.21    10.20    10.00             sink,trans
+                               --  (P)   u_logic_Bge3z4_reg/CLK    -0.21    10.20    10.00             sink,trans
+                               --  (P)   u_logic_D4a3z4_reg/CLK    -0.21    10.20    10.00             sink,trans
+                               --  (P)   u_logic_Ieh3z4_reg/CLK    -0.19    10.19    10.00             sink,trans
+                               --  (P)   u_logic_Jca3z4_reg/CLK    -0.19    10.19    10.00             sink,trans
+                               --  (P)   u_logic_Qfa3z4_reg/CLK    -0.19    10.19    10.00             sink,trans
+                               --  (P)   u_logic_Cma3z4_reg/CLK    -0.19    10.19    10.00             sink,trans
+                               --(N)   ctsbuf_net_16810425    -0.19     10.19     10.00                
+                               --  (P)   u_logic_clk_gate_Ydw2z4_reg/latch/CLK    -0.19    10.19    10.00 icg,trans
+                               --  (P)   cts_inv_261614259/I    -0.17    10.17    10.00                trans
+                               --(N)   u_logic_net7456        -0.11     10.11     10.00                
+                               --  (P)   cto_buf_drc_15188/I    -0.11    10.11    10.00                trans
+                               --(N)   p_abuf0                -0.11     10.11     10.00                
+                               --  (P)   u_logic_Ay53z4_reg/CLK    -0.11    10.11    10.00             sink,trans
+                               --  (P)   u_logic_Gf53z4_reg/CLK    -0.10    10.09    10.00             sink,trans
+                               --  (P)   u_logic_Na63z4_reg/CLK    -0.06    10.05    10.00             sink,trans
+                               --(N)   cts166                 -0.08     10.07     10.00                
+                               --  (P)   u_logic_Qcy2z4_reg/CLK    -0.08    10.07    10.00             sink,trans
+                               --  (P)   u_logic_W4y2z4_reg/CLK    -0.08    10.07    10.00             sink,trans
+                               --  (P)   u_logic_K6y2z4_reg/CLK    -0.08    10.07    10.00             sink,trans
+                               --  (P)   u_logic_Bby2z4_reg/CLK    -0.08    10.07    10.00             sink,trans
+                               --  (P)   u_logic_M9y2z4_reg/CLK    -0.06    10.05    10.00             sink,trans
+                               --  (P)   u_logic_Y7y2z4_reg/CLK    -0.04    10.03    10.00             sink,trans
+
+
+
+Showing all datapoints per clock / skew group
+=================== Capacitance Violation Details Table for Corner mode_norm.worst_low.RCmax ====================
+Clock /                                Net Name/            Cap DRC       Cap       Cap     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+
+
+
+Showing all datapoints per clock / skew group
+====================== Fanout Violation Details Table for Corner mode_norm.worst_low.RCmax ======================
+Clock /                                Net Name/           Fanout DRC   Fanout   Fanout     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+
+
+
+Showing all datapoints per clock / skew group
+==================== Net Length Violation Details Table for Corner mode_norm.worst_low.RCmax ====================
+Clock /                                Net Name/           Netlength DRC Netlength Netlength    Limit  CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+
+
+1

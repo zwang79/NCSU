@@ -1,0 +1,864 @@
+Warning: Scenario mode_norm.fast.RCmin is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.fast.RCmin_bc is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.slow.RCmax_bc is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.worst_low.RCmax_bc is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by group
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+        -derate
+        -attributes
+        -physical
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:29:23 2019
+****************************************
+
+  Startpoint: remainder_reg_64_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: remainder_reg_129_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: mode_norm.slow.RCmax
+  Corner: mode_norm.slow.RCmax
+  Scenario: mode_norm.slow.RCmax
+  Path Group: clock
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+
+  remainder_reg_64_/CLK (SDFFSNQ_X1)                                 0.00      1.00      0.00      0.00 r    (37.76,33.42)     s, n
+  remainder_reg_64_/Q (SDFFSNQ_X1)                                 110.15      1.00     33.00     33.00 r    (39.55,33.41)     s, n
+  n_T_39[0] (net)                                  36     60.46
+  U2423/I (BUF_X1)                                                 116.50      1.00      6.07     39.06 r    (39.62,18.05)
+  U2423/Z (BUF_X1)                                                 118.47      1.00     16.29     55.35 r    (39.81,18.07)
+  n4719 (net)                                      34     54.08
+  U4165/B1 (AOI22_X1)                                              221.23      1.00     86.67    142.02 r    (8.00,34.17)
+  U4165/ZN (AOI22_X1)                                               89.05      1.00     43.32    185.34 f    (8.11,34.22)
+  n4481 (net)                                       4     10.46
+  U2675/A1 (NOR2_X2)                                                98.19      1.00     14.23    199.57 f    (39.62,51.09)
+  U2675/ZN (NOR2_X2)                                               143.03      1.00     29.01    228.58 r    (39.62,51.07)
+  n4462 (net)                                      64     73.91
+  U4233/B2 (AOI22_X1)                                              402.43      1.00    155.54    384.12 r    (6.02,18.05)
+  U4233/ZN (AOI22_X1)                                               89.78      1.00     17.07    401.19 f    (6.19,18.01)
+  n3396 (net)                                       1      0.93
+  U4234/A2 (NAND2_X1)                                               89.78      1.00      0.06    401.25 f    (5.76,18.08)
+  U4234/ZN (NAND2_X1)                                               25.79      1.00      8.62    409.87 r    (5.86,18.01)
+  n3398 (net)                                       1      2.20
+  U4235/A2 (XNOR2_X1)                                               25.79      1.00      0.51    410.39 r    (2.34,18.73)
+  U4235/ZN (XNOR2_X1)                                               10.17      1.00      7.27    417.65 r    (2.45,18.82)
+  intadd_3_B_1_ (net)                               1      1.87
+  intadd_3_U61/B (FA_X1)                                            10.17      1.00      0.29    417.94 r    (1.62,20.45)
+  intadd_3_U61/CO (FA_X1)                                            5.30      1.00     11.12    429.06 r    (2.56,20.35)
+  intadd_3_n60 (net)                                1      1.71
+  intadd_3_U60/CI (FA_X1)                                            5.30      1.00      0.44    429.50 r    (1.60,15.74)
+  intadd_3_U60/CO (FA_X1)                                            4.71      1.00      9.02    438.52 r    (2.37,15.74)
+  intadd_3_n59 (net)                                1      1.36
+  intadd_3_U59/CI (FA_X1)                                            4.71      1.00      0.15    438.67 r    (1.60,14.98)
+  intadd_3_U59/CO (FA_X1)                                            5.66      1.00      9.50    448.17 r    (2.37,14.98)
+  intadd_3_n58 (net)                                1      1.98
+  intadd_3_U58/CI (FA_X1)                                            5.78      1.00      0.72    448.89 r    (1.02,7.30)
+  intadd_3_U58/CO (FA_X1)                                            5.28      1.00      9.44    458.34 r    (1.79,7.30)
+  intadd_3_n57 (net)                                1      1.67
+  intadd_3_U57/CI (FA_X1)                                            5.28      1.00      0.42    458.76 r    (2.50,2.69)
+  intadd_3_U57/CO (FA_X1)                                            5.05      1.00      9.10    467.85 r    (3.26,2.69)
+  intadd_3_n56 (net)                                1      1.44
+  intadd_3_U56/CI (FA_X1)                                            5.05      1.00      0.23    468.08 r    (4.29,4.22)
+  intadd_3_U56/CO (FA_X1)                                            4.94      1.00      9.10    477.18 r    (5.06,4.22)
+  intadd_3_n55 (net)                                1      1.50
+  intadd_3_U55/CI (FA_X1)                                            4.94      1.00      0.27    477.45 r    (6.72,2.69)
+  intadd_3_U55/CO (FA_X1)                                            4.94      1.00      9.00    486.45 r    (7.49,2.69)
+  intadd_3_n54 (net)                                1      1.43
+  intadd_3_U54/CI (FA_X1)                                            4.94      1.00      0.21    486.66 r    (8.26,4.22)
+  intadd_3_U54/CO (FA_X1)                                            4.86      1.00      8.95    495.61 r    (9.02,4.22)
+  intadd_3_n53 (net)                                1      1.38
+  intadd_3_U53/CI (FA_X1)                                            4.86      1.00      0.17    495.78 r    (9.98,3.46)
+  intadd_3_U53/CO (FA_X1)                                            4.98      1.00      8.98    504.76 r    (10.75,3.46)
+  intadd_3_n52 (net)                                1      1.43
+  intadd_3_U52/CI (FA_X1)                                            4.98      1.00      0.21    504.97 r    (12.29,4.22)
+  intadd_3_U52/CO (FA_X1)                                            4.84      1.00      8.96    513.94 r    (13.06,4.22)
+  intadd_3_n51 (net)                                1      1.39
+  intadd_3_U51/CI (FA_X1)                                            4.84      1.00      0.15    514.09 r    (14.91,4.22)
+  intadd_3_U51/CO (FA_X1)                                            5.26      1.00      9.19    523.28 r    (14.14,4.22)
+  intadd_3_n50 (net)                                1      1.62
+  intadd_3_U50/CI (FA_X1)                                            5.26      1.00      0.36    523.64 r    (16.26,6.53)
+  intadd_3_U50/CO (FA_X1)                                            4.69      1.00      8.98    532.63 r    (17.02,6.53)
+  intadd_3_n49 (net)                                1      1.35
+  intadd_3_U49/CI (FA_X1)                                            4.69      1.00      0.11    532.74 r    (18.30,6.53)
+  intadd_3_U49/CO (FA_X1)                                            5.04      1.00      9.08    541.82 r    (19.07,6.53)
+  intadd_3_n48 (net)                                1      1.54
+  intadd_3_U48/CI (FA_X1)                                            5.04      1.00      0.29    542.11 r    (20.93,8.06)
+  intadd_3_U48/CO (FA_X1)                                            4.77      1.00      9.02    551.13 r    (21.70,8.06)
+  intadd_3_n47 (net)                                1      1.43
+  intadd_3_U47/CI (FA_X1)                                            4.77      1.00      0.19    551.32 r    (23.10,8.83)
+  intadd_3_U47/CO (FA_X1)                                            4.81      1.00      8.87    560.19 r    (23.87,8.83)
+  intadd_3_n46 (net)                                1      1.34
+  intadd_3_U46/CI (FA_X1)                                            4.81      1.00      0.11    560.30 r    (24.26,9.60)
+  intadd_3_U46/CO (FA_X1)                                            4.88      1.00      9.04    569.34 r    (25.02,9.60)
+  intadd_3_n45 (net)                                1      1.49
+  intadd_3_U45/CI (FA_X1)                                            4.88      1.00      0.23    569.57 r    (26.11,11.14)
+  intadd_3_U45/CO (FA_X1)                                            4.73      1.00      8.87    578.44 r    (26.88,11.14)
+  intadd_3_n44 (net)                                1      1.32
+  intadd_3_U44/CI (FA_X1)                                            4.73      1.00      0.10    578.54 r    (27.78,11.14)
+  intadd_3_U44/CO (FA_X1)                                            4.92      1.00      9.02    587.56 r    (28.54,11.14)
+  intadd_3_n43 (net)                                1      1.49
+  intadd_3_U43/CI (FA_X1)                                            4.92      1.00      0.23    587.79 r    (29.63,9.60)
+  intadd_3_U43/CO (FA_X1)                                            4.77      1.00      8.91    596.69 r    (30.40,9.60)
+  intadd_3_n42 (net)                                1      1.34
+  intadd_3_U42/CI (FA_X1)                                            4.77      1.00      0.11    596.81 r    (30.72,10.37)
+  intadd_3_U42/CO (FA_X1)                                            4.75      1.00      8.83    605.64 r    (31.49,10.37)
+  intadd_3_n41 (net)                                1      1.31
+  intadd_3_U41/CI (FA_X1)                                            4.75      1.00      0.08    605.72 r    (32.26,10.37)
+  intadd_3_U41/CO (FA_X1)                                            4.96      1.00      9.00    614.72 r    (33.02,10.37)
+  intadd_3_n40 (net)                                1      1.47
+  intadd_3_U40/CI (FA_X1)                                            4.96      1.00      0.21    614.93 r    (33.98,8.83)
+  intadd_3_U40/CO (FA_X1)                                            4.75      1.00      8.89    623.82 r    (34.75,8.83)
+  intadd_3_n39 (net)                                1      1.32
+  intadd_3_U39/CI (FA_X1)                                            4.75      1.00      0.10    623.91 r    (35.71,8.83)
+  intadd_3_U39/CO (FA_X1)                                            4.86      1.00      8.93    632.84 r    (36.48,8.83)
+  intadd_3_n38 (net)                                1      1.40
+  intadd_3_U38/CI (FA_X1)                                            4.86      1.00      0.17    633.01 r    (37.50,8.06)
+  intadd_3_U38/CO (FA_X1)                                            4.90      1.00      8.98    641.99 r    (38.27,8.06)
+  intadd_3_n37 (net)                                1      1.42
+  intadd_3_U37/CI (FA_X1)                                            4.90      1.00      0.19    642.19 r    (38.78,9.60)
+  intadd_3_U37/CO (FA_X1)                                            4.98      1.00      9.10    651.28 r    (39.55,9.60)
+  intadd_3_n36 (net)                                1      1.52
+  intadd_3_U36/CI (FA_X1)                                            4.98      1.00      0.25    651.53 r    (39.55,12.67)
+  intadd_3_U36/CO (FA_X1)                                            5.09      1.00      9.16    660.69 r    (40.32,12.67)
+  intadd_3_n35 (net)                                1      1.57
+  intadd_3_U35/CI (FA_X1)                                            5.09      1.00      0.31    660.99 r    (41.60,10.37)
+  intadd_3_U35/CO (FA_X1)                                            4.94      1.00      9.02    670.01 r    (42.37,10.37)
+  intadd_3_n34 (net)                                1      1.41
+  intadd_3_U34/CI (FA_X1)                                            4.94      1.00      0.17    670.19 r    (41.92,8.83)
+  intadd_3_U34/CO (FA_X1)                                            4.92      1.00      9.00    679.19 r    (42.69,8.83)
+  intadd_3_n33 (net)                                1      1.43
+  intadd_3_U33/CI (FA_X1)                                            4.92      1.00      0.19    679.38 r    (43.26,10.37)
+  intadd_3_U33/CO (FA_X1)                                            4.73      1.00      8.89    688.27 r    (44.03,10.37)
+  intadd_3_n32 (net)                                1      1.32
+  intadd_3_U32/CI (FA_X1)                                            4.73      1.00      0.11    688.38 r    (44.29,9.60)
+  intadd_3_U32/CO (FA_X1)                                            4.94      1.00      8.98    697.36 r    (45.06,9.60)
+  intadd_3_n31 (net)                                1      1.45
+  intadd_3_U31/CI (FA_X1)                                            4.94      1.00      0.21    697.57 r    (46.72,10.37)
+  intadd_3_U31/CO (FA_X1)                                            4.75      1.00      8.87    706.44 r    (47.49,10.37)
+  intadd_3_n30 (net)                                1      1.30
+  intadd_3_U30/CI (FA_X1)                                            4.75      1.00      0.08    706.52 r    (48.26,10.37)
+  intadd_3_U30/CO (FA_X1)                                            4.92      1.00      9.00    715.52 r    (49.02,10.37)
+  intadd_3_n29 (net)                                1      1.47
+  intadd_3_U29/CI (FA_X1)                                            4.92      1.00      0.23    715.75 r    (49.28,8.06)
+  intadd_3_U29/CO (FA_X1)                                            5.30      1.00      9.25    725.00 r    (50.05,8.06)
+  intadd_3_n28 (net)                                1      1.67
+  intadd_3_U28/CI (FA_X1)                                            5.30      1.00      0.38    725.38 r    (49.15,11.90)
+  intadd_3_U28/CO (FA_X1)                                            4.69      1.00      8.96    734.35 r    (49.92,11.90)
+  intadd_3_n27 (net)                                1      1.32
+  intadd_3_U27/CI (FA_X1)                                            4.69      1.00      0.10    734.44 r    (50.88,11.90)
+  intadd_3_U27/CO (FA_X1)                                            4.75      1.00      8.83    743.27 r    (51.65,11.90)
+  intadd_3_n26 (net)                                1      1.32
+  intadd_3_U26/CI (FA_X1)                                            4.75      1.00      0.10    743.37 r    (52.61,11.90)
+  intadd_3_U26/CO (FA_X1)                                            4.84      1.00      8.95    752.32 r    (53.38,11.90)
+  intadd_3_n25 (net)                                1      1.41
+  intadd_3_U25/CI (FA_X1)                                            4.84      1.00      0.19    752.51 r    (53.89,13.44)
+  intadd_3_U25/CO (FA_X1)                                            4.98      1.00      9.08    761.59 r    (54.66,13.44)
+  intadd_3_n24 (net)                                1      1.52
+  intadd_3_U24/CI (FA_X1)                                            4.98      1.00      0.27    761.85 r    (53.82,15.74)
+  intadd_3_U24/CO (FA_X1)                                            5.19      1.00      9.19    771.05 r    (54.59,15.74)
+  intadd_3_n23 (net)                                1      1.59
+  intadd_3_U23/CI (FA_X1)                                            5.19      1.00      0.32    771.37 r    (52.29,17.28)
+  intadd_3_U23/CO (FA_X1)                                            4.94      1.00      9.10    780.47 r    (53.06,17.28)
+  intadd_3_n22 (net)                                1      1.46
+  intadd_3_U22/CI (FA_X1)                                            4.94      1.00      0.23    780.70 r    (52.80,19.58)
+  intadd_3_U22/CO (FA_X1)                                            4.94      1.00      9.08    789.78 r    (53.57,19.58)
+  intadd_3_n21 (net)                                1      1.49
+  intadd_3_U21/CI (FA_X1)                                            4.94      1.00      0.25    790.02 r    (52.29,21.12)
+  intadd_3_U21/CO (FA_X1)                                            5.09      1.00      9.17    799.20 r    (53.06,21.12)
+  intadd_3_n20 (net)                                1      1.59
+  intadd_3_U20/CI (FA_X1)                                            5.09      1.00      0.32    799.52 r    (51.46,23.42)
+  intadd_3_U20/CO (FA_X1)                                            5.00      1.00      9.16    808.68 r    (52.22,23.42)
+  intadd_3_n19 (net)                                1      1.54
+  intadd_3_U19/CI (FA_X1)                                            5.00      1.00      0.29    808.96 r    (50.50,24.96)
+  intadd_3_U19/CO (FA_X1)                                            5.02      1.00      9.14    818.10 r    (49.73,24.96)
+  intadd_3_n18 (net)                                1      1.54
+  intadd_3_U18/CI (FA_X1)                                            5.02      1.00      0.29    818.39 r    (47.23,25.73)
+  intadd_3_U18/CO (FA_X1)                                            4.94      1.00      9.17    827.56 r    (48.00,25.73)
+  intadd_3_n17 (net)                                1      1.57
+  intadd_3_U17/CI (FA_X1)                                            4.94      1.00      0.31    827.87 r    (47.49,28.80)
+  intadd_3_U17/CO (FA_X1)                                            4.73      1.00      8.95    836.81 r    (48.26,28.80)
+  intadd_3_n16 (net)                                1      1.38
+  intadd_3_U16/CI (FA_X1)                                            4.73      1.00      0.13    836.94 r    (48.26,30.34)
+  intadd_3_U16/CO (FA_X1)                                            4.98      1.00      9.14    846.08 r    (49.02,30.34)
+  intadd_3_n15 (net)                                1      1.59
+  intadd_3_U15/CI (FA_X1)                                            4.98      1.00      0.32    846.41 r    (47.55,32.64)
+  intadd_3_U15/CO (FA_X1)                                            4.81      1.00      9.00    855.41 r    (48.32,32.64)
+  intadd_3_n14 (net)                                1      1.43
+  intadd_3_U14/CI (FA_X1)                                            4.81      1.00      0.19    855.60 r    (49.60,33.41)
+  intadd_3_U14/CO (FA_X1)                                            5.11      1.00      9.16    864.75 r    (50.37,33.41)
+  intadd_3_n13 (net)                                1      1.60
+  intadd_3_U13/CI (FA_X1)                                            5.11      1.00      0.32    865.08 r    (49.60,36.48)
+  intadd_3_U13/CO (FA_X1)                                            4.79      1.00      9.10    874.18 r    (50.37,36.48)
+  intadd_3_n12 (net)                                1      1.48
+  intadd_3_U12/CI (FA_X1)                                            4.79      1.00      0.23    874.40 r    (49.98,38.78)
+  intadd_3_U12/S (FA_X1)                                             6.33      1.00     14.71    889.11 f    (50.11,38.74)
+  intadd_1_A_53_ (net)                              1      2.42
+  intadd_1_U10/A (FA_X1)                                             6.50      1.00      0.90    890.01 f    (56.08,36.50)
+  intadd_1_U10/S (FA_X1)                                             5.68      1.00     14.08    904.08 r    (56.26,36.52)
+  intadd_1_SUM_53_ (net)                            1      1.79
+  intadd_4_U9/B (FA_X1)                                              5.68      1.00      0.21    904.29 r    (55.95,37.92)
+  intadd_4_U9/CO (FA_X1)                                             4.94      1.00      9.94    914.23 r    (56.90,38.02)
+  intadd_4_n8 (net)                                 1      1.53
+  intadd_4_U8/CI (FA_X1)                                             4.94      1.00      0.31    914.54 r    (56.13,41.09)
+  intadd_4_U8/CO (FA_X1)                                             4.84      1.00      9.06    923.60 r    (56.90,41.09)
+  intadd_4_n7 (net)                                 1      1.47
+  intadd_4_U7/CI (FA_X1)                                             4.84      1.00      0.27    923.86 r    (56.13,43.39)
+  intadd_4_U7/CO (FA_X1)                                             4.94      1.00      9.10    932.96 r    (56.90,43.39)
+  intadd_4_n6 (net)                                 1      1.54
+  intadd_4_U6/CI (FA_X1)                                             4.94      1.00      0.31    933.27 r    (56.13,46.46)
+  intadd_4_U6/CO (FA_X1)                                             4.92      1.00      9.12    942.38 r    (56.90,46.46)
+  intadd_4_n5 (net)                                 1      1.53
+  intadd_4_U5/CI (FA_X1)                                             4.92      1.00      0.31    942.69 r    (56.13,49.54)
+  intadd_4_U5/CO (FA_X1)                                             4.63      1.00      8.91    951.60 r    (56.90,49.54)
+  intadd_4_n4 (net)                                 1      1.35
+  intadd_4_U4/CI (FA_X1)                                             4.63      1.00      0.15    951.75 r    (56.13,50.30)
+  intadd_4_U4/CO (FA_X1)                                             5.07      1.00      9.16    960.90 r    (56.90,50.30)
+  intadd_4_n3 (net)                                 1      1.64
+  intadd_4_U3/CI (FA_X1)                                             5.07      1.00      0.42    961.32 r    (56.13,54.91)
+  intadd_4_U3/CO (FA_X1)                                             4.71      1.00      9.00    970.33 r    (56.90,54.91)
+  intadd_4_n2 (net)                                 1      1.40
+  intadd_4_U2/CI (FA_X1)                                             4.71      1.00      0.19    970.52 r    (56.13,56.45)
+  intadd_4_U2/CO (FA_X1)                                             5.72      1.00      9.59    980.11 r    (56.90,56.45)
+  intadd_4_n1 (net)                                 1      2.08
+  intadd_1_U2/A (FA_X1)                                              5.72      1.00      0.53    980.64 r    (52.24,56.46)
+  intadd_1_U2/CO (FA_X1)                                             6.96      1.00     10.62    991.27 r    (53.06,56.45)
+  intadd_1_n1 (net)                                 3      2.99
+  U5313/A2 (NOR2_X1)                                                 6.96      1.00      0.51    991.78 r    (49.92,56.42)
+  U5313/ZN (NOR2_X1)                                                 4.88      1.00      3.64    995.43 f    (50.02,56.48)
+  n4378 (net)                                       2      2.03
+  U5321/B (AOI21_X1)                                                 4.88      1.00      0.06    995.48 f    (49.79,56.42)
+  U5321/ZN (AOI21_X1)                                                7.51      1.00      4.88    1000.37 r   (49.68,56.38)
+  intadd_3_A_60_ (net)                              1      1.87
+  intadd_3_U2/A (FA_X1)                                              7.51      1.00      0.23    1000.60 r   (48.08,56.46)
+  intadd_3_U2/CO (FA_X1)                                             4.29      1.00      9.08    1009.67 r   (48.90,56.45)
+  intadd_3_n1 (net)                                 1      1.17
+  U5346/I (INV_X1)                                                   4.29      1.00      0.23    1009.90 r   (45.44,56.45)
+  U5346/ZN (INV_X1)                                                  3.15      1.00      2.56    1012.46 f   (45.50,56.44)
+  n4434 (net)                                       1      1.69
+  U5365/B (FA_X1)                                                    3.15      1.00      0.19    1012.65 f   (44.11,56.35)
+  U5365/CO (FA_X1)                                                   6.03      1.00      9.08    1021.73 f   (45.06,56.45)
+  n4457 (net)                                       3      2.86
+  U5367/A2 (NOR2_X1)                                                 6.03      1.00      0.50    1022.22 f   (43.14,55.71)
+  U5367/ZN (NOR2_X1)                                                 6.69      1.00      4.23    1026.46 r   (43.23,55.65)
+  n4454 (net)                                       2      1.90
+  U5379/I (INV_X1)                                                   6.69      1.00      0.10    1026.55 r   (43.33,56.45)
+  U5379/ZN (INV_X1)                                                  3.01      1.00      2.31    1028.86 f   (43.39,56.44)
+  n4456 (net)                                       1      0.98
+  U5381/B1 (AOI22_X1)                                                3.01      1.00      0.06    1028.92 f   (42.94,56.45)
+  U5381/ZN (AOI22_X1)                                                8.37      1.00      4.79    1033.71 r   (43.05,56.41)
+  intadd_6_B_1_ (net)                               1      1.78
+  intadd_6_U3/B (FA_X1)                                              8.37      1.00      0.21    1033.92 r   (41.43,56.35)
+  intadd_6_U3/CO (FA_X1)                                             4.83      1.00     10.47    1044.39 r   (42.37,56.45)
+  intadd_6_n2 (net)                                 1      1.51
+  intadd_6_U2/CI (FA_X1)                                             4.83      1.00      0.31    1044.69 r   (40.26,54.91)
+  intadd_6_U2/CO (FA_X1)                                             6.24      1.00      9.69    1054.38 r   (41.02,54.91)
+  intadd_6_n1 (net)                                 1      2.15
+  U5395/A2 (XOR2_X1)                                                 6.24      1.00      0.51    1054.90 r   (39.65,51.75)
+  U5395/Z (XOR2_X1)                                                 12.40      1.00      6.43    1061.33 r   (39.76,51.84)
+  n4486 (net)                                       2      1.89
+  U5396/A1 (OAI21_X1)                                               12.40      1.00      0.15    1061.48 r   (40.26,51.04)
+  U5396/ZN (OAI21_X1)                                               11.23      1.00      4.31    1065.79 f   (40.27,50.99)
+  n4484 (net)                                       1      1.05
+  U5397/B (AOI21_X1)                                                11.23      1.00      0.10    1065.88 f   (40.70,51.81)
+  U5397/ZN (AOI21_X1)                                                6.89      1.00      4.58    1070.46 r   (40.59,51.77)
+  N588 (net)                                        1      1.02
+  remainder_reg_129_/D (SDFFSNQ_X1)                                  6.89      1.00      0.23    1070.69 r   (40.90,45.77)     s, n
+  data arrival time                                                                              1070.69
+
+  clock clock (rise edge)                                                              5000.00   5000.00
+  clock network delay (ideal)                                                            0.00    5000.00
+  remainder_reg_129_/CLK (SDFFSNQ_X1)                                0.00      1.00      0.00    5000.00 r   (40.45,45.70)     s, n
+  clock uncertainty                                                                    -20.00    4980.00
+  library setup time                                                           1.00    -11.30    4968.70
+  data required time                                                                             4968.69
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             4968.69
+  data arrival time                                                                              -1070.69
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    3898.00
+
+
+
+  Startpoint: io_req_valid (input port clocked by clock)
+  Endpoint: remainder_reg_45_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: mode_norm.slow.RCmax
+  Corner: mode_norm.slow.RCmax
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGIN
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+  input external delay                                                                 120.00    120.00
+
+  io_req_valid (in)                                                  4.11      1.00      1.64    121.64 r    (35.39,57.59)
+  io_req_valid (net)                                1      1.33
+  U2066/A2 (NAND2_X1)                                                4.12      1.00      0.25    121.89 r    (35.39,53.41)
+  U2066/ZN (NAND2_X1)                                               14.55      1.00      7.25    129.14 f    (35.49,53.34)
+  n4608 (net)                                       5      5.09
+  U2764/I (INV_X1)                                                  14.55      1.00      0.36    129.50 f    (35.07,54.91)
+  U2764/ZN (INV_X1)                                                 82.26      1.00      8.75    138.25 r    (35.14,54.90)
+  n4785 (net)                                      36     38.52
+  U3417/A2 (NAND4_X1)                                               99.01      1.00      1.39    139.65 r    (34.56,51.08)
+  U3417/ZN (NAND4_X1)                                               25.92      1.00     17.74    157.38 f    (34.56,51.07)
+  n2593 (net)                                       1      1.00
+  U3418/B (AOI21_X1)                                                25.92      1.00      0.06    157.44 f    (35.07,51.10)
+  U3418/ZN (AOI21_X1)                                               53.02      1.00     13.56    171.00 r    (34.96,51.14)
+  n3350 (net)                                      10     13.78
+  U2767/I (INV_X1)                                                  64.87      1.00     15.72    186.72 r    (23.74,26.50)
+  U2767/ZN (INV_X1)                                                 53.06      1.00     28.61    215.33 f    (23.81,26.50)
+  n4787 (net)                                      23     25.99
+  U3708/A3 (NAND3_X1)                                               56.80      1.00      9.27    224.60 f    (14.91,34.95)
+  U3708/ZN (NAND3_X1)                                               20.05      1.00      6.66    231.26 r    (14.75,34.94)
+  n2849 (net)                                       1      1.45
+  U3709/B (AOI21_X1)                                                20.05      1.00      0.31    231.56 r    (15.10,39.52)
+  U3709/ZN (AOI21_X1)                                               32.44      1.00      5.93    237.49 f    (14.99,39.49)
+  n2864 (net)                                       1      2.12
+  U3724/A2 (NAND4_X1)                                               32.44      1.00      0.84    238.33 f    (25.66,39.54)
+  U3724/ZN (NAND4_X1)                                               20.48      1.00      5.19    243.52 r    (25.67,39.55)
+  N504 (net)                                        1      1.87
+  remainder_reg_45_/D (SDFFSNQ_X1)                                  20.48      1.00      0.71    244.23 r    (28.80,49.46)     s, n
+  data arrival time                                                                              244.23
+
+  clock clock (rise edge)                                                              5000.00   5000.00
+  clock network delay (ideal)                                                            0.00    5000.00
+  remainder_reg_45_/CLK (SDFFSNQ_X1)                                 0.00      1.00      0.00    5000.00 r   (29.25,49.53)     s, n
+  clock uncertainty                                                                    -20.00    4980.00
+  library setup time                                                           1.00    -12.78    4967.22
+  data required time                                                                             4967.22
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             4967.22
+  data arrival time                                                                              -244.23
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    4722.99
+
+
+
+  Startpoint: resHi_reg (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: io_resp_bits_data[34] (output port clocked by clock)
+  Mode: mode_norm.slow.RCmax
+  Corner: mode_norm.slow.RCmax
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGOUT
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+
+  resHi_reg/CLK (SDFFSNQ_X1)                                         0.00      1.00      0.00      0.00 r    (31.62,53.38)     s, n
+  resHi_reg/Q (SDFFSNQ_X1)                                         138.61      1.00     12.89     12.89 r    (33.41,53.38)     s, n
+  resHi (net)                                      59     62.69
+  U2157/I (BUF_X1)                                                 267.37      1.00     99.24    112.13 r    (4.93,31.10)
+  U2157/Z (BUF_X1)                                                  34.98      1.00     23.10    135.23 r    (4.74,31.08)
+  n4700 (net)                                      14     17.02
+  U2072/I (INV_X1)                                                  37.57      1.00      4.71    139.94 r    (10.82,35.71)
+  U2072/ZN (INV_X1)                                                 30.12      1.00     16.14    156.08 f    (10.88,35.72)
+  n4695 (net)                                      13     14.26
+  U3408/B2 (AOI22_X1)                                               32.77      1.00      5.23    161.30 f    (20.35,37.25)
+  U3408/ZN (AOI22_X1)                                               69.60      1.00     11.37    172.67 r    (20.52,37.29)
+  n4503 (net)                                       3      4.16
+  U5411/B1 (AOI22_X1)                                               69.60      1.00      0.90    173.57 r    (32.51,37.24)
+  U5411/ZN (AOI22_X1)                                               46.20      1.00     20.18    193.75 f    (32.62,37.29)
+  io_resp_bits_data[31] (net)                       2      5.72
+  U5414/A2 (NAND2_X1)                                               46.35      1.00      0.23    193.98 f    (32.45,36.51)
+  U5414/ZN (NAND2_X1)                                               70.72      1.00     29.32    223.29 r    (32.54,36.45)
+  n4517 (net)                                      32     36.19
+  U5419/B (OAI21_X1)                                                84.84      1.00     19.40    242.69 r    (6.66,30.37)
+  U5419/ZN (OAI21_X1)                                               26.59      1.00     13.89    256.58 f    (6.54,30.41)
+  io_resp_bits_data[34] (net)                       1      3.21
+  io_resp_bits_data[34] (out)                                       26.59      1.00      1.09    257.66 f    (0.01,30.53)
+  data arrival time                                                                              257.66
+
+  clock clock (rise edge)                                                              5000.00   5000.00
+  clock network delay (ideal)                                                            0.00    5000.00
+  clock uncertainty                                                                    -20.00    4980.00
+  output external delay                                                                -120.00   4860.00
+  data required time                                                                             4859.99
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             4859.99
+  data arrival time                                                                              -257.66
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    4602.33
+
+
+
+  Startpoint: remainder_reg_64_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: remainder_reg_129_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: mode_norm.worst_low.RCmax
+  Corner: mode_norm.worst_low.RCmax
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: clock
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+
+  remainder_reg_64_/CLK (SDFFSNQ_X1)                                 0.00      1.00      0.00      0.00 r    (37.76,33.42)     s, n
+  remainder_reg_64_/Q (SDFFSNQ_X1)                                 119.38      1.00     44.59     44.59 f    (39.55,33.41)     s, n
+  n_T_39[0] (net)                                  36     62.48
+  U2423/I (BUF_X1)                                                 126.36      1.00      6.37     50.96 f    (39.62,18.05)
+  U2423/Z (BUF_X1)                                                 126.02      1.00     23.92     74.88 f    (39.81,18.07)
+  n4719 (net)                                      34     55.94
+  U4165/B1 (AOI22_X1)                                              230.37      1.00     90.81    165.69 f    (8.00,34.17)
+  U4165/ZN (AOI22_X1)                                               73.59      1.00     54.11    219.80 r    (8.11,34.22)
+  n4481 (net)                                       4     10.36
+  U2680/A2 (NOR2_X2)                                                82.15      1.00     13.47    233.27 r    (38.98,50.20)
+  U2680/ZN (NOR2_X2)                                                61.95      1.00     22.77    256.04 f    (38.98,50.30)
+  n4229 (net)                                      65     68.59
+  U4174/B1 (AOI22_X1)                                              333.60      1.00    133.46    389.50 f    (6.53,19.59)
+  U4174/ZN (AOI22_X1)                                               36.11      1.00     30.23    419.73 r    (6.64,19.54)
+  n3323 (net)                                       1      0.99
+  U4175/B (OAI21_X1)                                                36.11      1.00      0.08    419.81 r    (6.78,20.32)
+  U4175/ZN (OAI21_X1)                                               15.03      1.00     10.57    430.37 f    (6.67,20.27)
+  n3325 (net)                                       1      1.90
+  U4176/A2 (XNOR2_X1)                                               15.03      1.00      0.34    430.72 f    (4.51,21.21)
+  U4176/ZN (XNOR2_X1)                                                8.79      1.00     12.36    443.08 r    (4.63,21.12)
+  intadd_3_B_0_ (net)                               1      1.76
+  intadd_3_U62/B (FA_X1)                                             8.79      1.00      0.21    443.29 r    (2.96,21.02)
+  intadd_3_U62/CO (FA_X1)                                            5.72      1.00     12.80    456.09 r    (3.90,21.12)
+  intadd_3_n61 (net)                                1      1.44
+  intadd_3_U61/CI (FA_X1)                                            5.72      1.00      0.25    456.33 r    (1.79,20.35)
+  intadd_3_U61/CO (FA_X1)                                            5.40      1.00     11.63    467.97 r    (2.56,20.35)
+  intadd_3_n60 (net)                                1      1.67
+  intadd_3_U60/CI (FA_X1)                                            5.40      1.00      0.42    468.39 r    (1.60,15.74)
+  intadd_3_U60/CO (FA_X1)                                            4.81      1.00     11.08    479.47 r    (2.37,15.74)
+  intadd_3_n59 (net)                                1      1.32
+  intadd_3_U59/CI (FA_X1)                                            4.81      1.00      0.13    479.60 r    (1.60,14.98)
+  intadd_3_U59/CO (FA_X1)                                            5.87      1.00     11.75    491.35 r    (2.37,14.98)
+  intadd_3_n58 (net)                                1      1.94
+  intadd_3_U58/CI (FA_X1)                                            5.87      1.00      0.71    492.06 r    (1.02,7.30)
+  intadd_3_U58/CO (FA_X1)                                            5.34      1.00     11.63    503.69 r    (1.79,7.30)
+  intadd_3_n57 (net)                                1      1.63
+  intadd_3_U57/CI (FA_X1)                                            5.34      1.00      0.40    504.09 r    (2.50,2.69)
+  intadd_3_U57/CO (FA_X1)                                            5.02      1.00     11.18    515.27 r    (3.26,2.69)
+  intadd_3_n56 (net)                                1      1.40
+  intadd_3_U56/CI (FA_X1)                                            5.02      1.00      0.21    515.48 r    (4.29,4.22)
+  intadd_3_U56/CO (FA_X1)                                            5.04      1.00     11.18    526.66 r    (5.06,4.22)
+  intadd_3_n55 (net)                                1      1.46
+  intadd_3_U55/CI (FA_X1)                                            5.04      1.00      0.27    526.92 r    (6.72,2.69)
+  intadd_3_U55/CO (FA_X1)                                            4.96      1.00     11.08    538.01 r    (7.49,2.69)
+  intadd_3_n54 (net)                                1      1.39
+  intadd_3_U54/CI (FA_X1)                                            4.96      1.00      0.19    538.20 r    (8.26,4.22)
+  intadd_3_U54/CO (FA_X1)                                            4.83      1.00     10.99    549.18 r    (9.02,4.22)
+  intadd_3_n53 (net)                                1      1.34
+  intadd_3_U53/CI (FA_X1)                                            4.83      1.00      0.15    549.34 r    (9.98,3.46)
+  intadd_3_U53/CO (FA_X1)                                            4.98      1.00     11.04    560.38 r    (10.75,3.46)
+  intadd_3_n52 (net)                                1      1.39
+  intadd_3_U52/CI (FA_X1)                                            4.98      1.00      0.21    560.59 r    (12.29,4.22)
+  intadd_3_U52/CO (FA_X1)                                            4.84      1.00     11.02    571.61 r    (13.06,4.22)
+  intadd_3_n51 (net)                                1      1.35
+  intadd_3_U51/CI (FA_X1)                                            4.84      1.00      0.15    571.77 r    (14.91,4.22)
+  intadd_3_U51/CO (FA_X1)                                            5.34      1.00     11.31    583.08 r    (14.14,4.22)
+  intadd_3_n50 (net)                                1      1.58
+  intadd_3_U50/CI (FA_X1)                                            5.34      1.00      0.36    583.44 r    (16.26,6.53)
+  intadd_3_U50/CO (FA_X1)                                            4.77      1.00     11.04    594.48 r    (17.02,6.53)
+  intadd_3_n49 (net)                                1      1.30
+  intadd_3_U49/CI (FA_X1)                                            4.77      1.00      0.11    594.60 r    (18.30,6.53)
+  intadd_3_U49/CO (FA_X1)                                            5.11      1.00     11.18    605.77 r    (19.07,6.53)
+  intadd_3_n48 (net)                                1      1.50
+  intadd_3_U48/CI (FA_X1)                                            5.11      1.00      0.29    606.06 r    (20.93,8.06)
+  intadd_3_U48/CO (FA_X1)                                            4.92      1.00     11.12    617.18 r    (21.70,8.06)
+  intadd_3_n47 (net)                                1      1.39
+  intadd_3_U47/CI (FA_X1)                                            4.92      1.00      0.19    617.37 r    (23.10,8.83)
+  intadd_3_U47/CO (FA_X1)                                            4.79      1.00     10.95    628.32 r    (23.87,8.83)
+  intadd_3_n46 (net)                                1      1.30
+  intadd_3_U46/CI (FA_X1)                                            4.79      1.00      0.11    628.43 r    (24.26,9.60)
+  intadd_3_U46/CO (FA_X1)                                            5.02      1.00     11.10    639.53 r    (25.02,9.60)
+  intadd_3_n45 (net)                                1      1.44
+  intadd_3_U45/CI (FA_X1)                                            5.02      1.00      0.23    639.76 r    (26.11,11.14)
+  intadd_3_U45/CO (FA_X1)                                            4.73      1.00     10.93    650.69 r    (26.88,11.14)
+  intadd_3_n44 (net)                                1      1.28
+  intadd_3_U44/CI (FA_X1)                                            4.73      1.00      0.08    650.77 r    (27.78,11.14)
+  intadd_3_U44/CO (FA_X1)                                            5.02      1.00     11.10    661.87 r    (28.54,11.14)
+  intadd_3_n43 (net)                                1      1.45
+  intadd_3_U43/CI (FA_X1)                                            5.02      1.00      0.23    662.10 r    (29.63,9.60)
+  intadd_3_U43/CO (FA_X1)                                            4.77      1.00     10.95    673.05 r    (30.40,9.60)
+  intadd_3_n42 (net)                                1      1.30
+  intadd_3_U42/CI (FA_X1)                                            4.77      1.00      0.11    673.16 r    (30.72,10.37)
+  intadd_3_U42/CO (FA_X1)                                            4.71      1.00     10.85    684.01 r    (31.49,10.37)
+  intadd_3_n41 (net)                                1      1.26
+  intadd_3_U41/CI (FA_X1)                                            4.71      1.00      0.08    684.09 r    (32.26,10.37)
+  intadd_3_U41/CO (FA_X1)                                            4.98      1.00     11.06    695.15 r    (33.02,10.37)
+  intadd_3_n40 (net)                                1      1.43
+  intadd_3_U40/CI (FA_X1)                                            4.98      1.00      0.21    695.36 r    (33.98,8.83)
+  intadd_3_U40/CO (FA_X1)                                            4.73      1.00     10.93    706.29 r    (34.75,8.83)
+  intadd_3_n39 (net)                                1      1.28
+  intadd_3_U39/CI (FA_X1)                                            4.73      1.00      0.10    706.39 r    (35.71,8.83)
+  intadd_3_U39/CO (FA_X1)                                            4.86      1.00     10.97    717.35 r    (36.48,8.83)
+  intadd_3_n38 (net)                                1      1.36
+  intadd_3_U38/CI (FA_X1)                                            4.86      1.00      0.17    717.53 r    (37.50,8.06)
+  intadd_3_U38/CO (FA_X1)                                            4.90      1.00     11.04    728.57 r    (38.27,8.06)
+  intadd_3_n37 (net)                                1      1.38
+  intadd_3_U37/CI (FA_X1)                                            4.90      1.00      0.17    728.74 r    (38.78,9.60)
+  intadd_3_U37/CO (FA_X1)                                            5.07      1.00     11.18    739.92 r    (39.55,9.60)
+  intadd_3_n36 (net)                                1      1.48
+  intadd_3_U36/CI (FA_X1)                                            5.07      1.00      0.23    740.15 r    (39.55,12.67)
+  intadd_3_U36/CO (FA_X1)                                            5.15      1.00     11.29    751.44 r    (40.32,12.67)
+  intadd_3_n35 (net)                                1      1.52
+  intadd_3_U35/CI (FA_X1)                                            5.15      1.00      0.31    751.74 r    (41.60,10.37)
+  intadd_3_U35/CO (FA_X1)                                            4.94      1.00     11.10    762.84 r    (42.37,10.37)
+  intadd_3_n34 (net)                                1      1.37
+  intadd_3_U34/CI (FA_X1)                                            4.94      1.00      0.17    763.02 r    (41.92,8.83)
+  intadd_3_U34/CO (FA_X1)                                            4.92      1.00     11.06    774.08 r    (42.69,8.83)
+  intadd_3_n33 (net)                                1      1.38
+  intadd_3_U33/CI (FA_X1)                                            4.92      1.00      0.19    774.27 r    (43.26,10.37)
+  intadd_3_U33/CO (FA_X1)                                            4.73      1.00     10.91    785.18 r    (44.03,10.37)
+  intadd_3_n32 (net)                                1      1.28
+  intadd_3_U32/CI (FA_X1)                                            4.73      1.00      0.10    785.27 r    (44.29,9.60)
+  intadd_3_U32/CO (FA_X1)                                            4.96      1.00     11.04    796.32 r    (45.06,9.60)
+  intadd_3_n31 (net)                                1      1.41
+  intadd_3_U31/CI (FA_X1)                                            4.96      1.00      0.21    796.53 r    (46.72,10.37)
+  intadd_3_U31/CO (FA_X1)                                            4.73      1.00     10.89    807.42 r    (47.49,10.37)
+  intadd_3_n30 (net)                                1      1.26
+  intadd_3_U30/CI (FA_X1)                                            4.73      1.00      0.08    807.50 r    (48.26,10.37)
+  intadd_3_U30/CO (FA_X1)                                            4.98      1.00     11.06    818.56 r    (49.02,10.37)
+  intadd_3_n29 (net)                                1      1.43
+  intadd_3_U29/CI (FA_X1)                                            4.98      1.00      0.21    818.77 r    (49.28,8.06)
+  intadd_3_U29/CO (FA_X1)                                            5.40      1.00     11.41    830.17 r    (50.05,8.06)
+  intadd_3_n28 (net)                                1      1.63
+  intadd_3_U28/CI (FA_X1)                                            5.40      1.00      0.36    830.54 r    (49.15,11.90)
+  intadd_3_U28/CO (FA_X1)                                            4.73      1.00     11.02    841.56 r    (49.92,11.90)
+  intadd_3_n27 (net)                                1      1.28
+  intadd_3_U27/CI (FA_X1)                                            4.73      1.00      0.10    841.66 r    (50.88,11.90)
+  intadd_3_U27/CO (FA_X1)                                            4.73      1.00     10.85    852.51 r    (51.65,11.90)
+  intadd_3_n26 (net)                                1      1.28
+  intadd_3_U26/CI (FA_X1)                                            4.73      1.00      0.10    852.60 r    (52.61,11.90)
+  intadd_3_U26/CO (FA_X1)                                            4.88      1.00     10.99    863.59 r    (53.38,11.90)
+  intadd_3_n25 (net)                                1      1.37
+  intadd_3_U25/CI (FA_X1)                                            4.88      1.00      0.17    863.76 r    (53.89,13.44)
+  intadd_3_U25/CO (FA_X1)                                            5.05      1.00     11.18    874.94 r    (54.66,13.44)
+  intadd_3_n24 (net)                                1      1.47
+  intadd_3_U24/CI (FA_X1)                                            5.05      1.00      0.27    875.21 r    (53.82,15.74)
+  intadd_3_U24/CO (FA_X1)                                            5.21      1.00     11.31    886.52 r    (54.59,15.74)
+  intadd_3_n23 (net)                                1      1.55
+  intadd_3_U23/CI (FA_X1)                                            5.21      1.00      0.32    886.84 r    (52.29,17.28)
+  intadd_3_U23/CO (FA_X1)                                            4.96      1.00     11.18    898.02 r    (53.06,17.28)
+  intadd_3_n22 (net)                                1      1.42
+  intadd_3_U22/CI (FA_X1)                                            4.96      1.00      0.21    898.23 r    (52.80,19.58)
+  intadd_3_U22/CO (FA_X1)                                            5.02      1.00     11.16    909.39 r    (53.57,19.58)
+  intadd_3_n21 (net)                                1      1.45
+  intadd_3_U21/CI (FA_X1)                                            5.02      1.00      0.23    909.61 r    (52.29,21.12)
+  intadd_3_U21/CO (FA_X1)                                            5.19      1.00     11.31    920.93 r    (53.06,21.12)
+  intadd_3_n20 (net)                                1      1.55
+  intadd_3_U20/CI (FA_X1)                                            5.19      1.00      0.32    921.25 r    (51.46,23.42)
+  intadd_3_U20/CO (FA_X1)                                            5.09      1.00     11.27    932.52 r    (52.22,23.42)
+  intadd_3_n19 (net)                                1      1.49
+  intadd_3_U19/CI (FA_X1)                                            5.09      1.00      0.27    932.79 r    (50.50,24.96)
+  intadd_3_U19/CO (FA_X1)                                            5.11      1.00     11.27    944.06 r    (49.73,24.96)
+  intadd_3_n18 (net)                                1      1.50
+  intadd_3_U18/CI (FA_X1)                                            5.11      1.00      0.29    944.35 r    (47.23,25.73)
+  intadd_3_U18/CO (FA_X1)                                            5.17      1.00     11.31    955.66 r    (48.00,25.73)
+  intadd_3_n17 (net)                                1      1.53
+  intadd_3_U17/CI (FA_X1)                                            5.17      1.00      0.29    955.94 r    (47.49,28.80)
+  intadd_3_U17/CO (FA_X1)                                            4.83      1.00     11.04    966.99 r    (48.26,28.80)
+  intadd_3_n16 (net)                                1      1.34
+  intadd_3_U16/CI (FA_X1)                                            4.83      1.00      0.11    967.10 r    (48.26,30.34)
+  intadd_3_U16/CO (FA_X1)                                            5.19      1.00     11.27    978.37 r    (49.02,30.34)
+  intadd_3_n15 (net)                                1      1.55
+  intadd_3_U15/CI (FA_X1)                                            5.19      1.00      0.31    978.68 r    (47.55,32.64)
+  intadd_3_U15/CO (FA_X1)                                            4.90      1.00     11.12    989.80 r    (48.32,32.64)
+  intadd_3_n14 (net)                                1      1.38
+  intadd_3_U14/CI (FA_X1)                                            4.90      1.00      0.19    989.99 r    (49.60,33.41)
+  intadd_3_U14/CO (FA_X1)                                            5.21      1.00     11.29    1001.28 r   (50.37,33.41)
+  intadd_3_n13 (net)                                1      1.55
+  intadd_3_U13/CI (FA_X1)                                            5.21      1.00      0.31    1001.59 r   (49.60,36.48)
+  intadd_3_U13/CO (FA_X1)                                            5.00      1.00     11.20    1012.78 r   (50.37,36.48)
+  intadd_3_n12 (net)                                1      1.44
+  intadd_3_U12/CI (FA_X1)                                            5.00      1.00      0.23    1013.01 r   (49.98,38.78)
+  intadd_3_U12/S (FA_X1)                                             6.22      1.00     17.93    1030.94 f   (50.11,38.74)
+  intadd_1_A_53_ (net)                              1      2.28
+  intadd_1_U10/A (FA_X1)                                             6.37      1.00      0.84    1031.78 f   (56.08,36.50)
+  intadd_1_U10/S (FA_X1)                                             5.57      1.00     17.99    1049.77 r   (56.26,36.52)
+  intadd_1_SUM_53_ (net)                            1      1.73
+  intadd_4_U9/B (FA_X1)                                              5.57      1.00      0.19    1049.96 r   (55.95,37.92)
+  intadd_4_U9/CO (FA_X1)                                             5.09      1.00     12.13    1062.09 r   (56.90,38.02)
+  intadd_4_n8 (net)                                 1      1.49
+  intadd_4_U8/CI (FA_X1)                                             5.09      1.00      0.31    1062.39 r   (56.13,41.09)
+  intadd_4_U8/CO (FA_X1)                                             5.00      1.00     11.16    1073.55 r   (56.90,41.09)
+  intadd_4_n7 (net)                                 1      1.43
+  intadd_4_U7/CI (FA_X1)                                             5.00      1.00      0.25    1073.80 r   (56.13,43.39)
+  intadd_4_U7/CO (FA_X1)                                             5.09      1.00     11.23    1085.03 r   (56.90,43.39)
+  intadd_4_n6 (net)                                 1      1.50
+  intadd_4_U6/CI (FA_X1)                                             5.09      1.00      0.31    1085.34 r   (56.13,46.46)
+  intadd_4_U6/CO (FA_X1)                                             5.09      1.00     11.25    1096.59 r   (56.90,46.46)
+  intadd_4_n5 (net)                                 1      1.49
+  intadd_4_U5/CI (FA_X1)                                             5.09      1.00      0.31    1096.90 r   (56.13,49.54)
+  intadd_4_U5/CO (FA_X1)                                             4.77      1.00     10.99    1107.88 r   (56.90,49.54)
+  intadd_4_n4 (net)                                 1      1.31
+  intadd_4_U4/CI (FA_X1)                                             4.77      1.00      0.13    1108.02 r   (56.13,50.30)
+  intadd_4_U4/CO (FA_X1)                                             5.26      1.00     11.31    1119.33 r   (56.90,50.30)
+  intadd_4_n3 (net)                                 1      1.60
+  intadd_4_U3/CI (FA_X1)                                             5.26      1.00      0.40    1119.73 r   (56.13,54.91)
+  intadd_4_U3/CO (FA_X1)                                             4.86      1.00     11.10    1130.83 r   (56.90,54.91)
+  intadd_4_n2 (net)                                 1      1.35
+  intadd_4_U2/CI (FA_X1)                                             4.86      1.00      0.19    1131.02 r   (56.13,56.45)
+  intadd_4_U2/CO (FA_X1)                                             5.99      1.00     11.83    1142.85 r   (56.90,56.45)
+  intadd_4_n1 (net)                                 1      2.00
+  intadd_1_U2/A (FA_X1)                                              5.99      1.00      0.51    1143.36 r   (52.24,56.46)
+  intadd_1_U2/CO (FA_X1)                                             7.50      1.00     13.56    1156.92 r   (53.06,56.45)
+  intadd_1_n1 (net)                                 3      2.85
+  U5313/A2 (NOR2_X1)                                                 7.50      1.00      0.48    1157.40 r   (49.92,56.42)
+  U5313/ZN (NOR2_X1)                                                 4.62      1.00      4.67    1162.07 f   (50.02,56.48)
+  n4378 (net)                                       2      1.88
+  U5321/B (AOI21_X1)                                                 4.62      1.00      0.06    1162.13 f   (49.79,56.42)
+  U5321/ZN (AOI21_X1)                                                7.13      1.00      6.60    1168.73 r   (49.68,56.38)
+  intadd_3_A_60_ (net)                              1      1.79
+  intadd_3_U2/A (FA_X1)                                              7.13      1.00      0.21    1168.94 r   (48.08,56.46)
+  intadd_3_U2/CO (FA_X1)                                             4.46      1.00     11.60    1180.53 r   (48.90,56.45)
+  intadd_3_n1 (net)                                 1      1.12
+  U5346/I (INV_X1)                                                   4.46      1.00      0.21    1180.74 r   (45.44,56.45)
+  U5346/ZN (INV_X1)                                                  3.09      1.00      3.11    1183.85 f   (45.50,56.44)
+  n4434 (net)                                       1      1.58
+  U5365/B (FA_X1)                                                    3.09      1.00      0.17    1184.02 f   (44.11,56.35)
+  U5365/CO (FA_X1)                                                   6.28      1.00     11.37    1195.39 f   (45.06,56.45)
+  n4457 (net)                                       3      2.71
+  U5367/A2 (NOR2_X1)                                                 6.28      1.00      0.48    1195.87 f   (43.14,55.71)
+  U5367/ZN (NOR2_X1)                                                 6.50      1.00      5.95    1201.82 r   (43.23,55.65)
+  n4454 (net)                                       2      1.80
+  U5379/I (INV_X1)                                                   6.50      1.00      0.10    1201.92 r   (43.33,56.45)
+  U5379/ZN (INV_X1)                                                  2.84      1.00      2.84    1204.76 f   (43.39,56.44)
+  n4456 (net)                                       1      0.89
+  U5381/B1 (AOI22_X1)                                                2.84      1.00      0.06    1204.81 f   (42.94,56.45)
+  U5381/ZN (AOI22_X1)                                                8.03      1.00      6.33    1211.15 r   (43.05,56.41)
+  intadd_6_B_1_ (net)                               1      1.72
+  intadd_6_U3/B (FA_X1)                                              8.03      1.00      0.21    1211.36 r   (41.43,56.35)
+  intadd_6_U3/CO (FA_X1)                                             5.05      1.00     12.65    1224.00 r   (42.37,56.45)
+  intadd_6_n2 (net)                                 1      1.47
+  intadd_6_U2/CI (FA_X1)                                             5.05      1.00      0.29    1224.29 r   (40.26,54.91)
+  intadd_6_U2/CO (FA_X1)                                             6.16      1.00     11.94    1236.23 r   (41.02,54.91)
+  intadd_6_n1 (net)                                 1      2.04
+  U5395/A2 (XOR2_X1)                                                 6.16      1.00      0.48    1236.71 r   (39.65,51.75)
+  U5395/Z (XOR2_X1)                                                  9.21      1.00      8.45    1245.16 r   (39.76,51.84)
+  n4486 (net)                                       2      1.82
+  U5396/A1 (OAI21_X1)                                                9.21      1.00      0.15    1245.31 r   (40.26,51.04)
+  U5396/ZN (OAI21_X1)                                                8.96      1.00      4.54    1249.85 f   (40.27,50.99)
+  n4484 (net)                                       1      0.97
+  U5397/B (AOI21_X1)                                                 8.96      1.00      0.10    1249.94 f   (40.70,51.81)
+  U5397/ZN (AOI21_X1)                                                5.80      1.00      6.45    1256.39 r   (40.59,51.77)
+  N588 (net)                                        1      0.99
+  remainder_reg_129_/D (SDFFSNQ_X1)                                  5.80      1.00      0.23    1256.62 r   (40.90,45.77)     s, n
+  data arrival time                                                                              1256.62
+
+  clock clock (rise edge)                                                              5000.00   5000.00
+  clock network delay (ideal)                                                            0.00    5000.00
+  remainder_reg_129_/CLK (SDFFSNQ_X1)                                0.00      1.00      0.00    5000.00 r   (40.45,45.70)     s, n
+  clock uncertainty                                                                    -20.00    4980.00
+  library setup time                                                           1.00    -11.82    4968.18
+  data required time                                                                             4968.17
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             4968.17
+  data arrival time                                                                              -1256.62
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    3711.55
+
+
+
+  Startpoint: io_req_valid (input port clocked by clock)
+  Endpoint: remainder_reg_37_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: mode_norm.worst_low.RCmax
+  Corner: mode_norm.worst_low.RCmax
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGIN
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+  input external delay                                                                 120.00    120.00
+
+  io_req_valid (in)                                                  3.40      1.00      1.64    121.64 f    (35.39,57.59)
+  io_req_valid (net)                                1      1.19
+  U2066/A2 (NAND2_X1)                                                3.40      1.00      0.23    121.87 f    (35.39,53.41)
+  U2066/ZN (NAND2_X1)                                               10.17      1.00      7.11    128.98 r    (35.49,53.34)
+  n4608 (net)                                       5      5.19
+  U2764/I (INV_X1)                                                  10.17      1.00      0.36    129.35 r    (35.07,54.91)
+  U2764/ZN (INV_X1)                                                 87.99      1.00      8.20    137.55 f    (35.14,54.90)
+  n4785 (net)                                      36     38.74
+  U3414/A1 (NAND2_X1)                                              126.90      1.00      9.67    147.22 f    (29.25,47.97)
+  U3414/ZN (NAND2_X1)                                               41.85      1.00     30.46    177.68 r    (29.22,48.03)
+  n3339 (net)                                       5      7.42
+  U2766/I (INV_X1)                                                  44.42      1.00      5.57    183.25 r    (25.54,25.73)
+  U2766/ZN (INV_X1)                                                 58.31      1.00     29.77    213.02 f    (25.60,25.72)
+  n4786 (net)                                      28     29.08
+  U3552/B1 (AOI22_X1)                                               63.46      1.00     11.92    224.94 f    (14.08,35.71)
+  U3552/ZN (AOI22_X1)                                               16.86      1.00     14.50    239.44 r    (14.19,35.75)
+  n2710 (net)                                       1      1.13
+  U3555/A1 (NAND4_X1)                                               16.86      1.00      0.17    239.61 r    (15.49,34.14)
+  U3555/ZN (NAND4_X1)                                               15.98      1.00      7.92    247.53 f    (15.36,34.18)
+  n2718 (net)                                       1      1.18
+  U3565/A2 (NOR4_X1)                                                15.98      1.00      0.21    247.73 f    (17.60,33.38)
+  U3565/ZN (NOR4_X1)                                                11.73      1.00      9.78    257.52 r    (17.60,33.41)
+  n2720 (net)                                       1      1.12
+  U3566/B (OAI21_X1)                                                11.73      1.00      0.13    257.65 r    (19.52,33.44)
+  U3566/ZN (OAI21_X1)                                               21.00      1.00      8.32    265.97 f    (19.41,33.49)
+  N496 (net)                                        1      3.02
+  remainder_reg_37_/D (SDFFSNQ_X1)                                  21.50      1.00      1.68    267.65 f    (20.80,56.52)     s, n
+  data arrival time                                                                              267.65
+
+  clock clock (rise edge)                                                              5000.00   5000.00
+  clock network delay (ideal)                                                            0.00    5000.00
+  remainder_reg_37_/CLK (SDFFSNQ_X1)                                 0.00      1.00      0.00    5000.00 r   (20.35,56.46)     s, n
+  clock uncertainty                                                                    -20.00    4980.00
+  library setup time                                                           1.00    -16.02    4963.98
+  data required time                                                                             4963.97
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             4963.97
+  data arrival time                                                                              -267.65
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    4696.33
+
+
+
+  Startpoint: resHi_reg (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: io_resp_bits_data[35] (output port clocked by clock)
+  Mode: mode_norm.worst_low.RCmax
+  Corner: mode_norm.worst_low.RCmax
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGOUT
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+
+  resHi_reg/CLK (SDFFSNQ_X1)                                         0.00      1.00      0.00      0.00 r    (31.62,53.38)     s, n
+  resHi_reg/Q (SDFFSNQ_X1)                                         136.83      1.00     18.22     18.22 f    (33.41,53.38)     s, n
+  resHi (net)                                      59     59.02
+  U2157/I (BUF_X1)                                                 256.00      1.00     94.34    112.55 f    (4.93,31.10)
+  U2157/Z (BUF_X1)                                                  31.30      1.00     34.28    146.83 f    (4.74,31.08)
+  n4700 (net)                                      14     16.08
+  U2072/I (INV_X1)                                                  34.01      1.00      4.58    151.41 f    (10.82,35.71)
+  U2072/ZN (INV_X1)                                                 32.86      1.00     21.21    172.62 r    (10.88,35.72)
+  n4695 (net)                                      13     13.95
+  U3408/B2 (AOI22_X1)                                               35.21      1.00      5.19    177.80 r    (20.35,37.25)
+  U3408/ZN (AOI22_X1)                                               53.18      1.00     14.74    192.55 f    (20.52,37.29)
+  n4503 (net)                                       3      4.08
+  U5411/B1 (AOI22_X1)                                               53.18      1.00      0.90    193.44 f    (32.51,37.24)
+  U5411/ZN (AOI22_X1)                                               33.15      1.00     22.58    216.03 r    (32.62,37.29)
+  io_resp_bits_data[31] (net)                       2      5.74
+  U5414/A2 (NAND2_X1)                                               33.25      1.00      0.15    216.18 r    (32.45,36.51)
+  U5414/ZN (NAND2_X1)                                               90.71      1.00     39.50    255.68 f    (32.54,36.45)
+  n4517 (net)                                      32     31.70
+  U5420/B (OAI21_X1)                                               100.00      1.00     18.44    274.12 f    (7.04,31.90)
+  U5420/ZN (OAI21_X1)                                               25.96      1.00     22.07    296.19 r    (7.15,31.95)
+  io_resp_bits_data[35] (net)                       1      3.29
+  io_resp_bits_data[35] (out)                                       25.96      1.00      1.18    297.37 r    (0.01,32.06)
+  data arrival time                                                                              297.37
+
+  clock clock (rise edge)                                                              5000.00   5000.00
+  clock network delay (ideal)                                                            0.00    5000.00
+  clock uncertainty                                                                    -20.00    4980.00
+  output external delay                                                                -120.00   4860.00
+  data required time                                                                             4859.99
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             4859.99
+  data arrival time                                                                              -297.37
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    4562.62
+
+
+1

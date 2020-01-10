@@ -1,0 +1,109 @@
+****************************************
+Report : clock
+Design : CORTEXM0DS
+Mode   : mode_norm.slow.RCmax
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:47 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+HCLK           500.00   {0 250}                       {HCLK}
+
+****************************************
+Report : clock
+Design : CORTEXM0DS
+Mode   : mode_norm.slow.RCmax_bc
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:47 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+HCLK           500.00   {0 250}                       {HCLK}
+
+****************************************
+Report : clock
+Design : CORTEXM0DS
+Mode   : mode_norm.worst_low.RCmax
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:47 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+HCLK           500.00   {0 250}                       {HCLK}
+
+****************************************
+Report : clock
+Design : CORTEXM0DS
+Mode   : mode_norm.worst_low.RCmax_bc
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:47 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+HCLK           500.00   {0 250}                       {HCLK}
+
+****************************************
+Report : clock
+Design : CORTEXM0DS
+Mode   : mode_norm.fast.RCmin
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:47 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+HCLK           500.00   {0 250}                       {HCLK}
+
+****************************************
+Report : clock
+Design : CORTEXM0DS
+Mode   : mode_norm.fast.RCmin_bc
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:47 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+HCLK           500.00   {0 250}                       {HCLK}
+
+1

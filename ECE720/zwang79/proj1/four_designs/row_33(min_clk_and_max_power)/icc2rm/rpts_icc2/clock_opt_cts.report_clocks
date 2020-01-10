@@ -1,0 +1,109 @@
+****************************************
+Report : clock
+Design : MulDiv
+Mode   : mode_norm.slow.RCmax
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:11:58 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clock          380.00   {0 190}             p         {clock}
+
+****************************************
+Report : clock
+Design : MulDiv
+Mode   : mode_norm.slow.RCmax_bc
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:11:58 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clock          380.00   {0 190}                       {clock}
+
+****************************************
+Report : clock
+Design : MulDiv
+Mode   : mode_norm.worst_low.RCmax
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:11:58 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clock          380.00   {0 190}             p         {clock}
+
+****************************************
+Report : clock
+Design : MulDiv
+Mode   : mode_norm.worst_low.RCmax_bc
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:11:58 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clock          380.00   {0 190}                       {clock}
+
+****************************************
+Report : clock
+Design : MulDiv
+Mode   : mode_norm.fast.RCmin
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:11:58 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clock          380.00   {0 190}             p         {clock}
+
+****************************************
+Report : clock
+Design : MulDiv
+Mode   : mode_norm.fast.RCmin_bc
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:11:58 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clock          380.00   {0 190}             p         {clock}
+
+1

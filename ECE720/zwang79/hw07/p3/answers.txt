@@ -1,0 +1,39 @@
+How to calculate CPI: CPI = mcycle / minstret
+How to calculate CPS: CPS = mcycle / real time
+All values are averages of multiple calculations
+
+
+fibonacci:
+Spike simulator
+CPI = 25129/25135 = 0.9998
+CPS = 25129/((0.528+0.516+0.533)/3) = 47804.06
+
+RTL emulator
+CPI = (28237/25333 + 28258/25333 + 28252/25338)/3 = 1.1150
+CPS = (28237/12.761 + 28258/12.879 + 28252/12.647)/3 = 2213.5872
+
+gregoryleibniz:
+Spike simulator
+CPI = 818/823 = 0.9939
+CPS = 818/((0.204+0.211+0.207)/3) = 3945.3376
+
+RTL emulator
+CPI = (24893/1026 + 24884/1026 + 24882/1026)/3 = 24.2557
+CPS = (24893/12.685 + 24884/12.664 + 24882/12.766)/3 = 1958.8067
+
+(a) Spike simulator CPS = 47804.06
+    RTL    emulator CPS = 2213.5872
+
+(b) Spike simulator CPS = 3945.3376
+    RTL    emulator CPS = 1958.8067
+
+(c) Spike simulator CPI = 0.9998
+    RTL    emulator CPI = 1.1150
+
+(c) Spike simulator CPI = 0.9939
+    RTL    emulator CPI = 24.2557
+
+Explaination for discrepancies: As we can see from the results, TLM has better performance than RTL in all aspects. However, TLM has larger CPS improvement when running fibonacci algorithm. On the other hand, TLM has larger CPI improvement when running gregoryleibniz algorithm.
+
+    I believe the reason behind this is that fibonacci is a recursive algorithm, which means the input of every iteration depends on the output of the last iteration. In other words, it's not that "parallel" in fabonacci. This is why two CPIs for fabonacci are close, and gregoryleibniz CPIs have a significant difference. 
+    As for CPS, fabonacci cannot take advantage of the pipelines (this is my assumption) in RTL emulator, and TLM's simulation time reduction is more significant. Thus, TLM has a better CPS performance for fabonacci.

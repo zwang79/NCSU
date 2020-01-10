@@ -1,0 +1,85 @@
+Information: Library cell 'FILL_X16' has been identified as a cell with insulated bias well(s). (UPF-710)
+Note - message 'UPF-710' limit (1) exceeded.  Remainder will be suppressed.
+ 
+****************************************
+Report : scenarios
+Design : MulDiv
+Scenario(s): mode_norm.slow.RCmax mode_norm.worst_low.RCmax mode_norm.fast.RCmin
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:42:11 2019
+****************************************
+
+All scenarios (Total=3): mode_norm.slow.RCmax mode_norm.worst_low.RCmax mode_norm.fast.RCmin
+All Active scenarios (Total=3): mode_norm.slow.RCmax mode_norm.worst_low.RCmax mode_norm.fast.RCmin
+Current scenario     : mode_norm.fast.RCmin
+
+Scenario #0: mode_norm.slow.RCmax is active.
+Scenario options: Setup
+Cts_corner: none
+Has timing derate: No
+
+Library(s) Used:
+ gtech (File: /afs/eos.ncsu.edu/software/synopsys2019/syn/libraries/syn/gtech.db)
+
+Operating condition(s) Used:
+  Analysis Type    : bc_wc
+  Max Operating Condition: NanGate_15nm_OCL:slow
+  Max Process    : 1.00
+  Max Voltage    : 0.72
+  Max Temperature: 125.00
+  Min Operating Condition: NanGate_15nm_OCL:slow
+  Min Process    : 1.00
+  Min Voltage    : 0.72
+  Min Temperature: 125.00
+
+TLU+ Files Used:
+  Max TLU+ file: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/FreePDK15_star_rcxt/FreePDK15_RCmax.tluplus
+  Tech2ITF mapping file: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/FreePDK15_star_rcxt/layer.map
+
+Scenario #1: mode_norm.worst_low.RCmax is active.
+Scenario options: Setup
+Cts_corner: none
+Has timing derate: No
+
+Library(s) Used:
+ gtech (File: /afs/eos.ncsu.edu/software/synopsys2019/syn/libraries/syn/gtech.db)
+
+Operating condition(s) Used:
+  Analysis Type    : bc_wc
+  Max Operating Condition: NanGate_15nm_OCL:worst_low
+  Max Process    : 1.00
+  Max Voltage    : 0.72
+  Max Temperature: -40.00
+  Min Operating Condition: NanGate_15nm_OCL:worst_low
+  Min Process    : 1.00
+  Min Voltage    : 0.72
+  Min Temperature: -40.00
+
+TLU+ Files Used:
+  Max TLU+ file: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/FreePDK15_star_rcxt/FreePDK15_RCmax.tluplus
+  Tech2ITF mapping file: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/FreePDK15_star_rcxt/layer.map
+
+Scenario #2: mode_norm.fast.RCmin is active.
+Scenario options: Hold Leakage_power
+Cts_corner: none
+Has timing derate: No
+
+Library(s) Used:
+ gtech (File: /afs/eos.ncsu.edu/software/synopsys2019/syn/libraries/syn/gtech.db)
+
+Operating condition(s) Used:
+  Analysis Type    : bc_wc
+  Max Operating Condition: NanGate_15nm_OCL:fast
+  Max Process    : 1.00
+  Max Voltage    : 0.88
+  Max Temperature: 0.00
+  Min Operating Condition: NanGate_15nm_OCL:fast
+  Min Process    : 1.00
+  Min Voltage    : 0.88
+  Min Temperature: 0.00
+
+TLU+ Files Used:
+  Max TLU+ file: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/FreePDK15_star_rcxt/FreePDK15_RCmin.tluplus
+  Tech2ITF mapping file: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/FreePDK15_star_rcxt/layer.map
+
+1

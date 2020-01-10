@@ -1,0 +1,30 @@
+ECE720 hw03 Feedback for Wang,Zhiping
+
+(4/4) 1(a) Was the cost of the initial partition calculated correctly?
+correct
+
+(2/2) 1(b) Are the sizes correct?  Correct admissiblility concludion?
+correct
+
+(4/4) 1(c) Correct gain for swap?
+correct
+
+(2/2) 1(d) Correct admissibility conclusion for new swap?
+correct
+
+(8/8) 1(e) Is the new partition's cost lower than the previous two?
+correct
+
+(20/20) 2 Minimum time to drive 1cm of wire? calculated correctly?
+correct
+
+(20/20) 3(csv) Was the CSV file submitted?  Does it look correct?
+(20/20) 3(scripts) Were the modified Makefile and scripts submitted?
+(20/20) 3(hold_margin) Did the submitted design have sufficient hold margin?
+Hold Margin   10.42 > Clk Max Tran    9.44 Condition met
+
+
+Total:
+(0/0) Late Penalty
+(100/100) Total
+

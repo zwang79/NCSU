@@ -1,0 +1,173 @@
+****************************************
+Report : qor
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:29:23 2019
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'MulDiv:MulDiv.design'. (TIM-125)
+Information: Design Average RC for design MulDiv  (NEX-011)
+Information: r = 38.274078 ohm/um, via_r = 3.321896 ohm/cut, c = 0.089065 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 34.377846 ohm/um, via_r = 3.220340 ohm/cut, c = 0.089165 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'MulDiv'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 4171, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 493, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'clock'
+----------------------------------------
+Worst Hold Violation:           -113.43
+Total Hold Violation:          -3963.87
+No. of Hold Violations:             249
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     79
+Critical Path Length:           1070.69
+Critical Path Slack:            3898.00
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      8
+Critical Path Length:            244.23
+Critical Path Slack:            4722.99
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            257.66
+Critical Path Slack:            4602.33
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     80
+Critical Path Length:           1256.62
+Critical Path Slack:            3711.55
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      8
+Critical Path Length:            267.65
+Critical Path Slack:            4696.33
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            297.37
+Critical Path Slack:            4562.62
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              5
+Hierarchical Port Count:             30
+Leaf Cell Count:                   3705
+Buf/Inv Cell Count:                 384
+Buf Cell Count:                       8
+Inv Cell Count:                     376
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          3486
+Sequential Cell Count:              219
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             1294.07
+Noncombinational Area:           319.73
+Buf/Inv Area:                     57.41
+Total Buffer Area:                 1.97
+Total Inverter Area:              55.44
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                           1613.81
+Cell Area (netlist and physical only):         1613.81
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              4175
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:29:23 2019
+****************************************
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+mode_norm.slow.RCmax (Setup)        3898.00           0.00              0
+mode_norm.worst_low.RCmax (Setup)        3711.55           0.00              0
+Design             (Setup)          3711.55           0.00              0
+
+mode_norm.fast.RCmin_bc (Hold)        -113.43       -3963.87            249
+Design             (Hold)           -113.43       -3963.87            249
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                           1613.81
+Cell Area (netlist and physical only):         1613.81
+Nets with DRC Violations:        0
+1

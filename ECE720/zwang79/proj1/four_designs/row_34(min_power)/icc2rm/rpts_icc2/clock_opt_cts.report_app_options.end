@@ -1,0 +1,36 @@
+****************************************
+Report : app_option
+           -non_default
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:31:33 2019
+****************************************
+Name                                         Type       Value       User-default System-default Scope      Status     Source
+-------------------------------------------- ---------- ----------- ------------ -------------- ---------- ---------- ----------------------------------------------------------------------------------------------------
+ccd.post_route_buffer_removal                bool       true        --           false          block      normal     
+design.on_disk_operation                     bool       true        true         false          global     normal     /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/zwang79/zwang79/proj1/icc2rm/rm_setup/icc2_pnr_setup.tcl:552
+extract.enable_coupling_cap                  bool       true        --           false          block      normal     
+opt.area.effort                              enum       high        {}           low            block      normal     
+opt.common.advanced_logic_restructuring_mode enum       area_timing {}           none           block      normal     
+opt.common.buffer_area_effort                enum       ultra       {}           low            block      normal     
+opt.common.use_route_aware_estimation        enum       true        {}           false          block      normal     
+opt.port.eliminate_verilog_assign            bool       true        --           false          block      normal     
+opt.power.effort                             enum       high        {}           low            block      normal     
+opt.power.mode                               enum       total       {}           none           block      normal     
+opt.timing.effort                            enum       high        {}           low            block      normal     
+place_opt.final_place.effort                 enum       high        {}           medium         block      normal     
+place_opt.initial_drc.global_route_based     enum       1           {}           false          block      normal     
+place_opt.place.congestion_effort            enum       high        {}           medium         block      normal     
+route.detail.eco_max_number_of_iterations    integer    10          --           -1             block      normal     
+route.detail.timing_driven                   bool       true        --           false          block      normal     
+route.global.timing_driven                   bool       true        --           false          block      normal     
+route.track.crosstalk_driven                 bool       true        --           false          block      normal     
+route.track.timing_driven                    bool       true        --           false          block      normal     
+time.enable_clock_to_data_analysis           bool       true        --           false          block      normal     
+time.enable_io_path_groups                   bool       true        --           false          block      normal     
+time.remove_clock_reconvergence_pessimism    bool       true        --           false          block      normal     
+time.si_enable_analysis                      bool       true        --           false          block      normal     
+-------------------------------------------- ---------- ----------- ------------ -------------- ---------- ---------- ----------------------------------------------------------------------------------------------------
+
+There are additional internal differences with no available TBC source.
+1

@@ -1,0 +1,19 @@
+############################################################
+I'm sorry that I couldn't make my makefile easy to use 
+since I've had a major issue in icc flow and it took me a lot of time
+############################################################
+
+Instructions:
+
+Target utilization, target max routing layer, target max clock transition time, clock uncertainty 
+needs to be set manually.
+
+make all:    run the whole flow(dc and icc) and generate result(cvs file)
+
+make dc:     run dc flow
+
+make icc:    run icc flow
+
+make date:   generate date file in order to record the time of attempt
+
+make cvs:    write results into cvs file

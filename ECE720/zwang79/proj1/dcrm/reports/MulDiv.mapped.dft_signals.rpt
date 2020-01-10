@@ -1,0 +1,66 @@
+ 
+****************************************
+Report : DFT signals
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:43:58 2019
+****************************************
+
+========================================
+TEST MODE: all_dft
+VIEW     : Specification
+========================================
+No DFT signals defined in this mode.
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Specification
+========================================
+No DFT signals defined in this mode.
+
+========================================
+TEST MODE: Mission_mode
+VIEW     : Specification
+========================================
+No DFT signals defined in this mode.
+
+ 
+****************************************
+Report : DFT signals
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:43:58 2019
+****************************************
+
+========================================
+TEST MODE: all_dft
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+reset              Reset               1         -         P 100.0 R 45.0 F 55.0
+clock              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clock              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+reset              Reset               1         -         P 100.0 R 45.0 F 55.0
+clock              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clock              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+io_resp_bits_tag[4] ScanDataOut        -         -
+test_si            ScanDataIn          -         -
+test_se            ScanEnable          1         -
+========================================
+TEST MODE: Mission_mode
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+reset              Reset               1         -         P 100.0 R 45.0 F 55.0
+clock              ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+clock              MasterClock         1         -         P 100.0 R 45.0 F 55.0
+
+1

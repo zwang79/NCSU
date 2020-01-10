@@ -1,0 +1,276 @@
+In mode: Internal_scan...
+  Design has scan chains in this mode
+  Design is scan routed
+  Post-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  ...checking vector rules...
+  ...checking clock rules...
+  ...checking scan chain rules...
+  ...checking scan compression rules...
+  ...checking X-state rules...
+  ...checking tristate rules...
+  ...extracting scan details...
+
+-----------------------------------------------------------------
+Begin Clock violations...
+
+ Warning: Clock reset cannot capture data with other clocks off. (C4-1)
+ Warning: Clock reset used as data is different than capture clock clock for inputs CLK/D of stable DFF (state_reg_0_). (C26-1)
+ Warning: Clock reset used as data is different than capture clock clock for inputs CLK/D of stable DFF (state_reg_1_). (C26-2)
+ Warning: Clock reset used as data is different than capture clock clock for inputs CLK/D of stable DFF (state_reg_2_). (C26-3)
+
+Clock violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 4
+
+-----------------------------------------------------------------
+
+4 CLOCK VIOLATIONS
+     1 Clock unable to capture violation (C4)
+     3 Clock as data different from capture clock for stable cell violations (C26)
+
+
+Warning: Violations occurred during test design rule checking. (TEST-124)
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  5 out of 219 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITH VIOLATIONS
+      *   5 cells are clock gating cells
+         clk_gate_divisor_reg/latch
+         clk_gate_remainder_reg/latch
+         clk_gate_state_reg/latch
+         clk_gate_count_reg/latch
+         clk_gate_req_dw_reg/latch
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      * 214 cells are valid scan cells
+         remainder_reg_0_
+         remainder_reg_32_
+         remainder_reg_16_
+         remainder_reg_8_
+         remainder_reg_10_
+         remainder_reg_2_
+         remainder_reg_18_
+         remainder_reg_34_
+         remainder_reg_26_
+         remainder_reg_58_
+         remainder_reg_42_
+         remainder_reg_100_
+         remainder_reg_43_
+         remainder_reg_11_
+         remainder_reg_3_
+         remainder_reg_14_
+         remainder_reg_6_
+         remainder_reg_12_
+         remainder_reg_4_
+         remainder_reg_27_
+         remainder_reg_19_
+         remainder_reg_51_
+         remainder_reg_35_
+         remainder_reg_67_
+         remainder_reg_50_
+         remainder_reg_108_
+         remainder_reg_59_
+         remainder_reg_116_
+         remainder_reg_117_
+         remainder_reg_60_
+         remainder_reg_44_
+         remainder_reg_28_
+         remainder_reg_20_
+         remainder_reg_52_
+         remainder_reg_36_
+         remainder_reg_68_
+         remainder_reg_69_
+         remainder_reg_70_
+         remainder_reg_13_
+         remainder_reg_5_
+         state_reg_0_
+         req_dw_reg
+         isHi_reg
+         req_tag_reg_4_
+         req_tag_reg_3_
+         req_tag_reg_2_
+         req_tag_reg_1_
+         req_tag_reg_0_
+         neg_out_reg
+         state_reg_1_
+         state_reg_2_
+         count_reg_1_
+         count_reg_0_
+         count_reg_2_
+         count_reg_3_
+         count_reg_4_
+         count_reg_5_
+         count_reg_6_
+         remainder_reg_64_
+         remainder_reg_65_
+         remainder_reg_48_
+         remainder_reg_24_
+         remainder_reg_56_
+         remainder_reg_40_
+         remainder_reg_72_
+         remainder_reg_15_
+         remainder_reg_7_
+         remainder_reg_45_
+         remainder_reg_29_
+         remainder_reg_21_
+         remainder_reg_53_
+         remainder_reg_37_
+         remainder_reg_38_
+         remainder_reg_30_
+         remainder_reg_22_
+         remainder_reg_54_
+         remainder_reg_46_
+         remainder_reg_104_
+         remainder_reg_47_
+         remainder_reg_31_
+         remainder_reg_23_
+         remainder_reg_55_
+         remainder_reg_39_
+         remainder_reg_101_
+         remainder_reg_102_
+         remainder_reg_61_
+         remainder_reg_92_
+         remainder_reg_93_
+         remainder_reg_94_
+         remainder_reg_95_
+         remainder_reg_62_
+         remainder_reg_85_
+         remainder_reg_86_
+         remainder_reg_87_
+         remainder_reg_88_
+         remainder_reg_63_
+         remainder_reg_129_
+         remainder_reg_96_
+         remainder_reg_110_
+         remainder_reg_111_
+         remainder_reg_112_
+         remainder_reg_113_
+         remainder_reg_114_
+         remainder_reg_57_
+         remainder_reg_115_
+         remainder_reg_66_
+         remainder_reg_17_
+         remainder_reg_1_
+         remainder_reg_49_
+         remainder_reg_97_
+         remainder_reg_98_
+         remainder_reg_105_
+         remainder_reg_106_
+         remainder_reg_107_
+         remainder_reg_109_
+         remainder_reg_25_
+         remainder_reg_73_
+         remainder_reg_41_
+         remainder_reg_99_
+         remainder_reg_71_
+         remainder_reg_103_
+         remainder_reg_33_
+         remainder_reg_74_
+         remainder_reg_75_
+         remainder_reg_76_
+         remainder_reg_77_
+         remainder_reg_78_
+         remainder_reg_79_
+         remainder_reg_80_
+         remainder_reg_89_
+         remainder_reg_90_
+         remainder_reg_91_
+         remainder_reg_81_
+         remainder_reg_82_
+         remainder_reg_83_
+         remainder_reg_84_
+         remainder_reg_9_
+         remainder_reg_118_
+         remainder_reg_119_
+         remainder_reg_120_
+         remainder_reg_121_
+         remainder_reg_122_
+         remainder_reg_123_
+         remainder_reg_124_
+         remainder_reg_125_
+         remainder_reg_126_
+         remainder_reg_127_
+         remainder_reg_128_
+         divisor_reg_63_
+         divisor_reg_62_
+         divisor_reg_61_
+         divisor_reg_60_
+         divisor_reg_59_
+         divisor_reg_58_
+         divisor_reg_57_
+         divisor_reg_56_
+         divisor_reg_55_
+         divisor_reg_54_
+         divisor_reg_53_
+         divisor_reg_52_
+         divisor_reg_51_
+         divisor_reg_50_
+         divisor_reg_49_
+         divisor_reg_48_
+         divisor_reg_47_
+         divisor_reg_46_
+         divisor_reg_45_
+         divisor_reg_44_
+         divisor_reg_43_
+         divisor_reg_42_
+         divisor_reg_41_
+         divisor_reg_40_
+         divisor_reg_39_
+         divisor_reg_38_
+         divisor_reg_37_
+         divisor_reg_36_
+         divisor_reg_35_
+         divisor_reg_34_
+         divisor_reg_33_
+         divisor_reg_32_
+         divisor_reg_31_
+         divisor_reg_30_
+         divisor_reg_29_
+         divisor_reg_28_
+         divisor_reg_27_
+         divisor_reg_26_
+         divisor_reg_25_
+         divisor_reg_24_
+         divisor_reg_23_
+         divisor_reg_22_
+         divisor_reg_21_
+         divisor_reg_20_
+         divisor_reg_19_
+         divisor_reg_18_
+         divisor_reg_17_
+         divisor_reg_16_
+         divisor_reg_15_
+         divisor_reg_14_
+         divisor_reg_13_
+         divisor_reg_12_
+         divisor_reg_11_
+         divisor_reg_10_
+         divisor_reg_9_
+         divisor_reg_8_
+         divisor_reg_7_
+         divisor_reg_6_
+         divisor_reg_5_
+         divisor_reg_4_
+         divisor_reg_3_
+         divisor_reg_2_
+         divisor_reg_1_
+         divisor_reg_0_
+         divisor_reg_64_
+         resHi_reg
+
+....Inferring feed-through connections....
+Information: Test design rule checking completed. (TEST-123)
+1

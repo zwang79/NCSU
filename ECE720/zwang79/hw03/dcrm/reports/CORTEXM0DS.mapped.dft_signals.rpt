@@ -1,0 +1,87 @@
+ 
+****************************************
+Report : DFT signals
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:06 2019
+****************************************
+
+========================================
+TEST MODE: all_dft
+VIEW     : Specification
+========================================
+No DFT signals defined in this mode.
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Specification
+========================================
+No DFT signals defined in this mode.
+
+========================================
+TEST MODE: Mission_mode
+VIEW     : Specification
+========================================
+No DFT signals defined in this mode.
+
+ 
+****************************************
+Report : DFT signals
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:06 2019
+****************************************
+
+========================================
+TEST MODE: all_dft
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+HCLK               ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+HCLK               MasterClock         1         -         P 100.0 R 45.0 F 55.0
+HRESETn            Reset               0         -         P 100.0 R 55.0 F 45.0
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+HCLK               ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+HCLK               MasterClock         1         -         P 100.0 R 45.0 F 55.0
+HRESETn            Reset               0         -         P 100.0 R 55.0 F 45.0
+HTRANS[0]          Constant            -         -
+HSIZE[2]           Constant            -         -
+HPROT[1]           Constant            -         -
+HMASTLOCK          Constant            -         -
+HBURST[2]          Constant            -         -
+HBURST[1]          Constant            -         -
+HBURST[0]          Constant            -         -
+SYSRESETREQ        ScanDataOut         -         -
+test_si            ScanDataIn          -         -
+test_se            ScanEnable          1         -
+========================================
+TEST MODE: Mission_mode
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+HCLK               ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+HCLK               MasterClock         1         -         P 100.0 R 45.0 F 55.0
+HRESETn            Reset               0         -         P 100.0 R 55.0 F 45.0
+HTRANS[0]          Constant            -         -
+HTRANS[0]          Functional          -         -
+HSIZE[2]           Constant            -         -
+HSIZE[2]           Functional          -         -
+HPROT[1]           Constant            -         -
+HPROT[1]           Functional          -         -
+HMASTLOCK          Constant            -         -
+HMASTLOCK          Functional          -         -
+HBURST[2]          Constant            -         -
+HBURST[2]          Functional          -         -
+HBURST[1]          Constant            -         -
+HBURST[1]          Functional          -         -
+HBURST[0]          Constant            -         -
+HBURST[0]          Functional          -         -
+
+1

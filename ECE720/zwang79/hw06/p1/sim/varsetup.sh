@@ -1,0 +1,1 @@
+export MODELSIM=modelsim.ini

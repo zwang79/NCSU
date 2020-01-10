@@ -1,0 +1,75 @@
+****************************************
+Report : Violation analysis
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:31:31 2019
+****************************************
+
+  Detect 1 violating paths.
+      Worst: -0.343      Total: -0.343      Average: -0.343
+  0 violating paths are categorized.
+      Worst: 0.000      Total: 0.000      Average: 0.000
+  1 violating paths are uncategorized.
+      Worst: -0.343      Total: -0.343      Average: -0.343
+
+****** Summary of Path Analysis ******
+
+  ****** Setup timing categories ******
+  category                                                      Count      Worst      Total   Percentage
+  -----------------                                            -------    -------    -------    ----- 
+  * category  S1: Large clock skew(LCS)                              0
+  * category  S2: Large external input delay(LID)                    0
+  * category  S3: Large driver adjustment(LDA)                       0
+  * category  S4: Large clock uncertainty(LCU)                       0
+  * category  S5: Large setup time of end point(LLS)                 0
+  * category  S6: Large external output delay(LOD)                   0
+  * category  S7: Delay setting is illegal(ID)                       0
+  * category  S8: Conflict with setup at endpoint(CSE)               0
+  * category  S9: Small violations(SM)                               1     -0.343     -0.343  100.00%
+  * category  S10: Remaining violating paths(OT)                     0
+
+  ****** Remaining violations distributed by slack ******
+
+  ****** Net analysis categories ******
+
+### Following metrics will be used for net based analysis. ###
+  * category  S1: Entire net is dont_touch(D)                        0
+  * category  S2: Net between pad cell and port(PAD)                 0
+  * category  S3: Tristate nets(TR)                                  0
+  * category  S4: Nets with multiple drivers(MD)                     0
+  * category  S5: Nets in read-only sub blocks(RO)                   0
+  * category  S6: Nets are highly blocked(BLK)                       0
+  * category  S7: Nets with port far from the core area(FP)          0
+
+  ****** Clock network ******
+  * category  S8: Nets on clock network(CK)                          0
+
+  ****** Remaining uncategorized fixable violations ******
+  * category  S9: Net is crossing high density area(DEN)             0
+  * category  S10: Net is partially blocked(PB)                      0
+  * category  S11: Connect to excluded cell of XMB(XME)              0
+  * category  S12: Connect to excluded cell of HMB(HME)              0
+  * category  S13: Nets across different exclusive MBs(DXM)          0
+  * category  S14: Nets across different hard MBs(DHM)               0
+  * category  S15: Some segments of net are dont_touch(PD)           0
+  * category  S16: High fanout nets(> 40)(HF)                        0
+  * category  S17: Nets crossing different voltage areas(MV)         0
+  * category  S18: Nets are too short(TS)                            0
+  * category  S19: Nets are long(> 400.0um)(LN)                      0
+  * category  S20: Other violations(OV)                              0
+
+
+### Detailed analysis results ###
+
+***************************************************************************
+  # 1:EP-u_logic_Pdi2z4_reg/D, -0.343,(SM)
+  Startpoint: u_logic_Wzy2z4_reg/CLK
+  Endpoint: u_logic_Pdi2z4_reg/D
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: HCLK
+  Slack: -0.343,  Require Time: 572.701, Num of Nets: 53
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******

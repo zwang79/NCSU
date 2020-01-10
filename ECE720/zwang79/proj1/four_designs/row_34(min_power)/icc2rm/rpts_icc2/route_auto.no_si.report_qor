@@ -1,0 +1,241 @@
+****************************************
+Report : qor
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:33:29 2019
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'MulDiv:MulDiv/route_auto.design'. (TIM-125)
+Information: Design MulDiv has 4512 nets, 0 global routed, 4505 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'MulDiv'. (NEX-022)
+---extraction options---
+Corner: mode_norm.slow.RCmax
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_rde_cap_scale            : 1
+ late_rde_res_scale            : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_rde_cap_scale           : 1
+ early_rde_res_scale           : 1
+Corner: mode_norm.slow.RCmax_bc
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_rde_cap_scale            : 1
+ late_rde_res_scale            : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_rde_cap_scale           : 1
+ early_rde_res_scale           : 1
+Corner: mode_norm.worst_low.RCmax
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_rde_cap_scale            : 1
+ late_rde_res_scale            : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_rde_cap_scale           : 1
+ early_rde_res_scale           : 1
+Corner: mode_norm.worst_low.RCmax_bc
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_rde_cap_scale            : 1
+ late_rde_res_scale            : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_rde_cap_scale           : 1
+ early_rde_res_scale           : 1
+Corner: mode_norm.fast.RCmin
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_rde_cap_scale            : 1
+ late_rde_res_scale            : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_rde_cap_scale           : 1
+ early_rde_res_scale           : 1
+Corner: mode_norm.fast.RCmin_bc
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ late_rde_cap_scale            : 1
+ late_rde_res_scale            : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+ early_rde_cap_scale           : 1
+ early_rde_res_scale           : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 8
+ extract.connect_open           : true
+ extract.incremental_extraction : true
+ extract.enable_coupling_cap    : false
+Extracting design: MulDiv 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 4510 nets are successfully extracted. (NEX-028)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 4510, routed nets = 4510, across physical hierarchy nets = 0, parasitics cached nets = 4510, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Information: Update timing is using PrimeTime delay calculation. (TIM-201)
+Information: Timer using 'PrimeTime Delay Calculation, AWP, CRPR'. (TIM-050)
+
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'clock'
+----------------------------------------
+Worst Hold Violation:             -1.02
+Total Hold Violation:             -1.02
+No. of Hold Violations:               1
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     89
+Critical Path Length:            900.44
+Critical Path Slack:            4061.29
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      5
+Critical Path Length:            254.84
+Critical Path Slack:            4696.65
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            223.87
+Critical Path Slack:            4663.54
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     89
+Critical Path Length:           1068.15
+Critical Path Slack:            3891.27
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      5
+Critical Path Length:            267.89
+Critical Path Slack:            4678.89
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            267.35
+Critical Path Slack:            4627.45
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              5
+Hierarchical Port Count:             37
+Leaf Cell Count:                   4044
+Buf/Inv Cell Count:                 722
+Buf Cell Count:                     291
+Inv Cell Count:                     431
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          3825
+Sequential Cell Count:              219
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             1381.66
+Noncombinational Area:           319.73
+Buf/Inv Area:                    145.20
+Total Buffer Area:                78.59
+Total Inverter Area:              66.60
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                           1701.40
+Cell Area (netlist and physical only):         1701.40
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              4513
+Nets with Violations:                15
+Max Trans Violations:                15
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:33:31 2019
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, AWP, CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+mode_norm.slow.RCmax (Setup)        4061.29           0.00              0
+mode_norm.worst_low.RCmax (Setup)        3891.27           0.00              0
+Design             (Setup)          3891.27           0.00              0
+
+mode_norm.fast.RCmin_bc (Hold)          -1.02          -1.02              1
+Design             (Hold)             -1.02          -1.02              1
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                           1701.40
+Cell Area (netlist and physical only):         1701.40
+Nets with DRC Violations:       15
+1

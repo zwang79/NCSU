@@ -1,0 +1,1673 @@
+Technology {
+	unitTimeName		= "ns"
+	timePrecision		= 1000
+	unitLengthName		= "micron"
+	unitVoltageName		= "V"
+	voltagePrecision	= 1000000
+	unitCurrentName		= "mA"
+	currentPrecision	= 1000000
+	unitPowerName		= "mw"
+	powerPrecision		= 1000000
+	unitResistanceName	= "kohm"
+	resistancePrecision	= 1000000
+	unitCapacitanceName	= "pf"
+	capacitancePrecision	= 1000000
+	unitInductanceName	= "nh"
+	inductancePrecision	= 100
+	date			= "Dec 24 2017"
+	dielectric		= 3.45e-05
+	lengthPrecision		= 2000
+	gridResolution		= 2
+	minBaselineTemperature	= 25
+	nomBaselineTemperature	= 25
+	maxBaselineTemperature	= 25
+}
+Color 43 {
+	name			= 43
+	rgbDefined		= 1
+	redIntensity		= 180
+	greenIntensity		= 175
+	blueIntensity		= 255
+}
+Color 47 {
+	name			= 47
+	rgbDefined		= 1
+	redIntensity		= 180
+	greenIntensity		= 255
+	blueIntensity		= 255
+}
+Tile "unit" {
+	width			= 0.064
+	height			= 0.768
+}
+Layer "GATEAB" {
+	layerNumber		= 1
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0
+	minWidth		= 0
+	minSpacing		= 0
+}
+Layer "ACT" {
+	layerNumber		= 2
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0
+	minWidth		= 0
+	minSpacing		= 0
+}
+Layer "M1" {
+	layerNumber		= 3
+	maskName		= "metal1"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "cyan"
+	lineStyle		= "solid"
+	pattern			= "dot"
+	pitch			= 0.064
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	sameNetMinSpacing	= 0.036
+	isDefaultLayer		= 1
+}
+Layer "V1" {
+	layerNumber		= 4
+	maskName		= "via1"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "43"
+	lineStyle		= "solid"
+	pattern			= "rectangleX"
+	pitch			= 0
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	sameNetMinSpacing	= 0.036
+	isDefaultLayer		= 1
+}
+Layer "MINT1" {
+	layerNumber		= 5
+	maskName		= "metal2"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "yellow"
+	lineStyle		= "solid"
+	pattern			= "dot"
+	pitch			= 0.064
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	isDefaultLayer		= 1
+}
+Layer "VINT1" {
+	layerNumber		= 6
+	maskName		= "via2"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "blue"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	isDefaultLayer		= 1
+}
+Layer "MINT2" {
+	layerNumber		= 7
+	maskName		= "metal3"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "red"
+	lineStyle		= "solid"
+	pattern			= "wave"
+	pitch			= 0.064
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	sameNetMinSpacing	= 0.036
+	isDefaultLayer		= 1
+}
+Layer "VINT2" {
+	layerNumber		= 8
+	maskName		= "via3"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "yellow"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	sameNetMinSpacing	= 0.036
+	isDefaultLayer		= 1
+}
+Layer "MINT3" {
+	layerNumber		= 9
+	maskName		= "metal4"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "green"
+	lineStyle		= "solid"
+	pattern			= "slash"
+	pitch			= 0.064
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	sameNetMinSpacing	= 0.036
+	isDefaultLayer		= 1
+}
+Layer "VINT3" {
+	layerNumber		= 10
+	maskName		= "via4"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "rectangleX"
+	pitch			= 0
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	sameNetMinSpacing	= 0.036
+	isDefaultLayer		= 1
+}
+Layer "MINT4" {
+	layerNumber		= 11
+	maskName		= "metal5"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "magenta"
+	lineStyle		= "solid"
+	pattern			= "backSlash"
+	pitch			= 0.064
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	sameNetMinSpacing	= 0.036
+	isDefaultLayer		= 1
+}
+Layer "VINT4" {
+	layerNumber		= 12
+	maskName		= "via5"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "47"
+	lineStyle		= "solid"
+	pattern			= "rectangleX"
+	pitch			= 0
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	sameNetMinSpacing	= 0.036
+	isDefaultLayer		= 1
+}
+Layer "MINT5" {
+	layerNumber		= 13
+	maskName		= "metal6"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "47"
+	lineStyle		= "solid"
+	pattern			= "dot"
+	pitch			= 0.064
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	sameNetMinSpacing	= 0.036
+	isDefaultLayer		= 1
+}
+Layer "VINT5" {
+	layerNumber		= 14
+	maskName		= "via6"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "43"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0.028
+	minWidth		= 0.028
+	minSpacing		= 0.036
+	sameNetMinSpacing	= 0.036
+	isDefaultLayer		= 1
+}
+Layer "MSMG1" {
+	layerNumber		= 15
+	maskName		= "metal7"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "purple"
+	lineStyle		= "solid"
+	pattern			= "backSlash"
+	pitch			= 0.112
+	defaultWidth		= 0.056
+	minWidth		= 0.056
+	minSpacing		= 0.056
+	isDefaultLayer		= 1
+}
+Layer "VSMG1" {
+	layerNumber		= 16
+	maskName		= "via7"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "43"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0.056
+	minWidth		= 0.056
+	minSpacing		= 0.072
+	isDefaultLayer		= 1
+}
+Layer "MSMG2" {
+	layerNumber		= 17
+	maskName		= "metal8"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "orange"
+	lineStyle		= "solid"
+	pattern			= "backSlash"
+	pitch			= 0.112
+	defaultWidth		= 0.056
+	minWidth		= 0.056
+	minSpacing		= 0.056
+	isDefaultLayer		= 1
+}
+Layer "VSMG2" {
+	layerNumber		= 18
+	maskName		= "via8"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0.056
+	minWidth		= 0.056
+	minSpacing		= 0.072
+	isDefaultLayer		= 1
+}
+Layer "MSMG3" {
+	layerNumber		= 19
+	maskName		= "metal9"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "slash"
+	pitch			= 0.112
+	defaultWidth		= 0.056
+	minWidth		= 0.056
+	minSpacing		= 0.056
+	isDefaultLayer		= 1
+}
+Layer "VSMG3" {
+	layerNumber		= 20
+	maskName		= "via9"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0.056
+	minWidth		= 0.056
+	minSpacing		= 0.072
+	isDefaultLayer		= 1
+}
+Layer "MSMG4" {
+	layerNumber		= 21
+	maskName		= "metal10"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "slash"
+	pitch			= 0.112
+	defaultWidth		= 0.056
+	minWidth		= 0.056
+	minSpacing		= 0.056
+	isDefaultLayer		= 1
+}
+Layer "VSMG4" {
+	layerNumber		= 22
+	maskName		= "via10"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0.056
+	minWidth		= 0.056
+	minSpacing		= 0.072
+	isDefaultLayer		= 1
+}
+Layer "MSMG5" {
+	layerNumber		= 23
+	maskName		= "metal11"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "slash"
+	pitch			= 0.112
+	defaultWidth		= 0.056
+	minWidth		= 0.056
+	minSpacing		= 0.056
+	isDefaultLayer		= 1
+}
+Layer "VSMG5" {
+	layerNumber		= 24
+	maskName		= "via11"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0.056
+	minWidth		= 0.056
+	minSpacing		= 0.072
+	isDefaultLayer		= 1
+}
+Layer "MG1" {
+	layerNumber		= 25
+	maskName		= "metal12"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0.224
+	defaultWidth		= 0.112
+	minWidth		= 0.112
+	minSpacing		= 0.112
+	isDefaultLayer		= 1
+}
+Layer "VG1" {
+	layerNumber		= 26
+	maskName		= "via12"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0
+	defaultWidth		= 0.112
+	minWidth		= 0.112
+	minSpacing		= 0.144
+	isDefaultLayer		= 1
+}
+Layer "MG2" {
+	layerNumber		= 27
+	maskName		= "metal13"
+	visible			= 1
+	selectable		= 1
+	blink			= 0
+	color			= "white"
+	lineStyle		= "solid"
+	pattern			= "blank"
+	pitch			= 0.224
+	defaultWidth		= 0.112
+	minWidth		= 0.112
+	minSpacing		= 0.112
+	isDefaultLayer		= 1
+}
+ContactCode "V1_0" {
+	contactCodeNumber	= 1
+	contactSourceType	= 0
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "V1"
+	upperLayer		= "MINT1"
+	lowerLayer		= "M1"
+	minCutSpacing		= 0.036
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+}
+ContactCode "VINT1_0" {
+	contactCodeNumber	= 2
+	contactSourceType	= 0
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT1"
+	upperLayer		= "MINT2"
+	lowerLayer		= "MINT1"
+	minCutSpacing		= 0.036
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+}
+ContactCode "VINT2_0" {
+	contactCodeNumber	= 3
+	contactSourceType	= 0
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.036
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+}
+ContactCode "VINT3_0" {
+	contactCodeNumber	= 4
+	contactSourceType	= 0
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.036
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+}
+ContactCode "VINT4_0" {
+	contactCodeNumber	= 5
+	contactSourceType	= 0
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.036
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+}
+ContactCode "VINT5_0" {
+	contactCodeNumber	= 6
+	contactSourceType	= 0
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT5"
+	upperLayer		= "MSMG1"
+	lowerLayer		= "MINT5"
+	minCutSpacing		= 0.036
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.042
+	upperLayerEncWidth	= 0.014
+	nonRotatable		= 0
+}
+ContactCode "VSMG1_0" {
+	contactCodeNumber	= 7
+	contactSourceType	= 0
+	cutHeight		= 0.056
+	cutWidth		= 0.056
+	cutLayer		= "VSMG1"
+	upperLayer		= "MSMG2"
+	lowerLayer		= "MSMG1"
+	minCutSpacing		= 0.072
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+}
+ContactCode "VSMG2_0" {
+	contactCodeNumber	= 8
+	contactSourceType	= 0
+	cutHeight		= 0.056
+	cutWidth		= 0.056
+	cutLayer		= "VSMG2"
+	upperLayer		= "MSMG3"
+	lowerLayer		= "MSMG2"
+	minCutSpacing		= 0.072
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+}
+ContactCode "VSMG3_0" {
+	contactCodeNumber	= 9
+	contactSourceType	= 0
+	cutHeight		= 0.056
+	cutWidth		= 0.056
+	cutLayer		= "VSMG3"
+	upperLayer		= "MSMG4"
+	lowerLayer		= "MSMG3"
+	minCutSpacing		= 0.072
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+}
+ContactCode "VSMG4_0" {
+	contactCodeNumber	= 10
+	contactSourceType	= 0
+	cutHeight		= 0.056
+	cutWidth		= 0.056
+	cutLayer		= "VSMG4"
+	upperLayer		= "MSMG5"
+	lowerLayer		= "MSMG4"
+	minCutSpacing		= 0.072
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+}
+ContactCode "VSMG5_0" {
+	contactCodeNumber	= 11
+	contactSourceType	= 0
+	cutHeight		= 0.056
+	cutWidth		= 0.056
+	cutLayer		= "VSMG5"
+	upperLayer		= "MG1"
+	lowerLayer		= "MSMG5"
+	minCutSpacing		= 0.072
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.084
+	nonRotatable		= 0
+}
+ContactCode "VG1_0" {
+	contactCodeNumber	= 12
+	contactSourceType	= 0
+	cutHeight		= 0.112
+	cutWidth		= 0.112
+	cutLayer		= "VG1"
+	upperLayer		= "MG2"
+	lowerLayer		= "MG1"
+	minCutSpacing		= 0.144
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 1
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.056
+	upperLayerEncHeight	= 0.056
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+}
+ContactCode "Via2Array-0" {
+	contactCodeNumber	= 13
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-0_Enc" {
+	contactCodeNumber	= 14
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-1" {
+	contactCodeNumber	= 15
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-1_Enc" {
+	contactCodeNumber	= 16
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-2" {
+	contactCodeNumber	= 17
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-2_Enc" {
+	contactCodeNumber	= 18
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-3" {
+	contactCodeNumber	= 19
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-3_Enc" {
+	contactCodeNumber	= 20
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-4" {
+	contactCodeNumber	= 21
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-4_Enc" {
+	contactCodeNumber	= 22
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-5" {
+	contactCodeNumber	= 23
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-5_Enc" {
+	contactCodeNumber	= 24
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-6" {
+	contactCodeNumber	= 25
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-6_Enc" {
+	contactCodeNumber	= 26
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-7" {
+	contactCodeNumber	= 27
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via2Array-7_Enc" {
+	contactCodeNumber	= 28
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT2"
+	upperLayer		= "MINT3"
+	lowerLayer		= "MINT2"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-0" {
+	contactCodeNumber	= 29
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-0_Enc" {
+	contactCodeNumber	= 30
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-1" {
+	contactCodeNumber	= 31
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-1_Enc" {
+	contactCodeNumber	= 32
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-2" {
+	contactCodeNumber	= 33
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-2_Enc" {
+	contactCodeNumber	= 34
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-3" {
+	contactCodeNumber	= 35
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-3_Enc" {
+	contactCodeNumber	= 36
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-4" {
+	contactCodeNumber	= 37
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-4_Enc" {
+	contactCodeNumber	= 38
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-5" {
+	contactCodeNumber	= 39
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-5_Enc" {
+	contactCodeNumber	= 40
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-6" {
+	contactCodeNumber	= 41
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-6_Enc" {
+	contactCodeNumber	= 42
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-7" {
+	contactCodeNumber	= 43
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via3Array-7_Enc" {
+	contactCodeNumber	= 44
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT3"
+	upperLayer		= "MINT4"
+	lowerLayer		= "MINT3"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-0" {
+	contactCodeNumber	= 45
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-0_Enc" {
+	contactCodeNumber	= 46
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-1" {
+	contactCodeNumber	= 47
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-1_Enc" {
+	contactCodeNumber	= 48
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-2" {
+	contactCodeNumber	= 49
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-2_Enc" {
+	contactCodeNumber	= 50
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0
+	lowerLayerEncWidth	= 0.032
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-3" {
+	contactCodeNumber	= 51
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0
+	upperLayerEncWidth	= 0.032
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-3_Enc" {
+	contactCodeNumber	= 52
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.032
+	lowerLayerEncWidth	= 0
+	upperLayerEncHeight	= 0.032
+	upperLayerEncWidth	= 0
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-4" {
+	contactCodeNumber	= 53
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-4_Enc" {
+	contactCodeNumber	= 54
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-5" {
+	contactCodeNumber	= 55
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-5_Enc" {
+	contactCodeNumber	= 56
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-6" {
+	contactCodeNumber	= 57
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-6_Enc" {
+	contactCodeNumber	= 58
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.028
+	lowerLayerEncWidth	= 0.002
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-7" {
+	contactCodeNumber	= 59
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.028
+	upperLayerEncWidth	= 0.002
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+ContactCode "Via4Array-7_Enc" {
+	contactCodeNumber	= 60
+	contactSourceType	= 5
+	cutHeight		= 0.028
+	cutWidth		= 0.028
+	cutLayer		= "VINT4"
+	upperLayer		= "MINT5"
+	lowerLayer		= "MINT4"
+	minCutSpacing		= 0.008
+	minNumCols		= 1
+	minNumRows		= 1
+	excludedForSignalRoute	= 0
+	isDefaultContact	= 0
+	lowerLayerEncHeight	= 0.002
+	lowerLayerEncWidth	= 0.028
+	upperLayerEncHeight	= 0.002
+	upperLayerEncWidth	= 0.028
+	nonRotatable		= 0
+	isFatContact		= 1
+}
+DesignRule {
+	layer1			= "V1"
+	layer2			= "VINT2"
+	minSpacing		= 0
+	minEnclosure		= 0
+	stackable		= 1
+	stackViaCenterSpacingThreshold = 0
+}
+DesignRule {
+	layer1			= "VINT2"
+	layer2			= "VINT3"
+	minSpacing		= 0
+	minEnclosure		= 0
+	stackable		= 1
+	stackViaCenterSpacingThreshold = 0
+}
+DesignRule {
+	layer1			= "VINT3"
+	layer2			= "VINT4"
+	minSpacing		= 0
+	minEnclosure		= 0
+	stackable		= 1
+	stackViaCenterSpacingThreshold = 0
+}
+DesignRule {
+	layer1			= "VINT4"
+	layer2			= "VINT5"
+	minSpacing		= 0
+	minEnclosure		= 0
+	stackable		= 1
+	stackViaCenterSpacingThreshold = 0
+}

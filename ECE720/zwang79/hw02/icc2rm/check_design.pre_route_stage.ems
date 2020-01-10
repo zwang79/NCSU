@@ -1,0 +1,284 @@
+<Database>
+Name/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/zwang79/zwang79/hw02/icc2rm/check_design.pre_route_stage.ems
+Creation TimeThu Sep 12 21:56:54 2019
+Modified TimeThu Sep 12 21:56:55 2019
+Design Namexbar
+Library Namexbar
+</Database>
+<RuleCount>
+CR-030261
+DFT-0111
+DMM-1046
+</RuleCount>
+<UserDefinedRules>
+</UserDefinedRules>
+<Messages>
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/CLKGATETST_X1_CLK10mmtypelib_port_type10objnameCLK (NanGate_15nm_OCL/CLKGATETST_X1)10objtypelib_pin10repairedstateaccepted10
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/DFFRNQ_X1_CLK10mmtypelib_port_type10objnameCLK (NanGate_15nm_OCL/DFFRNQ_X1)10objtypelib_pin10repairedstateaccepted10
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/DFFSNQ_X1_CLK10mmtypelib_port_type10objnameCLK (NanGate_15nm_OCL/DFFSNQ_X1)10objtypelib_pin10repairedstateaccepted10
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/LHQ_X1_E10mmtypelib_port_type10objnameE (NanGate_15nm_OCL/LHQ_X1)10objtypelib_pin10repairedstateaccepted10
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/SDFFRNQ_X1_CLK10mmtypelib_port_type10objnameCLK (NanGate_15nm_OCL/SDFFRNQ_X1)10objtypelib_pin10repairedstateaccepted10
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/SDFFSNQ_X1_CLK10mmtypelib_port_type10objnameCLK (NanGate_15nm_OCL/SDFFSNQ_X1)10objtypelib_pin10repairedstateaccepted10
+DFT-011reason10
+CR-030instanceout_reg_264_10layerslayer M110portVDD10
+CR-030instanceout_reg_264_10layerslayer M110portVSS10
+CR-030instanceout_reg_70_10layerslayer M110portVDD10
+CR-030instanceout_reg_70_10layerslayer M110portVSS10
+CR-030instanceout_reg_359_10layerslayer M110portVDD10
+CR-030instanceout_reg_359_10layerslayer M110portVSS10
+CR-030instanceU373910layerslayer M110portVSS10
+CR-030instanceout_reg_69_10layerslayer M110portVDD10
+CR-030instanceout_reg_69_10layerslayer M110portVSS10
+CR-030instanceout_reg_167_10layerslayer M110portVDD10
+CR-030instanceout_reg_67_10layerslayer M110portVDD10
+CR-030instanceout_reg_67_10layerslayer M110portVSS10
+CR-030instanceout_reg_66_10layerslayer M110portVDD10
+CR-030instanceU374310layerslayer M110portVSS10
+CR-030instanceout_reg_357_10layerslayer M110portVSS10
+CR-030instanceU374610layerslayer M110portVSS10
+CR-030instanceout_reg_260_10layerslayer M110portVDD10
+CR-030instanceout_reg_260_10layerslayer M110portVSS10
+CR-030instanceout_reg_127_10layerslayer M110portVDD10
+CR-030instanceout_reg_30_10layerslayer M110portVDD10
+CR-030instanceout_reg_30_10layerslayer M110portVSS10
+CR-030instanceout_reg_126_10layerslayer M110portVDD10
+CR-030instancevalid_reg_6_10layerslayer M110portVDD10
+CR-030instancevalid_reg_6_10layerslayer M110portVSS10
+CR-030instanceout_reg_354_10layerslayer M110portVDD10
+CR-030instanceout_reg_354_10layerslayer M110portVSS10
+CR-030instanceout_reg_123_10layerslayer M110portVDD10
+CR-030instanceout_reg_25_10layerslayer M110portVDD10
+CR-030instanceout_reg_25_10layerslayer M110portVSS10
+CR-030instanceout_reg_120_10layerslayer M110portVDD10
+CR-030instanceout_reg_22_10layerslayer M110portVDD10
+CR-030instanceout_reg_22_10layerslayer M110portVSS10
+CR-030instanceout_reg_21_10layerslayer M110portVDD10
+CR-030instanceout_reg_21_10layerslayer M110portVSS10
+CR-030instanceout_reg_19_10layerslayer M110portVDD10
+CR-030instanceout_reg_19_10layerslayer M110portVSS10
+CR-030instanceout_reg_18_10layerslayer M110portVDD10
+CR-030instanceout_reg_18_10layerslayer M110portVSS10
+CR-030instanceout_reg_17_10layerslayer M110portVDD10
+CR-030instanceout_reg_17_10layerslayer M110portVSS10
+CR-030instanceout_reg_16_10layerslayer M110portVDD10
+CR-030instanceout_reg_16_10layerslayer M110portVSS10
+CR-030instanceout_reg_210_10layerslayer M110portVDD10
+CR-030instanceout_reg_210_10layerslayer M110portVSS10
+CR-030instanceout_reg_14_10layerslayer M110portVDD10
+CR-030instanceout_reg_14_10layerslayer M110portVSS10
+CR-030instanceout_reg_13_10layerslayer M110portVDD10
+CR-030instanceout_reg_13_10layerslayer M110portVSS10
+CR-030instanceout_reg_12_10layerslayer M110portVDD10
+CR-030instanceout_reg_12_10layerslayer M110portVSS10
+CR-030instanceout_reg_207_10layerslayer M110portVDD10
+CR-030instanceout_reg_207_10layerslayer M110portVSS10
+CR-030instanceout_reg_107_10layerslayer M110portVDD10
+CR-030instanceout_reg_205_10layerslayer M110portVDD10
+CR-030instanceout_reg_205_10layerslayer M110portVSS10
+CR-030instanceout_reg_10_10layerslayer M110portVDD10
+CR-030instanceout_reg_10_10layerslayer M110portVSS10
+CR-030instanceout_reg_204_10layerslayer M110portVDD10
+CR-030instanceout_reg_204_10layerslayer M110portVSS10
+CR-030instanceout_reg_203_10layerslayer M110portVDD10
+CR-030instanceout_reg_203_10layerslayer M110portVSS10
+CR-030instanceout_reg_8_10layerslayer M110portVDD10
+CR-030instanceout_reg_8_10layerslayer M110portVSS10
+CR-030instanceout_reg_7_10layerslayer M110portVDD10
+CR-030instanceout_reg_7_10layerslayer M110portVSS10
+CR-030instanceout_reg_103_10layerslayer M110portVDD10
+CR-030instanceout_reg_6_10layerslayer M110portVDD10
+CR-030instanceout_reg_6_10layerslayer M110portVSS10
+CR-030instanceout_reg_200_10layerslayer M110portVDD10
+CR-030instanceout_reg_200_10layerslayer M110portVSS10
+CR-030instanceout_reg_5_10layerslayer M110portVDD10
+CR-030instanceout_reg_5_10layerslayer M110portVSS10
+CR-030instanceout_reg_4_10layerslayer M110portVDD10
+CR-030instanceout_reg_4_10layerslayer M110portVSS10
+CR-030instanceout_reg_3_10layerslayer M110portVDD10
+CR-030instanceout_reg_3_10layerslayer M110portVSS10
+CR-030instanceout_reg_197_10layerslayer M110portVDD10
+CR-030instanceout_reg_197_10layerslayer M110portVSS10
+CR-030instanceout_reg_2_10layerslayer M110portVDD10
+CR-030instanceout_reg_2_10layerslayer M110portVSS10
+CR-030instanceout_reg_1_10layerslayer M110portVDD10
+CR-030instanceout_reg_1_10layerslayer M110portVSS10
+CR-030instanceout_reg_0_10layerslayer M110portVDD10
+CR-030instanceout_reg_0_10layerslayer M110portVSS10
+CR-030instancevalid_reg_4_10layerslayer M110portVDD10
+CR-030instancevalid_reg_4_10layerslayer M110portVSS10
+CR-030instanceout_reg_192_10layerslayer M110portVDD10
+CR-030instanceout_reg_192_10layerslayer M110portVSS10
+CR-030instancevalid_reg_7_10layerslayer M110portVDD10
+CR-030instanceout_reg_151_10layerslayer M110portVDD10
+CR-030instanceout_reg_151_10layerslayer M110portVSS10
+CR-030instanceout_reg_143_10layerslayer M110portVDD10
+CR-030instanceout_reg_143_10layerslayer M110portVSS10
+CR-030instanceout_reg_140_10layerslayer M110portVDD10
+CR-030instanceout_reg_140_10layerslayer M110portVSS10
+CR-030instanceout_reg_294_10layerslayer M110portVDD10
+CR-030instanceout_reg_294_10layerslayer M110portVSS10
+CR-030instanceout_reg_138_10layerslayer M110portVDD10
+CR-030instanceout_reg_138_10layerslayer M110portVSS10
+CR-030instanceout_reg_293_10layerslayer M110portVDD10
+CR-030instanceout_reg_293_10layerslayer M110portVSS10
+CR-030instanceout_reg_136_10layerslayer M110portVDD10
+CR-030instanceout_reg_136_10layerslayer M110portVSS10
+CR-030instanceout_reg_292_10layerslayer M110portVDD10
+CR-030instanceout_reg_292_10layerslayer M110portVSS10
+CR-030instanceout_reg_134_10layerslayer M110portVDD10
+CR-030instanceout_reg_134_10layerslayer M110portVSS10
+CR-030instanceout_reg_37_10layerslayer M110portVDD10
+CR-030instanceout_reg_37_10layerslayer M110portVSS10
+CR-030instanceout_reg_133_10layerslayer M110portVDD10
+CR-030instanceout_reg_133_10layerslayer M110portVSS10
+CR-030instanceout_reg_291_10layerslayer M110portVDD10
+CR-030instanceout_reg_291_10layerslayer M110portVSS10
+CR-030instanceout_reg_132_10layerslayer M110portVDD10
+CR-030instanceout_reg_132_10layerslayer M110portVSS10
+CR-030instanceU400610layerslayer M110portVSS10
+CR-030instanceout_reg_290_10layerslayer M110portVDD10
+CR-030instanceout_reg_290_10layerslayer M110portVSS10
+CR-030instanceout_reg_129_10layerslayer M110portVDD10
+CR-030instanceout_reg_129_10layerslayer M110portVSS10
+CR-030instanceU400910layerslayer M110portVSS10
+CR-030instanceout_reg_289_10layerslayer M110portVDD10
+CR-030instanceout_reg_289_10layerslayer M110portVSS10
+CR-030instanceout_reg_34_10layerslayer M110portVDD10
+CR-030instanceout_reg_34_10layerslayer M110portVSS10
+CR-030instanceU401110layerslayer M110portVSS10
+CR-030instanceU401210layerslayer M110portVSS10
+CR-030instanceout_reg_33_10layerslayer M110portVDD10
+CR-030instanceout_reg_33_10layerslayer M110portVSS10
+CR-030instancevalid_reg_10_10layerslayer M110portVDD10
+CR-030instanceout_reg_32_10layerslayer M110portVDD10
+CR-030instanceout_reg_32_10layerslayer M110portVSS10
+CR-030instancevalid_reg_8_10layerslayer M110portVDD10
+CR-030instancevalid_reg_8_10layerslayer M110portVSS10
+CR-030instancevalid_reg_2_10layerslayer M110portVDD10
+CR-030instanceout_reg_283_10layerslayer M110portVDD10
+CR-030instanceout_reg_283_10layerslayer M110portVSS10
+CR-030instanceout_reg_94_10layerslayer M110portVDD10
+CR-030instanceout_reg_94_10layerslayer M110portVSS10
+CR-030instanceout_reg_348_10layerslayer M110portVDD10
+CR-030instanceU402310layerslayer M110portVSS10
+CR-030instanceU406210layerslayer M110portVSS10
+CR-030instanceout_reg_181_10layerslayer M110portVDD10
+CR-030instanceU406510layerslayer M110portVSS10
+CR-030instanceU406710layerslayer M110portVSS10
+CR-030instanceout_reg_277_10layerslayer M110portVDD10
+CR-030instanceout_reg_277_10layerslayer M110portVSS10
+CR-030instanceU406810layerslayer M110portVSS10
+CR-030instanceout_reg_90_10layerslayer M110portVDD10
+CR-030instanceout_reg_275_10layerslayer M110portVDD10
+CR-030instanceout_reg_275_10layerslayer M110portVSS10
+CR-030instanceout_reg_89_10layerslayer M110portVDD10
+CR-030instanceout_reg_89_10layerslayer M110portVSS10
+CR-030instanceU403410layerslayer M110portVSS10
+CR-030instanceout_reg_271_10layerslayer M110portVDD10
+CR-030instanceout_reg_271_10layerslayer M110portVSS10
+CR-030instanceout_reg_87_10layerslayer M110portVDD10
+CR-030instanceU403710layerslayer M110portVSS10
+CR-030instanceU407610layerslayer M110portVSS10
+CR-030instanceout_reg_269_10layerslayer M110portVDD10
+CR-030instanceout_reg_269_10layerslayer M110portVSS10
+CR-030instanceU403910layerslayer M110portVSS10
+CR-030instanceout_reg_86_10layerslayer M110portVDD10
+CR-030instanceU404010layerslayer M110portVSS10
+CR-030instanceU407910layerslayer M110portVSS10
+CR-030instanceU408110layerslayer M110portVSS10
+CR-030instanceU408210layerslayer M110portVSS10
+CR-030instanceout_reg_84_10layerslayer M110portVDD10
+CR-030instanceout_reg_82_10layerslayer M110portVDD10
+CR-030instanceU404810layerslayer M110portVSS10
+CR-030instanceU405110layerslayer M110portVSS10
+CR-030instanceU409010layerslayer M110portVSS10
+CR-030instanceU409310layerslayer M110portVSS10
+CR-030instanceU418610layerslayer M110portVSS10
+CR-030instanceout_reg_332_10layerslayer M110portVDD10
+CR-030instanceU418910layerslayer M110portVSS10
+CR-030instanceU419110layerslayer M110portVSS10
+CR-030instanceU419210layerslayer M110portVSS10
+CR-030instanceout_reg_330_10layerslayer M110portVDD10
+CR-030instanceout_reg_75_10layerslayer M110portVDD10
+CR-030instanceout_reg_328_10layerslayer M110portVDD10
+CR-030instanceout_reg_327_10layerslayer M110portVDD10
+CR-030instanceU420010layerslayer M110portVSS10
+CR-030instanceout_reg_326_10layerslayer M110portVDD10
+CR-030instanceU420310layerslayer M110portVSS10
+CR-030instanceU420510layerslayer M110portVSS10
+CR-030instanceU420610layerslayer M110portVSS10
+CR-030instanceU454810layerslayer M110portVSS10
+CR-030instancevalid_reg_11_10layerslayer M110portVDD10
+CR-030instancevalid_reg_11_10layerslayer M110portVSS10
+CR-030instanceU373110layerslayer M110portVSS10
+CR-030instanceU414410layerslayer M110portVSS10
+CR-030instanceU414710layerslayer M110portVSS10
+CR-030instanceU373610layerslayer M110portVSS10
+CR-030instanceU414910layerslayer M110portVSS10
+CR-030instanceU415010layerslayer M110portVSS10
+CR-030instanceout_reg_375_10layerslayer M110portVDD10
+CR-030instanceout_reg_375_10layerslayer M110portVSS10
+CR-030instanceout_reg_371_10layerslayer M110portVDD10
+CR-030instanceout_reg_371_10layerslayer M110portVSS10
+CR-030instanceout_reg_370_10layerslayer M110portVDD10
+CR-030instanceout_reg_370_10layerslayer M110portVSS10
+CR-030instanceout_reg_369_10layerslayer M110portVDD10
+CR-030instanceout_reg_369_10layerslayer M110portVSS10
+CR-030instanceout_reg_365_10layerslayer M110portVDD10
+CR-030instanceout_reg_365_10layerslayer M110portVSS10
+CR-030instanceout_reg_363_10layerslayer M110portVSS10
+CR-030instanceout_reg_362_10layerslayer M110portVDD10
+CR-030instanceout_reg_362_10layerslayer M110portVSS10
+CR-030instanceout_reg_361_10layerslayer M110portVDD10
+CR-030instanceout_reg_361_10layerslayer M110portVSS10
+CR-030instanceU512310layerslayer M110portVSS10
+CR-030instanceU514710layerslayer M110portVSS10
+CR-030instanceU514810layerslayer M110portVSS10
+CR-030instanceU515510layerslayer M110portVSS10
+CR-030instanceU503910layerslayer M110portVSS10
+CR-030instanceU546610layerslayer M110portVDD10
+CR-030instanceU546610layerslayer M110portVSS10
+CR-030instanceU473110layerslayer M110portVSS10
+CR-030instanceU506510layerslayer M110portVSS10
+CR-030instanceU507510layerslayer M110portVSS10
+CR-030instanceU487910layerslayer M110portVSS10
+CR-030instanceU508310layerslayer M110portVSS10
+CR-030instanceU509110layerslayer M110portVSS10
+CR-030instanceU509210layerslayer M110portVSS10
+CR-030instanceU595810layerslayer M110portVSS10
+CR-030instanceU595910layerslayer M110portVSS10
+CR-030instanceU607410layerslayer M110portVSS10
+CR-030instanceU596610layerslayer M110portVSS10
+CR-030instanceU598410layerslayer M110portVSS10
+CR-030instanceU599410layerslayer M110portVSS10
+CR-030instanceU599510layerslayer M110portVSS10
+CR-030instanceU601010layerslayer M110portVSS10
+CR-030instanceU601110layerslayer M110portVSS10
+CR-030instanceU579710layerslayer M110portVSS10
+CR-030instanceU580310layerslayer M110portVSS10
+CR-030instanceU580410layerslayer M110portVSS10
+CR-030instanceU665210layerslayer M110portVSS10
+CR-030instanceU601810layerslayer M110portVSS10
+CR-030instanceU656810layerslayer M110portVSS10
+CR-030instanceU656910layerslayer M110portVSS10
+CR-030instanceU657610layerslayer M110portVSS10
+CR-030instanceU657710layerslayer M110portVSS10
+CR-030instanceU659410layerslayer M110portVSS10
+CR-030instanceU667610layerslayer M110portVSS10
+CR-030instanceU659710layerslayer M110portVSS10
+CR-030instanceU667710layerslayer M110portVSS10
+CR-030instanceU660410layerslayer M110portVSS10
+CR-030instanceU660510layerslayer M110portVSS10
+CR-030instanceU668410layerslayer M110portVSS10
+CR-030instanceU660610layerslayer M110portVSS10
+CR-030instanceU668510layerslayer M110portVSS10
+CR-030instanceU661210layerslayer M110portVSS10
+CR-030instanceU640810layerslayer M110portVSS10
+CR-030instanceU661310layerslayer M110portVSS10
+CR-030instanceU641310layerslayer M110portVSS10
+CR-030instanceU641410layerslayer M110portVSS10
+CR-030instanceU604210layerslayer M110portVSS10
+CR-030instanceU662010layerslayer M110portVSS10
+CR-030instanceU662110layerslayer M110portVSS10
+CR-030instanceU662810layerslayer M110portVSS10
+</Messages>

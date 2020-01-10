@@ -1,0 +1,28 @@
+****************************************
+Report : report clock qor
+        -type power
+        -nosplit
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:04:37 2019
+****************************************
+Warning: There is no clocks in scenario mode_norm.fast.RCmin to report.
+Information: Doing activity propagation for mode 'mode_norm.fast.RCmin_bc' and corner 'mode_norm.fast.RCmin_bc' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario mode_norm.fast.RCmin_bc (POW-052)
+
+
+==============================
+==== Power (per scenario) ====
+==============================
+
+Clock                               ClkTree        ClkTree           Sink            Net          Total
+                                    Leakage       Internal       Internal      Switching        Dynamic          Total
+                                  (stdcell)      (stdcell)      (stdcell)         (nets)          Power          Power
+                                       (mW)           (mW)           (mW)           (mW)           (mW)           (mW)
+------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Corner: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+clk                                    0.00            N/A            N/A            N/A            N/A            N/A
+------------------------------------------------------------------------------------------------------------------------
+Total                                  0.00            N/A            N/A            N/A            N/A            N/A
+
+1

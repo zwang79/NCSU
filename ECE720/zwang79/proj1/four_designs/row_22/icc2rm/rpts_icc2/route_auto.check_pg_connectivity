@@ -1,0 +1,32 @@
+Loading cell instances...
+Number of Standard Cells: 5479
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 531
+Number of VDD Vias: 4212
+Number of VDD Terminals: 50
+Number of VSS Wires: 57
+Number of VSS Vias: 3396
+Number of VSS Terminals: 48
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 152
+  Number of floating vias: 117
+  Number of floating std cells: 1424
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 10
+  Number of floating vias: 0
+  Number of floating std cells: 1764
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 0 seconds.
+{PATH_3_2 PATH_3_9 PATH_3_10 PATH_3_12 PATH_3_15 PATH_3_22 PATH_3_23 PATH_3_25 PATH_3_28 PATH_3_35 PATH_3_36 PATH_3_38 PATH_3_41 PATH_3_48 PATH_3_49 PATH_3_51 PATH_3_54 PATH_3_62 PATH_7_10853 PATH_5_14213 PATH_5_14214 PATH_5_14216 PATH_5_14217 PATH_5_14218 PATH_5_14219 PATH_5_14220 PATH_5_14223 PATH_5_14224 PATH_5_14225 PATH_5_14235 PATH_5_14236 PATH_7_10860 PATH_7_10867 PATH_7_10874 PATH_7_10876 PATH_5_14240 PATH_5_14245 PATH_5_14255 PATH_5_14257 PATH_5_14258 PATH_7_10879 PATH_7_10885 PATH_7_10886 PATH_7_10888 PATH_7_10891 PATH_7_10892 PATH_7_10894 PATH_7_10895 PATH_7_10896 PATH_7_10897 PATH_5_14259 PATH_5_14262 PATH_5_14263 PATH_5_14265 PATH_5_14270 PATH_5_14272 PATH_5_14273 PATH_5_14280 PATH_5_14281 PATH_5_14283 PATH_5_14284 PATH_5_14287 PATH_5_14294 PATH_5_14295 PATH_5_14297 PATH_5_14300 PATH_3_1932 PATH_3_1933 PATH_3_1936 PATH_3_1939 PATH_3_1941 PATH_3_1942 PATH_3_1947 PATH_3_1949 PATH_3_1950 PATH_5_14303 PATH_5_14305 PATH_5_14307 PATH_5_14310 PATH_5_14312 PATH_7_10905 PATH_7_10910 PATH_7_10917 PATH_5_14322 PATH_5_14328 PATH_5_14333 PATH_5_14335 PATH_5_14336 PATH_5_14337 PATH_5_14346 PATH_5_14347 PATH_5_14350 PATH_5_14351 PATH_5_14352 PATH_5_14353 PATH_5_14358 PATH_5_14363 PATH_7_10920 PATH_7_10926 PATH_7_10931 ...}

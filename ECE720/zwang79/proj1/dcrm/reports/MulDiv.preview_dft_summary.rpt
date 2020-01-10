@@ -1,0 +1,181 @@
+
+********************************************
+Report    : Scenario Reduction Summary
+Design    : MulDiv
+Scenarios :
+	    mode_norm.slow.RCmax (dominant)
+	    mode_norm.worst_low.RCmax
+	    mode_norm.fast.RCmin (Leakage-Only)
+********************************************
+
+Information: Layer MSMG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG2 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG3 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG4 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG5 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG2 is ignored for resistance and capacitance computation. (RCEX-019)
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer M1 : 0.16 0.16 (RCEX-011)
+Information: Library Derived Res for layer M1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT1 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT2 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT2 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT3 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT3 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT4 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT4 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT5 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT5 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MSMG1 : 0.22 0.22 (RCEX-011)
+Information: Library Derived Res for layer MSMG1 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG2 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG3 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG3 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG4 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG4 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG5 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG5 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MG1 : 0.21 0.21 (RCEX-011)
+Information: Library Derived Res for layer MG1 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Cap for layer MG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MG2 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.046 0.046 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Vertical Res : 0.046 0.046 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.005 0.005 (RCEX-011)
+
+Running DFT insertion in topographical mode.
+  Information: Using test design rule information from previous dft_drc run.
+  Architecting Scan Chains
+
+****************************************
+Preview_dft report
+For    : 'Insert_dft' command
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:43:01 2019
+****************************************
+
+Number of chains: 1
+Scan methodology: full_scan
+Scan style: multiplexed_flip_flop
+Clock domain: mix_clocks
+Voltage Mixing: False
+Power Domain Mixing: False
+
+
+Scan chain '1' (test_si --> io_resp_bits_tag[4]) contains 214 cells
+
+
+
+************ Test Point Plan Report ************
+Total number of test points  : 0
+Number of Autofix test points: 0
+Number of Wrapper test points: 0
+Number of test modes         : 0
+Number of test point enables : 0
+Number of data sources       : 0
+Number of data sinks         : 0
+**************************************************
+
+Information: Layer MSMG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG2 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG3 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG4 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG5 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG2 is ignored for resistance and capacitance computation. (RCEX-019)
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer M1 : 0.16 0.16 (RCEX-011)
+Information: Library Derived Res for layer M1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT1 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT2 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT2 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT3 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT3 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT4 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT4 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT5 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT5 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MSMG1 : 0.22 0.22 (RCEX-011)
+Information: Library Derived Res for layer MSMG1 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG2 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG3 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG3 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG4 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG4 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG5 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG5 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MG1 : 0.21 0.21 (RCEX-011)
+Information: Library Derived Res for layer MG1 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Cap for layer MG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MG2 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.046 0.046 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Vertical Res : 0.046 0.046 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.005 0.005 (RCEX-011)
+Information: Layer MSMG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG2 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG3 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG4 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG5 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG2 is ignored for resistance and capacitance computation. (RCEX-019)
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer M1 : 0.16 0.16 (RCEX-011)
+Information: Library Derived Res for layer M1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT1 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT2 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT2 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT3 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT3 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT4 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT4 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT5 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT5 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MSMG1 : 0.22 0.22 (RCEX-011)
+Information: Library Derived Res for layer MSMG1 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG2 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG3 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG3 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG4 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG4 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG5 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG5 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MG1 : 0.21 0.21 (RCEX-011)
+Information: Library Derived Res for layer MG1 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Cap for layer MG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MG2 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.046 0.046 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Vertical Res : 0.046 0.046 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.005 0.005 (RCEX-011)
+1

@@ -1,0 +1,13 @@
+ECE720 hw05 Feedback for Wang,Zhiping
+
+(50/50) 1 Does the simulated system have the correct behavior?
+correct
+
+(50/50) 2 Does the simulated behavior match the simple_fifo example, excepting ordering at each sim-time?
+correct
+
+
+Total:
+(0/0) Late Penalty
+(100/100) Total
+

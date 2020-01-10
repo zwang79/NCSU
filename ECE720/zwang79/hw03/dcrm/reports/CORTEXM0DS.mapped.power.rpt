@@ -1,0 +1,154 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CORTEXM0DS
+Scenario(s): mode_norm.slow.RCmax
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:16 2019
+****************************************
+
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_slow_conditional_ccs.db)
+
+
+Global Operating Voltage = 0.72 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+Information: Correlated power is not available. (PWR-761)
+Power Breakdown
+---------------
+
+                             Cell        Driven Net  Tot Dynamic      Cell
+                             Internal    Switching   Power (mW)       Leakage
+Cell                         Power (mW)  Power (mW)  (% Cell/Tot)     Power (pW)
+--------------------------------------------------------------------------------
+Netlist Power                   2.9832      1.3496   4.333e+00 (69%)  3.730e+09
+Estimated Clock Tree Power   N/A         N/A          (N/A)           N/A
+--------------------------------------------------------------------------------
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.1883            0.3948        5.0419e+07            0.6336  (   7.86%)
+register           2.2847            0.1096        1.2717e+09            3.6661  (  45.47%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.5101            0.8452        2.4077e+09            3.7630  (  46.67%)
+--------------------------------------------------------------------------------------------------
+Total              2.9832 mW         1.3496 mW     3.7298e+09 pW         8.0626 mW
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CORTEXM0DS
+Scenario(s): mode_norm.worst_low.RCmax
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:16 2019
+****************************************
+
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_worst_low_conditional_ccs.db)
+
+
+Global Operating Voltage = 0.72 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+Information: Correlated power is not available. (PWR-761)
+Power Breakdown
+---------------
+
+                             Cell        Driven Net  Tot Dynamic      Cell
+                             Internal    Switching   Power (mW)       Leakage
+Cell                         Power (mW)  Power (mW)  (% Cell/Tot)     Power (pW)
+--------------------------------------------------------------------------------
+Netlist Power                   2.1672      1.3018   3.469e+00 (62%)  2.190e+06
+Estimated Clock Tree Power   N/A         N/A          (N/A)           N/A
+--------------------------------------------------------------------------------
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.1707            0.3778        2.3912e+04            0.5485  (  15.80%)
+register           1.6523            0.1064        7.5078e+05            1.7594  (  50.69%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.3442            0.8177        1.4151e+06            1.1633  (  33.51%)
+--------------------------------------------------------------------------------------------------
+Total              2.1672 mW         1.3018 mW     2.1898e+06 pW         3.4712 mW
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CORTEXM0DS
+Scenario(s): mode_norm.fast.RCmin
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:17 2019
+****************************************
+
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_fast_conditional_ccs.db)
+
+
+Global Operating Voltage = 0.88 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+Information: Correlated power is not available. (PWR-761)
+Power Breakdown
+---------------
+
+                             Cell        Driven Net  Tot Dynamic      Cell
+                             Internal    Switching   Power (mW)       Leakage
+Cell                         Power (mW)  Power (mW)  (% Cell/Tot)     Power (pW)
+--------------------------------------------------------------------------------
+Netlist Power                   3.8973      2.0357   5.933e+00 (66%)  3.809e+07
+Estimated Clock Tree Power   N/A         N/A          (N/A)           N/A
+--------------------------------------------------------------------------------
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.2747            0.6129        4.6473e+05            0.8880  (  14.87%)
+register           2.9415            0.1627        1.2911e+07            3.1172  (  52.20%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.6811            1.2601        2.4714e+07            1.9659  (  32.92%)
+--------------------------------------------------------------------------------------------------
+Total              3.8973 mW         2.0357 mW     3.8090e+07 pW         5.9711 mW
+1

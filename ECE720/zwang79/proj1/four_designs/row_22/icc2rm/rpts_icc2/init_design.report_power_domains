@@ -1,0 +1,30 @@
+****************************************
+Report : Power Domain
+Design : MulDiv
+Corner : mode_norm.slow.RCmax
+Version: P-2019.03-SP1
+Date   : Sat Oct  5 20:01:47 2019
+****************************************
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Power Domain            :  DEFAULT_POWER_DOMAIN
+Current Scope           :  / (top scope)
+Elements                :  MulDiv
+Voltage Area            :  DEFAULT_VA
+Available Supply Nets   :  VDD, VSS
+Available Supply Sets   :
+
+Default Supplies           - Power -     - Ground -
+  Primary               :  VDD [0.72]    VSS
+  Isolation             :  --            --
+  Retention             :  --            --
+
+Power Switch            :
+Isolation Strategy      :
+Level Shifter Strategy  :
+Repeater Strategy       :
+Retention Strategy      :
+Always on strategy      :  dual_power
+Disallow Forward Biasing : false
+Disallow Reverse Biasing : false
+--------------------------------------------------------------------------------------------------
+1

@@ -1,0 +1,426 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Warning: The scenario mode_norm.fast.RCmin has max transition DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+Warning: The scenario mode_norm.fast.RCmin has max capacitance DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+****************************************
+Report : clock qor
+        -type drc_violators
+        -all
+        -nosplit
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:33:14 2019
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+=======================================================
+==== DRC Reporting for Corner mode_norm.fast.RCmin ====
+=======================================================
+
+================================================================ Summary Table for Corner mode_norm.fast.RCmin =================================================================
+Clock /                               Attrs      Sink  DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack
+Skew Group                                      Count     Trans     Trans     Trans       Cap       Cap       Cap    Fanout    Fanout    Fanout  Netlength Netlength Netlength
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+clock                                     M       214         0        --        --         0        --        --         0        --        --         0        --        --
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214         0        --      0.00         0        --      0.00         0        --      0.00         0        --      0.00
+
+
+Legends for CTS Tags Column
+===========================
+
+clk        =  master clock source point
+gclk       =  generated clock source point
+sink       =  default sinks of clock for CTS, not user defined balance points
+icg        =  input of an ICG
+bal        =  user defined clock balance point
+e_ign      =  user defined explicit ignore point
+i_ign      =  CTS derived implicit ignore point
+trans      =  transition violation
+cap        =  capacitance violation
+dt_lib     =  library specified dont_touch on cell
+dt_cell    =  set_dont_touch on cell
+dt_net     =  set_dont_touch on net
+dt_mv_cell =  MV derived dont_touch on cell
+dt_mv_net  =  MV derived dont_touch on net
+dt_subtree =  dont_touch_subtree derived dont_touch
+hier       =  on hierarchy boundary or inside physical hierarchy
+
+
+Showing all datapoints per clock / skew group
+====================== Transition Violation Details Table for Corner mode_norm.fast.RCmin =======================
+Clock /                                Net Name/           Trans DRC    Trans     Trans     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+
+
+
+Showing all datapoints per clock / skew group
+====================== Capacitance Violation Details Table for Corner mode_norm.fast.RCmin ======================
+Clock /                                Net Name/            Cap DRC       Cap       Cap     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+
+
+
+Showing all datapoints per clock / skew group
+======================== Fanout Violation Details Table for Corner mode_norm.fast.RCmin =========================
+Clock /                                Net Name/           Fanout DRC   Fanout   Fanout     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+
+
+
+Showing all datapoints per clock / skew group
+====================== Net Length Violation Details Table for Corner mode_norm.fast.RCmin =======================
+Clock /                                Net Name/           Netlength DRC Netlength Netlength    Limit  CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+
+
+Warning: The scenario mode_norm.fast.RCmin_bc has max transition DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+Warning: The scenario mode_norm.fast.RCmin_bc has max capacitance DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+==========================================================
+==== DRC Reporting for Corner mode_norm.fast.RCmin_bc ====
+==========================================================
+
+=============================================================== Summary Table for Corner mode_norm.fast.RCmin_bc ===============================================================
+Clock /                               Attrs      Sink  DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack
+Skew Group                                      Count     Trans     Trans     Trans       Cap       Cap       Cap    Fanout    Fanout    Fanout  Netlength Netlength Netlength
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+clock                                     M       214         0        --        --         0        --        --         0        --        --         0        --        --
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214         0        --      0.00         0        --      0.00         0        --      0.00         0        --      0.00
+
+
+Legends for CTS Tags Column
+===========================
+
+clk        =  master clock source point
+gclk       =  generated clock source point
+sink       =  default sinks of clock for CTS, not user defined balance points
+icg        =  input of an ICG
+bal        =  user defined clock balance point
+e_ign      =  user defined explicit ignore point
+i_ign      =  CTS derived implicit ignore point
+trans      =  transition violation
+cap        =  capacitance violation
+dt_lib     =  library specified dont_touch on cell
+dt_cell    =  set_dont_touch on cell
+dt_net     =  set_dont_touch on net
+dt_mv_cell =  MV derived dont_touch on cell
+dt_mv_net  =  MV derived dont_touch on net
+dt_subtree =  dont_touch_subtree derived dont_touch
+hier       =  on hierarchy boundary or inside physical hierarchy
+
+
+Showing all datapoints per clock / skew group
+===================== Transition Violation Details Table for Corner mode_norm.fast.RCmin_bc =====================
+Clock /                                Net Name/           Trans DRC    Trans     Trans     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+
+
+
+Showing all datapoints per clock / skew group
+==================== Capacitance Violation Details Table for Corner mode_norm.fast.RCmin_bc =====================
+Clock /                                Net Name/            Cap DRC       Cap       Cap     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+
+
+
+Showing all datapoints per clock / skew group
+======================= Fanout Violation Details Table for Corner mode_norm.fast.RCmin_bc =======================
+Clock /                                Net Name/           Fanout DRC   Fanout   Fanout     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+
+
+
+Showing all datapoints per clock / skew group
+===================== Net Length Violation Details Table for Corner mode_norm.fast.RCmin_bc =====================
+Clock /                                Net Name/           Netlength DRC Netlength Netlength    Limit  CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+
+
+=======================================================
+==== DRC Reporting for Corner mode_norm.slow.RCmax ====
+=======================================================
+
+================================================================ Summary Table for Corner mode_norm.slow.RCmax =================================================================
+Clock /                               Attrs      Sink  DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack
+Skew Group                                      Count     Trans     Trans     Trans       Cap       Cap       Cap    Fanout    Fanout    Fanout  Netlength Netlength Netlength
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+clock                                     M       214        14     -4.39    -19.05         0        --        --         0        --        --         0        --        --
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214        14     -4.39    -19.05         0        --      0.00         0        --      0.00         0        --      0.00
+
+
+Legends for CTS Tags Column
+===========================
+
+clk        =  master clock source point
+gclk       =  generated clock source point
+sink       =  default sinks of clock for CTS, not user defined balance points
+icg        =  input of an ICG
+bal        =  user defined clock balance point
+e_ign      =  user defined explicit ignore point
+i_ign      =  CTS derived implicit ignore point
+trans      =  transition violation
+cap        =  capacitance violation
+dt_lib     =  library specified dont_touch on cell
+dt_cell    =  set_dont_touch on cell
+dt_net     =  set_dont_touch on net
+dt_mv_cell =  MV derived dont_touch on cell
+dt_mv_net  =  MV derived dont_touch on net
+dt_subtree =  dont_touch_subtree derived dont_touch
+hier       =  on hierarchy boundary or inside physical hierarchy
+
+
+Showing all datapoints per clock / skew group
+====================== Transition Violation Details Table for Corner mode_norm.slow.RCmax =======================
+Clock /                                Net Name/           Trans DRC    Trans     Trans     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+clock
+                               --(N)   clk_gate_remainder_reg/ctsbuf_net_142577    -4.39    14.38    10.00 trans
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4083748/I    -4.39    14.38    10.00 trans
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4453785/ZN    -1.41    11.41    10.00 trans
+                               --(N)   clk_gate_remainder_reg/ctsbuf_net_232586    -3.51    13.50    10.00
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4823822/I    -3.51    13.50    10.00 trans
+                               --(N)   p_abuf6                -1.62     11.62     10.00                trans
+                               --  (P)   remainder_reg_117_/CLK    -1.62    11.62    10.00             sink,trans
+                               --  (P)   remainder_reg_64_/CLK    -1.62    11.62    10.00              sink,trans
+                               --  (P)   remainder_reg_118_/CLK    -1.62    11.62    10.00             sink,trans
+                               --  (P)   remainder_reg_63_/CLK    -1.53    11.52    10.00              sink,trans
+                               --  (P)   remainder_reg_120_/CLK    -1.49    11.48    10.00             sink,trans
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4103750/ZN    -0.34    10.34    10.00 trans
+                               --(N)   p_abuf0                -1.60     11.60     10.00                
+                               --  (P)   remainder_reg_102_/CLK    -1.60    11.60    10.00             sink,trans
+                               --  (P)   remainder_reg_97_/CLK    -1.56    11.56    10.00              sink,trans
+                               --  (P)   remainder_reg_103_/CLK    -1.51    11.50    10.00             sink,trans
+                               --  (P)   remainder_reg_98_/CLK    -1.47    11.46    10.00              sink,trans
+                               --  (P)   remainder_reg_106_/CLK    -1.43    11.43    10.00             sink,trans
+                               --  (P)   remainder_reg_94_/CLK    -1.34    11.33    10.00              sink,trans
+                               --  (P)   remainder_reg_107_/CLK    -0.95    10.95    10.00             sink,trans
+                               --  (P)   remainder_reg_105_/CLK    -0.42    10.41    10.00             sink,trans
+                               --  (P)   remainder_reg_104_/CLK    -0.10    10.09    10.00             sink,trans
+                               --  (P)   remainder_reg_101_/CLK    -0.10    10.09    10.00             sink,trans
+                               --  (P)   remainder_reg_99_/CLK    -0.10    10.09    10.00              sink,trans
+                               --  (P)   remainder_reg_108_/CLK    -0.08    10.07    10.00             sink,trans
+                               --(N)   clk_gate_remainder_reg/cts8    -1.60    11.60    10.00          
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4043744/I    -1.60    11.60    10.00 trans
+                               --(N)   cts31                  -1.45     11.44     10.00                
+                               --  (P)   cto_buf_drc_4614/I    -1.45    11.44     10.00                trans
+                               --(N)   p_abuf2                -1.14     11.14     10.00                
+                               --  (P)   remainder_reg_10_/CLK    -1.14    11.14    10.00              sink,trans
+                               --  (P)   remainder_reg_2_/CLK    -1.13    11.12    10.00               sink,trans
+                               --  (P)   remainder_reg_5_/CLK    -1.11    11.10    10.00               sink,trans
+                               --  (P)   remainder_reg_18_/CLK    -1.01    11.01    10.00              sink,trans
+                               --  (P)   remainder_reg_9_/CLK    -0.84    10.83    10.00               sink,trans
+                               --  (P)   remainder_reg_3_/CLK    -0.74    10.74    10.00               sink,trans
+                               --  (P)   remainder_reg_19_/CLK    -0.42    10.41    10.00              sink,trans
+                               --(N)   p_abuf5                -1.11     11.10     10.00                
+                               --  (P)   remainder_reg_69_/CLK    -1.11    11.10    10.00              sink,trans
+                               --  (P)   remainder_reg_37_/CLK    -0.97    10.97    10.00              sink,trans
+                               --  (P)   remainder_reg_77_/CLK    -0.92    10.91    10.00              sink,trans
+                               --  (P)   remainder_reg_49_/CLK    -0.15    10.15    10.00              sink,trans
+                               --(N)   clk_gate_remainder_reg/cts6    -0.80    10.80    10.00          
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4073747/I    -0.80    10.80    10.00 trans
+                               --(N)   cts26                  -0.78     10.78     10.00                
+                               --  (P)   divisor_reg_5_/CLK    -0.78    10.78     10.00                sink,trans
+                               --  (P)   divisor_reg_4_/CLK    -0.76    10.76     10.00                sink,trans
+                               --  (P)   divisor_reg_3_/CLK    -0.74    10.74     10.00                sink,trans
+                               --  (P)   divisor_reg_2_/CLK    -0.71    10.70     10.00                sink,trans
+                               --(N)   cts9                   -0.42     10.41     10.00                
+                               --  (P)   divisor_reg_54_/CLK    -0.42    10.41    10.00                sink,trans
+                               --  (P)   divisor_reg_53_/CLK    -0.42    10.41    10.00                sink,trans
+                               --  (P)   divisor_reg_52_/CLK    -0.42    10.41    10.00                sink,trans
+                               --  (P)   divisor_reg_51_/CLK    -0.40    10.40    10.00                sink,trans
+                               --  (P)   divisor_reg_48_/CLK    -0.36    10.36    10.00                sink,trans
+                               --  (P)   divisor_reg_50_/CLK    -0.34    10.34    10.00                sink,trans
+                               --  (P)   divisor_reg_47_/CLK    -0.32    10.32    10.00                sink,trans
+                               --  (P)   divisor_reg_49_/CLK    -0.31    10.30    10.00                sink,trans
+                               --(N)   cts37                  -0.29     10.28     10.00                
+                               --  (P)   req_tag_reg_2_/CLK    -0.29    10.28     10.00                sink,trans
+                               --  (P)   req_tag_reg_1_/CLK    -0.27    10.26     10.00                sink,trans
+                               --  (P)   req_tag_reg_0_/CLK    -0.25    10.24     10.00                sink,trans
+                               --(N)   clk_gate_remainder_reg/ctsbuf_net_102573    -0.19    10.19    10.00
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4063746/I    -0.19    10.19    10.00 trans
+                               --(N)   p_abuf1                -0.15     10.15     10.00                
+                               --  (P)   remainder_reg_41_/CLK    -0.15    10.15    10.00              sink,trans
+                               --  (P)   remainder_reg_42_/CLK    -0.15    10.15    10.00              sink,trans
+                               --  (P)   remainder_reg_0_/CLK    -0.15    10.15    10.00               sink,trans
+                               --  (P)   remainder_reg_34_/CLK    -0.13    10.13    10.00              sink,trans
+                               --  (P)   remainder_reg_32_/CLK    -0.13    10.13    10.00              sink,trans
+                               --  (P)   remainder_reg_44_/CLK    -0.13    10.13    10.00              sink,trans
+
+
+
+Showing all datapoints per clock / skew group
+====================== Capacitance Violation Details Table for Corner mode_norm.slow.RCmax ======================
+Clock /                                Net Name/            Cap DRC       Cap       Cap     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+
+
+
+Showing all datapoints per clock / skew group
+======================== Fanout Violation Details Table for Corner mode_norm.slow.RCmax =========================
+Clock /                                Net Name/           Fanout DRC   Fanout   Fanout     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+
+
+
+Showing all datapoints per clock / skew group
+====================== Net Length Violation Details Table for Corner mode_norm.slow.RCmax =======================
+Clock /                                Net Name/           Netlength DRC Netlength Netlength    Limit  CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+
+
+============================================================
+==== DRC Reporting for Corner mode_norm.worst_low.RCmax ====
+============================================================
+
+============================================================== Summary Table for Corner mode_norm.worst_low.RCmax ==============================================================
+Clock /                               Attrs      Sink  DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack DRC Count Max Slack Tot Slack
+Skew Group                                      Count     Trans     Trans     Trans       Cap       Cap       Cap    Fanout    Fanout    Fanout  Netlength Netlength Netlength
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+clock                                     M       214        11     -4.25    -15.01         0        --        --         0        --        --         0        --        --
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214        11     -4.25    -15.01         0        --      0.00         0        --      0.00         0        --      0.00
+
+
+Legends for CTS Tags Column
+===========================
+
+clk        =  master clock source point
+gclk       =  generated clock source point
+sink       =  default sinks of clock for CTS, not user defined balance points
+icg        =  input of an ICG
+bal        =  user defined clock balance point
+e_ign      =  user defined explicit ignore point
+i_ign      =  CTS derived implicit ignore point
+trans      =  transition violation
+cap        =  capacitance violation
+dt_lib     =  library specified dont_touch on cell
+dt_cell    =  set_dont_touch on cell
+dt_net     =  set_dont_touch on net
+dt_mv_cell =  MV derived dont_touch on cell
+dt_mv_net  =  MV derived dont_touch on net
+dt_subtree =  dont_touch_subtree derived dont_touch
+hier       =  on hierarchy boundary or inside physical hierarchy
+
+
+Showing all datapoints per clock / skew group
+==================== Transition Violation Details Table for Corner mode_norm.worst_low.RCmax ====================
+Clock /                                Net Name/           Trans DRC    Trans     Trans     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+clock
+                               --(N)   clk_gate_remainder_reg/ctsbuf_net_142577    -4.25    14.25    10.00 trans
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4083748/I    -4.25    14.25    10.00 trans
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4453785/ZN    -1.34    11.33    10.00 trans
+                               --(N)   clk_gate_remainder_reg/ctsbuf_net_232586    -3.38    13.37    10.00
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4823822/I    -3.38    13.37    10.00 trans
+                               --(N)   p_abuf6                -2.14     12.13     10.00                trans
+                               --  (P)   remainder_reg_117_/CLK    -2.14    12.13    10.00             sink,trans
+                               --  (P)   remainder_reg_64_/CLK    -2.12    12.11    10.00              sink,trans
+                               --  (P)   remainder_reg_118_/CLK    -2.12    12.11    10.00             sink,trans
+                               --  (P)   remainder_reg_63_/CLK    -2.06    12.05    10.00              sink,trans
+                               --  (P)   remainder_reg_120_/CLK    -2.02    12.02    10.00             sink,trans
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4103750/ZN    -0.95    10.95    10.00 trans
+                               --(N)   cts31                  -1.68     11.67     10.00                
+                               --  (P)   cto_buf_drc_4614/I    -1.68    11.67     10.00                trans
+                               --(N)   p_abuf0                -0.97     10.97     10.00                
+                               --  (P)   remainder_reg_102_/CLK    -0.97    10.97    10.00             sink,trans
+                               --  (P)   remainder_reg_97_/CLK    -0.95    10.95    10.00              sink,trans
+                               --  (P)   remainder_reg_103_/CLK    -0.92    10.91    10.00             sink,trans
+                               --  (P)   remainder_reg_98_/CLK    -0.88    10.87    10.00              sink,trans
+                               --  (P)   remainder_reg_106_/CLK    -0.84    10.83    10.00             sink,trans
+                               --  (P)   remainder_reg_94_/CLK    -0.76    10.76    10.00              sink,trans
+                               --  (P)   remainder_reg_107_/CLK    -0.42    10.41    10.00             sink,trans
+                               --(N)   cts26                  -0.88     10.87     10.00                
+                               --  (P)   divisor_reg_5_/CLK    -0.88    10.87     10.00                sink,trans
+                               --  (P)   divisor_reg_4_/CLK    -0.88    10.87     10.00                sink,trans
+                               --  (P)   divisor_reg_3_/CLK    -0.84    10.83     10.00                sink,trans
+                               --  (P)   divisor_reg_2_/CLK    -0.78    10.78     10.00                sink,trans
+                               --(N)   clk_gate_remainder_reg/cts8    -0.69    10.68    10.00          
+                               --  (P)   clk_gate_remainder_reg/cts_inv_4043744/I    -0.69    10.68    10.00 trans
+                               --(N)   p_abuf5                -0.46     10.45     10.00                
+                               --  (P)   remainder_reg_69_/CLK    -0.46    10.45    10.00              sink,trans
+                               --  (P)   remainder_reg_37_/CLK    -0.34    10.34    10.00              sink,trans
+                               --  (P)   remainder_reg_77_/CLK    -0.31    10.30    10.00              sink,trans
+                               --(N)   p_abuf2                -0.27     10.26     10.00                
+                               --  (P)   remainder_reg_10_/CLK    -0.27    10.26    10.00              sink,trans
+                               --  (P)   remainder_reg_2_/CLK    -0.25    10.24    10.00               sink,trans
+                               --  (P)   remainder_reg_5_/CLK    -0.23    10.22    10.00               sink,trans
+                               --  (P)   remainder_reg_18_/CLK    -0.17    10.17    10.00              sink,trans
+                               --  (P)   remainder_reg_9_/CLK    -0.02    10.01    10.00               sink,trans
+                               --(N)   cts37                  -0.25     10.24     10.00                
+                               --  (P)   req_tag_reg_2_/CLK    -0.25    10.24     10.00                sink,trans
+                               --  (P)   req_tag_reg_1_/CLK    -0.25    10.24     10.00                sink,trans
+                               --  (P)   req_tag_reg_0_/CLK    -0.23    10.22     10.00                sink,trans
+                               --(N)   cts39                  -0.06     10.05     10.00                
+                               --  (P)   count_reg_1_/CLK     -0.06     10.05     10.00                sink,trans
+                               --  (P)   count_reg_0_/CLK     -0.06     10.05     10.00                sink,trans
+                               --  (P)   count_reg_3_/CLK     -0.04     10.03     10.00                sink,trans
+                               --  (P)   count_reg_2_/CLK     -0.02     10.01     10.00                sink,trans
+
+
+
+Showing all datapoints per clock / skew group
+=================== Capacitance Violation Details Table for Corner mode_norm.worst_low.RCmax ====================
+Clock /                                Net Name/            Cap DRC       Cap       Cap     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+
+
+
+Showing all datapoints per clock / skew group
+====================== Fanout Violation Details Table for Corner mode_norm.worst_low.RCmax ======================
+Clock /                                Net Name/           Fanout DRC   Fanout   Fanout     Limit      CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+
+
+
+Showing all datapoints per clock / skew group
+==================== Net Length Violation Details Table for Corner mode_norm.worst_low.RCmax ====================
+Clock /                                Net Name/           Netlength DRC Netlength Netlength    Limit  CTS Tags
+Skew Group                             Pin/Port Name          Slack     Value     Limit      Type
+-----------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+
+
+1

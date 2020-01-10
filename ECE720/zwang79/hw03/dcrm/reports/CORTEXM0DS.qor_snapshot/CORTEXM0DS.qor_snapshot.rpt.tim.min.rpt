@@ -1,0 +1,374 @@
+ 
+****************************************
+Report : timing
+        -path full_clock
+        -delay min
+        -physical
+        -derate
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -crosstalk_delta
+        -capacitance
+Design : CORTEXM0DS
+Scenario(s): mode_norm.slow.RCmax mode_norm.worst_low.RCmax mode_norm.fast.RCmin
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:15 2019
+****************************************
+
+ * Some/all delay information is back-annotated.
+Wire Load Model Mode: Inactive.
+
+  Startpoint: u_logic_Swy2z4_reg
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_logic_Zoy2z4_reg
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Scenario: mode_norm.slow.RCmax
+  Path Group: HCLK
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  u_logic_Swy2z4_reg/CLK (SDFFSNQ_X1)               0.000     0.000     0.000                0.000      0.000 r    (68.80,47.37)                         0.72
+  u_logic_Swy2z4_reg/Q (SDFFSNQ_X1)                          71.523                         42.099     42.099 r    (70.59,47.36)                         0.72
+  u_logic_Ud9vx4 (net)          33       50.085                                              0.000     42.099 r    [18.85,50.08]                         
+  u_logic_Zoy2z4_reg/SI (SDFFSNQ_X1)                0.000    71.523     0.000                2.039 *   44.138 r    (69.12,46.19)                         0.72
+  data arrival time                                                                                    44.138                                            
+
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                          0.050      0.050                                            
+  u_logic_Zoy2z4_reg/CLK (SDFFSNQ_X1)                                                        0.000      0.050 r                                          
+  library hold time                                                                         53.015     53.065                                            
+  data required time                                                                                   53.065                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   53.065                                            
+  data arrival time                                                                                   -44.138                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                     -8.927                                            
+
+
+  Startpoint: HREADY (input port clocked by HCLK)
+  Endpoint: u_logic_clk_gate_J6i2z4_reg/latch
+            (gating element for clock HCLK)
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGIN
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                               0.000      0.000                                            
+  input external delay                                                                                    120.000    120.000 r                                          
+  HREADY (in)                                                               55.760                         27.516    147.516 r    (70.64,15.14)                         
+  HREADY (net)                                 26       38.459                                              0.000    147.516 r    [14.19,38.46]                         
+  u_logic_clk_gate_J6i2z4_reg/EN (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_0)                                  0.000    147.516 r    (netlink)                             
+  u_logic_clk_gate_J6i2z4_reg/EN (net)                  38.459                                              0.000    147.516 r    [14.19,38.46]                         
+  u_logic_clk_gate_J6i2z4_reg/latch/E (CLKGATETST_X1)              0.000    55.760     0.000                6.364 *  153.880 r    (60.11,14.49)          so             0.72
+  data arrival time                                                                                                  153.880                                            
+
+  clock HCLK (rise edge)                                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                               0.000      0.000                                            
+  clock uncertainty                                                                                         0.050      0.050                                            
+  u_logic_clk_gate_J6i2z4_reg/latch/CLK (CLKGATETST_X1)                                                     0.000      0.050 r                                          
+  clock gating hold time                                                                                   42.245     42.295                                            
+  data required time                                                                                                  42.295                                            
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                  42.295                                            
+  data arrival time                                                                                                 -153.880                                            
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                        111.585                                            
+
+
+  Startpoint: u_logic_Ypi3z4_reg
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: SYSRESETREQ
+            (output port clocked by HCLK)
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGOUT
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  u_logic_Ypi3z4_reg/CLK (SDFFRNQ_X1)               0.000     0.000     0.000                0.000      0.000 r    (33.00,52.14)                         0.72
+  u_logic_Ypi3z4_reg/Q (SDFFRNQ_X1)                           8.264                         13.026     13.026 f    (34.79,52.12)                         0.72
+  SYSRESETREQ (net)              2        5.359                                              0.000     13.026 f    [1.83,5.36]                           
+  SYSRESETREQ (out)                                 0.000    10.426     0.000                2.922 *   15.948 f    (34.72,70.64)                         
+  data arrival time                                                                                    15.948                                            
+
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                          0.050      0.050                                            
+  output external delay                                                                   -120.000   -119.950                                            
+  data required time                                                                                 -119.950                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                 -119.950                                            
+  data arrival time                                                                                   -15.948                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                         135.898                                            
+
+
+  Startpoint: u_logic_Swy2z4_reg
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_logic_Zoy2z4_reg
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: HCLK
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  u_logic_Swy2z4_reg/CLK (SDFFSNQ_X1)               0.000     0.000     0.000                0.000      0.000 r    (68.80,47.37)                         0.72
+  u_logic_Swy2z4_reg/Q (SDFFSNQ_X1)                          84.377                         56.632     56.632 r    (70.59,47.36)                         0.72
+  u_logic_Ud9vx4 (net)          33       48.609                                              0.000     56.632 r    [18.85,48.61]                         
+  u_logic_Zoy2z4_reg/SI (SDFFSNQ_X1)                0.000    84.377     0.000                1.981 *   58.613 r    (69.12,46.19)                         0.72
+  data arrival time                                                                                    58.613                                            
+
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                          0.050      0.050                                            
+  u_logic_Zoy2z4_reg/CLK (SDFFSNQ_X1)                                                        0.000      0.050 r                                          
+  library hold time                                                                         57.009     57.059                                            
+  data required time                                                                                   57.059                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   57.059                                            
+  data arrival time                                                                                   -58.613                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                           1.554                                            
+
+
+  Startpoint: HREADY (input port clocked by HCLK)
+  Endpoint: u_logic_clk_gate_J6i2z4_reg/latch
+            (gating element for clock HCLK)
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGIN
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                               0.000      0.000                                            
+  input external delay                                                                                    120.000    120.000 r                                          
+  HREADY (in)                                                               66.463                         37.361    157.361 r    (70.64,15.14)                         
+  HREADY (net)                                 26       37.452                                              0.000    157.361 r    [14.19,37.45]                         
+  u_logic_clk_gate_J6i2z4_reg/EN (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_0)                                  0.000    157.361 r    (netlink)                             
+  u_logic_clk_gate_J6i2z4_reg/EN (net)                  37.452                                              0.000    157.361 r    [14.19,37.45]                         
+  u_logic_clk_gate_J6i2z4_reg/latch/E (CLKGATETST_X1)              0.000    66.463     0.000                6.146 *  163.507 r    (60.11,14.49)          so             0.72
+  data arrival time                                                                                                  163.507                                            
+
+  clock HCLK (rise edge)                                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                               0.000      0.000                                            
+  clock uncertainty                                                                                         0.050      0.050                                            
+  u_logic_clk_gate_J6i2z4_reg/latch/CLK (CLKGATETST_X1)                                                     0.000      0.050 r                                          
+  clock gating hold time                                                                                   46.635     46.685                                            
+  data required time                                                                                                  46.685                                            
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                  46.685                                            
+  data arrival time                                                                                                 -163.507                                            
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                        116.822                                            
+
+
+  Startpoint: u_logic_Ypi3z4_reg
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: SYSRESETREQ
+            (output port clocked by HCLK)
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGOUT
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  u_logic_Ypi3z4_reg/CLK (SDFFRNQ_X1)               0.000     0.000     0.000                0.000      0.000 r    (33.00,52.14)                         0.72
+  u_logic_Ypi3z4_reg/Q (SDFFRNQ_X1)                           8.971                         17.114     17.114 f    (34.79,52.12)                         0.72
+  SYSRESETREQ (net)              2        5.303                                              0.000     17.114 f    [1.83,5.30]                           
+  SYSRESETREQ (out)                                 0.000    10.933     0.000                2.908 *   20.021 f    (34.72,70.64)                         
+  data arrival time                                                                                    20.021                                            
+
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                          0.050      0.050                                            
+  output external delay                                                                   -120.000   -119.950                                            
+  data required time                                                                                 -119.950                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                 -119.950                                            
+  data arrival time                                                                                   -20.021                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                         139.971                                            
+
+
+  Startpoint: u_logic_Swy2z4_reg
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_logic_Zoy2z4_reg
+            (rising edge-triggered flip-flop clocked by HCLK)
+  Scenario: mode_norm.fast.RCmin
+  Path Group: HCLK
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  u_logic_Swy2z4_reg/CLK (SDFFSNQ_X1)               0.000     0.000     0.000                0.000      0.000 r    (68.80,47.37)                         0.88
+  u_logic_Swy2z4_reg/Q (SDFFSNQ_X1)                          67.450                         42.788     42.788 r    (70.59,47.36)                         0.88
+  u_logic_Ud9vx4 (net)          33       49.577                                              0.000     42.788 r    [16.83,49.58]                         
+  u_logic_Zoy2z4_reg/SI (SDFFSNQ_X1)                0.000    67.450     0.000                1.702 *   44.491 r    (69.12,46.19)                         0.88
+  data arrival time                                                                                    44.491                                            
+
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                          0.050      0.050                                            
+  u_logic_Zoy2z4_reg/CLK (SDFFSNQ_X1)                                                        0.000      0.050 r                                          
+  library hold time                                                                         47.916     47.966                                            
+  data required time                                                                                   47.966                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   47.966                                            
+  data arrival time                                                                                   -44.491                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                     -3.475                                            
+
+
+  Startpoint: HREADY (input port clocked by HCLK)
+  Endpoint: u_logic_clk_gate_J6i2z4_reg/latch
+            (gating element for clock HCLK)
+  Scenario: mode_norm.fast.RCmin
+  Path Group: REGIN
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                               0.000      0.000                                            
+  input external delay                                                                                    120.000    120.000 r                                          
+  HREADY (in)                                                               52.892                         28.020    148.020 r    (70.64,15.14)                         
+  HREADY (net)                                 26       38.121                                              0.000    148.020 r    [12.67,38.12]                         
+  u_logic_clk_gate_J6i2z4_reg/EN (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_0)                                  0.000    148.020 r    (netlink)                             
+  u_logic_clk_gate_J6i2z4_reg/EN (net)                  38.121                                              0.000    148.020 r    [12.67,38.12]                         
+  u_logic_clk_gate_J6i2z4_reg/latch/E (CLKGATETST_X1)              0.000    52.892     0.000                5.521 *  153.541 r    (60.11,14.49)          so             0.88
+  data arrival time                                                                                                  153.541                                            
+
+  clock HCLK (rise edge)                                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                               0.000      0.000                                            
+  clock uncertainty                                                                                         0.050      0.050                                            
+  u_logic_clk_gate_J6i2z4_reg/latch/CLK (CLKGATETST_X1)                                                     0.000      0.050 r                                          
+  clock gating hold time                                                                                   38.712     38.762                                            
+  data required time                                                                                                  38.762                                            
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                  38.762                                            
+  data arrival time                                                                                                 -153.541                                            
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                        114.779                                            
+
+
+  Startpoint: u_logic_Ypi3z4_reg
+              (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: SYSRESETREQ
+            (output port clocked by HCLK)
+  Scenario: mode_norm.fast.RCmin
+  Path Group: REGOUT
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  u_logic_Ypi3z4_reg/CLK (SDFFRNQ_X1)               0.000     0.000     0.000                0.000      0.000 r    (33.00,52.14)                         0.88
+  u_logic_Ypi3z4_reg/Q (SDFFRNQ_X1)                           7.344                         13.062     13.062 f    (34.79,52.12)                         0.88
+  SYSRESETREQ (net)              2        5.203                                              0.000     13.062 f    [1.63,5.20]                           
+  SYSRESETREQ (out)                                 0.000     9.181     0.000                2.539 *   15.602 f    (34.72,70.64)                         
+  data arrival time                                                                                    15.602                                            
+
+  clock HCLK (rise edge)                                                                     0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                          0.050      0.050                                            
+  output external delay                                                                   -120.000   -119.950                                            
+  data required time                                                                                 -119.950                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                 -119.950                                            
+  data arrival time                                                                                   -15.602                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                         135.552                                            
+
+
+1

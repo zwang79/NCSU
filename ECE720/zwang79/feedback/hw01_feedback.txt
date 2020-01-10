@@ -1,0 +1,14 @@
+ECE720 hw01 Feedback for Wang,Zhiping
+
+(40/40) 1 Did the makefile generate the desired output with a single command?
+Good, except that I had to clone the dcrm and icc2rm repositories and modify the setup file, which is more work for me.  Please try to commit these files next time.
+
+(30/30) 2 Did the report_qor target correctly count the number of files?
+(25/30) 3 Was the execution time correctly calculated?
+Your flow printed only one time for the total execution time, not two times.  Also, the README file was not updated with instructions on how to run your flow.  Finally, it would have been nice to avoid running the flow twice to check P3. Please try to help me out with some more guidance in your solution next time.
+
+
+Total:
+(0/0) Late Penalty
+(95/100) Total
+

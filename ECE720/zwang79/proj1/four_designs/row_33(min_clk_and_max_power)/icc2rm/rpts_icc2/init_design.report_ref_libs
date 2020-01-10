@@ -1,0 +1,13 @@
+****************************************
+Report : Reference Library Report
+Library: MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:09:04 2019
+****************************************
+
+    Name             Path                                                                                                                                Location
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------
+*+  NanGate_15nm_OCL /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/Nangate_15nm_OCL_ICC2_LibPrep_v2014_06/icc2_cell_lib/NanGate_15nm_OCL.ndm /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/Nangate_15nm_OCL_ICC2_LibPrep_v2014_06/icc2_cell_lib/NanGate_15nm_OCL.ndm
+    "*" = Library currently open
+    "+" = Library has technology information
+1

@@ -1,0 +1,1974 @@
+Warning: Use -per_clock_root option along with -type latency option to split the reporting of a clock to per clock root, so that the clock trees associated with different root pins are reported separately
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+****************************************
+Report : clock qor
+        -type latency
+        -show_paths
+        -nosplit
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:47:04 2019
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+===========================================================
+==== Latency Reporting for Corner mode_norm.fast.RCmin ====
+===========================================================
+
+============================================ Summary Table for Corner mode_norm.fast.RCmin =============================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+clock                                   M,D       214        --      0.00        --      0.00      0.00      0.00      0.00        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214        --      0.00        --      0.00      0.00        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+=================================== Details Table for Corner mode_norm.fast.RCmin ====================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+clock
+
+
+======================================================
+==== Path Reports for Corner mode_norm.fast.RCmin ====
+======================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+==============================================================
+==== Latency Reporting for Corner mode_norm.fast.RCmin_bc ====
+==============================================================
+
+=========================================== Summary Table for Corner mode_norm.fast.RCmin_bc ===========================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+clock                                   M,D       214     40.00     25.69        --     82.61     56.92     68.03      6.24        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214        --     25.69        --     82.61     56.92        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+================================== Details Table for Corner mode_norm.fast.RCmin_bc ==================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+clock
+                                   L   remainder_reg_13_/CLK             82.61 r     82.61 r      0.00        0.00
+                                   L   remainder_reg_12_/CLK             82.59 r     82.59 r      0.00        0.00
+                                   L   remainder_reg_21_/CLK             82.44 r     82.44 r      0.00        0.00
+                                   L   remainder_reg_20_/CLK             82.40 r     82.40 r      0.00        0.00
+                                   L   remainder_reg_23_/CLK             82.15 r     82.15 r      0.00        0.00
+                                   S   remainder_reg_65_/CLK             56.92 r     56.92 r        --          --
+                                   S   remainder_reg_66_/CLK             56.97 r     56.97 r        --          --
+                                   S   remainder_reg_40_/CLK             57.28 r     57.28 r        --          --
+                                   S   remainder_reg_55_/CLK             57.28 r     57.28 r        --          --
+                                   S   remainder_reg_42_/CLK             57.30 r     57.30 r        --          --
+
+
+=========================================================
+==== Path Reports for Corner mode_norm.fast.RCmin_bc ====
+=========================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_13_/CLK
+Latency             : 82.61
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.97    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.63    0.29    0.29 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.03    1.47    1.26    1.54 f
+  cts_inv_10394723/I (INV_X1)                                      1.47    0.08    1.62 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.36    4.98    3.34    4.96 r
+  cts_inv_10034687/I (INV_X1)                                      4.98    0.51    5.47 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.09    2.52    2.12    7.59 f
+  cts_inv_9994683/I (INV_X1)                                       2.52    0.08    7.67 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.92    5.74    3.93   11.60 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.92   5.74   0.00  11.60 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.05    1.05   12.65 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.23    2.92    5.99   18.63 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                2.92    0.11   18.75 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.65    4.69    4.46   23.21 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                4.83    0.13   23.35 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.35    5.07    6.10   29.45 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.07    0.13   29.58 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.71   5.38    4.08   33.66 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.17    2.16   35.82 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.26   1.66    1.45   37.27 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                1.66    0.15   37.42 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.11   2.92    2.23   39.65 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                2.92    0.15   39.81 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.69   4.12    3.13   42.93 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.12    0.19   43.13 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.51   4.79    3.64   46.77 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               4.79    0.38   47.15 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.20   2.04    3.81   50.96 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.04    0.15   51.12 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.17   2.19    1.89   53.01 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.19    0.08   53.08 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.50   2.57    3.49   56.57 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                2.57    0.31   56.88 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.26   2.16    1.85   58.73 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.16    0.17   58.90 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.51   2.37    3.51   62.41 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.42    0.32   62.73 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   3.98   5.82    3.95   66.68 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.98   5.82   0.00  66.68 r
+  cto_buf_drc_5234/I (BUF_X4)                                      5.82    0.17   66.85 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      5.19    2.61    4.88   71.74 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   5.19   2.61   0.00  71.74 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                2.75    0.48   72.21 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   7.63   4.98    3.53   75.74 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                6.43    1.87   77.61 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.89   4.02    2.54   80.15 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.89   4.02   0.00  80.15 r
+  remainder_reg_13_/CLK (SDFFSNQ_X1)                               7.25    2.46   82.61 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             82.61
+  total clock latency                                                             82.61
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_12_/CLK
+Latency             : 82.59
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.97    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.63    0.29    0.29 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.03    1.47    1.26    1.54 f
+  cts_inv_10394723/I (INV_X1)                                      1.47    0.08    1.62 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.36    4.98    3.34    4.96 r
+  cts_inv_10034687/I (INV_X1)                                      4.98    0.51    5.47 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.09    2.52    2.12    7.59 f
+  cts_inv_9994683/I (INV_X1)                                       2.52    0.08    7.67 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.92    5.74    3.93   11.60 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.92   5.74   0.00  11.60 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.05    1.05   12.65 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.23    2.92    5.99   18.63 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                2.92    0.11   18.75 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.65    4.69    4.46   23.21 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                4.83    0.13   23.35 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.35    5.07    6.10   29.45 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.07    0.13   29.58 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.71   5.38    4.08   33.66 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.17    2.16   35.82 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.26   1.66    1.45   37.27 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                1.66    0.15   37.42 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.11   2.92    2.23   39.65 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                2.92    0.15   39.81 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.69   4.12    3.13   42.93 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.12    0.19   43.13 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.51   4.79    3.64   46.77 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               4.79    0.38   47.15 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.20   2.04    3.81   50.96 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.04    0.15   51.12 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.17   2.19    1.89   53.01 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.19    0.08   53.08 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.50   2.57    3.49   56.57 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                2.57    0.31   56.88 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.26   2.16    1.85   58.73 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.16    0.17   58.90 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.51   2.37    3.51   62.41 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.42    0.32   62.73 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   3.98   5.82    3.95   66.68 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.98   5.82   0.00  66.68 r
+  cto_buf_drc_5234/I (BUF_X4)                                      5.82    0.17   66.85 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      5.19    2.61    4.88   71.74 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   5.19   2.61   0.00  71.74 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                2.75    0.48   72.21 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   7.63   4.98    3.53   75.74 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                6.43    1.87   77.61 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.89   4.02    2.54   80.15 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.89   4.02   0.00  80.15 r
+  remainder_reg_12_/CLK (SDFFSNQ_X1)                               7.25    2.44   82.59 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             82.59
+  total clock latency                                                             82.59
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_21_/CLK
+Latency             : 82.44
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.97    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.63    0.29    0.29 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.03    1.47    1.26    1.54 f
+  cts_inv_10394723/I (INV_X1)                                      1.47    0.08    1.62 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.36    4.98    3.34    4.96 r
+  cts_inv_10034687/I (INV_X1)                                      4.98    0.51    5.47 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.09    2.52    2.12    7.59 f
+  cts_inv_9994683/I (INV_X1)                                       2.52    0.08    7.67 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.92    5.74    3.93   11.60 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.92   5.74   0.00  11.60 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.05    1.05   12.65 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.23    2.92    5.99   18.63 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                2.92    0.11   18.75 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.65    4.69    4.46   23.21 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                4.83    0.13   23.35 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.35    5.07    6.10   29.45 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.07    0.13   29.58 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.71   5.38    4.08   33.66 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.17    2.16   35.82 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.26   1.66    1.45   37.27 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                1.66    0.15   37.42 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.11   2.92    2.23   39.65 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                2.92    0.15   39.81 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.69   4.12    3.13   42.93 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.12    0.19   43.13 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.51   4.79    3.64   46.77 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               4.79    0.38   47.15 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.20   2.04    3.81   50.96 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.04    0.15   51.12 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.17   2.19    1.89   53.01 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.19    0.08   53.08 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.50   2.57    3.49   56.57 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                2.57    0.31   56.88 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.26   2.16    1.85   58.73 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.16    0.17   58.90 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.51   2.37    3.51   62.41 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.42    0.32   62.73 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   3.98   5.82    3.95   66.68 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.98   5.82   0.00  66.68 r
+  cto_buf_drc_5234/I (BUF_X4)                                      5.82    0.17   66.85 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      5.19    2.61    4.88   71.74 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   5.19   2.61   0.00  71.74 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                2.75    0.48   72.21 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   7.63   4.98    3.53   75.74 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                6.43    1.87   77.61 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.89   4.02    2.54   80.15 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.89   4.02   0.00  80.15 r
+  remainder_reg_21_/CLK (SDFFSNQ_X1)                               7.25    2.29   82.44 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             82.44
+  total clock latency                                                             82.44
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_20_/CLK
+Latency             : 82.40
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.97    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.63    0.29    0.29 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.03    1.47    1.26    1.54 f
+  cts_inv_10394723/I (INV_X1)                                      1.47    0.08    1.62 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.36    4.98    3.34    4.96 r
+  cts_inv_10034687/I (INV_X1)                                      4.98    0.51    5.47 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.09    2.52    2.12    7.59 f
+  cts_inv_9994683/I (INV_X1)                                       2.52    0.08    7.67 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.92    5.74    3.93   11.60 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.92   5.74   0.00  11.60 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.05    1.05   12.65 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.23    2.92    5.99   18.63 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                2.92    0.11   18.75 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.65    4.69    4.46   23.21 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                4.83    0.13   23.35 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.35    5.07    6.10   29.45 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.07    0.13   29.58 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.71   5.38    4.08   33.66 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.17    2.16   35.82 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.26   1.66    1.45   37.27 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                1.66    0.15   37.42 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.11   2.92    2.23   39.65 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                2.92    0.15   39.81 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.69   4.12    3.13   42.93 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.12    0.19   43.13 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.51   4.79    3.64   46.77 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               4.79    0.38   47.15 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.20   2.04    3.81   50.96 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.04    0.15   51.12 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.17   2.19    1.89   53.01 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.19    0.08   53.08 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.50   2.57    3.49   56.57 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                2.57    0.31   56.88 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.26   2.16    1.85   58.73 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.16    0.17   58.90 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.51   2.37    3.51   62.41 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.42    0.32   62.73 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   3.98   5.82    3.95   66.68 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.98   5.82   0.00  66.68 r
+  cto_buf_drc_5234/I (BUF_X4)                                      5.82    0.17   66.85 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      5.19    2.61    4.88   71.74 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   5.19   2.61   0.00  71.74 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                2.75    0.48   72.21 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   7.63   4.98    3.53   75.74 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                6.43    1.87   77.61 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.89   4.02    2.54   80.15 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.89   4.02   0.00  80.15 r
+  remainder_reg_20_/CLK (SDFFSNQ_X1)                               7.27    2.25   82.40 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             82.40
+  total clock latency                                                             82.40
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_23_/CLK
+Latency             : 82.15
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.97    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.63    0.29    0.29 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.03    1.47    1.26    1.54 f
+  cts_inv_10394723/I (INV_X1)                                      1.47    0.08    1.62 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.36    4.98    3.34    4.96 r
+  cts_inv_10034687/I (INV_X1)                                      4.98    0.51    5.47 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.09    2.52    2.12    7.59 f
+  cts_inv_9994683/I (INV_X1)                                       2.52    0.08    7.67 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.92    5.74    3.93   11.60 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.92   5.74   0.00  11.60 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.05    1.05   12.65 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.23    2.92    5.99   18.63 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                2.92    0.11   18.75 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.65    4.69    4.46   23.21 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                4.83    0.13   23.35 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.35    5.07    6.10   29.45 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.07    0.13   29.58 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.71   5.38    4.08   33.66 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.17    2.16   35.82 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.26   1.66    1.45   37.27 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                1.66    0.15   37.42 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.11   2.92    2.23   39.65 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                2.92    0.15   39.81 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.69   4.12    3.13   42.93 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.12    0.19   43.13 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.51   4.79    3.64   46.77 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               4.79    0.38   47.15 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.20   2.04    3.81   50.96 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.04    0.15   51.12 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.17   2.19    1.89   53.01 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.19    0.08   53.08 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.50   2.57    3.49   56.57 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                2.57    0.31   56.88 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.26   2.16    1.85   58.73 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.16    0.17   58.90 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.51   2.37    3.51   62.41 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.42    0.32   62.73 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   3.98   5.82    3.95   66.68 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.98   5.82   0.00  66.68 r
+  cto_buf_drc_5234/I (BUF_X4)                                      5.82    0.17   66.85 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      5.19    2.61    4.88   71.74 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   5.19   2.61   0.00  71.74 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                2.75    0.48   72.21 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   7.63   4.98    3.53   75.74 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                6.43    1.87   77.61 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.89   4.02    2.54   80.15 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.89   4.02   0.00  80.15 r
+  remainder_reg_23_/CLK (SDFFSNQ_X1)                               7.21    2.00   82.15 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             82.15
+  total clock latency                                                             82.15
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_65_/CLK
+Latency             : 56.92
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.90    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.63    0.29    0.29 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.02    1.47    1.26    1.54 f
+  cts_inv_10394723/I (INV_X1)                                      1.47    0.08    1.62 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.33    4.98    3.34    4.96 r
+  cts_inv_10034687/I (INV_X1)                                      4.98    0.51    5.47 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.08    2.52    2.12    7.59 f
+  cts_inv_9994683/I (INV_X1)                                       2.52    0.08    7.67 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.84    5.74    3.93   11.60 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.84   5.74   0.00  11.60 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.05    1.05   12.65 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.19    2.92    5.99   18.63 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                2.92    0.11   18.75 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.57    4.69    4.46   23.21 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                4.83    0.13   23.35 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.26    5.07    6.10   29.45 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.07    0.13   29.58 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.61   5.38    4.08   33.66 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.17    2.16   35.82 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.22   1.66    1.45   37.27 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                1.66    0.15   37.42 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.08   2.92    2.23   39.65 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                2.92    0.11   39.77 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.32   2.50    2.19   41.96 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.50    0.21   42.17 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   4.65   5.95    4.01   46.18 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/I (BUF_X1)               6.08    0.80   46.98 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/Z (BUF_X1)    1   3.95   5.44    5.91   52.89 f
+  clk_gate_remainder_reg/cts_inv_5484232/I (INV_X4)                5.63    0.86   53.75 f
+  clk_gate_remainder_reg/cts_inv_5484232/ZN (INV_X4)   12  10.45   5.91    3.01   56.76 r
+  clk_gate_remainder_reg/p_abuf9 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   12  10.45   5.91   0.00  56.76 r
+  remainder_reg_65_/CLK (SDFFSNQ_X1)                               6.05    0.15   56.92 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             56.92
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_66_/CLK
+Latency             : 56.97
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.90    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.63    0.29    0.29 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.02    1.47    1.26    1.54 f
+  cts_inv_10394723/I (INV_X1)                                      1.47    0.08    1.62 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.33    4.98    3.34    4.96 r
+  cts_inv_10034687/I (INV_X1)                                      4.98    0.51    5.47 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.08    2.52    2.12    7.59 f
+  cts_inv_9994683/I (INV_X1)                                       2.52    0.08    7.67 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.84    5.74    3.93   11.60 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.84   5.74   0.00  11.60 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.05    1.05   12.65 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.19    2.92    5.99   18.63 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                2.92    0.11   18.75 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.57    4.69    4.46   23.21 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                4.83    0.13   23.35 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.26    5.07    6.10   29.45 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.07    0.13   29.58 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.61   5.38    4.08   33.66 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.17    2.16   35.82 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.22   1.66    1.45   37.27 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                1.66    0.15   37.42 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.08   2.92    2.23   39.65 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                2.92    0.11   39.77 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.32   2.50    2.19   41.96 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.50    0.21   42.17 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   4.65   5.95    4.01   46.18 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/I (BUF_X1)               6.08    0.80   46.98 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/Z (BUF_X1)    1   3.95   5.44    5.91   52.89 f
+  clk_gate_remainder_reg/cts_inv_5484232/I (INV_X4)                5.63    0.86   53.75 f
+  clk_gate_remainder_reg/cts_inv_5484232/ZN (INV_X4)   12  10.45   5.91    3.01   56.76 r
+  clk_gate_remainder_reg/p_abuf9 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   12  10.45   5.91   0.00  56.76 r
+  remainder_reg_66_/CLK (SDFFSNQ_X1)                               6.03    0.21   56.97 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             56.97
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_40_/CLK
+Latency             : 57.28
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.90    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.63    0.29    0.29 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.02    1.47    1.26    1.54 f
+  cts_inv_10394723/I (INV_X1)                                      1.47    0.08    1.62 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.33    4.98    3.34    4.96 r
+  cts_inv_10034687/I (INV_X1)                                      4.98    0.51    5.47 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.08    2.52    2.12    7.59 f
+  cts_inv_9994683/I (INV_X1)                                       2.52    0.08    7.67 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.84    5.74    3.93   11.60 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.84   5.74   0.00  11.60 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.05    1.05   12.65 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.19    2.92    5.99   18.63 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                2.92    0.11   18.75 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.57    4.69    4.46   23.21 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                4.83    0.13   23.35 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.26    5.07    6.10   29.45 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.07    0.13   29.58 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.61   5.38    4.08   33.66 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.17    2.16   35.82 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.22   1.66    1.45   37.27 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                1.66    0.15   37.42 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.08   2.92    2.23   39.65 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                2.92    0.11   39.77 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.32   2.50    2.19   41.96 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.50    0.21   42.17 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   4.65   5.95    4.01   46.18 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/I (BUF_X1)               5.95    0.59   46.77 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/Z (BUF_X1)    1   3.96   5.44    5.89   52.66 f
+  clk_gate_remainder_reg/cts_inv_5494233/I (INV_X4)                5.57    0.74   53.41 f
+  clk_gate_remainder_reg/cts_inv_5494233/ZN (INV_X4)    7   7.08   4.71    2.29   55.69 r
+  clk_gate_remainder_reg/p_abuf10 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    7   7.08   4.71   0.00  55.69 r
+  remainder_reg_40_/CLK (SDFFSNQ_X1)                               6.94    1.58   57.28 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             57.28
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_55_/CLK
+Latency             : 57.28
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.90    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.63    0.29    0.29 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.02    1.47    1.26    1.54 f
+  cts_inv_10394723/I (INV_X1)                                      1.47    0.08    1.62 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.33    4.98    3.34    4.96 r
+  cts_inv_10034687/I (INV_X1)                                      4.98    0.51    5.47 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.08    2.52    2.12    7.59 f
+  cts_inv_9994683/I (INV_X1)                                       2.52    0.08    7.67 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.84    5.74    3.93   11.60 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.84   5.74   0.00  11.60 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.05    1.05   12.65 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.19    2.92    5.99   18.63 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                2.92    0.11   18.75 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.57    4.69    4.46   23.21 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                4.83    0.13   23.35 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.26    5.07    6.10   29.45 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.07    0.13   29.58 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.61   5.38    4.08   33.66 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.17    2.16   35.82 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.22   1.66    1.45   37.27 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                1.66    0.15   37.42 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.08   2.92    2.23   39.65 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                2.92    0.11   39.77 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.32   2.50    2.19   41.96 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.50    0.21   42.17 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   4.65   5.95    4.01   46.18 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/I (BUF_X1)               5.95    0.59   46.77 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/Z (BUF_X1)    1   3.96   5.44    5.89   52.66 f
+  clk_gate_remainder_reg/cts_inv_5494233/I (INV_X4)                5.57    0.74   53.41 f
+  clk_gate_remainder_reg/cts_inv_5494233/ZN (INV_X4)    7   7.08   4.71    2.29   55.69 r
+  clk_gate_remainder_reg/p_abuf10 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    7   7.08   4.71   0.00  55.69 r
+  remainder_reg_55_/CLK (SDFFSNQ_X1)                               6.92    1.58   57.28 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             57.28
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_42_/CLK
+Latency             : 57.30
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.90    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.63    0.29    0.29 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.02    1.47    1.26    1.54 f
+  cts_inv_10394723/I (INV_X1)                                      1.47    0.08    1.62 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.33    4.98    3.34    4.96 r
+  cts_inv_10034687/I (INV_X1)                                      4.98    0.51    5.47 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.08    2.52    2.12    7.59 f
+  cts_inv_9994683/I (INV_X1)                                       2.52    0.08    7.67 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.84    5.74    3.93   11.60 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.84   5.74   0.00  11.60 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.05    1.05   12.65 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.19    2.92    5.99   18.63 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                2.92    0.11   18.75 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.57    4.69    4.46   23.21 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                4.83    0.13   23.35 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.26    5.07    6.10   29.45 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.07    0.13   29.58 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.61   5.38    4.08   33.66 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.17    2.16   35.82 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.22   1.66    1.45   37.27 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                1.66    0.15   37.42 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.08   2.92    2.23   39.65 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                2.92    0.11   39.77 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.32   2.50    2.19   41.96 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.50    0.21   42.17 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   4.65   5.95    4.01   46.18 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/I (BUF_X1)               5.95    0.59   46.77 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/Z (BUF_X1)    1   3.96   5.44    5.89   52.66 f
+  clk_gate_remainder_reg/cts_inv_5494233/I (INV_X4)                5.57    0.74   53.41 f
+  clk_gate_remainder_reg/cts_inv_5494233/ZN (INV_X4)    7   7.08   4.71    2.29   55.69 r
+  clk_gate_remainder_reg/p_abuf10 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    7   7.08   4.71   0.00  55.69 r
+  remainder_reg_42_/CLK (SDFFSNQ_X1)                               6.92    1.60   57.30 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             57.30
+
+
+===========================================================
+==== Latency Reporting for Corner mode_norm.slow.RCmax ====
+===========================================================
+
+============================================ Summary Table for Corner mode_norm.slow.RCmax =============================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+clock                                   M,D       214     40.00     26.15        --     85.47     59.32     70.89      6.24        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214        --     26.15        --     85.47     59.32        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+=================================== Details Table for Corner mode_norm.slow.RCmax ====================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+clock
+                                   L   remainder_reg_13_/CLK             85.47 r     85.47 r      0.00        0.00
+                                   L   remainder_reg_12_/CLK             85.45 r     85.45 r      0.00        0.00
+                                   L   remainder_reg_21_/CLK             85.28 r     85.28 r      0.00        0.00
+                                   L   remainder_reg_20_/CLK             85.26 r     85.26 r      0.00        0.00
+                                   L   remainder_reg_23_/CLK             84.95 r     84.95 r      0.00        0.00
+                                   S   remainder_reg_65_/CLK             59.32 r     59.32 r        --          --
+                                   S   remainder_reg_66_/CLK             59.38 r     59.38 r        --          --
+                                   S   remainder_reg_40_/CLK             59.70 r     59.70 r        --          --
+                                   S   remainder_reg_55_/CLK             59.70 r     59.70 r        --          --
+                                   S   remainder_reg_42_/CLK             59.72 r     59.72 r        --          --
+
+
+======================================================
+==== Path Reports for Corner mode_norm.slow.RCmax ====
+======================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_13_/CLK
+Latency             : 85.47
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      3.01    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.74    0.34    0.34 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.03    1.62    1.32    1.66 f
+  cts_inv_10394723/I (INV_X1)                                      1.62    0.10    1.75 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.60    5.51    3.36    5.11 r
+  cts_inv_10034687/I (INV_X1)                                      5.63    0.69    5.80 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.10    2.88    2.27    8.07 f
+  cts_inv_9994683/I (INV_X1)                                       2.88    0.11    8.18 f
+  cts_inv_9994683/ZN (INV_X1)                       2      4.00    6.08    3.83   12.02 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   4.00   6.08   0.00  12.02 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.52    1.22   13.24 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.21    3.19    6.20   19.44 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.19    0.15   19.59 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.87    5.15    4.41   23.99 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                5.34    0.17   24.17 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.63    5.57    6.16   30.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.57    0.25   30.57 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.67   5.84    4.22   34.79 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                8.11    2.54   37.33 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.25   2.12    1.30   38.62 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.12    0.19   38.81 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.11   3.24    2.37   41.18 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                3.24    0.21   41.39 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.69   4.37    3.03   44.42 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.37    0.25   44.67 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.70   5.42    3.85   48.52 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               5.42    0.53   49.06 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.22   2.35    3.80   52.85 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.35    0.19   53.04 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.13   2.37    1.81   54.86 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.37    0.10   54.95 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.52   2.77    3.47   58.42 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                2.82    0.36   58.78 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.30   2.38    1.96   60.75 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.38    0.21   60.96 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.57   2.69    3.53   64.49 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.77    0.40   64.89 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   4.00   6.08    3.81   68.70 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   4.00   6.08   0.00  68.70 r
+  cto_buf_drc_5234/I (BUF_X4)                                      6.08    0.23   68.93 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      5.10    2.80    4.83   73.76 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   5.10   2.80   0.00  73.76 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                3.03    0.59   74.35 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   7.57   5.36    3.62   77.97 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                7.34    2.27   80.24 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.61   4.50    2.44   82.68 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.61   4.50   0.00  82.68 r
+  remainder_reg_13_/CLK (SDFFSNQ_X1)                               8.16    2.78   85.47 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             85.47
+  total clock latency                                                             85.47
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_12_/CLK
+Latency             : 85.45
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      3.01    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.74    0.34    0.34 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.03    1.62    1.32    1.66 f
+  cts_inv_10394723/I (INV_X1)                                      1.62    0.10    1.75 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.60    5.51    3.36    5.11 r
+  cts_inv_10034687/I (INV_X1)                                      5.63    0.69    5.80 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.10    2.88    2.27    8.07 f
+  cts_inv_9994683/I (INV_X1)                                       2.88    0.11    8.18 f
+  cts_inv_9994683/ZN (INV_X1)                       2      4.00    6.08    3.83   12.02 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   4.00   6.08   0.00  12.02 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.52    1.22   13.24 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.21    3.19    6.20   19.44 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.19    0.15   19.59 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.87    5.15    4.41   23.99 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                5.34    0.17   24.17 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.63    5.57    6.16   30.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.57    0.25   30.57 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.67   5.84    4.22   34.79 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                8.11    2.54   37.33 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.25   2.12    1.30   38.62 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.12    0.19   38.81 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.11   3.24    2.37   41.18 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                3.24    0.21   41.39 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.69   4.37    3.03   44.42 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.37    0.25   44.67 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.70   5.42    3.85   48.52 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               5.42    0.53   49.06 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.22   2.35    3.80   52.85 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.35    0.19   53.04 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.13   2.37    1.81   54.86 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.37    0.10   54.95 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.52   2.77    3.47   58.42 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                2.82    0.36   58.78 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.30   2.38    1.96   60.75 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.38    0.21   60.96 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.57   2.69    3.53   64.49 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.77    0.40   64.89 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   4.00   6.08    3.81   68.70 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   4.00   6.08   0.00  68.70 r
+  cto_buf_drc_5234/I (BUF_X4)                                      6.08    0.23   68.93 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      5.10    2.80    4.83   73.76 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   5.10   2.80   0.00  73.76 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                3.03    0.59   74.35 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   7.57   5.36    3.62   77.97 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                7.34    2.27   80.24 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.61   4.50    2.44   82.68 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.61   4.50   0.00  82.68 r
+  remainder_reg_12_/CLK (SDFFSNQ_X1)                               8.18    2.77   85.45 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             85.45
+  total clock latency                                                             85.45
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_21_/CLK
+Latency             : 85.28
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      3.01    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.74    0.34    0.34 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.03    1.62    1.32    1.66 f
+  cts_inv_10394723/I (INV_X1)                                      1.62    0.10    1.75 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.60    5.51    3.36    5.11 r
+  cts_inv_10034687/I (INV_X1)                                      5.63    0.69    5.80 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.10    2.88    2.27    8.07 f
+  cts_inv_9994683/I (INV_X1)                                       2.88    0.11    8.18 f
+  cts_inv_9994683/ZN (INV_X1)                       2      4.00    6.08    3.83   12.02 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   4.00   6.08   0.00  12.02 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.52    1.22   13.24 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.21    3.19    6.20   19.44 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.19    0.15   19.59 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.87    5.15    4.41   23.99 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                5.34    0.17   24.17 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.63    5.57    6.16   30.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.57    0.25   30.57 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.67   5.84    4.22   34.79 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                8.11    2.54   37.33 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.25   2.12    1.30   38.62 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.12    0.19   38.81 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.11   3.24    2.37   41.18 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                3.24    0.21   41.39 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.69   4.37    3.03   44.42 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.37    0.25   44.67 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.70   5.42    3.85   48.52 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               5.42    0.53   49.06 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.22   2.35    3.80   52.85 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.35    0.19   53.04 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.13   2.37    1.81   54.86 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.37    0.10   54.95 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.52   2.77    3.47   58.42 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                2.82    0.36   58.78 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.30   2.38    1.96   60.75 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.38    0.21   60.96 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.57   2.69    3.53   64.49 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.77    0.40   64.89 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   4.00   6.08    3.81   68.70 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   4.00   6.08   0.00  68.70 r
+  cto_buf_drc_5234/I (BUF_X4)                                      6.08    0.23   68.93 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      5.10    2.80    4.83   73.76 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   5.10   2.80   0.00  73.76 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                3.03    0.59   74.35 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   7.57   5.36    3.62   77.97 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                7.34    2.27   80.24 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.61   4.50    2.44   82.68 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.61   4.50   0.00  82.68 r
+  remainder_reg_21_/CLK (SDFFSNQ_X1)                               8.16    2.59   85.28 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             85.28
+  total clock latency                                                             85.28
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_20_/CLK
+Latency             : 85.26
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      3.01    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.74    0.34    0.34 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.03    1.62    1.32    1.66 f
+  cts_inv_10394723/I (INV_X1)                                      1.62    0.10    1.75 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.60    5.51    3.36    5.11 r
+  cts_inv_10034687/I (INV_X1)                                      5.63    0.69    5.80 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.10    2.88    2.27    8.07 f
+  cts_inv_9994683/I (INV_X1)                                       2.88    0.11    8.18 f
+  cts_inv_9994683/ZN (INV_X1)                       2      4.00    6.08    3.83   12.02 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   4.00   6.08   0.00  12.02 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.52    1.22   13.24 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.21    3.19    6.20   19.44 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.19    0.15   19.59 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.87    5.15    4.41   23.99 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                5.34    0.17   24.17 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.63    5.57    6.16   30.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.57    0.25   30.57 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.67   5.84    4.22   34.79 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                8.11    2.54   37.33 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.25   2.12    1.30   38.62 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.12    0.19   38.81 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.11   3.24    2.37   41.18 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                3.24    0.21   41.39 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.69   4.37    3.03   44.42 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.37    0.25   44.67 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.70   5.42    3.85   48.52 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               5.42    0.53   49.06 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.22   2.35    3.80   52.85 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.35    0.19   53.04 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.13   2.37    1.81   54.86 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.37    0.10   54.95 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.52   2.77    3.47   58.42 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                2.82    0.36   58.78 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.30   2.38    1.96   60.75 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.38    0.21   60.96 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.57   2.69    3.53   64.49 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.77    0.40   64.89 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   4.00   6.08    3.81   68.70 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   4.00   6.08   0.00  68.70 r
+  cto_buf_drc_5234/I (BUF_X4)                                      6.08    0.23   68.93 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      5.10    2.80    4.83   73.76 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   5.10   2.80   0.00  73.76 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                3.03    0.59   74.35 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   7.57   5.36    3.62   77.97 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                7.34    2.27   80.24 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.61   4.50    2.44   82.68 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.61   4.50   0.00  82.68 r
+  remainder_reg_20_/CLK (SDFFSNQ_X1)                               8.18    2.57   85.26 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             85.26
+  total clock latency                                                             85.26
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_23_/CLK
+Latency             : 84.95
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      3.01    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.74    0.34    0.34 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.03    1.62    1.32    1.66 f
+  cts_inv_10394723/I (INV_X1)                                      1.62    0.10    1.75 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.60    5.51    3.36    5.11 r
+  cts_inv_10034687/I (INV_X1)                                      5.63    0.69    5.80 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.10    2.88    2.27    8.07 f
+  cts_inv_9994683/I (INV_X1)                                       2.88    0.11    8.18 f
+  cts_inv_9994683/ZN (INV_X1)                       2      4.00    6.08    3.83   12.02 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   4.00   6.08   0.00  12.02 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.52    1.22   13.24 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.21    3.19    6.20   19.44 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.19    0.15   19.59 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.87    5.15    4.41   23.99 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                5.34    0.17   24.17 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.63    5.57    6.16   30.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.57    0.25   30.57 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.67   5.84    4.22   34.79 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                8.11    2.54   37.33 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.25   2.12    1.30   38.62 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.12    0.19   38.81 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.11   3.24    2.37   41.18 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                3.24    0.21   41.39 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.69   4.37    3.03   44.42 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.37    0.25   44.67 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.70   5.42    3.85   48.52 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               5.42    0.53   49.06 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.22   2.35    3.80   52.85 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.35    0.19   53.04 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.13   2.37    1.81   54.86 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.37    0.10   54.95 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.52   2.77    3.47   58.42 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                2.82    0.36   58.78 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.30   2.38    1.96   60.75 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.38    0.21   60.96 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.57   2.69    3.53   64.49 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.77    0.40   64.89 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   4.00   6.08    3.81   68.70 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   4.00   6.08   0.00  68.70 r
+  cto_buf_drc_5234/I (BUF_X4)                                      6.08    0.23   68.93 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      5.10    2.80    4.83   73.76 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   5.10   2.80   0.00  73.76 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                3.03    0.59   74.35 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   7.57   5.36    3.62   77.97 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                7.34    2.27   80.24 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.61   4.50    2.44   82.68 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.61   4.50   0.00  82.68 r
+  remainder_reg_23_/CLK (SDFFSNQ_X1)                               8.07    2.27   84.95 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             84.95
+  total clock latency                                                             84.95
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_65_/CLK
+Latency             : 59.32
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.94    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.74    0.34    0.34 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.02    1.62    1.32    1.66 f
+  cts_inv_10394723/I (INV_X1)                                      1.62    0.10    1.75 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.57    5.51    3.36    5.11 r
+  cts_inv_10034687/I (INV_X1)                                      5.63    0.69    5.80 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.09    2.88    2.27    8.07 f
+  cts_inv_9994683/I (INV_X1)                                       2.88    0.11    8.18 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.91    6.08    3.83   12.02 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.91   6.08   0.00  12.02 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.52    1.22   13.24 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.17    3.19    6.20   19.44 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.19    0.15   19.59 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.79    5.15    4.41   23.99 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                5.34    0.17   24.17 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.53    5.57    6.16   30.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.57    0.25   30.57 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.58   5.84    4.22   34.79 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                8.11    2.54   37.33 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.21   2.12    1.30   38.62 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.12    0.19   38.81 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.09   3.24    2.37   41.18 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                3.24    0.15   41.33 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.32   2.73    2.14   43.47 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.73    0.25   43.72 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   5.01   6.92    4.35   48.07 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/I (BUF_X1)               7.17    1.09   49.15 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/Z (BUF_X1)    1   3.96   5.93    5.95   55.10 f
+  clk_gate_remainder_reg/cts_inv_5484232/I (INV_X4)                6.24    1.07   56.17 f
+  clk_gate_remainder_reg/cts_inv_5484232/ZN (INV_X4)   12  10.16   6.37    2.88   59.05 r
+  clk_gate_remainder_reg/p_abuf9 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   12  10.16   6.37   0.00  59.05 r
+  remainder_reg_65_/CLK (SDFFSNQ_X1)                               6.73    0.27   59.32 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             59.32
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_66_/CLK
+Latency             : 59.38
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.94    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.74    0.34    0.34 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.02    1.62    1.32    1.66 f
+  cts_inv_10394723/I (INV_X1)                                      1.62    0.10    1.75 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.57    5.51    3.36    5.11 r
+  cts_inv_10034687/I (INV_X1)                                      5.63    0.69    5.80 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.09    2.88    2.27    8.07 f
+  cts_inv_9994683/I (INV_X1)                                       2.88    0.11    8.18 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.91    6.08    3.83   12.02 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.91   6.08   0.00  12.02 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.52    1.22   13.24 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.17    3.19    6.20   19.44 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.19    0.15   19.59 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.79    5.15    4.41   23.99 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                5.34    0.17   24.17 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.53    5.57    6.16   30.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.57    0.25   30.57 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.58   5.84    4.22   34.79 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                8.11    2.54   37.33 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.21   2.12    1.30   38.62 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.12    0.19   38.81 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.09   3.24    2.37   41.18 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                3.24    0.15   41.33 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.32   2.73    2.14   43.47 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.73    0.25   43.72 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   5.01   6.92    4.35   48.07 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/I (BUF_X1)               7.17    1.09   49.15 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/Z (BUF_X1)    1   3.96   5.93    5.95   55.10 f
+  clk_gate_remainder_reg/cts_inv_5484232/I (INV_X4)                6.24    1.07   56.17 f
+  clk_gate_remainder_reg/cts_inv_5484232/ZN (INV_X4)   12  10.16   6.37    2.88   59.05 r
+  clk_gate_remainder_reg/p_abuf9 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   12  10.16   6.37   0.00  59.05 r
+  remainder_reg_66_/CLK (SDFFSNQ_X1)                               6.66    0.32   59.38 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             59.38
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_40_/CLK
+Latency             : 59.70
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.94    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.74    0.34    0.34 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.02    1.62    1.32    1.66 f
+  cts_inv_10394723/I (INV_X1)                                      1.62    0.10    1.75 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.57    5.51    3.36    5.11 r
+  cts_inv_10034687/I (INV_X1)                                      5.63    0.69    5.80 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.09    2.88    2.27    8.07 f
+  cts_inv_9994683/I (INV_X1)                                       2.88    0.11    8.18 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.91    6.08    3.83   12.02 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.91   6.08   0.00  12.02 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.52    1.22   13.24 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.17    3.19    6.20   19.44 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.19    0.15   19.59 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.79    5.15    4.41   23.99 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                5.34    0.17   24.17 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.53    5.57    6.16   30.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.57    0.25   30.57 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.58   5.84    4.22   34.79 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                8.11    2.54   37.33 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.21   2.12    1.30   38.62 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.12    0.19   38.81 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.09   3.24    2.37   41.18 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                3.24    0.15   41.33 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.32   2.73    2.14   43.47 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.73    0.25   43.72 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   5.01   6.92    4.35   48.07 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/I (BUF_X1)               6.92    0.84   48.90 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/Z (BUF_X1)    1   3.97   5.93    5.91   54.82 f
+  clk_gate_remainder_reg/cts_inv_5494233/I (INV_X4)                6.10    0.88   55.69 f
+  clk_gate_remainder_reg/cts_inv_5494233/ZN (INV_X4)    7   7.04   5.07    2.21   57.91 r
+  clk_gate_remainder_reg/p_abuf10 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    7   7.04   5.07   0.00  57.91 r
+  remainder_reg_40_/CLK (SDFFSNQ_X1)                               7.78    1.79   59.70 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             59.70
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_55_/CLK
+Latency             : 59.70
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.94    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.74    0.34    0.34 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.02    1.62    1.32    1.66 f
+  cts_inv_10394723/I (INV_X1)                                      1.62    0.10    1.75 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.57    5.51    3.36    5.11 r
+  cts_inv_10034687/I (INV_X1)                                      5.63    0.69    5.80 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.09    2.88    2.27    8.07 f
+  cts_inv_9994683/I (INV_X1)                                       2.88    0.11    8.18 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.91    6.08    3.83   12.02 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.91   6.08   0.00  12.02 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.52    1.22   13.24 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.17    3.19    6.20   19.44 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.19    0.15   19.59 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.79    5.15    4.41   23.99 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                5.34    0.17   24.17 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.53    5.57    6.16   30.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.57    0.25   30.57 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.58   5.84    4.22   34.79 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                8.11    2.54   37.33 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.21   2.12    1.30   38.62 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.12    0.19   38.81 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.09   3.24    2.37   41.18 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                3.24    0.15   41.33 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.32   2.73    2.14   43.47 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.73    0.25   43.72 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   5.01   6.92    4.35   48.07 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/I (BUF_X1)               6.92    0.84   48.90 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/Z (BUF_X1)    1   3.97   5.93    5.91   54.82 f
+  clk_gate_remainder_reg/cts_inv_5494233/I (INV_X4)                6.10    0.88   55.69 f
+  clk_gate_remainder_reg/cts_inv_5494233/ZN (INV_X4)    7   7.04   5.07    2.21   57.91 r
+  clk_gate_remainder_reg/p_abuf10 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    7   7.04   5.07   0.00  57.91 r
+  remainder_reg_55_/CLK (SDFFSNQ_X1)                               7.76    1.79   59.70 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             59.70
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_42_/CLK
+Latency             : 59.72
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.94    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.74    0.34    0.34 r
+  cts_inv_10434727/ZN (INV_X1)                      1      1.02    1.62    1.32    1.66 f
+  cts_inv_10394723/I (INV_X1)                                      1.62    0.10    1.75 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.57    5.51    3.36    5.11 r
+  cts_inv_10034687/I (INV_X1)                                      5.63    0.69    5.80 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.09    2.88    2.27    8.07 f
+  cts_inv_9994683/I (INV_X1)                                       2.88    0.11    8.18 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.91    6.08    3.83   12.02 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.91   6.08   0.00  12.02 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 6.52    1.22   13.24 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.17    3.19    6.20   19.44 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.19    0.15   19.59 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.79    5.15    4.41   23.99 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                5.34    0.17   24.17 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.53    5.57    6.16   30.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                5.57    0.25   30.57 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.58   5.84    4.22   34.79 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                8.11    2.54   37.33 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.21   2.12    1.30   38.62 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.12    0.19   38.81 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   2.09   3.24    2.37   41.18 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                3.24    0.15   41.33 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.32   2.73    2.14   43.47 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.73    0.25   43.72 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   5.01   6.92    4.35   48.07 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/I (BUF_X1)               6.92    0.84   48.90 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/Z (BUF_X1)    1   3.97   5.93    5.91   54.82 f
+  clk_gate_remainder_reg/cts_inv_5494233/I (INV_X4)                6.10    0.88   55.69 f
+  clk_gate_remainder_reg/cts_inv_5494233/ZN (INV_X4)    7   7.04   5.07    2.21   57.91 r
+  clk_gate_remainder_reg/p_abuf10 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    7   7.04   5.07   0.00  57.91 r
+  remainder_reg_42_/CLK (SDFFSNQ_X1)                               7.80    1.81   59.72 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             59.72
+
+
+================================================================
+==== Latency Reporting for Corner mode_norm.worst_low.RCmax ====
+================================================================
+
+========================================== Summary Table for Corner mode_norm.worst_low.RCmax ==========================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+clock                                   M,D       214     40.00     32.88        --    107.88     75.00     88.72      8.25        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214        --     32.88        --    107.88     75.00        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+================================= Details Table for Corner mode_norm.worst_low.RCmax =================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+clock
+                                   L   remainder_reg_13_/CLK            107.88 r    107.88 r        --          --
+                                   L   remainder_reg_12_/CLK            107.86 r    107.86 r        --          --
+                                   L   remainder_reg_21_/CLK            107.71 r    107.71 r        --          --
+                                   L   remainder_reg_20_/CLK            107.67 r    107.67 r        --          --
+                                   L   remainder_reg_23_/CLK            107.38 r    107.38 r        --          --
+                                   S   remainder_reg_65_/CLK             75.00 r     75.00 r        --          --
+                                   S   remainder_reg_66_/CLK             75.05 r     75.05 r        --          --
+                                   S   remainder_reg_40_/CLK             75.24 r     75.24 r        --          --
+                                   S   remainder_reg_55_/CLK             75.24 r     75.24 r        --          --
+                                   S   remainder_reg_42_/CLK             75.28 r     75.28 r        --          --
+
+
+===========================================================
+==== Path Reports for Corner mode_norm.worst_low.RCmax ====
+===========================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_13_/CLK
+Latency             : 107.88
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.92    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.72    0.32    0.32 r
+  cts_inv_10434727/ZN (INV_X1)                      1      0.96    1.74    1.58    1.91 f
+  cts_inv_10394723/I (INV_X1)                                      1.74    0.10    2.00 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.55    6.60    4.69    6.69 r
+  cts_inv_10034687/I (INV_X1)                                      6.60    0.67    7.36 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.03    3.01    3.01   10.38 f
+  cts_inv_9994683/I (INV_X1)                                       3.01    0.10   10.47 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.92    7.17    5.32   15.79 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.92   7.17   0.00  15.79 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 7.48    1.20   16.99 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.16    3.40    7.76   24.76 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.40    0.13   24.89 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.77    6.03    5.89   30.78 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                6.22    0.17   30.96 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.49    6.47    8.37   39.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                6.47    0.23   39.56 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.08   6.05    5.30   44.86 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.92    2.33   47.19 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.20   2.00    2.12   49.30 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.00    0.19   49.50 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   1.97   3.30    2.78   52.28 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                3.30    0.19   52.47 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.60   4.94    4.12   56.59 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.94    0.25   56.84 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.53   5.78    4.86   61.70 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               5.78    0.51   62.22 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.15   2.38    5.15   67.37 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.38    0.19   67.56 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.09   2.48    2.44   70.00 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.48    0.10   70.10 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.47   3.13    4.60   74.69 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                3.13    0.36   75.05 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.20   2.38    2.44   77.50 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.38    0.19   77.69 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.50   2.84    4.60   82.28 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.90    0.38   82.66 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   3.86   7.10    5.23   87.89 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.86   7.10   0.00  87.89 r
+  cto_buf_drc_5234/I (BUF_X4)                                      7.10    0.21   88.10 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      4.91    3.05    6.54   94.64 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   4.91   3.05   0.00  94.64 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                3.22    0.57   95.21 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   6.98   5.53    4.37   99.58 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                7.17    2.08  101.66 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.15   4.77    3.51  105.17 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.15   4.77   0.00 105.17 r
+  remainder_reg_13_/CLK (SDFFSNQ_X1)                               8.13    2.71  107.88 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                            107.88
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_12_/CLK
+Latency             : 107.86
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.92    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.72    0.32    0.32 r
+  cts_inv_10434727/ZN (INV_X1)                      1      0.96    1.74    1.58    1.91 f
+  cts_inv_10394723/I (INV_X1)                                      1.74    0.10    2.00 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.55    6.60    4.69    6.69 r
+  cts_inv_10034687/I (INV_X1)                                      6.60    0.67    7.36 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.03    3.01    3.01   10.38 f
+  cts_inv_9994683/I (INV_X1)                                       3.01    0.10   10.47 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.92    7.17    5.32   15.79 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.92   7.17   0.00  15.79 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 7.48    1.20   16.99 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.16    3.40    7.76   24.76 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.40    0.13   24.89 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.77    6.03    5.89   30.78 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                6.22    0.17   30.96 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.49    6.47    8.37   39.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                6.47    0.23   39.56 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.08   6.05    5.30   44.86 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.92    2.33   47.19 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.20   2.00    2.12   49.30 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.00    0.19   49.50 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   1.97   3.30    2.78   52.28 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                3.30    0.19   52.47 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.60   4.94    4.12   56.59 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.94    0.25   56.84 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.53   5.78    4.86   61.70 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               5.78    0.51   62.22 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.15   2.38    5.15   67.37 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.38    0.19   67.56 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.09   2.48    2.44   70.00 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.48    0.10   70.10 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.47   3.13    4.60   74.69 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                3.13    0.36   75.05 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.20   2.38    2.44   77.50 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.38    0.19   77.69 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.50   2.84    4.60   82.28 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.90    0.38   82.66 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   3.86   7.10    5.23   87.89 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.86   7.10   0.00  87.89 r
+  cto_buf_drc_5234/I (BUF_X4)                                      7.10    0.21   88.10 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      4.91    3.05    6.54   94.64 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   4.91   3.05   0.00  94.64 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                3.22    0.57   95.21 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   6.98   5.53    4.37   99.58 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                7.17    2.08  101.66 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.15   4.77    3.51  105.17 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.15   4.77   0.00 105.17 r
+  remainder_reg_12_/CLK (SDFFSNQ_X1)                               8.14    2.69  107.86 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                            107.86
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_21_/CLK
+Latency             : 107.71
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.92    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.72    0.32    0.32 r
+  cts_inv_10434727/ZN (INV_X1)                      1      0.96    1.74    1.58    1.91 f
+  cts_inv_10394723/I (INV_X1)                                      1.74    0.10    2.00 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.55    6.60    4.69    6.69 r
+  cts_inv_10034687/I (INV_X1)                                      6.60    0.67    7.36 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.03    3.01    3.01   10.38 f
+  cts_inv_9994683/I (INV_X1)                                       3.01    0.10   10.47 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.92    7.17    5.32   15.79 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.92   7.17   0.00  15.79 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 7.48    1.20   16.99 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.16    3.40    7.76   24.76 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.40    0.13   24.89 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.77    6.03    5.89   30.78 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                6.22    0.17   30.96 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.49    6.47    8.37   39.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                6.47    0.23   39.56 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.08   6.05    5.30   44.86 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.92    2.33   47.19 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.20   2.00    2.12   49.30 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.00    0.19   49.50 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   1.97   3.30    2.78   52.28 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                3.30    0.19   52.47 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.60   4.94    4.12   56.59 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.94    0.25   56.84 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.53   5.78    4.86   61.70 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               5.78    0.51   62.22 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.15   2.38    5.15   67.37 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.38    0.19   67.56 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.09   2.48    2.44   70.00 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.48    0.10   70.10 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.47   3.13    4.60   74.69 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                3.13    0.36   75.05 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.20   2.38    2.44   77.50 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.38    0.19   77.69 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.50   2.84    4.60   82.28 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.90    0.38   82.66 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   3.86   7.10    5.23   87.89 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.86   7.10   0.00  87.89 r
+  cto_buf_drc_5234/I (BUF_X4)                                      7.10    0.21   88.10 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      4.91    3.05    6.54   94.64 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   4.91   3.05   0.00  94.64 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                3.22    0.57   95.21 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   6.98   5.53    4.37   99.58 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                7.17    2.08  101.66 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.15   4.77    3.51  105.17 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.15   4.77   0.00 105.17 r
+  remainder_reg_21_/CLK (SDFFSNQ_X1)                               8.11    2.54  107.71 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                            107.71
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_20_/CLK
+Latency             : 107.67
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.92    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.72    0.32    0.32 r
+  cts_inv_10434727/ZN (INV_X1)                      1      0.96    1.74    1.58    1.91 f
+  cts_inv_10394723/I (INV_X1)                                      1.74    0.10    2.00 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.55    6.60    4.69    6.69 r
+  cts_inv_10034687/I (INV_X1)                                      6.60    0.67    7.36 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.03    3.01    3.01   10.38 f
+  cts_inv_9994683/I (INV_X1)                                       3.01    0.10   10.47 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.92    7.17    5.32   15.79 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.92   7.17   0.00  15.79 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 7.48    1.20   16.99 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.16    3.40    7.76   24.76 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.40    0.13   24.89 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.77    6.03    5.89   30.78 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                6.22    0.17   30.96 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.49    6.47    8.37   39.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                6.47    0.23   39.56 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.08   6.05    5.30   44.86 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.92    2.33   47.19 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.20   2.00    2.12   49.30 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.00    0.19   49.50 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   1.97   3.30    2.78   52.28 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                3.30    0.19   52.47 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.60   4.94    4.12   56.59 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.94    0.25   56.84 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.53   5.78    4.86   61.70 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               5.78    0.51   62.22 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.15   2.38    5.15   67.37 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.38    0.19   67.56 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.09   2.48    2.44   70.00 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.48    0.10   70.10 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.47   3.13    4.60   74.69 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                3.13    0.36   75.05 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.20   2.38    2.44   77.50 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.38    0.19   77.69 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.50   2.84    4.60   82.28 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.90    0.38   82.66 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   3.86   7.10    5.23   87.89 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.86   7.10   0.00  87.89 r
+  cto_buf_drc_5234/I (BUF_X4)                                      7.10    0.21   88.10 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      4.91    3.05    6.54   94.64 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   4.91   3.05   0.00  94.64 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                3.22    0.57   95.21 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   6.98   5.53    4.37   99.58 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                7.17    2.08  101.66 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.15   4.77    3.51  105.17 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.15   4.77   0.00 105.17 r
+  remainder_reg_20_/CLK (SDFFSNQ_X1)                               8.09    2.50  107.67 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                            107.67
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_23_/CLK
+Latency             : 107.38
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.92    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.72    0.32    0.32 r
+  cts_inv_10434727/ZN (INV_X1)                      1      0.96    1.74    1.58    1.91 f
+  cts_inv_10394723/I (INV_X1)                                      1.74    0.10    2.00 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.55    6.60    4.69    6.69 r
+  cts_inv_10034687/I (INV_X1)                                      6.60    0.67    7.36 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.03    3.01    3.01   10.38 f
+  cts_inv_9994683/I (INV_X1)                                       3.01    0.10   10.47 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.92    7.17    5.32   15.79 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.92   7.17   0.00  15.79 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 7.48    1.20   16.99 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.16    3.40    7.76   24.76 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.40    0.13   24.89 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.77    6.03    5.89   30.78 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                6.22    0.17   30.96 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.49    6.47    8.37   39.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                6.47    0.23   39.56 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   7.08   6.05    5.30   44.86 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.92    2.33   47.19 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.20   2.00    2.12   49.30 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.00    0.19   49.50 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   1.97   3.30    2.78   52.28 f
+  clk_gate_remainder_reg/cts_inv_7274411/I (INV_X1)                3.30    0.19   52.47 f
+  clk_gate_remainder_reg/cts_inv_7274411/ZN (INV_X1)    2   2.60   4.94    4.12   56.59 r
+  clk_gate_remainder_reg/cts_inv_7124396/I (INV_X1)                4.94    0.25   56.84 r
+  clk_gate_remainder_reg/cts_inv_7124396/ZN (INV_X1)    2   3.53   5.78    4.86   61.70 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/I (BUF_X1)               5.78    0.51   62.22 f
+  clk_gate_remainder_reg/cto_buf_drc_5197/Z (BUF_X1)    1   1.15   2.38    5.15   67.37 f
+  clk_gate_remainder_reg/cts_inv_6374321/I (INV_X1)                2.38    0.19   67.56 f
+  clk_gate_remainder_reg/cts_inv_6374321/ZN (INV_X1)    1   1.09   2.48    2.44   70.00 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/I (BUF_X1)               2.48    0.10   70.10 r
+  clk_gate_remainder_reg/cto_buf_drc_5199/Z (BUF_X1)    1   1.47   3.13    4.60   74.69 r
+  clk_gate_remainder_reg/cts_inv_6084292/I (INV_X1)                3.13    0.36   75.05 r
+  clk_gate_remainder_reg/cts_inv_6084292/ZN (INV_X1)    1   1.20   2.38    2.44   77.50 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/I (BUF_X1)               2.38    0.19   77.69 f
+  clk_gate_remainder_reg/cto_buf_drc_5201/Z (BUF_X1)    1   1.50   2.84    4.60   82.28 f
+  clk_gate_remainder_reg/cts_inv_5444228/I (INV_X1)                2.90    0.38   82.66 f
+  clk_gate_remainder_reg/cts_inv_5444228/ZN (INV_X1)    2   3.86   7.10    5.23   87.89 r
+  clk_gate_remainder_reg/p_abuf5 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.86   7.10   0.00  87.89 r
+  cto_buf_drc_5234/I (BUF_X4)                                      7.10    0.21   88.10 r
+  cto_buf_drc_5234/Z (BUF_X4)                       4      4.91    3.05    6.54   94.64 r
+  clk_gate_remainder_reg/cts13 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    4   4.91   3.05   0.00  94.64 r
+  clk_gate_remainder_reg/cts_inv_4934177/I (INV_X2)                3.22    0.57   95.21 r
+  clk_gate_remainder_reg/cts_inv_4934177/ZN (INV_X2)    1   6.98   5.53    4.37   99.58 f
+  clk_gate_remainder_reg/cts_inv_4684152/I (INV_X8)                7.17    2.08  101.66 f
+  clk_gate_remainder_reg/cts_inv_4684152/ZN (INV_X8)   14  12.15   4.77    3.51  105.17 r
+  clk_gate_remainder_reg/p_abuf0 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   14  12.15   4.77   0.00 105.17 r
+  remainder_reg_23_/CLK (SDFFSNQ_X1)                               8.03    2.21  107.38 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                            107.38
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_65_/CLK
+Latency             : 75.00
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.86    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.72    0.32    0.32 r
+  cts_inv_10434727/ZN (INV_X1)                      1      0.95    1.74    1.58    1.91 f
+  cts_inv_10394723/I (INV_X1)                                      1.74    0.10    2.00 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.52    6.60    4.69    6.69 r
+  cts_inv_10034687/I (INV_X1)                                      6.60    0.67    7.36 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.01    3.01    3.01   10.38 f
+  cts_inv_9994683/I (INV_X1)                                       3.01    0.10   10.47 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.84    7.17    5.32   15.79 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.84   7.17   0.00  15.79 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 7.48    1.20   16.99 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.12    3.40    7.76   24.76 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.40    0.13   24.89 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.69    6.03    5.89   30.78 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                6.22    0.17   30.96 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.40    6.47    8.37   39.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                6.47    0.23   39.56 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   6.98   6.05    5.30   44.86 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.92    2.33   47.19 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.17   2.00    2.12   49.30 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.00    0.19   49.50 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   1.95   3.30    2.78   52.28 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                3.30    0.15   52.43 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.28   2.86    2.86   55.29 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.86    0.25   55.54 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   4.79   7.44    5.34   60.88 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/I (BUF_X1)               7.63    1.01   61.89 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/Z (BUF_X1)    1   3.66   6.10    7.84   69.73 f
+  clk_gate_remainder_reg/cts_inv_5484232/I (INV_X4)                6.33    0.97   70.71 f
+  clk_gate_remainder_reg/cts_inv_5484232/ZN (INV_X4)   12   9.79   6.79    4.02   74.73 r
+  clk_gate_remainder_reg/p_abuf9 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   12   9.79   6.79   0.00  74.73 r
+  remainder_reg_65_/CLK (SDFFSNQ_X1)                               7.06    0.27   75.00 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             75.00
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_66_/CLK
+Latency             : 75.05
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.86    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.72    0.32    0.32 r
+  cts_inv_10434727/ZN (INV_X1)                      1      0.95    1.74    1.58    1.91 f
+  cts_inv_10394723/I (INV_X1)                                      1.74    0.10    2.00 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.52    6.60    4.69    6.69 r
+  cts_inv_10034687/I (INV_X1)                                      6.60    0.67    7.36 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.01    3.01    3.01   10.38 f
+  cts_inv_9994683/I (INV_X1)                                       3.01    0.10   10.47 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.84    7.17    5.32   15.79 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.84   7.17   0.00  15.79 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 7.48    1.20   16.99 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.12    3.40    7.76   24.76 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.40    0.13   24.89 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.69    6.03    5.89   30.78 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                6.22    0.17   30.96 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.40    6.47    8.37   39.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                6.47    0.23   39.56 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   6.98   6.05    5.30   44.86 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.92    2.33   47.19 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.17   2.00    2.12   49.30 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.00    0.19   49.50 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   1.95   3.30    2.78   52.28 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                3.30    0.15   52.43 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.28   2.86    2.86   55.29 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.86    0.25   55.54 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   4.79   7.44    5.34   60.88 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/I (BUF_X1)               7.63    1.01   61.89 f
+  clk_gate_remainder_reg/cto_buf_drc_5205/Z (BUF_X1)    1   3.66   6.10    7.84   69.73 f
+  clk_gate_remainder_reg/cts_inv_5484232/I (INV_X4)                6.33    0.97   70.71 f
+  clk_gate_remainder_reg/cts_inv_5484232/ZN (INV_X4)   12   9.79   6.79    4.02   74.73 r
+  clk_gate_remainder_reg/p_abuf9 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)   12   9.79   6.79   0.00  74.73 r
+  remainder_reg_66_/CLK (SDFFSNQ_X1)                               7.00    0.32   75.05 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             75.05
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_40_/CLK
+Latency             : 75.24
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.86    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.72    0.32    0.32 r
+  cts_inv_10434727/ZN (INV_X1)                      1      0.95    1.74    1.58    1.91 f
+  cts_inv_10394723/I (INV_X1)                                      1.74    0.10    2.00 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.52    6.60    4.69    6.69 r
+  cts_inv_10034687/I (INV_X1)                                      6.60    0.67    7.36 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.01    3.01    3.01   10.38 f
+  cts_inv_9994683/I (INV_X1)                                       3.01    0.10   10.47 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.84    7.17    5.32   15.79 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.84   7.17   0.00  15.79 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 7.48    1.20   16.99 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.12    3.40    7.76   24.76 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.40    0.13   24.89 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.69    6.03    5.89   30.78 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                6.22    0.17   30.96 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.40    6.47    8.37   39.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                6.47    0.23   39.56 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   6.98   6.05    5.30   44.86 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.92    2.33   47.19 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.17   2.00    2.12   49.30 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.00    0.19   49.50 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   1.95   3.30    2.78   52.28 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                3.30    0.15   52.43 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.28   2.86    2.86   55.29 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.86    0.25   55.54 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   4.79   7.44    5.34   60.88 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/I (BUF_X1)               7.44    0.80   61.68 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/Z (BUF_X1)    1   3.66   6.10    7.80   69.48 f
+  clk_gate_remainder_reg/cts_inv_5494233/I (INV_X4)                6.24    0.80   70.29 f
+  clk_gate_remainder_reg/cts_inv_5494233/ZN (INV_X4)    7   6.82   5.42    3.20   73.49 r
+  clk_gate_remainder_reg/p_abuf10 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    7   6.82   5.42   0.00  73.49 r
+  remainder_reg_40_/CLK (SDFFSNQ_X1)                               7.86    1.75   75.24 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             75.24
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_55_/CLK
+Latency             : 75.24
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.86    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.72    0.32    0.32 r
+  cts_inv_10434727/ZN (INV_X1)                      1      0.95    1.74    1.58    1.91 f
+  cts_inv_10394723/I (INV_X1)                                      1.74    0.10    2.00 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.52    6.60    4.69    6.69 r
+  cts_inv_10034687/I (INV_X1)                                      6.60    0.67    7.36 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.01    3.01    3.01   10.38 f
+  cts_inv_9994683/I (INV_X1)                                       3.01    0.10   10.47 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.84    7.17    5.32   15.79 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.84   7.17   0.00  15.79 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 7.48    1.20   16.99 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.12    3.40    7.76   24.76 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.40    0.13   24.89 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.69    6.03    5.89   30.78 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                6.22    0.17   30.96 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.40    6.47    8.37   39.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                6.47    0.23   39.56 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   6.98   6.05    5.30   44.86 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.92    2.33   47.19 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.17   2.00    2.12   49.30 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.00    0.19   49.50 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   1.95   3.30    2.78   52.28 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                3.30    0.15   52.43 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.28   2.86    2.86   55.29 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.86    0.25   55.54 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   4.79   7.44    5.34   60.88 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/I (BUF_X1)               7.44    0.80   61.68 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/Z (BUF_X1)    1   3.66   6.10    7.80   69.48 f
+  clk_gate_remainder_reg/cts_inv_5494233/I (INV_X4)                6.24    0.80   70.29 f
+  clk_gate_remainder_reg/cts_inv_5494233/ZN (INV_X4)    7   6.82   5.42    3.20   73.49 r
+  clk_gate_remainder_reg/p_abuf10 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    7   6.82   5.42   0.00  73.49 r
+  remainder_reg_55_/CLK (SDFFSNQ_X1)                               7.84    1.75   75.24 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             75.24
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_clock
+Clock Fanout        : clock
+Clock at Sink       : clock
+Sink                : remainder_reg_42_/CLK
+Latency             : 75.28
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  clock (in)                                        2      2.86    0.00    0.00    0.00 r
+  cts_inv_10434727/I (INV_X1)                                      0.72    0.32    0.32 r
+  cts_inv_10434727/ZN (INV_X1)                      1      0.95    1.74    1.58    1.91 f
+  cts_inv_10394723/I (INV_X1)                                      1.74    0.10    2.00 f
+  cts_inv_10394723/ZN (INV_X1)                      1      3.52    6.60    4.69    6.69 r
+  cts_inv_10034687/I (INV_X1)                                      6.60    0.67    7.36 r
+  cts_inv_10034687/ZN (INV_X1)                      1      1.01    3.01    3.01   10.38 f
+  cts_inv_9994683/I (INV_X1)                                       3.01    0.10   10.47 f
+  cts_inv_9994683/ZN (INV_X1)                       2      3.84    7.17    5.32   15.79 r
+  clk_gate_remainder_reg/CLK (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    2   3.84   7.17   0.00  15.79 r
+  clk_gate_remainder_reg/latch/CLK (CLKGATETST_X1)                 7.48    1.20   16.99 r
+  clk_gate_remainder_reg/latch/Q (CLKGATETST_X1)    1      1.12    3.40    7.76   24.76 r
+  clk_gate_remainder_reg/cts_buf_7854469/I (BUF_X2)                3.40    0.13   24.89 r
+  clk_gate_remainder_reg/cts_buf_7854469/Z (BUF_X2)    2   4.69    6.03    5.89   30.78 r
+  clk_gate_remainder_reg/cts_buf_7774461/I (BUF_X2)                6.22    0.17   30.96 r
+  clk_gate_remainder_reg/cts_buf_7774461/Z (BUF_X2)    2   6.40    6.47    8.37   39.33 r
+  clk_gate_remainder_reg/cts_inv_7734457/I (INV_X2)                6.47    0.23   39.56 r
+  clk_gate_remainder_reg/cts_inv_7734457/ZN (INV_X2)    1   6.98   6.05    5.30   44.86 f
+  clk_gate_remainder_reg/cts_inv_7464430/I (INV_X8)                7.92    2.33   47.19 f
+  clk_gate_remainder_reg/cts_inv_7464430/ZN (INV_X8)    1   1.17   2.00    2.12   49.30 r
+  clk_gate_remainder_reg/cts_inv_7374421/I (INV_X1)                2.00    0.19   49.50 r
+  clk_gate_remainder_reg/cts_inv_7374421/ZN (INV_X1)    2   1.95   3.30    2.78   52.28 f
+  clk_gate_remainder_reg/cts_inv_7284412/I (INV_X1)                3.30    0.15   52.43 f
+  clk_gate_remainder_reg/cts_inv_7284412/ZN (INV_X1)    1   1.28   2.86    2.86   55.29 r
+  clk_gate_remainder_reg/cts_inv_7144398/I (INV_X1)                2.86    0.25   55.54 r
+  clk_gate_remainder_reg/cts_inv_7144398/ZN (INV_X1)    2   4.79   7.44    5.34   60.88 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/I (BUF_X1)               7.44    0.80   61.68 f
+  clk_gate_remainder_reg/cto_buf_drc_5204/Z (BUF_X1)    1   3.66   6.10    7.80   69.48 f
+  clk_gate_remainder_reg/cts_inv_5494233/I (INV_X4)                6.24    0.80   70.29 f
+  clk_gate_remainder_reg/cts_inv_5494233/ZN (INV_X4)    7   6.82   5.42    3.20   73.49 r
+  clk_gate_remainder_reg/p_abuf10 (SNPS_CLOCK_GATE_HIGH_MulDiv_1)    7   6.82   5.42   0.00  73.49 r
+  remainder_reg_42_/CLK (SDFFSNQ_X1)                               7.82    1.79   75.28 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             75.28
+
+
+1

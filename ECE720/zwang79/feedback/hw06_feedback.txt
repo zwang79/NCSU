@@ -1,0 +1,16 @@
+ECE720 hw06 Feedback for Wang,Zhiping
+
+(43/45) 1 Were the address space and latency for each transaction calculated correctly? Was the latency found through simulation?  Were the discrepancies explained?
+ (-2)simulated latency was differs from the solution
+
+(20/20) 2 Are the transaction rates for the slaves correct?
+correct
+
+(35/35) 3 Does the simulated system have the correct behavior?
+correct
+
+
+Total:
+(0/0) Late Penalty
+(98/100) Total
+

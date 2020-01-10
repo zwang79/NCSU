@@ -1,0 +1,171 @@
+****************************************
+Report : qor
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:29:24 2019
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'MulDiv:MulDiv.design'. (TIM-125)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 4171, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 0, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Information: Timer using 'Zero-interconnect Delay Calculation'. (TIM-050)
+
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'clock'
+----------------------------------------
+Worst Hold Violation:            -48.87
+Total Hold Violation:          -2896.47
+No. of Hold Violations:             267
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     87
+Critical Path Length:            836.96
+Critical Path Slack:            4131.91
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      8
+Critical Path Length:            212.44
+Critical Path Slack:            4755.73
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            139.35
+Critical Path Slack:            4720.64
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     87
+Critical Path Length:           1034.64
+Critical Path Slack:            3933.73
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      8
+Critical Path Length:            238.92
+Critical Path Slack:            4729.18
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            180.99
+Critical Path Slack:            4679.00
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              5
+Hierarchical Port Count:             30
+Leaf Cell Count:                   3705
+Buf/Inv Cell Count:                 384
+Buf Cell Count:                       8
+Inv Cell Count:                     376
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          3486
+Sequential Cell Count:              219
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             1294.07
+Noncombinational Area:           319.73
+Buf/Inv Area:                     57.41
+Total Buffer Area:                 1.97
+Total Inverter Area:              55.44
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                           1613.81
+Cell Area (netlist and physical only):         1613.81
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              4175
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:29:25 2019
+****************************************
+Information: Timer using 'Zero-interconnect Delay Calculation'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+mode_norm.slow.RCmax (Setup)        4131.91           0.00              0
+mode_norm.worst_low.RCmax (Setup)        3933.73           0.00              0
+Design             (Setup)          3933.73           0.00              0
+
+mode_norm.fast.RCmin_bc (Hold)         -48.87       -2896.47            267
+Design             (Hold)            -48.87       -2896.47            267
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                           1613.81
+Cell Area (netlist and physical only):         1613.81
+Nets with DRC Violations:        0
+1

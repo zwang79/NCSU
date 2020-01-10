@@ -1,0 +1,241 @@
+Warning: Scenario mode_norm.fast.RCmin is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.fast.RCmin_bc is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.slow.RCmax_bc is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.worst_low.RCmax_bc is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by group
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+        -derate
+        -attributes
+        -physical
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:00:42 2019
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, AWP, CRPR'. (TIM-050)
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: out_reg_280_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: mode_norm.slow.RCmax
+  Corner: mode_norm.slow.RCmax
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGIN
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                                  0.00      0.00
+  clock network delay (ideal)                                                           54.51     54.51
+  input external delay                                                                 120.00    174.51
+
+  reset (in)                                                       121.58      1.00     22.81    197.32 r    (0.01,17.95)
+  reset (net)                                      43     65.45
+  U3716/I (INV_X1)                                                 145.85      1.00     32.46    229.78 r    (4.22,38.02)
+  U3716/ZN (INV_X1)                                                 89.44      1.00     44.36    274.15 f    (4.29,38.02)
+  n6793 (net)                                      32     46.18
+  U3730/A1 (AND2_X1)                                               132.12      1.00     35.51    309.66 f    (22.78,36.39)
+  U3730/Z (AND2_X1)                                                 83.39      1.00     28.50    338.16 f    (22.91,36.49)
+  n4275 (net)                                      32     62.00
+  U5096/A2 (AOI22_X1)                                              102.63      1.00     14.69    352.85 f    (41.47,34.99)
+  U5096/ZN (AOI22_X1)                                               32.10      1.00     14.08    366.92 r    (41.32,34.99)
+  n4318 (net)                                       1      1.14
+  U5102/A2 (NAND4_X1)                                               32.10      1.00      0.04    366.96 r    (40.90,34.17)
+  U5102/ZN (NAND4_X1)                                              103.15      1.00     18.94    385.90 f    (40.90,34.18)
+  N300 (net)                                        1     16.66
+  out_reg_280_/D (SDFFSNQ_X1)                                      154.88      1.00     55.26    441.16 f    (46.14,4.15)      s, n
+  data arrival time                                                                              441.16
+
+  clock clk (rise edge)                                                                500.00    500.00
+  clock network delay (propagated)                                                      83.07    583.07
+  clock reconvergence pessimism                                                          0.00    583.07
+  out_reg_280_/CLK (SDFFSNQ_X1)                                    113.26      1.00      0.00    583.07 r    (45.70,4.22)      s, n
+  clock uncertainty                                                                    -20.00    563.07
+  library setup time                                                           1.00    -11.75    551.31
+  data required time                                                                             551.30
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             551.30
+  data arrival time                                                                              -441.16
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    110.14
+
+
+
+  Startpoint: out_reg_200_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[200] (output port clocked by clk)
+  Mode: mode_norm.slow.RCmax
+  Corner: mode_norm.slow.RCmax
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGOUT
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                                  0.00      0.00
+  clock network delay (propagated)                                                      85.95     85.95
+
+  out_reg_200_/CLK (SDFFSNQ_X1)                                    123.10      1.00      0.00     85.95 r    (0.06,14.97)      s, n
+  out_reg_200_/Q (SDFFSNQ_X1)                                       11.22      1.00     23.59    109.54 f    (1.86,14.98)      s, n
+  out[200] (net)                                    1      7.98
+  out[200] (out)                                                    30.80      1.00      9.84    119.38 f    (49.46,14.69)
+  data arrival time                                                                              119.38
+
+  clock clk (rise edge)                                                                500.00    500.00
+  clock network delay (ideal)                                                           53.03    553.03
+  clock reconvergence pessimism                                                          0.00    553.03
+  clock uncertainty                                                                    -20.00    533.03
+  output external delay                                                                -120.00   413.03
+  data required time                                                                             413.02
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             413.02
+  data arrival time                                                                              -119.38
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    293.64
+
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: out_reg_280_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: mode_norm.worst_low.RCmax
+  Corner: mode_norm.worst_low.RCmax
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGIN
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                                  0.00      0.00
+  clock network delay (ideal)                                                           60.55     60.55
+  input external delay                                                                 120.00    180.55
+
+  reset (in)                                                       140.21      1.00     34.87    215.42 r    (0.01,17.95)
+  reset (net)                                      43     64.14
+  U3712/I (INV_X1)                                                 146.68      1.00     18.58    234.00 r    (8.32,16.51)
+  U3712/ZN (INV_X1)                                                 74.44      1.00     55.89    289.88 f    (8.38,16.52)
+  n6791 (net)                                      32     31.83
+  U4877/A2 (NAND2_X1)                                               75.17      1.00      2.06    291.94 f    (7.81,12.70)
+  U4877/ZN (NAND2_X1)                                               97.73      1.00     56.04    347.98 r    (7.90,12.64)
+  n4282 (net)                                      32     54.49
+  U5099/B2 (OAI22_X1)                                              132.16      1.00     33.40    381.38 r    (39.23,1.92)
+  U5099/ZN (OAI22_X1)                                               22.26      1.00     14.57    395.95 f    (39.40,1.96)
+  n4314 (net)                                       1      1.12
+  U5101/A2 (NOR3_X1)                                                22.26      1.00      0.06    396.01 f    (39.87,2.70)
+  U5101/ZN (NOR3_X1)                                                29.35      1.00     17.05    413.06 r    (39.90,2.69)
+  n4316 (net)                                       1      6.02
+  U5102/A4 (NAND4_X1)                                               32.20      1.00      5.40    418.46 r    (40.70,34.18)
+  U5102/ZN (NAND4_X1)                                               88.27      1.00     19.05    437.51 f    (40.90,34.18)
+  N300 (net)                                        1     16.62
+  out_reg_280_/D (SDFFSNQ_X1)                                      142.90      1.00     52.45    489.97 f    (46.14,4.15)      s, n
+  data arrival time                                                                              489.97
+
+  clock clk (rise edge)                                                                500.00    500.00
+  clock network delay (propagated)                                                      88.41    588.41
+  clock reconvergence pessimism                                                          0.00    588.41
+  out_reg_280_/CLK (SDFFSNQ_X1)                                    117.02      1.00      0.00    588.41 r    (45.70,4.22)      s, n
+  clock uncertainty                                                                    -20.00    568.41
+  library setup time                                                           1.00    -20.09    548.32
+  data required time                                                                             548.30
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             548.30
+  data arrival time                                                                              -489.97
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                     58.34
+
+
+
+  Startpoint: out_reg_200_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[200] (output port clocked by clk)
+  Mode: mode_norm.worst_low.RCmax
+  Corner: mode_norm.worst_low.RCmax
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGOUT
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                                  0.00      0.00
+  clock network delay (propagated)                                                      92.56     92.56
+
+  out_reg_200_/CLK (SDFFSNQ_X1)                                    125.66      1.00      0.00     92.56 r    (0.06,14.97)      s, n
+  out_reg_200_/Q (SDFFSNQ_X1)                                       11.39      1.00     27.43    119.99 f    (1.86,14.98)      s, n
+  out[200] (net)                                    1      7.98
+  out[200] (out)                                                    30.92      1.00      9.82    129.81 f    (49.46,14.69)
+  data arrival time                                                                              129.81
+
+  clock clk (rise edge)                                                                500.00    500.00
+  clock network delay (ideal)                                                           59.03    559.03
+  clock reconvergence pessimism                                                          0.00    559.03
+  clock uncertainty                                                                    -20.00    539.03
+  output external delay                                                                -120.00   419.03
+  data required time                                                                             419.02
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             419.02
+  data arrival time                                                                              -129.81
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    289.20
+
+
+1

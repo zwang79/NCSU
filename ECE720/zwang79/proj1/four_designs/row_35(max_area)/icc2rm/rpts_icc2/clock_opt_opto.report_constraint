@@ -1,0 +1,98 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:48:28 2019
+****************************************
+
+
+
+   Mode: mode_norm.slow.RCmax Corner: mode_norm.slow.RCmax
+   Scenario: mode_norm.slow.RCmax
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   cts16                       10.00          10.36          -0.36  (VIOLATED) 
+     PIN : cto_buf_drc_5145/I    10.00        10.36          -0.36  (VIOLATED) 
+
+   cts21                       10.00          10.22          -0.23  (VIOLATED) 
+     PIN : divisor_reg_60_/CLK    10.00       10.22          -0.23  (VIOLATED) 
+     PIN : divisor_reg_62_/CLK    10.00       10.19          -0.19  (VIOLATED) 
+     PIN : divisor_reg_61_/CLK    10.00       10.19          -0.19  (VIOLATED) 
+     PIN : divisor_reg_58_/CLK    10.00       10.19          -0.19  (VIOLATED) 
+     PIN : divisor_reg_59_/CLK    10.00       10.11          -0.11  (VIOLATED) 
+
+   p_abuf2                     10.00          10.15          -0.15  (VIOLATED) 
+     PIN : remainder_reg_35_/CLK    10.00     10.15          -0.15  (VIOLATED) 
+     PIN : remainder_reg_32_/CLK    10.00     10.13          -0.13  (VIOLATED) 
+     PIN : remainder_reg_34_/CLK    10.00     10.11          -0.11  (VIOLATED) 
+     PIN : remainder_reg_51_/CLK    10.00     10.07          -0.08  (VIOLATED) 
+
+   cts17                       10.00          10.15          -0.15  (VIOLATED) 
+     PIN : divisor_reg_39_/CLK    10.00       10.15          -0.15  (VIOLATED) 
+     PIN : divisor_reg_38_/CLK    10.00       10.13          -0.13  (VIOLATED) 
+     PIN : divisor_reg_41_/CLK    10.00       10.11          -0.11  (VIOLATED) 
+     PIN : divisor_reg_42_/CLK    10.00       10.07          -0.08  (VIOLATED) 
+     PIN : divisor_reg_40_/CLK    10.00       10.05          -0.06  (VIOLATED) 
+
+   cts32                       10.00          10.09          -0.10  (VIOLATED) 
+     PIN : divisor_reg_4_/CLK    10.00        10.09          -0.10  (VIOLATED) 
+     PIN : divisor_reg_5_/CLK    10.00        10.07          -0.08  (VIOLATED) 
+     PIN : divisor_reg_3_/CLK    10.00        10.05          -0.06  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 5
+
+   Mode: mode_norm.worst_low.RCmax Corner: mode_norm.worst_low.RCmax
+   Scenario: mode_norm.worst_low.RCmax
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   p_abuf6                     10.00          10.55          -0.55  (VIOLATED) 
+     PIN : remainder_reg_98_/CLK    10.00     10.55          -0.55  (VIOLATED) 
+     PIN : remainder_reg_101_/CLK    10.00    10.53          -0.53  (VIOLATED) 
+     PIN : remainder_reg_99_/CLK    10.00     10.51          -0.51  (VIOLATED) 
+     PIN : remainder_reg_90_/CLK    10.00     10.09          -0.10  (VIOLATED) 
+     PIN : remainder_reg_91_/CLK    10.00     10.05          -0.06  (VIOLATED) 
+
+   p_abuf2                     10.00          10.19          -0.19  (VIOLATED) 
+     PIN : remainder_reg_32_/CLK    10.00     10.19          -0.19  (VIOLATED) 
+     PIN : remainder_reg_35_/CLK    10.00     10.17          -0.17  (VIOLATED) 
+     PIN : remainder_reg_34_/CLK    10.00     10.17          -0.17  (VIOLATED) 
+     PIN : remainder_reg_51_/CLK    10.00     10.17          -0.17  (VIOLATED) 
+     PIN : remainder_reg_48_/CLK    10.00     10.05          -0.06  (VIOLATED) 
+
+   cts21                       10.00          10.17          -0.17  (VIOLATED) 
+     PIN : divisor_reg_62_/CLK    10.00       10.17          -0.17  (VIOLATED) 
+     PIN : divisor_reg_61_/CLK    10.00       10.17          -0.17  (VIOLATED) 
+     PIN : divisor_reg_60_/CLK    10.00       10.15          -0.15  (VIOLATED) 
+     PIN : divisor_reg_59_/CLK    10.00       10.09          -0.10  (VIOLATED) 
+     PIN : divisor_reg_58_/CLK    10.00       10.09          -0.10  (VIOLATED) 
+
+   cts16                       10.00          10.09          -0.10  (VIOLATED) 
+     PIN : cto_buf_drc_5145/I    10.00        10.09          -0.10  (VIOLATED) 
+
+   cts32                       10.00          10.01          -0.02  (VIOLATED) 
+     PIN : divisor_reg_4_/CLK    10.00        10.01          -0.02  (VIOLATED) 
+     PIN : divisor_reg_3_/CLK    10.00        10.01          -0.02  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 5
+
+   Mode: mode_norm.slow.RCmax Corner: mode_norm.slow.RCmax
+   Scenario: mode_norm.slow.RCmax
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Mode: mode_norm.worst_low.RCmax Corner: mode_norm.worst_low.RCmax
+   Scenario: mode_norm.worst_low.RCmax
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 10
+1

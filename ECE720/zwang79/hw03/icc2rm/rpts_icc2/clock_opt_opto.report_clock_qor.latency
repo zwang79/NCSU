@@ -1,0 +1,1754 @@
+Warning: Use -per_clock_root option along with -type latency option to split the reporting of a clock to per clock root, so that the clock trees associated with different root pins are reported separately
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+****************************************
+Report : clock qor
+        -type latency
+        -show_paths
+        -nosplit
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:31:21 2019
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+===========================================================
+==== Latency Reporting for Corner mode_norm.fast.RCmin ====
+===========================================================
+
+============================================ Summary Table for Corner mode_norm.fast.RCmin =============================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+HCLK                                    M,D       841        --      0.00        --      0.00      0.00      0.00      0.00        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        841        --      0.00        --      0.00      0.00        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+=================================== Details Table for Corner mode_norm.fast.RCmin ====================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+HCLK
+
+
+======================================================
+==== Path Reports for Corner mode_norm.fast.RCmin ====
+======================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+==============================================================
+==== Latency Reporting for Corner mode_norm.fast.RCmin_bc ====
+==============================================================
+
+=========================================== Summary Table for Corner mode_norm.fast.RCmin_bc ===========================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+HCLK                                    M,D       841     69.12     36.64        --     82.07     45.43     61.30      7.74        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        841        --     36.64        --     82.07     45.43        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+================================== Details Table for Corner mode_norm.fast.RCmin_bc ==================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+HCLK
+                                   L   u_logic_Azs2z4_reg/CLK            82.07 r     82.07 r      0.00        0.00
+                                   L   u_logic_Jxs2z4_reg/CLK            82.04 r     82.04 r      0.00        0.00
+                                   L   u_logic_Bus2z4_reg/CLK            81.98 r     81.98 r      0.00        0.00
+                                   L   u_logic_Axm2z4_reg/CLK            81.96 r     81.96 r      0.00        0.00
+                                   L   u_logic_Svs2z4_reg/CLK            81.92 r     81.92 r      0.00        0.00
+                                   S   u_logic_Umi3z4_reg/CLK            45.43 r     45.43 r      0.00        0.00
+                                   S   u_logic_Hmh3z4_reg/CLK            45.43 r     45.43 r      0.00        0.00
+                                   S   u_logic_Z0g3z4_reg/CLK            45.49 r     45.49 r      0.00        0.00
+                                   S   u_logic_Lqr2z4_reg/CLK            45.93 r     45.93 r      0.00        0.00
+                                   S   u_logic_Vuo2z4_reg/CLK            46.22 r     46.22 r      0.00        0.00
+
+
+=========================================================
+==== Path Reports for Corner mode_norm.fast.RCmin_bc ====
+=========================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Azs2z4_reg/CLK
+Latency             : 82.07
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      4.14    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.75    0.80    0.80 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.22    1.49    1.35    2.16 f
+  cts_inv_293014573/I (INV_X1)                                     3.28    1.32    3.47 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.86    6.90    3.15    6.62 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  7.36    0.57    7.19 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.38    1.96    4.84   12.04 r
+  cts_inv_292114564/I (INV_X1)                                     1.96    0.21   12.25 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.68    2.50    2.04   14.29 f
+  cts_inv_290814551/I (INV_X1)                                     2.61    0.44   14.72 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.16    6.07    4.12   18.84 r
+  cts_inv_284014483/I (INV_X2)                                     7.06    1.72   20.56 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.58    3.78    3.03   23.59 f
+  cts_inv_282114464/I (INV_X1)                                     3.78    0.04   23.63 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.69    6.71    4.69   28.32 r
+  cts_inv_279614439/I (INV_X4)                                     7.76    1.87   30.19 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.87    2.23    1.66   31.85 f
+  cts_inv_277214415/I (INV_X1)                                     2.54    0.59   32.44 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.79    5.55    3.83   36.28 r
+  cts_inv_274914392/I (INV_X1)                                     5.55    0.57   36.85 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.69    3.26    2.73   39.58 f
+  cts_inv_272414367/I (INV_X1)                                     3.26    0.40   39.98 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.68    4.14    3.20   43.18 r
+  cts_inv_270214345/I (INV_X2)                                     4.33    0.71   43.89 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.66    3.45    2.00   45.89 f
+  cts_inv_268214325/I (INV_X1)                                     7.04    2.06   47.95 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.66    7.19    5.46   53.41 r
+  cts_inv_261614259/I (INV_X2)                                     7.63    1.35   54.76 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.98    6.03    4.73   59.49 f
+  cts_inv_259714240/I (INV_X4)                                     6.22    0.90   60.39 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.51    6.01    3.07   63.46 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.51   6.01   0.00  63.46 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            8.32    1.75   65.21 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   5.04   8.03   9.50   74.71 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   5.04   8.03   0.00  74.71 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  8.03    0.11   74.83 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.97    5.91    6.29   81.12 r
+  u_logic_Azs2z4_reg/CLK (SDFFRNQ_X1)                              6.14    0.95   82.07 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             82.07
+  total clock latency                                                             82.07
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Jxs2z4_reg/CLK
+Latency             : 82.04
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      4.14    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.75    0.80    0.80 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.22    1.49    1.35    2.16 f
+  cts_inv_293014573/I (INV_X1)                                     3.28    1.32    3.47 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.86    6.90    3.15    6.62 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  7.36    0.57    7.19 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.38    1.96    4.84   12.04 r
+  cts_inv_292114564/I (INV_X1)                                     1.96    0.21   12.25 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.68    2.50    2.04   14.29 f
+  cts_inv_290814551/I (INV_X1)                                     2.61    0.44   14.72 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.16    6.07    4.12   18.84 r
+  cts_inv_284014483/I (INV_X2)                                     7.06    1.72   20.56 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.58    3.78    3.03   23.59 f
+  cts_inv_282114464/I (INV_X1)                                     3.78    0.04   23.63 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.69    6.71    4.69   28.32 r
+  cts_inv_279614439/I (INV_X4)                                     7.76    1.87   30.19 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.87    2.23    1.66   31.85 f
+  cts_inv_277214415/I (INV_X1)                                     2.54    0.59   32.44 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.79    5.55    3.83   36.28 r
+  cts_inv_274914392/I (INV_X1)                                     5.55    0.57   36.85 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.69    3.26    2.73   39.58 f
+  cts_inv_272414367/I (INV_X1)                                     3.26    0.40   39.98 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.68    4.14    3.20   43.18 r
+  cts_inv_270214345/I (INV_X2)                                     4.33    0.71   43.89 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.66    3.45    2.00   45.89 f
+  cts_inv_268214325/I (INV_X1)                                     7.04    2.06   47.95 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.66    7.19    5.46   53.41 r
+  cts_inv_261614259/I (INV_X2)                                     7.63    1.35   54.76 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.98    6.03    4.73   59.49 f
+  cts_inv_259714240/I (INV_X4)                                     6.22    0.90   60.39 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.51    6.01    3.07   63.46 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.51   6.01   0.00  63.46 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            8.32    1.75   65.21 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   5.04   8.03   9.50   74.71 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   5.04   8.03   0.00  74.71 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  8.03    0.11   74.83 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.97    5.91    6.29   81.12 r
+  u_logic_Jxs2z4_reg/CLK (SDFFRNQ_X1)                              6.12    0.92   82.04 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             82.04
+  total clock latency                                                             82.04
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Bus2z4_reg/CLK
+Latency             : 81.98
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      4.14    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.75    0.80    0.80 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.22    1.49    1.35    2.16 f
+  cts_inv_293014573/I (INV_X1)                                     3.28    1.32    3.47 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.86    6.90    3.15    6.62 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  7.36    0.57    7.19 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.38    1.96    4.84   12.04 r
+  cts_inv_292114564/I (INV_X1)                                     1.96    0.21   12.25 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.68    2.50    2.04   14.29 f
+  cts_inv_290814551/I (INV_X1)                                     2.61    0.44   14.72 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.16    6.07    4.12   18.84 r
+  cts_inv_284014483/I (INV_X2)                                     7.06    1.72   20.56 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.58    3.78    3.03   23.59 f
+  cts_inv_282114464/I (INV_X1)                                     3.78    0.04   23.63 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.69    6.71    4.69   28.32 r
+  cts_inv_279614439/I (INV_X4)                                     7.76    1.87   30.19 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.87    2.23    1.66   31.85 f
+  cts_inv_277214415/I (INV_X1)                                     2.54    0.59   32.44 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.79    5.55    3.83   36.28 r
+  cts_inv_274914392/I (INV_X1)                                     5.55    0.57   36.85 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.69    3.26    2.73   39.58 f
+  cts_inv_272414367/I (INV_X1)                                     3.26    0.40   39.98 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.68    4.14    3.20   43.18 r
+  cts_inv_270214345/I (INV_X2)                                     4.33    0.71   43.89 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.66    3.45    2.00   45.89 f
+  cts_inv_268214325/I (INV_X1)                                     7.04    2.06   47.95 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.66    7.19    5.46   53.41 r
+  cts_inv_261614259/I (INV_X2)                                     7.63    1.35   54.76 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.98    6.03    4.73   59.49 f
+  cts_inv_259714240/I (INV_X4)                                     6.22    0.90   60.39 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.51    6.01    3.07   63.46 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.51   6.01   0.00  63.46 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            8.32    1.75   65.21 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   5.04   8.03   9.50   74.71 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   5.04   8.03   0.00  74.71 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  8.03    0.11   74.83 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.97    5.91    6.29   81.12 r
+  u_logic_Bus2z4_reg/CLK (SDFFRNQ_X1)                              6.08    0.86   81.98 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             81.98
+  total clock latency                                                             81.98
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Axm2z4_reg/CLK
+Latency             : 81.96
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      4.14    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.75    0.80    0.80 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.22    1.49    1.35    2.16 f
+  cts_inv_293014573/I (INV_X1)                                     3.28    1.32    3.47 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.86    6.90    3.15    6.62 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  7.36    0.57    7.19 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.38    1.96    4.84   12.04 r
+  cts_inv_292114564/I (INV_X1)                                     1.96    0.21   12.25 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.68    2.50    2.04   14.29 f
+  cts_inv_290814551/I (INV_X1)                                     2.61    0.44   14.72 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.16    6.07    4.12   18.84 r
+  cts_inv_284014483/I (INV_X2)                                     7.06    1.72   20.56 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.58    3.78    3.03   23.59 f
+  cts_inv_282114464/I (INV_X1)                                     3.78    0.04   23.63 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.69    6.71    4.69   28.32 r
+  cts_inv_279614439/I (INV_X4)                                     7.76    1.87   30.19 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.87    2.23    1.66   31.85 f
+  cts_inv_277214415/I (INV_X1)                                     2.54    0.59   32.44 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.79    5.55    3.83   36.28 r
+  cts_inv_274914392/I (INV_X1)                                     5.55    0.57   36.85 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.69    3.26    2.73   39.58 f
+  cts_inv_272414367/I (INV_X1)                                     3.26    0.40   39.98 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.68    4.14    3.20   43.18 r
+  cts_inv_270214345/I (INV_X2)                                     4.33    0.71   43.89 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.66    3.45    2.00   45.89 f
+  cts_inv_268214325/I (INV_X1)                                     7.04    2.06   47.95 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.66    7.19    5.46   53.41 r
+  cts_inv_261614259/I (INV_X2)                                     7.63    1.35   54.76 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.98    6.03    4.73   59.49 f
+  cts_inv_259714240/I (INV_X4)                                     6.22    0.90   60.39 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.51    6.01    3.07   63.46 r
+  u_logic_clk_gate_Z4l2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_11)    6  10.51   6.01   0.00  63.46 r
+  u_logic_clk_gate_Z4l2z4_reg/latch/CLK (CLKGATETST_X1)            8.39    2.19   65.65 r
+  u_logic_clk_gate_Z4l2z4_reg/latch/Q (CLKGATETST_X1)    5   5.13   8.16   9.59   75.24 r
+  u_logic_clk_gate_Z4l2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_11)    5   5.13   8.16   0.00  75.24 r
+  cto_buf_drc_15335/I (CLKBUF_X1)                                  8.16    0.08   75.32 r
+  cto_buf_drc_15335/Z (CLKBUF_X1)                   4      3.98    5.93    6.31   81.63 r
+  u_logic_Axm2z4_reg/CLK (SDFFRNQ_X1)                              5.93    0.32   81.96 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             81.96
+  total clock latency                                                             81.96
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Svs2z4_reg/CLK
+Latency             : 81.92
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      4.14    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.75    0.80    0.80 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.22    1.49    1.35    2.16 f
+  cts_inv_293014573/I (INV_X1)                                     3.28    1.32    3.47 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.86    6.90    3.15    6.62 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  7.36    0.57    7.19 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.38    1.96    4.84   12.04 r
+  cts_inv_292114564/I (INV_X1)                                     1.96    0.21   12.25 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.68    2.50    2.04   14.29 f
+  cts_inv_290814551/I (INV_X1)                                     2.61    0.44   14.72 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.16    6.07    4.12   18.84 r
+  cts_inv_284014483/I (INV_X2)                                     7.06    1.72   20.56 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.58    3.78    3.03   23.59 f
+  cts_inv_282114464/I (INV_X1)                                     3.78    0.04   23.63 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.69    6.71    4.69   28.32 r
+  cts_inv_279614439/I (INV_X4)                                     7.76    1.87   30.19 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.87    2.23    1.66   31.85 f
+  cts_inv_277214415/I (INV_X1)                                     2.54    0.59   32.44 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.79    5.55    3.83   36.28 r
+  cts_inv_274914392/I (INV_X1)                                     5.55    0.57   36.85 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.69    3.26    2.73   39.58 f
+  cts_inv_272414367/I (INV_X1)                                     3.26    0.40   39.98 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.68    4.14    3.20   43.18 r
+  cts_inv_270214345/I (INV_X2)                                     4.33    0.71   43.89 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.66    3.45    2.00   45.89 f
+  cts_inv_268214325/I (INV_X1)                                     7.04    2.06   47.95 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.66    7.19    5.46   53.41 r
+  cts_inv_261614259/I (INV_X2)                                     7.63    1.35   54.76 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.98    6.03    4.73   59.49 f
+  cts_inv_259714240/I (INV_X4)                                     6.22    0.90   60.39 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.51    6.01    3.07   63.46 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.51   6.01   0.00  63.46 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            8.32    1.75   65.21 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   5.04   8.03   9.50   74.71 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   5.04   8.03   0.00  74.71 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  8.03    0.11   74.83 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.97    5.91    6.29   81.12 r
+  u_logic_Svs2z4_reg/CLK (SDFFRNQ_X1)                              6.07    0.80   81.92 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             81.92
+  total clock latency                                                             81.92
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Umi3z4_reg/CLK
+Latency             : 45.43
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      4.02    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.75    0.80    0.80 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.19    1.49    1.35    2.16 f
+  cts_inv_292914572/I (INV_X1)                                     3.03    1.18    3.34 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.66    2.90    2.46    5.80 r
+  cts_inv_291914562/I (INV_X1)                                     2.98    0.40    6.20 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.71    2.69    2.27    8.47 f
+  cts_inv_290614549/I (INV_X1)                                     2.77    0.40    8.87 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.56    2.77    2.35   11.22 r
+  cts_inv_289314536/I (INV_X1)                                     2.77    0.31   11.52 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.42    5.72    3.93   15.45 f
+  cts_inv_288014523/I (INV_X4)                                     6.37    1.39   16.84 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.79    4.18    2.29   19.13 r
+  cto_buf_drc_14644/I (BUF_X4)                                     6.47    0.95   20.08 r
+  cto_buf_drc_14644/Z (BUF_X4)                      1      4.70    2.52    4.94   25.02 r
+  cts_inv_274714390/I (INV_X4)                                     4.75    1.79   26.82 r
+  cts_inv_274714390/ZN (INV_X4)                     1      7.14    3.19    2.67   29.49 f
+  cts_inv_272214365/I (INV_X8)                                     3.28    0.48   29.96 f
+  cts_inv_272214365/ZN (INV_X8)                    13     19.44    5.28    2.27   32.23 r
+  u_logic_clk_gate_X2j2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)   13  19.44   5.28   0.00  32.23 r
+  u_logic_clk_gate_X2j2z4_reg/latch/CLK (CLKGATETST_X1)            6.26    1.39   33.63 r
+  u_logic_clk_gate_X2j2z4_reg/latch/Q (CLKGATETST_X1)    1   2.06   4.12   6.81   40.44 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/I (BUF_X4)         4.12    0.17   40.61 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/Z (BUF_X4)    5   6.15   3.36   4.56  45.17 r
+  u_logic_clk_gate_X2j2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)    5   6.15   3.36   0.00  45.17 r
+  u_logic_Umi3z4_reg/CLK (SDFFSNQ_X1)                              3.47    0.27   45.43 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             45.43
+  total clock latency                                                             45.43
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Hmh3z4_reg/CLK
+Latency             : 45.43
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      4.02    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.75    0.80    0.80 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.19    1.49    1.35    2.16 f
+  cts_inv_292914572/I (INV_X1)                                     3.03    1.18    3.34 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.66    2.90    2.46    5.80 r
+  cts_inv_291914562/I (INV_X1)                                     2.98    0.40    6.20 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.71    2.69    2.27    8.47 f
+  cts_inv_290614549/I (INV_X1)                                     2.77    0.40    8.87 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.56    2.77    2.35   11.22 r
+  cts_inv_289314536/I (INV_X1)                                     2.77    0.31   11.52 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.42    5.72    3.93   15.45 f
+  cts_inv_288014523/I (INV_X4)                                     6.37    1.39   16.84 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.79    4.18    2.29   19.13 r
+  cto_buf_drc_14644/I (BUF_X4)                                     6.47    0.95   20.08 r
+  cto_buf_drc_14644/Z (BUF_X4)                      1      4.70    2.52    4.94   25.02 r
+  cts_inv_274714390/I (INV_X4)                                     4.75    1.79   26.82 r
+  cts_inv_274714390/ZN (INV_X4)                     1      7.14    3.19    2.67   29.49 f
+  cts_inv_272214365/I (INV_X8)                                     3.28    0.48   29.96 f
+  cts_inv_272214365/ZN (INV_X8)                    13     19.44    5.28    2.27   32.23 r
+  u_logic_clk_gate_X2j2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)   13  19.44   5.28   0.00  32.23 r
+  u_logic_clk_gate_X2j2z4_reg/latch/CLK (CLKGATETST_X1)            6.26    1.39   33.63 r
+  u_logic_clk_gate_X2j2z4_reg/latch/Q (CLKGATETST_X1)    1   2.06   4.12   6.81   40.44 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/I (BUF_X4)         4.12    0.17   40.61 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/Z (BUF_X4)    5   6.15   3.36   4.56  45.17 r
+  u_logic_clk_gate_X2j2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)    5   6.15   3.36   0.00  45.17 r
+  u_logic_Hmh3z4_reg/CLK (SDFFSNQ_X1)                              3.47    0.27   45.43 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             45.43
+  total clock latency                                                             45.43
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Z0g3z4_reg/CLK
+Latency             : 45.49
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      4.02    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.75    0.80    0.80 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.19    1.49    1.35    2.16 f
+  cts_inv_292914572/I (INV_X1)                                     3.03    1.18    3.34 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.66    2.90    2.46    5.80 r
+  cts_inv_291914562/I (INV_X1)                                     2.98    0.40    6.20 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.71    2.69    2.27    8.47 f
+  cts_inv_290614549/I (INV_X1)                                     2.77    0.40    8.87 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.56    2.77    2.35   11.22 r
+  cts_inv_289314536/I (INV_X1)                                     2.77    0.31   11.52 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.42    5.72    3.93   15.45 f
+  cts_inv_288014523/I (INV_X4)                                     6.37    1.39   16.84 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.79    4.18    2.29   19.13 r
+  cto_buf_drc_14644/I (BUF_X4)                                     6.47    0.95   20.08 r
+  cto_buf_drc_14644/Z (BUF_X4)                      1      4.70    2.52    4.94   25.02 r
+  cts_inv_274714390/I (INV_X4)                                     4.75    1.79   26.82 r
+  cts_inv_274714390/ZN (INV_X4)                     1      7.14    3.19    2.67   29.49 f
+  cts_inv_272214365/I (INV_X8)                                     3.28    0.48   29.96 f
+  cts_inv_272214365/ZN (INV_X8)                    13     19.44    5.28    2.27   32.23 r
+  u_logic_clk_gate_X2j2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)   13  19.44   5.28   0.00  32.23 r
+  u_logic_clk_gate_X2j2z4_reg/latch/CLK (CLKGATETST_X1)            6.26    1.39   33.63 r
+  u_logic_clk_gate_X2j2z4_reg/latch/Q (CLKGATETST_X1)    1   2.06   4.12   6.81   40.44 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/I (BUF_X4)         4.12    0.17   40.61 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/Z (BUF_X4)    5   6.15   3.36   4.56  45.17 r
+  u_logic_clk_gate_X2j2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)    5   6.15   3.36   0.00  45.17 r
+  u_logic_Z0g3z4_reg/CLK (SDFFSNQ_X1)                              3.47    0.32   45.49 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             45.49
+  total clock latency                                                             45.49
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Lqr2z4_reg/CLK
+Latency             : 45.93
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      4.02    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.75    0.80    0.80 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.19    1.49    1.35    2.16 f
+  cts_inv_292914572/I (INV_X1)                                     3.03    1.18    3.34 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.66    2.90    2.46    5.80 r
+  cts_inv_291914562/I (INV_X1)                                     2.98    0.40    6.20 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.71    2.69    2.27    8.47 f
+  cts_inv_290614549/I (INV_X1)                                     2.77    0.40    8.87 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.56    2.77    2.35   11.22 r
+  cts_inv_289314536/I (INV_X1)                                     2.77    0.31   11.52 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.42    5.72    3.93   15.45 f
+  cts_inv_288014523/I (INV_X4)                                     6.37    1.39   16.84 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.79    4.18    2.29   19.13 r
+  u_logic_clk_gate_Fpi2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    2   5.79   4.18   0.00  19.13 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/CLK (CLKGATETST_X1)            7.99    2.75   21.88 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/Q (CLKGATETST_X1)    1   1.24   3.01   6.47   28.34 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/I (BUF_X1)         3.01    0.11   28.46 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/Z (BUF_X1)    2   3.01   4.63   4.81  33.26 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/I (INV_X1)         4.63    0.13   33.40 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/ZN (INV_X1)    1   1.22   2.57   2.21  35.61 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/I (CLKBUF_X1)      2.57    0.17   35.78 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/Z (CLKBUF_X1)    1   3.95   6.12   5.59  41.37 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/I (INV_X4)         6.12    0.74   42.11 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/ZN (INV_X4)    9  10.96   6.28   3.15  45.26 r
+  u_logic_clk_gate_Fpi2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    9  10.96   6.28   0.00  45.26 r
+  u_logic_Lqr2z4_reg/CLK (SDFFSNQ_X1)                              6.54    0.67   45.93 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             45.93
+  total clock latency                                                             45.93
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : mode_norm.fast.RCmin_bc
+Corner              : mode_norm.fast.RCmin_bc
+Scenario            : mode_norm.fast.RCmin_bc
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Vuo2z4_reg/CLK
+Latency             : 46.22
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      4.02    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.75    0.80    0.80 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.19    1.49    1.35    2.16 f
+  cts_inv_292914572/I (INV_X1)                                     3.03    1.18    3.34 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.66    2.90    2.46    5.80 r
+  cts_inv_291914562/I (INV_X1)                                     2.98    0.40    6.20 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.71    2.69    2.27    8.47 f
+  cts_inv_290614549/I (INV_X1)                                     2.77    0.40    8.87 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.56    2.77    2.35   11.22 r
+  cts_inv_289314536/I (INV_X1)                                     2.77    0.31   11.52 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.42    5.72    3.93   15.45 f
+  cts_inv_288014523/I (INV_X4)                                     6.37    1.39   16.84 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.79    4.18    2.29   19.13 r
+  u_logic_clk_gate_Fpi2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    2   5.79   4.18   0.00  19.13 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/CLK (CLKGATETST_X1)            7.99    2.75   21.88 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/Q (CLKGATETST_X1)    1   1.24   3.01   6.47   28.34 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/I (BUF_X1)         3.01    0.11   28.46 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/Z (BUF_X1)    2   3.01   4.63   4.81  33.26 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/I (INV_X1)         4.63    0.13   33.40 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/ZN (INV_X1)    1   1.22   2.57   2.21  35.61 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/I (CLKBUF_X1)      2.57    0.17   35.78 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/Z (CLKBUF_X1)    1   3.95   6.12   5.59  41.37 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/I (INV_X4)         6.12    0.74   42.11 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/ZN (INV_X4)    9  10.96   6.28   3.15  45.26 r
+  u_logic_clk_gate_Fpi2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    9  10.96   6.28   0.00  45.26 r
+  u_logic_Vuo2z4_reg/CLK (SDFFSNQ_X1)                              7.78    0.95   46.22 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             46.22
+  total clock latency                                                             46.22
+
+
+===========================================================
+==== Latency Reporting for Corner mode_norm.slow.RCmax ====
+===========================================================
+
+============================================ Summary Table for Corner mode_norm.slow.RCmax =============================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+HCLK                                    M,D       841     69.12     38.22        --     85.91     47.68     64.37      7.96        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        841        --     38.22        --     85.91     47.68        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+=================================== Details Table for Corner mode_norm.slow.RCmax ====================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+HCLK
+                                   L   u_logic_Azs2z4_reg/CLK            85.91 r     85.91 r      0.00        0.00
+                                   L   u_logic_Jxs2z4_reg/CLK            85.85 r     85.85 r      0.00        0.00
+                                   L   u_logic_Bus2z4_reg/CLK            85.77 r     85.77 r      0.00        0.00
+                                   L   u_logic_Axm2z4_reg/CLK            85.72 r     85.72 r      0.00        0.00
+                                   L   u_logic_Svs2z4_reg/CLK            85.72 r     85.72 r      0.00        0.00
+                                   S   u_logic_Umi3z4_reg/CLK            47.68 r     47.68 r      0.00        0.00
+                                   S   u_logic_Hmh3z4_reg/CLK            47.70 r     47.70 r      0.00        0.00
+                                   S   u_logic_Z0g3z4_reg/CLK            47.76 r     47.76 r      0.00        0.00
+                                   S   u_logic_Lqr2z4_reg/CLK            48.41 r     48.41 r      0.00        0.00
+                                   S   u_logic_Vuo2z4_reg/CLK            48.75 r     48.75 r      0.00        0.00
+
+
+======================================================
+==== Path Reports for Corner mode_norm.slow.RCmax ====
+======================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Azs2z4_reg/CLK
+Latency             : 85.91
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.99    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.98    0.92    0.92 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.36    1.70    1.45    2.37 f
+  cts_inv_293014573/I (INV_X1)                                     3.83    1.54    3.91 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.99    7.48    3.13    7.04 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  8.13    0.67    7.71 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.39    2.17    4.92   12.63 r
+  cts_inv_292114564/I (INV_X1)                                     2.17    0.25   12.87 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.76    2.80    2.16   15.03 f
+  cts_inv_290814551/I (INV_X1)                                     2.96    0.51   15.54 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.18    6.33    3.97   19.51 r
+  cts_inv_284014483/I (INV_X2)                                     7.63    2.00   21.51 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.77    4.29    3.28   24.80 f
+  cts_inv_282114464/I (INV_X1)                                     4.29    0.10   24.89 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.60    6.98    4.52   29.41 r
+  cts_inv_279614439/I (INV_X4)                                     8.28    2.10   31.51 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.97    2.73    1.85   33.36 f
+  cts_inv_277214415/I (INV_X1)                                     3.09    0.71   34.07 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.85    5.87    3.78   37.84 r
+  cts_inv_274914392/I (INV_X1)                                     5.87    0.72   38.57 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.77    3.72    2.88   41.45 f
+  cts_inv_272414367/I (INV_X1)                                     3.80    0.48   41.92 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.68    4.39    3.13   45.05 r
+  cts_inv_270214345/I (INV_X2)                                     4.63    0.80   45.85 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.98    3.87    2.14   47.99 f
+  cts_inv_268214325/I (INV_X1)                                     8.32    2.48   50.47 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.66    7.92    5.46   55.92 r
+  cts_inv_261614259/I (INV_X2)                                     8.45    1.56   57.49 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.97    6.69    4.96   62.45 f
+  cts_inv_259714240/I (INV_X4)                                     6.98    1.11   63.55 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.37    6.60    3.01   66.57 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.37   6.60   0.00  66.57 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            9.23    2.00   68.57 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   4.96   8.47   9.75   78.32 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   4.96   8.47   0.00  78.32 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  8.47    0.19   78.51 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.93    6.26    6.28   84.78 r
+  u_logic_Azs2z4_reg/CLK (SDFFRNQ_X1)                              6.58    1.13   85.91 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             85.91
+  total clock latency                                                             85.91
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Jxs2z4_reg/CLK
+Latency             : 85.85
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.99    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.98    0.92    0.92 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.36    1.70    1.45    2.37 f
+  cts_inv_293014573/I (INV_X1)                                     3.83    1.54    3.91 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.99    7.48    3.13    7.04 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  8.13    0.67    7.71 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.39    2.17    4.92   12.63 r
+  cts_inv_292114564/I (INV_X1)                                     2.17    0.25   12.87 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.76    2.80    2.16   15.03 f
+  cts_inv_290814551/I (INV_X1)                                     2.96    0.51   15.54 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.18    6.33    3.97   19.51 r
+  cts_inv_284014483/I (INV_X2)                                     7.63    2.00   21.51 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.77    4.29    3.28   24.80 f
+  cts_inv_282114464/I (INV_X1)                                     4.29    0.10   24.89 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.60    6.98    4.52   29.41 r
+  cts_inv_279614439/I (INV_X4)                                     8.28    2.10   31.51 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.97    2.73    1.85   33.36 f
+  cts_inv_277214415/I (INV_X1)                                     3.09    0.71   34.07 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.85    5.87    3.78   37.84 r
+  cts_inv_274914392/I (INV_X1)                                     5.87    0.72   38.57 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.77    3.72    2.88   41.45 f
+  cts_inv_272414367/I (INV_X1)                                     3.80    0.48   41.92 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.68    4.39    3.13   45.05 r
+  cts_inv_270214345/I (INV_X2)                                     4.63    0.80   45.85 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.98    3.87    2.14   47.99 f
+  cts_inv_268214325/I (INV_X1)                                     8.32    2.48   50.47 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.66    7.92    5.46   55.92 r
+  cts_inv_261614259/I (INV_X2)                                     8.45    1.56   57.49 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.97    6.69    4.96   62.45 f
+  cts_inv_259714240/I (INV_X4)                                     6.98    1.11   63.55 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.37    6.60    3.01   66.57 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.37   6.60   0.00  66.57 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            9.23    2.00   68.57 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   4.96   8.47   9.75   78.32 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   4.96   8.47   0.00  78.32 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  8.47    0.19   78.51 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.93    6.26    6.28   84.78 r
+  u_logic_Jxs2z4_reg/CLK (SDFFRNQ_X1)                              6.54    1.07   85.85 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             85.85
+  total clock latency                                                             85.85
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Bus2z4_reg/CLK
+Latency             : 85.77
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.99    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.98    0.92    0.92 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.36    1.70    1.45    2.37 f
+  cts_inv_293014573/I (INV_X1)                                     3.83    1.54    3.91 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.99    7.48    3.13    7.04 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  8.13    0.67    7.71 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.39    2.17    4.92   12.63 r
+  cts_inv_292114564/I (INV_X1)                                     2.17    0.25   12.87 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.76    2.80    2.16   15.03 f
+  cts_inv_290814551/I (INV_X1)                                     2.96    0.51   15.54 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.18    6.33    3.97   19.51 r
+  cts_inv_284014483/I (INV_X2)                                     7.63    2.00   21.51 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.77    4.29    3.28   24.80 f
+  cts_inv_282114464/I (INV_X1)                                     4.29    0.10   24.89 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.60    6.98    4.52   29.41 r
+  cts_inv_279614439/I (INV_X4)                                     8.28    2.10   31.51 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.97    2.73    1.85   33.36 f
+  cts_inv_277214415/I (INV_X1)                                     3.09    0.71   34.07 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.85    5.87    3.78   37.84 r
+  cts_inv_274914392/I (INV_X1)                                     5.87    0.72   38.57 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.77    3.72    2.88   41.45 f
+  cts_inv_272414367/I (INV_X1)                                     3.80    0.48   41.92 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.68    4.39    3.13   45.05 r
+  cts_inv_270214345/I (INV_X2)                                     4.63    0.80   45.85 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.98    3.87    2.14   47.99 f
+  cts_inv_268214325/I (INV_X1)                                     8.32    2.48   50.47 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.66    7.92    5.46   55.92 r
+  cts_inv_261614259/I (INV_X2)                                     8.45    1.56   57.49 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.97    6.69    4.96   62.45 f
+  cts_inv_259714240/I (INV_X4)                                     6.98    1.11   63.55 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.37    6.60    3.01   66.57 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.37   6.60   0.00  66.57 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            9.23    2.00   68.57 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   4.96   8.47   9.75   78.32 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   4.96   8.47   0.00  78.32 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  8.47    0.19   78.51 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.93    6.26    6.28   84.78 r
+  u_logic_Bus2z4_reg/CLK (SDFFRNQ_X1)                              6.48    0.99   85.77 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             85.77
+  total clock latency                                                             85.77
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Axm2z4_reg/CLK
+Latency             : 85.72
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.99    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.98    0.92    0.92 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.36    1.70    1.45    2.37 f
+  cts_inv_293014573/I (INV_X1)                                     3.83    1.54    3.91 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.99    7.48    3.13    7.04 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  8.13    0.67    7.71 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.39    2.17    4.92   12.63 r
+  cts_inv_292114564/I (INV_X1)                                     2.17    0.25   12.87 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.76    2.80    2.16   15.03 f
+  cts_inv_290814551/I (INV_X1)                                     2.96    0.51   15.54 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.18    6.33    3.97   19.51 r
+  cts_inv_284014483/I (INV_X2)                                     7.63    2.00   21.51 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.77    4.29    3.28   24.80 f
+  cts_inv_282114464/I (INV_X1)                                     4.29    0.10   24.89 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.60    6.98    4.52   29.41 r
+  cts_inv_279614439/I (INV_X4)                                     8.28    2.10   31.51 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.97    2.73    1.85   33.36 f
+  cts_inv_277214415/I (INV_X1)                                     3.09    0.71   34.07 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.85    5.87    3.78   37.84 r
+  cts_inv_274914392/I (INV_X1)                                     5.87    0.72   38.57 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.77    3.72    2.88   41.45 f
+  cts_inv_272414367/I (INV_X1)                                     3.80    0.48   41.92 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.68    4.39    3.13   45.05 r
+  cts_inv_270214345/I (INV_X2)                                     4.63    0.80   45.85 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.98    3.87    2.14   47.99 f
+  cts_inv_268214325/I (INV_X1)                                     8.32    2.48   50.47 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.66    7.92    5.46   55.92 r
+  cts_inv_261614259/I (INV_X2)                                     8.45    1.56   57.49 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.97    6.69    4.96   62.45 f
+  cts_inv_259714240/I (INV_X4)                                     6.98    1.11   63.55 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.37    6.60    3.01   66.57 r
+  u_logic_clk_gate_Z4l2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_11)    6  10.37   6.60   0.00  66.57 r
+  u_logic_clk_gate_Z4l2z4_reg/latch/CLK (CLKGATETST_X1)            9.29    2.46   69.03 r
+  u_logic_clk_gate_Z4l2z4_reg/latch/Q (CLKGATETST_X1)    5   5.06   8.60   9.82   78.85 r
+  u_logic_clk_gate_Z4l2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_11)    5   5.06   8.60   0.00  78.85 r
+  cto_buf_drc_15335/I (CLKBUF_X1)                                  8.60    0.13   78.98 r
+  cto_buf_drc_15335/Z (CLKBUF_X1)                   4      3.94    6.28    6.31   85.30 r
+  u_logic_Axm2z4_reg/CLK (SDFFRNQ_X1)                              6.28    0.42   85.72 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             85.72
+  total clock latency                                                             85.72
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Svs2z4_reg/CLK
+Latency             : 85.72
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.99    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.98    0.92    0.92 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.36    1.70    1.45    2.37 f
+  cts_inv_293014573/I (INV_X1)                                     3.83    1.54    3.91 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.99    7.48    3.13    7.04 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  8.13    0.67    7.71 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.39    2.17    4.92   12.63 r
+  cts_inv_292114564/I (INV_X1)                                     2.17    0.25   12.87 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.76    2.80    2.16   15.03 f
+  cts_inv_290814551/I (INV_X1)                                     2.96    0.51   15.54 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.18    6.33    3.97   19.51 r
+  cts_inv_284014483/I (INV_X2)                                     7.63    2.00   21.51 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.77    4.29    3.28   24.80 f
+  cts_inv_282114464/I (INV_X1)                                     4.29    0.10   24.89 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.60    6.98    4.52   29.41 r
+  cts_inv_279614439/I (INV_X4)                                     8.28    2.10   31.51 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.97    2.73    1.85   33.36 f
+  cts_inv_277214415/I (INV_X1)                                     3.09    0.71   34.07 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.85    5.87    3.78   37.84 r
+  cts_inv_274914392/I (INV_X1)                                     5.87    0.72   38.57 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.77    3.72    2.88   41.45 f
+  cts_inv_272414367/I (INV_X1)                                     3.80    0.48   41.92 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.68    4.39    3.13   45.05 r
+  cts_inv_270214345/I (INV_X2)                                     4.63    0.80   45.85 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.98    3.87    2.14   47.99 f
+  cts_inv_268214325/I (INV_X1)                                     8.32    2.48   50.47 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.66    7.92    5.46   55.92 r
+  cts_inv_261614259/I (INV_X2)                                     8.45    1.56   57.49 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.97    6.69    4.96   62.45 f
+  cts_inv_259714240/I (INV_X4)                                     6.98    1.11   63.55 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.37    6.60    3.01   66.57 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.37   6.60   0.00  66.57 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            9.23    2.00   68.57 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   4.96   8.47   9.75   78.32 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   4.96   8.47   0.00  78.32 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  8.47    0.19   78.51 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.93    6.26    6.28   84.78 r
+  u_logic_Svs2z4_reg/CLK (SDFFRNQ_X1)                              6.45    0.93   85.72 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             85.72
+  total clock latency                                                             85.72
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Umi3z4_reg/CLK
+Latency             : 47.68
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.86    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.98    0.92    0.92 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.34    1.70    1.45    2.37 f
+  cts_inv_292914572/I (INV_X1)                                     3.55    1.39    3.76 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.70    3.19    2.46    6.22 r
+  cts_inv_291914562/I (INV_X1)                                     3.28    0.46    6.68 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.79    3.03    2.42    9.10 f
+  cts_inv_290614549/I (INV_X1)                                     3.15    0.48    9.57 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.59    3.03    2.33   11.90 r
+  cts_inv_289314536/I (INV_X1)                                     3.03    0.36   12.26 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.48    6.29    4.08   16.35 f
+  cts_inv_288014523/I (INV_X4)                                     7.13    1.64   17.99 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.92    4.75    2.19   20.18 r
+  cto_buf_drc_14644/I (BUF_X4)                                     7.50    1.16   21.34 r
+  cto_buf_drc_14644/Z (BUF_X4)                      1      4.62    2.73    5.05   26.40 r
+  cts_inv_274714390/I (INV_X4)                                     5.30    2.02   28.42 r
+  cts_inv_274714390/ZN (INV_X4)                     1      7.06    3.53    2.78   31.20 f
+  cts_inv_272214365/I (INV_X8)                                     3.70    0.61   31.81 f
+  cts_inv_272214365/ZN (INV_X8)                    13     18.81    5.55    2.16   33.97 r
+  u_logic_clk_gate_X2j2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)   13  18.81   5.55   0.00  33.97 r
+  u_logic_clk_gate_X2j2z4_reg/latch/CLK (CLKGATETST_X1)            6.98    1.64   35.61 r
+  u_logic_clk_gate_X2j2z4_reg/latch/Q (CLKGATETST_X1)    1   1.97   4.35   7.04   42.65 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/I (BUF_X4)         4.35    0.21   42.86 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/Z (BUF_X4)    5   6.19   3.72   4.48  47.34 r
+  u_logic_clk_gate_X2j2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)    5   6.19   3.72   0.00  47.34 r
+  u_logic_Umi3z4_reg/CLK (SDFFSNQ_X1)                              3.89    0.34   47.68 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             47.68
+  total clock latency                                                             47.68
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Hmh3z4_reg/CLK
+Latency             : 47.70
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.86    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.98    0.92    0.92 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.34    1.70    1.45    2.37 f
+  cts_inv_292914572/I (INV_X1)                                     3.55    1.39    3.76 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.70    3.19    2.46    6.22 r
+  cts_inv_291914562/I (INV_X1)                                     3.28    0.46    6.68 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.79    3.03    2.42    9.10 f
+  cts_inv_290614549/I (INV_X1)                                     3.15    0.48    9.57 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.59    3.03    2.33   11.90 r
+  cts_inv_289314536/I (INV_X1)                                     3.03    0.36   12.26 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.48    6.29    4.08   16.35 f
+  cts_inv_288014523/I (INV_X4)                                     7.13    1.64   17.99 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.92    4.75    2.19   20.18 r
+  cto_buf_drc_14644/I (BUF_X4)                                     7.50    1.16   21.34 r
+  cto_buf_drc_14644/Z (BUF_X4)                      1      4.62    2.73    5.05   26.40 r
+  cts_inv_274714390/I (INV_X4)                                     5.30    2.02   28.42 r
+  cts_inv_274714390/ZN (INV_X4)                     1      7.06    3.53    2.78   31.20 f
+  cts_inv_272214365/I (INV_X8)                                     3.70    0.61   31.81 f
+  cts_inv_272214365/ZN (INV_X8)                    13     18.81    5.55    2.16   33.97 r
+  u_logic_clk_gate_X2j2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)   13  18.81   5.55   0.00  33.97 r
+  u_logic_clk_gate_X2j2z4_reg/latch/CLK (CLKGATETST_X1)            6.98    1.64   35.61 r
+  u_logic_clk_gate_X2j2z4_reg/latch/Q (CLKGATETST_X1)    1   1.97   4.35   7.04   42.65 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/I (BUF_X4)         4.35    0.21   42.86 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/Z (BUF_X4)    5   6.19   3.72   4.48  47.34 r
+  u_logic_clk_gate_X2j2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)    5   6.19   3.72   0.00  47.34 r
+  u_logic_Hmh3z4_reg/CLK (SDFFSNQ_X1)                              3.87    0.36   47.70 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             47.70
+  total clock latency                                                             47.70
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Z0g3z4_reg/CLK
+Latency             : 47.76
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.86    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.98    0.92    0.92 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.34    1.70    1.45    2.37 f
+  cts_inv_292914572/I (INV_X1)                                     3.55    1.39    3.76 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.70    3.19    2.46    6.22 r
+  cts_inv_291914562/I (INV_X1)                                     3.28    0.46    6.68 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.79    3.03    2.42    9.10 f
+  cts_inv_290614549/I (INV_X1)                                     3.15    0.48    9.57 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.59    3.03    2.33   11.90 r
+  cts_inv_289314536/I (INV_X1)                                     3.03    0.36   12.26 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.48    6.29    4.08   16.35 f
+  cts_inv_288014523/I (INV_X4)                                     7.13    1.64   17.99 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.92    4.75    2.19   20.18 r
+  cto_buf_drc_14644/I (BUF_X4)                                     7.50    1.16   21.34 r
+  cto_buf_drc_14644/Z (BUF_X4)                      1      4.62    2.73    5.05   26.40 r
+  cts_inv_274714390/I (INV_X4)                                     5.30    2.02   28.42 r
+  cts_inv_274714390/ZN (INV_X4)                     1      7.06    3.53    2.78   31.20 f
+  cts_inv_272214365/I (INV_X8)                                     3.70    0.61   31.81 f
+  cts_inv_272214365/ZN (INV_X8)                    13     18.81    5.55    2.16   33.97 r
+  u_logic_clk_gate_X2j2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)   13  18.81   5.55   0.00  33.97 r
+  u_logic_clk_gate_X2j2z4_reg/latch/CLK (CLKGATETST_X1)            6.98    1.64   35.61 r
+  u_logic_clk_gate_X2j2z4_reg/latch/Q (CLKGATETST_X1)    1   1.97   4.35   7.04   42.65 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/I (BUF_X4)         4.35    0.21   42.86 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/Z (BUF_X4)    5   6.19   3.72   4.48  47.34 r
+  u_logic_clk_gate_X2j2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)    5   6.19   3.72   0.00  47.34 r
+  u_logic_Z0g3z4_reg/CLK (SDFFSNQ_X1)                              3.91    0.42   47.76 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             47.76
+  total clock latency                                                             47.76
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Lqr2z4_reg/CLK
+Latency             : 48.41
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.86    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.98    0.92    0.92 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.34    1.70    1.45    2.37 f
+  cts_inv_292914572/I (INV_X1)                                     3.55    1.39    3.76 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.70    3.19    2.46    6.22 r
+  cts_inv_291914562/I (INV_X1)                                     3.28    0.46    6.68 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.79    3.03    2.42    9.10 f
+  cts_inv_290614549/I (INV_X1)                                     3.15    0.48    9.57 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.59    3.03    2.33   11.90 r
+  cts_inv_289314536/I (INV_X1)                                     3.03    0.36   12.26 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.48    6.29    4.08   16.35 f
+  cts_inv_288014523/I (INV_X4)                                     7.13    1.64   17.99 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.92    4.75    2.19   20.18 r
+  u_logic_clk_gate_Fpi2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    2   5.92   4.75   0.00  20.18 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/CLK (CLKGATETST_X1)            9.25    3.19   23.37 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/Q (CLKGATETST_X1)    1   1.21   3.32   6.89   30.25 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/I (BUF_X1)         3.32    0.15   30.40 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/Z (BUF_X1)    2   3.05   4.96   4.79  35.19 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/I (INV_X1)         4.96    0.19   35.38 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/ZN (INV_X1)    1   1.29   2.92   2.35  37.73 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/I (CLKBUF_X1)      2.92    0.21   37.94 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/Z (CLKBUF_X1)    1   3.95   6.66   5.63  43.56 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/I (INV_X4)         6.83    0.92   44.48 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/ZN (INV_X4)    9  11.12   6.92   3.11  47.59 r
+  u_logic_clk_gate_Fpi2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    9  11.12   6.92   0.00  47.59 r
+  u_logic_Lqr2z4_reg/CLK (SDFFSNQ_X1)                              7.40    0.82   48.41 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             48.41
+  total clock latency                                                             48.41
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : mode_norm.slow.RCmax
+Corner              : mode_norm.slow.RCmax
+Scenario            : mode_norm.slow.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Vuo2z4_reg/CLK
+Latency             : 48.75
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.86    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.98    0.92    0.92 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.34    1.70    1.45    2.37 f
+  cts_inv_292914572/I (INV_X1)                                     3.55    1.39    3.76 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.70    3.19    2.46    6.22 r
+  cts_inv_291914562/I (INV_X1)                                     3.28    0.46    6.68 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.79    3.03    2.42    9.10 f
+  cts_inv_290614549/I (INV_X1)                                     3.15    0.48    9.57 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.59    3.03    2.33   11.90 r
+  cts_inv_289314536/I (INV_X1)                                     3.03    0.36   12.26 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.48    6.29    4.08   16.35 f
+  cts_inv_288014523/I (INV_X4)                                     7.13    1.64   17.99 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.92    4.75    2.19   20.18 r
+  u_logic_clk_gate_Fpi2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    2   5.92   4.75   0.00  20.18 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/CLK (CLKGATETST_X1)            9.25    3.19   23.37 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/Q (CLKGATETST_X1)    1   1.21   3.32   6.89   30.25 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/I (BUF_X1)         3.32    0.15   30.40 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/Z (BUF_X1)    2   3.05   4.96   4.79  35.19 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/I (INV_X1)         4.96    0.19   35.38 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/ZN (INV_X1)    1   1.29   2.92   2.35  37.73 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/I (CLKBUF_X1)      2.92    0.21   37.94 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/Z (CLKBUF_X1)    1   3.95   6.66   5.63  43.56 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/I (INV_X4)         6.83    0.92   44.48 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/ZN (INV_X4)    9  11.12   6.92   3.11  47.59 r
+  u_logic_clk_gate_Fpi2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    9  11.12   6.92   0.00  47.59 r
+  u_logic_Vuo2z4_reg/CLK (SDFFSNQ_X1)                              8.89    1.16   48.75 r
+  ----------------------------------------------------------------------------------------------
+  clock balancing offset                                                           0.00
+  clock network delay                                                             48.75
+  total clock latency                                                             48.75
+
+
+================================================================
+==== Latency Reporting for Corner mode_norm.worst_low.RCmax ====
+================================================================
+
+========================================== Summary Table for Corner mode_norm.worst_low.RCmax ==========================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+HCLK                                    M,D       841     69.12     48.69        --    106.39     57.70     78.43     10.42        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                        841        --     48.69        --    106.39     57.70        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+================================= Details Table for Corner mode_norm.worst_low.RCmax =================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+HCLK
+                                   L   u_logic_Azs2z4_reg/CLK           106.39 r    106.39 r        --          --
+                                   L   u_logic_Jxs2z4_reg/CLK           106.33 r    106.33 r        --          --
+                                   L   u_logic_Axm2z4_reg/CLK           106.28 r    106.28 r        --          --
+                                   L   u_logic_Bus2z4_reg/CLK           106.28 r    106.28 r        --          --
+                                   L   u_logic_Svs2z4_reg/CLK           106.22 r    106.22 r        --          --
+                                   S   u_logic_Umi3z4_reg/CLK            57.72 r     57.70 r        --          --
+                                   S   u_logic_Hmh3z4_reg/CLK            57.72 r     57.70 r        --          --
+                                   S   u_logic_Z0g3z4_reg/CLK            57.79 r     57.77 r        --          --
+                                   S   u_logic_Lqr2z4_reg/CLK            58.71 r     58.71 r        --          --
+                                   S   u_logic_Vuo2z4_reg/CLK            59.05 r     59.05 r        --          --
+
+
+===========================================================
+==== Path Reports for Corner mode_norm.worst_low.RCmax ====
+===========================================================
+Reporting paths for 5 largest and 5 smallest datapoints per clock / skew group
+
+---------------------------------------------
+Largest Path #1
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Azs2z4_reg/CLK
+Latency             : 106.39
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.81    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.91    0.86    0.86 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.21    1.74    1.81    2.67 f
+  cts_inv_293014573/I (INV_X1)                                     3.70    1.45    4.12 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.90    8.68    4.18    8.30 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  9.16    0.82    9.12 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.34    2.31    6.56   15.68 r
+  cts_inv_292114564/I (INV_X1)                                     2.31    0.23   15.91 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.69    2.94    2.63   18.54 f
+  cts_inv_290814551/I (INV_X1)                                     3.07    0.50   19.04 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.05    7.40    5.46   24.49 r
+  cts_inv_284014483/I (INV_X2)                                     8.39    1.93   26.42 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.63    4.35    4.23   30.65 f
+  cts_inv_282114464/I (INV_X1)                                     4.35    0.08   30.73 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.43    8.07    6.12   36.85 r
+  cts_inv_279614439/I (INV_X4)                                     9.04    2.00   38.85 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.90    2.71    2.42   41.28 f
+  cts_inv_277214415/I (INV_X1)                                     3.03    0.67   41.94 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.77    6.92    5.17   47.11 r
+  cts_inv_274914392/I (INV_X1)                                     6.92    0.71   47.82 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.70    3.83    3.83   51.65 f
+  cts_inv_272414367/I (INV_X1)                                     3.83    0.46   52.11 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.59    4.96    4.23   56.34 r
+  cts_inv_270214345/I (INV_X2)                                     5.13    0.78   57.13 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.91    4.31    2.84   59.97 f
+  cts_inv_268214325/I (INV_X1)                                     8.30    2.44   62.41 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.54    8.70    7.38   69.79 r
+  cts_inv_261614259/I (INV_X2)                                     9.12    1.53   71.32 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.38    6.81    6.10   77.42 f
+  cts_inv_259714240/I (INV_X4)                                     7.02    1.03   78.45 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.15    6.90    4.23   82.68 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.15   6.90   0.00  82.68 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            9.33    1.98   84.67 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   4.79   9.56  12.02   96.68 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   4.79   9.56   0.00  96.68 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  9.56    0.19   96.87 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.79    7.21    8.43  105.30 r
+  u_logic_Azs2z4_reg/CLK (SDFFRNQ_X1)                              7.44    1.09  106.39 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                            106.39
+
+
+---------------------------------------------
+Largest Path #2
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Jxs2z4_reg/CLK
+Latency             : 106.33
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.81    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.91    0.86    0.86 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.21    1.74    1.81    2.67 f
+  cts_inv_293014573/I (INV_X1)                                     3.70    1.45    4.12 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.90    8.68    4.18    8.30 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  9.16    0.82    9.12 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.34    2.31    6.56   15.68 r
+  cts_inv_292114564/I (INV_X1)                                     2.31    0.23   15.91 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.69    2.94    2.63   18.54 f
+  cts_inv_290814551/I (INV_X1)                                     3.07    0.50   19.04 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.05    7.40    5.46   24.49 r
+  cts_inv_284014483/I (INV_X2)                                     8.39    1.93   26.42 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.63    4.35    4.23   30.65 f
+  cts_inv_282114464/I (INV_X1)                                     4.35    0.08   30.73 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.43    8.07    6.12   36.85 r
+  cts_inv_279614439/I (INV_X4)                                     9.04    2.00   38.85 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.90    2.71    2.42   41.28 f
+  cts_inv_277214415/I (INV_X1)                                     3.03    0.67   41.94 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.77    6.92    5.17   47.11 r
+  cts_inv_274914392/I (INV_X1)                                     6.92    0.71   47.82 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.70    3.83    3.83   51.65 f
+  cts_inv_272414367/I (INV_X1)                                     3.83    0.46   52.11 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.59    4.96    4.23   56.34 r
+  cts_inv_270214345/I (INV_X2)                                     5.13    0.78   57.13 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.91    4.31    2.84   59.97 f
+  cts_inv_268214325/I (INV_X1)                                     8.30    2.44   62.41 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.54    8.70    7.38   69.79 r
+  cts_inv_261614259/I (INV_X2)                                     9.12    1.53   71.32 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.38    6.81    6.10   77.42 f
+  cts_inv_259714240/I (INV_X4)                                     7.02    1.03   78.45 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.15    6.90    4.23   82.68 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.15   6.90   0.00  82.68 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            9.33    1.98   84.67 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   4.79   9.56  12.02   96.68 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   4.79   9.56   0.00  96.68 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  9.56    0.19   96.87 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.79    7.21    8.43  105.30 r
+  u_logic_Jxs2z4_reg/CLK (SDFFRNQ_X1)                              7.40    1.03  106.33 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                            106.33
+
+
+---------------------------------------------
+Largest Path #3
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Axm2z4_reg/CLK
+Latency             : 106.28
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.81    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.91    0.86    0.86 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.21    1.74    1.81    2.67 f
+  cts_inv_293014573/I (INV_X1)                                     3.70    1.45    4.12 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.90    8.68    4.18    8.30 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  9.16    0.82    9.12 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.34    2.31    6.56   15.68 r
+  cts_inv_292114564/I (INV_X1)                                     2.31    0.23   15.91 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.69    2.94    2.63   18.54 f
+  cts_inv_290814551/I (INV_X1)                                     3.07    0.50   19.04 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.05    7.40    5.46   24.49 r
+  cts_inv_284014483/I (INV_X2)                                     8.39    1.93   26.42 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.63    4.35    4.23   30.65 f
+  cts_inv_282114464/I (INV_X1)                                     4.35    0.08   30.73 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.43    8.07    6.12   36.85 r
+  cts_inv_279614439/I (INV_X4)                                     9.04    2.00   38.85 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.90    2.71    2.42   41.28 f
+  cts_inv_277214415/I (INV_X1)                                     3.03    0.67   41.94 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.77    6.92    5.17   47.11 r
+  cts_inv_274914392/I (INV_X1)                                     6.92    0.71   47.82 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.70    3.83    3.83   51.65 f
+  cts_inv_272414367/I (INV_X1)                                     3.83    0.46   52.11 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.59    4.96    4.23   56.34 r
+  cts_inv_270214345/I (INV_X2)                                     5.13    0.78   57.13 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.91    4.31    2.84   59.97 f
+  cts_inv_268214325/I (INV_X1)                                     8.30    2.44   62.41 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.54    8.70    7.38   69.79 r
+  cts_inv_261614259/I (INV_X2)                                     9.12    1.53   71.32 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.38    6.81    6.10   77.42 f
+  cts_inv_259714240/I (INV_X4)                                     7.02    1.03   78.45 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.15    6.90    4.23   82.68 r
+  u_logic_clk_gate_Z4l2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_11)    6  10.15   6.90   0.00  82.68 r
+  u_logic_clk_gate_Z4l2z4_reg/latch/CLK (CLKGATETST_X1)            9.40    2.44   85.12 r
+  u_logic_clk_gate_Z4l2z4_reg/latch/Q (CLKGATETST_X1)    5   4.90   9.73  12.13   97.26 r
+  u_logic_clk_gate_Z4l2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_11)    5   4.90   9.73   0.00  97.26 r
+  cto_buf_drc_15335/I (CLKBUF_X1)                                  9.73    0.13   97.39 r
+  cto_buf_drc_15335/Z (CLKBUF_X1)                   4      3.80    7.23    8.47  105.86 r
+  u_logic_Axm2z4_reg/CLK (SDFFRNQ_X1)                              7.23    0.42  106.28 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                            106.28
+
+
+---------------------------------------------
+Largest Path #4
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Bus2z4_reg/CLK
+Latency             : 106.28
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.81    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.91    0.86    0.86 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.21    1.74    1.81    2.67 f
+  cts_inv_293014573/I (INV_X1)                                     3.70    1.45    4.12 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.90    8.68    4.18    8.30 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  9.16    0.82    9.12 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.34    2.31    6.56   15.68 r
+  cts_inv_292114564/I (INV_X1)                                     2.31    0.23   15.91 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.69    2.94    2.63   18.54 f
+  cts_inv_290814551/I (INV_X1)                                     3.07    0.50   19.04 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.05    7.40    5.46   24.49 r
+  cts_inv_284014483/I (INV_X2)                                     8.39    1.93   26.42 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.63    4.35    4.23   30.65 f
+  cts_inv_282114464/I (INV_X1)                                     4.35    0.08   30.73 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.43    8.07    6.12   36.85 r
+  cts_inv_279614439/I (INV_X4)                                     9.04    2.00   38.85 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.90    2.71    2.42   41.28 f
+  cts_inv_277214415/I (INV_X1)                                     3.03    0.67   41.94 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.77    6.92    5.17   47.11 r
+  cts_inv_274914392/I (INV_X1)                                     6.92    0.71   47.82 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.70    3.83    3.83   51.65 f
+  cts_inv_272414367/I (INV_X1)                                     3.83    0.46   52.11 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.59    4.96    4.23   56.34 r
+  cts_inv_270214345/I (INV_X2)                                     5.13    0.78   57.13 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.91    4.31    2.84   59.97 f
+  cts_inv_268214325/I (INV_X1)                                     8.30    2.44   62.41 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.54    8.70    7.38   69.79 r
+  cts_inv_261614259/I (INV_X2)                                     9.12    1.53   71.32 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.38    6.81    6.10   77.42 f
+  cts_inv_259714240/I (INV_X4)                                     7.02    1.03   78.45 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.15    6.90    4.23   82.68 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.15   6.90   0.00  82.68 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            9.33    1.98   84.67 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   4.79   9.56  12.02   96.68 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   4.79   9.56   0.00  96.68 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  9.56    0.19   96.87 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.79    7.21    8.43  105.30 r
+  u_logic_Bus2z4_reg/CLK (SDFFRNQ_X1)                              7.38    0.97  106.28 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                            106.28
+
+
+---------------------------------------------
+Largest Path #5
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Svs2z4_reg/CLK
+Latency             : 106.22
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.81    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.91    0.86    0.86 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.21    1.74    1.81    2.67 f
+  cts_inv_293014573/I (INV_X1)                                     3.70    1.45    4.12 f
+  cts_inv_293014573/ZN (INV_X1)                     2      3.90    8.68    4.18    8.30 r
+  ctobgt_inst_16172/I (CLKBUF_X2)                                  9.16    0.82    9.12 r
+  ctobgt_inst_16172/Z (CLKBUF_X2)                   1      1.34    2.31    6.56   15.68 r
+  cts_inv_292114564/I (INV_X1)                                     2.31    0.23   15.91 r
+  cts_inv_292114564/ZN (INV_X1)                     1      1.69    2.94    2.63   18.54 f
+  cts_inv_290814551/I (INV_X1)                                     3.07    0.50   19.04 f
+  cts_inv_290814551/ZN (INV_X1)                     2      4.05    7.40    5.46   24.49 r
+  cts_inv_284014483/I (INV_X2)                                     8.39    1.93   26.42 r
+  cts_inv_284014483/ZN (INV_X2)                     2      3.63    4.35    4.23   30.65 f
+  cts_inv_282114464/I (INV_X1)                                     4.35    0.08   30.73 f
+  cts_inv_282114464/ZN (INV_X1)                     1      4.43    8.07    6.12   36.85 r
+  cts_inv_279614439/I (INV_X4)                                     9.04    2.00   38.85 r
+  cts_inv_279614439/ZN (INV_X4)                     1      1.90    2.71    2.42   41.28 f
+  cts_inv_277214415/I (INV_X1)                                     3.03    0.67   41.94 f
+  cts_inv_277214415/ZN (INV_X1)                     2      3.77    6.92    5.17   47.11 r
+  cts_inv_274914392/I (INV_X1)                                     6.92    0.71   47.82 r
+  cts_inv_274914392/ZN (INV_X1)                     1      1.70    3.83    3.83   51.65 f
+  cts_inv_272414367/I (INV_X1)                                     3.83    0.46   52.11 f
+  cts_inv_272414367/ZN (INV_X1)                     1      2.59    4.96    4.23   56.34 r
+  cts_inv_270214345/I (INV_X2)                                     5.13    0.78   57.13 r
+  cts_inv_270214345/ZN (INV_X2)                     1      3.91    4.31    2.84   59.97 f
+  cts_inv_268214325/I (INV_X1)                                     8.30    2.44   62.41 f
+  cts_inv_268214325/ZN (INV_X1)                     2      4.54    8.70    7.38   69.79 r
+  cts_inv_261614259/I (INV_X2)                                     9.12    1.53   71.32 r
+  cts_inv_261614259/ZN (INV_X2)                     2      7.38    6.81    6.10   77.42 f
+  cts_inv_259714240/I (INV_X4)                                     7.02    1.03   78.45 f
+  cts_inv_259714240/ZN (INV_X4)                     6     10.15    6.90    4.23   82.68 r
+  u_logic_clk_gate_Tqs2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    6  10.15   6.90   0.00  82.68 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/CLK (CLKGATETST_X1)            9.33    1.98   84.67 r
+  u_logic_clk_gate_Tqs2z4_reg/latch/Q (CLKGATETST_X1)    5   4.79   9.56  12.02   96.68 r
+  u_logic_clk_gate_Tqs2z4_reg/ENCLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_17)    5   4.79   9.56   0.00  96.68 r
+  cto_buf_drc_15339/I (CLKBUF_X1)                                  9.56    0.19   96.87 r
+  cto_buf_drc_15339/Z (CLKBUF_X1)                   4      3.79    7.21    8.43  105.30 r
+  u_logic_Svs2z4_reg/CLK (SDFFRNQ_X1)                              7.36    0.92  106.22 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                            106.22
+
+
+---------------------------------------------
+Smallest Path #1
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Umi3z4_reg/CLK
+Latency             : 57.70
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.69    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.91    0.86    0.86 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.19    1.74    1.81    2.67 f
+  cts_inv_292914572/I (INV_X1)                                     3.41    1.32    3.99 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.65    3.45    3.26    7.25 r
+  cts_inv_291914562/I (INV_X1)                                     3.53    0.46    7.71 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.72    3.11    2.99   10.70 f
+  cts_inv_290614549/I (INV_X1)                                     3.20    0.46   11.16 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.55    3.26    3.11   14.27 r
+  cts_inv_289314536/I (INV_X1)                                     3.26    0.34   14.61 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.18    6.60    4.98   19.59 f
+  cts_inv_288014523/I (INV_X4)                                     7.25    1.51   21.10 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.80    4.75    3.32   24.41 r
+  cto_buf_drc_14644/I (BUF_X4)                                     7.44    1.14   25.56 r
+  cto_buf_drc_14644/Z (BUF_X4)                      1      4.45    2.92    6.54   32.10 r
+  cts_inv_274714390/I (INV_X4)                                     5.25    1.95   34.05 r
+  cts_inv_274714390/ZN (INV_X4)                     1      6.46    3.41    3.38   37.42 f
+  cts_inv_272214365/I (INV_X8)                                     3.55    0.57   37.99 f
+  cts_inv_272214365/ZN (INV_X8)                    13     18.46    6.14    2.80   40.80 r
+  u_logic_clk_gate_X2j2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)   13  18.46   6.14   0.00  40.80 r
+  u_logic_clk_gate_X2j2z4_reg/latch/CLK (CLKGATETST_X1)            7.46    1.70   42.50 r
+  u_logic_clk_gate_X2j2z4_reg/latch/Q (CLKGATETST_X1)    1   1.87   4.75   8.66   51.16 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/I (BUF_X4)         4.75    0.21   51.36 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/Z (BUF_X4)    5   6.00   4.04   5.99  57.35 r
+  u_logic_clk_gate_X2j2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)    5   6.00   4.04   0.00  57.35 r
+  u_logic_Umi3z4_reg/CLK (SDFFSNQ_X1)                              4.18    0.34   57.70 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             57.70
+
+
+---------------------------------------------
+Smallest Path #2
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Hmh3z4_reg/CLK
+Latency             : 57.70
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.69    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.91    0.86    0.86 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.19    1.74    1.81    2.67 f
+  cts_inv_292914572/I (INV_X1)                                     3.41    1.32    3.99 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.65    3.45    3.26    7.25 r
+  cts_inv_291914562/I (INV_X1)                                     3.53    0.46    7.71 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.72    3.11    2.99   10.70 f
+  cts_inv_290614549/I (INV_X1)                                     3.20    0.46   11.16 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.55    3.26    3.11   14.27 r
+  cts_inv_289314536/I (INV_X1)                                     3.26    0.34   14.61 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.18    6.60    4.98   19.59 f
+  cts_inv_288014523/I (INV_X4)                                     7.25    1.51   21.10 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.80    4.75    3.32   24.41 r
+  cto_buf_drc_14644/I (BUF_X4)                                     7.44    1.14   25.56 r
+  cto_buf_drc_14644/Z (BUF_X4)                      1      4.45    2.92    6.54   32.10 r
+  cts_inv_274714390/I (INV_X4)                                     5.25    1.95   34.05 r
+  cts_inv_274714390/ZN (INV_X4)                     1      6.46    3.41    3.38   37.42 f
+  cts_inv_272214365/I (INV_X8)                                     3.55    0.57   37.99 f
+  cts_inv_272214365/ZN (INV_X8)                    13     18.46    6.14    2.80   40.80 r
+  u_logic_clk_gate_X2j2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)   13  18.46   6.14   0.00  40.80 r
+  u_logic_clk_gate_X2j2z4_reg/latch/CLK (CLKGATETST_X1)            7.46    1.70   42.50 r
+  u_logic_clk_gate_X2j2z4_reg/latch/Q (CLKGATETST_X1)    1   1.87   4.75   8.66   51.16 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/I (BUF_X4)         4.75    0.21   51.36 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/Z (BUF_X4)    5   6.00   4.04   5.99  57.35 r
+  u_logic_clk_gate_X2j2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)    5   6.00   4.04   0.00  57.35 r
+  u_logic_Hmh3z4_reg/CLK (SDFFSNQ_X1)                              4.20    0.34   57.70 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             57.70
+
+
+---------------------------------------------
+Smallest Path #3
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Z0g3z4_reg/CLK
+Latency             : 57.77
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.69    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.91    0.86    0.86 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.19    1.74    1.81    2.67 f
+  cts_inv_292914572/I (INV_X1)                                     3.41    1.32    3.99 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.65    3.45    3.26    7.25 r
+  cts_inv_291914562/I (INV_X1)                                     3.53    0.46    7.71 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.72    3.11    2.99   10.70 f
+  cts_inv_290614549/I (INV_X1)                                     3.20    0.46   11.16 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.55    3.26    3.11   14.27 r
+  cts_inv_289314536/I (INV_X1)                                     3.26    0.34   14.61 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.18    6.60    4.98   19.59 f
+  cts_inv_288014523/I (INV_X4)                                     7.25    1.51   21.10 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.80    4.75    3.32   24.41 r
+  cto_buf_drc_14644/I (BUF_X4)                                     7.44    1.14   25.56 r
+  cto_buf_drc_14644/Z (BUF_X4)                      1      4.45    2.92    6.54   32.10 r
+  cts_inv_274714390/I (INV_X4)                                     5.25    1.95   34.05 r
+  cts_inv_274714390/ZN (INV_X4)                     1      6.46    3.41    3.38   37.42 f
+  cts_inv_272214365/I (INV_X8)                                     3.55    0.57   37.99 f
+  cts_inv_272214365/ZN (INV_X8)                    13     18.46    6.14    2.80   40.80 r
+  u_logic_clk_gate_X2j2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)   13  18.46   6.14   0.00  40.80 r
+  u_logic_clk_gate_X2j2z4_reg/latch/CLK (CLKGATETST_X1)            7.46    1.70   42.50 r
+  u_logic_clk_gate_X2j2z4_reg/latch/Q (CLKGATETST_X1)    1   1.87   4.75   8.66   51.16 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/I (BUF_X4)         4.75    0.21   51.36 r
+  u_logic_clk_gate_X2j2z4_reg/cto_buf_drc_15175/Z (BUF_X4)    5   6.00   4.04   5.99  57.35 r
+  u_logic_clk_gate_X2j2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_6)    5   6.00   4.04   0.00  57.35 r
+  u_logic_Z0g3z4_reg/CLK (SDFFSNQ_X1)                              4.22    0.42   57.77 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             57.77
+
+
+---------------------------------------------
+Smallest Path #4
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Lqr2z4_reg/CLK
+Latency             : 58.71
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.69    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.91    0.86    0.86 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.19    1.74    1.81    2.67 f
+  cts_inv_292914572/I (INV_X1)                                     3.41    1.32    3.99 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.65    3.45    3.26    7.25 r
+  cts_inv_291914562/I (INV_X1)                                     3.53    0.46    7.71 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.72    3.11    2.99   10.70 f
+  cts_inv_290614549/I (INV_X1)                                     3.20    0.46   11.16 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.55    3.26    3.11   14.27 r
+  cts_inv_289314536/I (INV_X1)                                     3.26    0.34   14.61 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.18    6.60    4.98   19.59 f
+  cts_inv_288014523/I (INV_X4)                                     7.25    1.51   21.10 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.80    4.75    3.32   24.41 r
+  u_logic_clk_gate_Fpi2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    2   5.80   4.75   0.00  24.41 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/CLK (CLKGATETST_X1)            9.10    3.13   27.54 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/Q (CLKGATETST_X1)    1   1.16   3.53   8.20   35.74 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/I (BUF_X1)         3.53    0.13   35.88 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/Z (BUF_X1)    2   2.97   5.82   6.37  42.25 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/I (INV_X1)         5.82    0.19   42.44 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/ZN (INV_X1)    1   1.16   2.98   3.03  45.47 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/I (CLKBUF_X1)      2.98    0.19   45.66 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/Z (CLKBUF_X1)    1   3.65   6.98   7.04  52.70 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/I (INV_X4)         6.98    0.84   53.54 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/ZN (INV_X4)    9  10.84   7.34   4.37  57.91 r
+  u_logic_clk_gate_Fpi2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    9  10.84   7.34   0.00  57.91 r
+  u_logic_Lqr2z4_reg/CLK (SDFFSNQ_X1)                              7.74    0.80   58.71 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             58.71
+
+
+---------------------------------------------
+Smallest Path #5
+Mode                : mode_norm.worst_low.RCmax
+Corner              : mode_norm.worst_low.RCmax
+Scenario            : mode_norm.worst_low.RCmax
+Skew Group          : default_HCLK
+Clock Fanout        : HCLK
+Clock at Sink       : HCLK
+Sink                : u_logic_Vuo2z4_reg/CLK
+Latency             : 59.05
+---------------------------------------------
+
+  Point                                          Fanout   Cap    Trans    Incr     Path  
+  ----------------------------------------------------------------------------------------------
+  source latency                                                           0.00    0.00
+  HCLK (in)                                         1      3.69    0.00    0.00    0.00 r
+  cts_inv_294214585/I (INV_X4)                                     1.91    0.86    0.86 r
+  cts_inv_294214585/ZN (INV_X4)                     2      3.19    1.74    1.81    2.67 f
+  cts_inv_292914572/I (INV_X1)                                     3.41    1.32    3.99 f
+  cts_inv_292914572/ZN (INV_X1)                     1      1.65    3.45    3.26    7.25 r
+  cts_inv_291914562/I (INV_X1)                                     3.53    0.46    7.71 r
+  cts_inv_291914562/ZN (INV_X1)                     1      1.72    3.11    2.99   10.70 f
+  cts_inv_290614549/I (INV_X1)                                     3.20    0.46   11.16 f
+  cts_inv_290614549/ZN (INV_X1)                     1      1.55    3.26    3.11   14.27 r
+  cts_inv_289314536/I (INV_X1)                                     3.26    0.34   14.61 r
+  cts_inv_289314536/ZN (INV_X1)                     1      4.18    6.60    4.98   19.59 f
+  cts_inv_288014523/I (INV_X4)                                     7.25    1.51   21.10 f
+  cts_inv_288014523/ZN (INV_X4)                     2      5.80    4.75    3.32   24.41 r
+  u_logic_clk_gate_Fpi2z4_reg/CLK (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    2   5.80   4.75   0.00  24.41 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/CLK (CLKGATETST_X1)            9.10    3.13   27.54 r
+  u_logic_clk_gate_Fpi2z4_reg/latch/Q (CLKGATETST_X1)    1   1.16   3.53   8.20   35.74 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/I (BUF_X1)         3.53    0.13   35.88 r
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14645/Z (BUF_X1)    2   2.97   5.82   6.37  42.25 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/I (INV_X1)         5.82    0.19   42.44 r
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_224113884/ZN (INV_X1)    1   1.16   2.98   3.03  45.47 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/I (CLKBUF_X1)      2.98    0.19   45.66 f
+  u_logic_clk_gate_Fpi2z4_reg/cto_buf_drc_14647/Z (CLKBUF_X1)    1   3.65   6.98   7.04  52.70 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/I (INV_X4)         6.98    0.84   53.54 f
+  u_logic_clk_gate_Fpi2z4_reg/cts_inv_222213865/ZN (INV_X4)    9  10.84   7.34   4.37  57.91 r
+  u_logic_clk_gate_Fpi2z4_reg/p_abuf1 (SNPS_CLOCK_GATE_HIGH_cortexm0ds_logic_2)    9  10.84   7.34   0.00  57.91 r
+  u_logic_Vuo2z4_reg/CLK (SDFFSNQ_X1)                              9.08    1.14   59.05 r
+  ----------------------------------------------------------------------------------------------
+  total clock latency                                                             59.05
+
+
+1

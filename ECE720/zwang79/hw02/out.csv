@@ -1,0 +1,6 @@
+date,target_util,route_auto_util,route_auto_len,route_auto_viol,route_auto_time
+Thu Sep 12 21:08:02 EDT 2019,0.7,0.6542,62767,1,74
+Thu Sep 12 21:32:36 EDT 2019,0.8,0.7442,59037,55,303
+Thu Sep 12 21:41:18 EDT 2019,0.7,0.6542,62484,0,66
+Thu Sep 12 21:51:54 EDT 2019,0.75,0.6979,62346,10,249.0
+Thu Sep 12 22:05:44 EDT 2019,0.75,0.6979,

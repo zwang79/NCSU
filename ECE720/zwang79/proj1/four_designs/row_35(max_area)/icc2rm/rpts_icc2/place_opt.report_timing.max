@@ -1,0 +1,595 @@
+Warning: Scenario mode_norm.fast.RCmin is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.fast.RCmin_bc is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.slow.RCmax_bc is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.worst_low.RCmax_bc is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by group
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+        -derate
+        -attributes
+        -physical
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:46:12 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+  Startpoint: remainder_reg_4_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: remainder_reg_129_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: mode_norm.slow.RCmax
+  Corner: mode_norm.slow.RCmax
+  Scenario: mode_norm.slow.RCmax
+  Path Group: clock
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+
+  remainder_reg_4_/CLK (SDFFSNQ_X1)                                  0.00      1.00      0.00      0.00 r    (6.72,31.88)      s, n
+  remainder_reg_4_/Q (SDFFSNQ_X1)                                   90.07      1.00     14.63     14.63 f    (4.93,31.87)      s, n
+  n_T_42[4] (net)                                  25     47.29
+  U4032/A1 (XNOR2_X1)                                              233.67      1.00     94.68    109.31 f    (54.94,20.39)
+  U4032/ZN (XNOR2_X1)                                               10.91      1.00     26.70    136.01 r    (55.06,20.35)
+  n3102 (net)                                       2      2.31
+  U4048/B1 (OAI22_X1)                                               10.91      1.00      0.23    136.24 r    (56.83,19.55)
+  U4048/ZN (OAI22_X1)                                               11.60      1.00      5.55    141.79 f    (56.79,19.62)
+  n3128 (net)                                       1      1.86
+  U4077/B (FA_X1)                                                   11.60      1.00      0.27    142.06 f    (58.26,17.95)
+  U4077/S (FA_X1)                                                    8.56      1.00     16.59    158.65 r    (58.56,18.09)
+  n3119 (net)                                       3      3.78
+  U2433/A1 (XOR2_X1)                                                 8.56      1.00      0.48    159.13 r    (58.53,21.15)
+  U2433/Z (XOR2_X1)                                                  8.91      1.00      6.41    165.54 r    (58.64,21.12)
+  n7475 (net)                                       1      1.91
+  U2420/A2 (XOR2_X1)                                                 8.91      1.00      0.15    165.69 r    (59.49,20.44)
+  U2420/Z (XOR2_X1)                                                  6.96      1.00      6.22    171.91 r    (59.60,20.35)
+  n3133 (net)                                       1      1.41
+  U4079/CI (FA_X1)                                                   6.96      1.00      0.15    172.06 r    (60.22,18.82)
+  U4079/S (FA_X1)                                                    5.72      1.00     14.84    186.90 f    (60.35,18.78)
+  n4019 (net)                                       2      2.00
+  U4778/A1 (NOR2_X1)                                                 5.72      1.00      0.25    187.15 f    (60.16,16.48)
+  U4778/ZN (NOR2_X1)                                                 8.83      1.00      5.36    192.51 r    (60.13,16.54)
+  n6715 (net)                                       3      2.81
+  U4890/A1 (OAI21_X1)                                                8.83      1.00      0.38    192.89 r    (61.18,16.54)
+  U4890/ZN (OAI21_X1)                                                7.13      1.00      4.96    197.85 f    (61.17,16.59)
+  n5675 (net)                                       2      1.92
+  U4771/A2 (AOI21_X1)                                                7.13      1.00      0.10    197.94 f    (61.31,17.34)
+  U4771/ZN (AOI21_X1)                                                6.20      1.00      4.20    202.14 r    (61.46,17.35)
+  n7460 (net)                                       1      1.03
+  U4769/B (OAI21_X1)                                                 6.20      1.00      0.06    202.20 r    (62.27,17.25)
+  U4769/ZN (OAI21_X1)                                                8.72      1.00      5.30    207.50 f    (62.16,17.20)
+  n5002 (net)                                       2      2.29
+  U4898/A1 (AOI21_X1)                                                8.72      1.00      0.27    207.77 f    (62.27,21.92)
+  U4898/ZN (AOI21_X1)                                                7.72      1.00      5.09    212.86 r    (62.25,21.95)
+  n5793 (net)                                       2      1.94
+  U4900/A1 (OAI21_X1)                                                7.72      1.00      0.11    212.97 r    (62.34,22.69)
+  U4900/ZN (OAI21_X1)                                                8.01      1.00      4.79    217.76 f    (62.32,22.73)
+  n4033 (net)                                       1      1.93
+  U4758/B (AOI21_X2)                                                 8.01      1.00      0.11    217.88 f    (62.46,23.46)
+  U4758/ZN (AOI21_X2)                                                9.37      1.00      4.79    222.66 r    (62.60,23.42)
+  n5147 (net)                                       3      2.97
+  U4734/A1 (OAI21_X1)                                                9.37      1.00      0.34    223.01 r    (62.66,26.46)
+  U4734/ZN (OAI21_X1)                                                7.84      1.00      4.94    227.95 f    (62.67,26.42)
+  n5135 (net)                                       1      1.82
+  U4947/A1 (AOI21_X2)                                                7.84      1.00      0.17    228.12 f    (62.53,28.04)
+  U4947/ZN (AOI21_X2)                                                6.41      1.00      4.33    232.45 r    (62.64,28.03)
+  n5123 (net)                                       2      2.82
+  U4733/A1 (OAI21_X2)                                                6.41      1.00      0.32    232.77 r    (62.66,30.34)
+  U4733/ZN (OAI21_X2)                                                7.76      1.00      4.43    237.20 f    (62.52,30.34)
+  n6499 (net)                                       3      3.68
+  U4720/A2 (AOI21_X2)                                                7.76      1.00      0.57    237.77 f    (62.72,33.39)
+  U4720/ZN (AOI21_X2)                                                6.20      1.00      4.20    241.97 r    (62.60,33.41)
+  n5110 (net)                                       1      1.86
+  U4706/A1 (OAI21_X2)                                                6.20      1.00      0.17    242.14 r    (62.72,34.94)
+  U4706/ZN (OAI21_X2)                                                7.97      1.00      4.48    246.62 f    (62.58,34.94)
+  n5361 (net)                                       3      3.89
+  U4705/A2 (AOI21_X2)                                                7.97      1.00      0.57    247.19 f    (62.52,39.54)
+  U4705/ZN (AOI21_X2)                                                6.33      1.00      4.25    251.45 r    (62.64,39.55)
+  n5352 (net)                                       2      1.93
+  U4683/A1 (OAI21_X1)                                                6.33      1.00      0.21    251.66 r    (62.14,41.12)
+  U4683/ZN (OAI21_X1)                                                6.05      1.00      3.32    254.97 f    (62.16,41.17)
+  n5342 (net)                                       1      0.91
+  U4667/A2 (AOI21_X1)                                                6.05      1.00      0.08    255.05 f    (61.63,41.92)
+  U4667/ZN (AOI21_X1)                                                7.95      1.00      5.02    260.07 r    (61.49,41.92)
+  n5333 (net)                                       2      1.97
+  U4626/A1 (OAI21_X1)                                                7.95      1.00      0.19    260.26 r    (61.12,44.19)
+  U4626/ZN (OAI21_X1)                                                6.26      1.00      3.70    263.96 f    (61.13,44.24)
+  n5322 (net)                                       1      1.00
+  U4603/A2 (AOI21_X1)                                                6.26      1.00      0.11    264.07 f    (60.22,45.63)
+  U4603/ZN (AOI21_X1)                                               11.69      1.00      6.75    270.82 r    (60.08,45.63)
+  n5278 (net)                                       3      3.47
+  U4602/A1 (OAI21_X1)                                               11.69      1.00      0.42    271.24 r    (59.20,47.26)
+  U4602/ZN (OAI21_X1)                                                8.24      1.00      5.61    276.85 f    (59.19,47.31)
+  n6451 (net)                                       2      2.08
+  U4591/A2 (AOI21_X1)                                                8.24      1.00      0.27    277.12 f    (57.28,49.60)
+  U4591/ZN (AOI21_X1)                                               10.66      1.00      6.56    283.68 r    (57.13,49.60)
+  n6442 (net)                                       2      2.94
+  U4578/A1 (OAI21_X2)                                               10.66      1.00      0.38    284.06 r    (55.81,52.61)
+  U4578/ZN (OAI21_X2)                                                7.65      1.00      4.63    288.70 f    (55.67,52.61)
+  n4574 (net)                                       2      2.84
+  U4577/A2 (AOI21_X2)                                                7.65      1.00      0.38    289.08 f    (53.05,54.16)
+  U4577/ZN (AOI21_X2)                                                6.07      1.00      4.12    293.20 r    (53.17,54.14)
+  n4559 (net)                                       1      1.76
+  U5212/A1 (OAI21_X2)                                                6.07      1.00      0.10    293.29 r    (53.12,54.91)
+  U5212/ZN (OAI21_X2)                                                7.97      1.00      4.43    297.72 f    (52.98,54.91)
+  n4544 (net)                                       2      3.84
+  U5221/A1 (AOI21_X2)                                                7.97      1.00      0.48    298.19 f    (47.23,55.69)
+  U5221/ZN (AOI21_X2)                                                7.74      1.00      5.02    303.21 r    (47.12,55.68)
+  n4532 (net)                                       3      3.94
+  U4752/A1 (OAI21_X2)                                                7.74      1.00      0.42    303.63 r    (44.42,56.45)
+  U4752/ZN (OAI21_X2)                                                6.01      1.00      4.12    307.75 f    (44.28,56.45)
+  n4504 (net)                                       2      2.68
+  U2320/A1 (AOI22_X1)                                                6.01      1.00      0.27    308.02 f    (40.77,56.42)
+  U2320/ZN (AOI22_X1)                                               10.62      1.00      5.84    313.85 r    (40.75,56.41)
+  n7466 (net)                                       2      2.60
+  U2301/A1 (OAI21_X1)                                               10.62      1.00      0.17    314.03 r    (37.89,56.48)
+  U2301/ZN (OAI21_X1)                                                8.91      1.00      6.07    320.09 f    (37.90,56.53)
+  n4485 (net)                                       2      2.62
+  U3085/A1 (NAND2_X1)                                                8.91      1.00      0.23    320.32 f    (35.33,56.48)
+  U3085/ZN (NAND2_X1)                                                5.23      1.00      3.66    323.98 r    (35.30,56.41)
+  n7347 (net)                                       2      2.06
+  U4556/A1 (OAI21_X1)                                                5.23      1.00      0.19    324.17 r    (33.86,54.94)
+  U4556/ZN (OAI21_X1)                                                6.47      1.00      3.66    327.84 f    (33.87,54.99)
+  n4465 (net)                                       1      1.38
+  U5249/CI (FA_X1)                                                   6.47      1.00      0.19    328.03 f    (33.22,52.61)
+  U5249/CO (FA_X1)                                                   5.80      1.00      9.12    337.14 f    (32.45,52.61)
+  n5382 (net)                                       2      2.68
+  SGI11_3418/A1 (AOI22_X1)                                           5.80      1.00      0.31    337.45 f    (33.79,50.27)
+  SGI11_3418/ZN (AOI22_X1)                                           8.49      1.00      4.92    342.37 r    (33.77,50.26)
+  n7495 (net)                                       1      1.84
+  SGI100_3369/A1 (XOR2_X1)                                           8.49      1.00      0.38    342.75 r    (35.49,47.26)
+  SGI100_3369/Z (XOR2_X1)                                            7.25      1.00      5.44    348.19 r    (35.60,47.23)
+  net_net_2597 (net)                                1      1.03
+  SGI98_3367/A2 (NOR2_X1)                                            7.25      1.00      0.06    348.24 r    (34.37,47.20)
+  SGI98_3367/ZN (NOR2_X1)                                            4.31      1.00      2.63    350.88 f    (34.46,47.26)
+  N588 (net)                                        1      0.74
+  remainder_reg_129_/D (SDFFSNQ_X1)                                  4.31      1.00      0.08    350.95 f    (36.80,47.93)     s, n
+  data arrival time                                                                              350.95
+
+  clock clock (rise edge)                                                              400.00    400.00
+  clock network delay (ideal)                                                           31.40    431.40
+  clock reconvergence pessimism                                                          0.00    431.40
+  remainder_reg_129_/CLK (SDFFSNQ_X1)                                0.00      1.00      0.00    431.40 r    (37.25,47.99)     s, n
+  clock uncertainty                                                                    -20.00    411.40
+  library setup time                                                           1.00    -12.02    399.38
+  data required time                                                                             399.38
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             399.38
+  data arrival time                                                                              -350.95
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                     48.43
+
+
+
+  Startpoint: io_req_bits_dw (input port clocked by clock)
+  Endpoint: divisor_reg_32_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: mode_norm.slow.RCmax
+  Corner: mode_norm.slow.RCmax
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGIN
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+  input external delay                                                                 120.00    120.00
+
+  io_req_bits_dw (in)                                                9.85      1.00      5.11    125.11 f    (33.98,0.01)
+  io_req_bits_dw (net)                              6      6.56
+  U2767/I (INV_X1)                                                   9.84      1.00      0.97    126.08 f    (31.30,3.46)
+  U2767/ZN (INV_X1)                                                 10.19      1.00      6.85    132.93 r    (31.23,3.46)
+  n6210 (net)                                       5      6.20
+  U3298/A1 (NAND3_X1)                                               10.19      1.00      0.42    133.35 r    (35.26,3.46)
+  U3298/ZN (NAND3_X1)                                               13.77      1.00      5.46    138.81 f    (35.23,3.46)
+  n2386 (net)                                       1      1.35
+  U3299/A2 (NOR2_X1)                                                13.77      1.00      0.23    139.04 f    (35.52,7.26)
+  U3299/ZN (NOR2_X1)                                                90.50      1.00      8.05    147.08 r    (35.62,7.33)
+  n2853 (net)                                      18     22.68
+  U2773/I (INV_X1)                                                 147.72      1.00     36.93    184.01 r    (50.75,31.10)
+  U2773/ZN (INV_X1)                                                 62.14      1.00     33.21    217.22 f    (50.82,31.11)
+  n7192 (net)                                      16     17.69
+  U3554/A1 (NAND2_X1)                                               64.16      1.00      7.71    224.92 f    (47.87,14.18)
+  U3554/ZN (NAND2_X1)                                               14.32      1.00      1.75    226.68 r    (47.84,14.24)
+  n7053 (net)                                       1      0.51
+  divisor_reg_32_/D (SDFFSNQ_X1)                                    14.32      1.00      0.02    226.70 r    (47.94,13.51)     s, n
+  data arrival time                                                                              226.70
+
+  clock clock (rise edge)                                                              400.00    400.00
+  clock network delay (ideal)                                                            0.00    400.00
+  clock reconvergence pessimism                                                          0.00    400.00
+  divisor_reg_32_/CLK (SDFFSNQ_X1)                                   0.00      1.00      0.00    400.00 r    (47.49,13.45)     s, n
+  clock uncertainty                                                                    -20.00    380.00
+  library setup time                                                           1.00    -12.11    367.89
+  data required time                                                                             367.89
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             367.89
+  data arrival time                                                                              -226.70
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    141.20
+
+
+
+  Startpoint: state_reg_0_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: io_resp_bits_data[42] (output port clocked by clock)
+  Mode: mode_norm.slow.RCmax
+  Corner: mode_norm.slow.RCmax
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGOUT
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+
+  state_reg_0_/CLK (SDFFSNQ_X1)                                      0.00      1.00      0.00      0.00 r    (35.71,3.45)      s, n
+  state_reg_0_/Q (SDFFSNQ_X1)                                       35.55      1.00     14.19     14.19 r    (37.50,3.46)      s, n
+  n_T_460_0_ (net)                                 12     18.01
+  U3083/A1 (NOR2_X1)                                                37.38      1.00      2.19     16.38 r    (28.48,1.95)
+  U3083/ZN (NOR2_X1)                                                13.31      1.00      6.39     22.77 f    (28.45,1.89)
+  n2263 (net)                                       1      2.75
+  HFSINV_7510_1055/I (INV_X2)                                       13.31      1.00      0.97     23.75 f    (20.86,3.46)
+  HFSINV_7510_1055/ZN (INV_X2)                                      35.72      1.00      7.95     31.70 r    (20.80,3.49)
+  HFSNET_196 (net)                                 34     34.72
+  HFSINV_7344_1054/I (INV_X2)                                       55.60      1.00     18.94     50.64 r    (8.38,1.15)
+  HFSINV_7344_1054/ZN (INV_X2)                                      38.49      1.00     18.63     69.27 f    (8.32,1.12)
+  HFSNET_195 (net)                                 31     30.53
+  U3251/A1 (AOI22_X1)                                               46.56      1.00     10.13     79.40 f    (16.96,2.66)
+  U3251/ZN (AOI22_X1)                                               22.54      1.00     13.28     92.68 r    (16.94,2.65)
+  io_resp_bits_data[31] (net)                       2      3.75
+  U3254/A1 (NAND2_X1)                                               22.54      1.00      0.29     92.96 r    (16.96,1.18)
+  U3254/ZN (NAND2_X1)                                               83.60      1.00     35.76    128.73 f    (16.93,1.12)
+  n2367 (net)                                      32     31.19
+  U3267/B (OAI21_X1)                                                84.74      1.00      6.10    134.83 f    (22.91,2.72)
+  U3267/ZN (OAI21_X1)                                               27.75      1.00     11.01    145.84 r    (22.80,2.77)
+  io_resp_bits_data[42] (net)                       1      2.86
+  io_resp_bits_data[42] (out)                                       27.75      1.00      0.40    146.24 r    (23.36,0.01)
+  data arrival time                                                                              146.24
+
+  clock clock (rise edge)                                                              400.00    400.00
+  clock network delay (ideal)                                                            0.00    400.00
+  clock reconvergence pessimism                                                          0.00    400.00
+  clock uncertainty                                                                    -20.00    380.00
+  output external delay                                                                -120.00   260.00
+  data required time                                                                             260.00
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             260.00
+  data arrival time                                                                              -146.24
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    113.76
+
+
+
+  Startpoint: remainder_reg_4_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: remainder_reg_125_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: mode_norm.worst_low.RCmax
+  Corner: mode_norm.worst_low.RCmax
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: clock
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+
+  remainder_reg_4_/CLK (SDFFSNQ_X1)                                  0.00      1.00      0.00      0.00 r    (6.72,31.88)      s, n
+  remainder_reg_4_/Q (SDFFSNQ_X1)                                  102.65      1.00     19.09     19.09 f    (4.93,31.87)      s, n
+  n_T_42[4] (net)                                  25     46.29
+  U4032/A1 (XNOR2_X1)                                              236.23      1.00     95.25    114.35 f    (54.94,20.39)
+  U4032/ZN (XNOR2_X1)                                                9.44      1.00     32.50    146.85 r    (55.06,20.35)
+  n3102 (net)                                       2      2.17
+  U4048/B1 (OAI22_X1)                                                9.44      1.00      0.23    147.08 r    (56.83,19.55)
+  U4048/ZN (OAI22_X1)                                               10.09      1.00      6.94    154.02 f    (56.79,19.62)
+  n3128 (net)                                       1      1.75
+  U4077/B (FA_X1)                                                   10.09      1.00      0.25    154.27 f    (58.26,17.95)
+  U4077/S (FA_X1)                                                    8.79      1.00     21.46    175.72 r    (58.56,18.09)
+  n3119 (net)                                       3      3.57
+  U2433/A1 (XOR2_X1)                                                 8.79      1.00      0.46    176.18 r    (58.53,21.15)
+  U2433/Z (XOR2_X1)                                                  8.20      1.00      8.68    184.86 r    (58.64,21.12)
+  n7475 (net)                                       1      1.80
+  U2420/A2 (XOR2_X1)                                                 8.20      1.00      0.13    184.99 r    (59.49,20.44)
+  U2420/Z (XOR2_X1)                                                  6.47      1.00      8.26    193.25 r    (59.60,20.35)
+  n3133 (net)                                       1      1.37
+  U4079/CI (FA_X1)                                                   6.47      1.00      0.13    193.39 r    (60.22,18.82)
+  U4079/S (FA_X1)                                                    5.51      1.00     17.87    211.26 f    (60.35,18.78)
+  n4019 (net)                                       2      1.87
+  U4778/A1 (NOR2_X1)                                                 5.51      1.00      0.23    211.49 f    (60.16,16.48)
+  U4778/ZN (NOR2_X1)                                                 8.64      1.00      6.54    218.03 r    (60.13,16.54)
+  n6715 (net)                                       3      2.68
+  U4890/A1 (OAI21_X1)                                                8.64      1.00      0.36    218.39 r    (61.18,16.54)
+  U4890/ZN (OAI21_X1)                                                6.48      1.00      5.65    224.04 f    (61.17,16.59)
+  n5675 (net)                                       2      1.82
+  U4771/A2 (AOI21_X1)                                                6.48      1.00      0.10    224.13 f    (61.31,17.34)
+  U4771/ZN (AOI21_X1)                                                5.40      1.00      5.19    229.32 r    (61.46,17.35)
+  n7460 (net)                                       1      0.98
+  U4769/B (OAI21_X1)                                                 5.40      1.00      0.06    229.38 r    (62.27,17.25)
+  U4769/ZN (OAI21_X1)                                                7.67      1.00      6.33    235.71 f    (62.16,17.20)
+  n5002 (net)                                       2      2.17
+  U4898/A1 (AOI21_X1)                                                7.67      1.00      0.25    235.96 f    (62.27,21.92)
+  U4898/ZN (AOI21_X1)                                                7.46      1.00      6.18    242.14 r    (62.25,21.95)
+  n5793 (net)                                       2      1.85
+  U4900/A1 (OAI21_X1)                                                7.46      1.00      0.10    242.23 r    (62.34,22.69)
+  U4900/ZN (OAI21_X1)                                                6.89      1.00      5.34    247.57 f    (62.32,22.73)
+  n4033 (net)                                       1      1.78
+  U4758/B (AOI21_X2)                                                 6.89      1.00      0.10    247.67 f    (62.46,23.46)
+  U4758/ZN (AOI21_X2)                                                8.01      1.00      6.66    254.33 r    (62.60,23.42)
+  n5147 (net)                                       3      2.87
+  U4734/A1 (OAI21_X1)                                                8.01      1.00      0.32    254.65 r    (62.66,26.46)
+  U4734/ZN (OAI21_X1)                                                6.83      1.00      5.40    260.05 f    (62.67,26.42)
+  n5135 (net)                                       1      1.73
+  U4947/A1 (AOI21_X2)                                                6.83      1.00      0.17    260.22 f    (62.53,28.04)
+  U4947/ZN (AOI21_X2)                                                6.16      1.00      5.23    265.45 r    (62.64,28.03)
+  n5123 (net)                                       2      2.72
+  U4733/A1 (OAI21_X2)                                                6.16      1.00      0.31    265.75 r    (62.66,30.34)
+  U4733/ZN (OAI21_X2)                                                6.87      1.00      4.98    270.73 f    (62.52,30.34)
+  n6499 (net)                                       3      3.52
+  U4720/A2 (AOI21_X2)                                                6.87      1.00      0.55    271.28 f    (62.72,33.39)
+  U4720/ZN (AOI21_X2)                                                5.38      1.00      5.19    276.47 r    (62.60,33.41)
+  n5110 (net)                                       1      1.79
+  U4706/A1 (OAI21_X2)                                                5.38      1.00      0.17    276.64 r    (62.72,34.94)
+  U4706/ZN (OAI21_X2)                                                7.08      1.00      4.92    281.56 f    (62.58,34.94)
+  n5361 (net)                                       3      3.73
+  U4705/A2 (AOI21_X2)                                                7.08      1.00      0.55    282.12 f    (62.52,39.54)
+  U4705/ZN (AOI21_X2)                                                5.49      1.00      5.30    287.42 r    (62.64,39.55)
+  n5352 (net)                                       2      1.86
+  U4683/A1 (OAI21_X1)                                                5.49      1.00      0.21    287.63 r    (62.14,41.12)
+  U4683/ZN (OAI21_X1)                                                5.11      1.00      3.68    291.31 f    (62.16,41.17)
+  n5342 (net)                                       1      0.89
+  U4667/A2 (AOI21_X1)                                                5.11      1.00      0.06    291.37 f    (61.63,41.92)
+  U4667/ZN (AOI21_X1)                                                7.57      1.00      6.16    297.53 r    (61.49,41.92)
+  n5333 (net)                                       2      1.89
+  U4626/A1 (OAI21_X1)                                                7.57      1.00      0.17    297.70 r    (61.12,44.19)
+  U4626/ZN (OAI21_X1)                                                5.32      1.00      4.29    301.99 f    (61.13,44.24)
+  n5322 (net)                                       1      0.98
+  U4603/A2 (AOI21_X1)                                                5.32      1.00      0.11    302.10 f    (60.22,45.63)
+  U4603/ZN (AOI21_X1)                                               11.46      1.00      8.34    310.44 r    (60.08,45.63)
+  n5278 (net)                                       3      3.32
+  U4602/A1 (OAI21_X1)                                               11.46      1.00      0.40    310.84 r    (59.20,47.26)
+  U4602/ZN (OAI21_X1)                                                7.42      1.00      6.50    317.34 f    (59.19,47.31)
+  n6451 (net)                                       2      2.01
+  U4591/A2 (AOI21_X1)                                                7.42      1.00      0.25    317.59 f    (57.28,49.60)
+  U4591/ZN (AOI21_X1)                                               10.30      1.00      8.16    325.76 r    (57.13,49.60)
+  n6442 (net)                                       2      2.83
+  U4578/A1 (OAI21_X2)                                               10.30      1.00      0.36    326.12 r    (55.81,52.61)
+  U4578/ZN (OAI21_X2)                                                6.68      1.00      5.34    331.46 f    (55.67,52.61)
+  n4574 (net)                                       2      2.75
+  U4577/A2 (AOI21_X2)                                                6.68      1.00      0.36    331.82 f    (53.05,54.16)
+  U4577/ZN (AOI21_X2)                                                5.23      1.00      5.07    336.89 r    (53.17,54.14)
+  n4559 (net)                                       1      1.69
+  U5212/A1 (OAI21_X2)                                                5.23      1.00      0.10    336.99 r    (53.12,54.91)
+  U5212/ZN (OAI21_X2)                                                7.11      1.00      4.88    341.87 f    (52.98,54.91)
+  n4544 (net)                                       2      3.72
+  U5221/A1 (AOI21_X2)                                                7.11      1.00      0.46    342.33 f    (47.23,55.69)
+  U5221/ZN (AOI21_X2)                                                7.55      1.00      6.10    348.43 r    (47.12,55.68)
+  n4532 (net)                                       3      3.79
+  U4752/A1 (OAI21_X2)                                                7.55      1.00      0.40    348.83 r    (44.42,56.45)
+  U4752/ZN (OAI21_X2)                                                5.23      1.00      4.73    353.57 f    (44.28,56.45)
+  n4504 (net)                                       2      2.60
+  U2320/A1 (AOI22_X1)                                                5.23      1.00      0.27    353.83 f    (40.77,56.42)
+  U2320/ZN (AOI22_X1)                                                9.82      1.00      7.15    360.98 r    (40.75,56.41)
+  n7466 (net)                                       2      2.49
+  U2301/A1 (OAI21_X1)                                                9.82      1.00      0.15    361.14 r    (37.89,56.48)
+  U2301/ZN (OAI21_X1)                                                7.99      1.00      6.79    367.93 f    (37.90,56.53)
+  n4485 (net)                                       2      2.50
+  U5354/A1 (XOR2_X1)                                                 7.99      1.00      0.11    368.04 f    (37.15,56.48)
+  U5354/Z (XOR2_X1)                                                  6.35      1.00      8.32    376.36 f    (37.26,56.45)
+  n4488 (net)                                       1      1.79
+  U5275/A1 (NAND2_X1)                                                6.35      1.00      0.76    377.12 f    (37.63,44.90)
+  U5275/ZN (NAND2_X1)                                               12.55      1.00      3.72    380.84 r    (37.66,44.96)
+  n4489 (net)                                       1      1.17
+  U5276/A3 (NAND3_X1)                                               12.55      1.00      0.15    380.99 r    (37.25,42.63)
+  U5276/ZN (NAND3_X1)                                                5.32      1.00      5.40    386.39 f    (37.41,42.62)
+  N584 (net)                                        1      0.52
+  remainder_reg_125_/D (SDFFSNQ_X1)                                  5.32      1.00      0.04    386.43 f    (38.02,43.32)     s, n
+  data arrival time                                                                              386.43
+
+  clock clock (rise edge)                                                              400.00    400.00
+  clock network delay (ideal)                                                           20.00    420.00
+  clock reconvergence pessimism                                                          0.00    420.00
+  remainder_reg_125_/CLK (SDFFSNQ_X1)                                0.00      1.00      0.00    420.00 r    (38.46,43.38)     s, n
+  clock uncertainty                                                                    -20.00    400.00
+  library setup time                                                           1.00    -13.02    386.98
+  data required time                                                                             386.99
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             386.99
+  data arrival time                                                                              -386.43
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                      0.56
+
+
+
+  Startpoint: io_req_bits_dw (input port clocked by clock)
+  Endpoint: divisor_reg_33_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: mode_norm.worst_low.RCmax
+  Corner: mode_norm.worst_low.RCmax
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGIN
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+  input external delay                                                                 120.00    120.00
+
+  io_req_bits_dw (in)                                               10.28      1.00      6.08    126.08 f    (33.98,0.01)
+  io_req_bits_dw (net)                              6      6.11
+  U2767/I (INV_X1)                                                  10.28      1.00      0.90    126.98 f    (31.30,3.46)
+  U2767/ZN (INV_X1)                                                 11.37      1.00      9.37    136.34 r    (31.23,3.46)
+  n6210 (net)                                       5      6.02
+  U3298/A1 (NAND3_X1)                                               11.37      1.00      0.40    136.74 r    (35.26,3.46)
+  U3298/ZN (NAND3_X1)                                               10.95      1.00      6.12    142.87 f    (35.23,3.46)
+  n2386 (net)                                       1      1.27
+  U3299/A2 (NOR2_X1)                                                10.95      1.00      0.23    143.10 f    (35.52,7.26)
+  U3299/ZN (NOR2_X1)                                                91.95      1.00     10.05    153.15 r    (35.62,7.33)
+  n2853 (net)                                      18     21.76
+  U2773/I (INV_X1)                                                 145.40      1.00     37.04    190.19 r    (50.75,31.10)
+  U2773/ZN (INV_X1)                                                 57.68      1.00     39.86    230.05 f    (50.82,31.11)
+  n7192 (net)                                      16     15.97
+  U3559/A1 (NAND2_X1)                                               59.68      1.00      6.96    237.01 f    (48.00,15.01)
+  U3559/ZN (NAND2_X1)                                                9.67      1.00      7.32    244.34 r    (47.97,14.94)
+  n7054 (net)                                       1      0.51
+  divisor_reg_33_/D (SDFFSNQ_X1)                                     9.67      1.00      0.02    244.36 r    (48.77,15.05)     s, n
+  data arrival time                                                                              244.36
+
+  clock clock (rise edge)                                                              400.00    400.00
+  clock network delay (ideal)                                                            0.00    400.00
+  clock reconvergence pessimism                                                          0.00    400.00
+  divisor_reg_33_/CLK (SDFFSNQ_X1)                                   0.00      1.00      0.00    400.00 r    (48.32,14.98)     s, n
+  clock uncertainty                                                                    -20.00    380.00
+  library setup time                                                           1.00    -12.34    367.66
+  data required time                                                                             367.66
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             367.66
+  data arrival time                                                                              -244.36
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    123.30
+
+
+
+  Startpoint: state_reg_0_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: io_resp_bits_data[46] (output port clocked by clock)
+  Mode: mode_norm.worst_low.RCmax
+  Corner: mode_norm.worst_low.RCmax
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGOUT
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                            0.00      0.00
+
+  state_reg_0_/CLK (SDFFSNQ_X1)                                      0.00      1.00      0.00      0.00 r    (35.71,3.45)      s, n
+  state_reg_0_/Q (SDFFSNQ_X1)                                       40.63      1.00     19.57     19.57 r    (37.50,3.46)      s, n
+  n_T_460_0_ (net)                                 12     17.41
+  U3083/A1 (NOR2_X1)                                                42.40      1.00      2.19     21.76 r    (28.48,1.95)
+  U3083/ZN (NOR2_X1)                                                12.57      1.00      9.35     31.11 f    (28.45,1.89)
+  n2263 (net)                                       1      2.60
+  HFSINV_7510_1055/I (INV_X2)                                       12.57      1.00      0.90     32.01 f    (20.86,3.46)
+  HFSINV_7510_1055/ZN (INV_X2)                                      41.43      1.00     10.07     42.08 r    (20.80,3.49)
+  HFSNET_196 (net)                                 34     33.81
+  HFSINV_7344_1054/I (INV_X2)                                       59.32      1.00     19.89     61.97 r    (8.38,1.15)
+  HFSINV_7344_1054/ZN (INV_X2)                                      38.95      1.00     23.67     85.64 f    (8.32,1.12)
+  HFSNET_195 (net)                                 31     28.40
+  U3251/A1 (AOI22_X1)                                               45.81      1.00      9.54     95.18 f    (16.96,2.66)
+  U3251/ZN (AOI22_X1)                                               20.20      1.00     18.50    113.68 r    (16.94,2.65)
+  io_resp_bits_data[31] (net)                       2      3.74
+  U3254/A1 (NAND2_X1)                                               20.20      1.00      0.29    113.96 r    (16.96,1.18)
+  U3254/ZN (NAND2_X1)                                               78.60      1.00     38.83    152.80 f    (16.93,1.12)
+  n2367 (net)                                      32     29.04
+  U3272/B (OAI21_X1)                                                79.92      1.00      5.63    158.42 f    (22.14,2.72)
+  U3272/ZN (OAI21_X1)                                               21.93      1.00     18.86    177.29 r    (22.26,2.77)
+  io_resp_bits_data[46] (net)                       1      2.87
+  io_resp_bits_data[46] (out)                                       21.93      1.00      0.40    177.69 r    (21.63,0.01)
+  data arrival time                                                                              177.69
+
+  clock clock (rise edge)                                                              400.00    400.00
+  clock network delay (ideal)                                                            0.00    400.00
+  clock reconvergence pessimism                                                          0.00    400.00
+  clock uncertainty                                                                    -20.00    380.00
+  output external delay                                                                -120.00   260.00
+  data required time                                                                             260.00
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             260.00
+  data arrival time                                                                              -177.69
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                     82.31
+
+
+1

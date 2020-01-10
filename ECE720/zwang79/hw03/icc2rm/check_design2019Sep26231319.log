@@ -1,0 +1,179 @@
+****************************************
+Report : Data Mismatches
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:13:19 2019
+****************************************
+No mismatches exist on the design.
+1
+****************************************
+Report : SCANDEF check
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:13:19 2019
+****************************************
+  Checking between SCANDEF file and design:
+
+  Total PARTITION group count: 1
+  Total SCANCHAINS checked: 1
+  VALIDATED :  1
+  FAILED    :  0
+
+  Chain name     Status    #cells    #bits     PARTITION      Scan in        Scan out
+  1              V         840       840       HCLK_45_45_0.720000 test_si   u_logic_Ypi3z4_reg/SI
+1
+NEX: 9061 nets
+NEX: 100.00%(9061/9061) nets are valid placed
+
+Histogram of "num of nodes per net"
+  value: 	percent%
+     2: 	63.8% (peak)
+     3: 	11.6% 
+     4: 	11.6% 
+     5: 	9.0% (average = 5) 
+    10: 	2.2% 
+    20: 	1.8% 
+    40: 	0.1% 
+    1000: 	0.0% 
+
+
+Histogram of "net bbox size(um)"
+  value: 	percent%
+   0.00: 	0.8% 
+   0.50: 	14.7% 
+   1.00: 	37.9% (peak)
+   2.00: 	12.3% 
+   3.00: 	5.8% 
+   4.00: 	5.0% (average = 4.4) 
+   5.00: 	12.1% 
+   10.00: 	7.8% 
+   20.00: 	3.0% 
+   40.00: 	0.7% 
+
+
+Histogram of "net bbox aspect()"
+  value: 	percent%
+   1.00: 	14.2% (peak)
+   1.10: 	10.9% 
+   1.20: 	9.0% 
+   1.30: 	8.2% 
+   1.40: 	6.5% 
+   1.50: 	5.7% 
+   1.60: 	5.6% 
+   1.70: 	5.3% 
+   1.80: 	4.3% 
+   1.90: 	3.5% (average = 2.0) 
+   2.00: 	10.1% 
+   2.50: 	5.4% 
+   3.00: 	4.7% 
+   4.00: 	2.5% 
+   5.00: 	3.4% 
+   10.00: 	0.6% 
+   20.00: 	0.0% 
+
+NEX: 8993 insts
+
+Histogram of "inst bbox size(um)"
+  value: 	percent%
+   0.50: 	90.1% (average = 0.9) (peak)
+   1.00: 	9.9% 
+
+NEX: 1 NDR rules: 
+  [0] default_rule_equivalent_ndr_double_spacing
+1
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MINT5
+Skipping 1 internal pins that are not physical. Set route.common.verbose_level to > 0 and run routing command to get skipped pin names.
+Info: number of net_type_blockage: 0 
+Printing options for 'route.common.*'
+common.debug_remove_extension_floating_shapes           :	 false               
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :	 true                
+detail.eco_max_number_of_iterations                     :	 10                  
+detail.force_end_on_preferred_grid                      :	 true                
+detail.timing_driven                                    :	 true                
+
+Printing options for 'route.auto_via_ladder.*'
+
+Warning: The check_routability command uses a single CPU process; ignoring the set_host_options -max_cores setting of 8. (ZRT-520)
+
+============================================
+==  Check for overlap of standard cells   ==
+============================================
+
+>>>>>> No overlap of standard cells found
+
+============================================
+==     Check for min-grid violations      ==
+============================================
+
+>>>>>> No min-grid violations found
+
+
+============================================
+==    Check for out-of-boundary ports     ==
+============================================
+
+>>>>>> No out-of-boundary error found
+
+============================================
+==        Check for blocked ports         ==
+============================================
+
+>>>>>> No blocked ports found
+
+>>>>>> No blocked nets found
+
+============================================
+==     Check for shielding violations     ==
+============================================
+
+>>>>>> The following Non-PG net has a shape with shape_use shield_route
+
+>>> No non-PG net has a shape with shape_use shield_route.
+
+>>>>>> The following PG net has shape with shape_use detail_route and shape length is too long.
+
+>>> No PG net has shape with shape_use detail_route and shape length is too long.
+
+>>>>>> The following nets with shield non-default rule has no internal data representation in Zroute.
+
+>>> No nets with shield non-default rule has no internal data representation in Zroute.
+
+============================================
+==     Check for via cut blockage violation   ==
+============================================
+
+>>>>>> The following via cut blockages are wrongly treated as real vias.
+
+>>> No via cut blockage is wrongly treated as real via.
+
+============================================
+==     Check for custom via definition    ==
+============================================
+
+>>> No custom via definition has too many cuts
+
+============================================
+==          Check for via master          ==
+============================================
+
+>>> The total number of via master definition is 180
+
+===============================================
+==     Check non-default rule setting        ==
+===============================================
+
+>>> No NDR width is larger than signalRouteMaxWidth
+
+>>> No NDR shield width is larger than signalRouteMaxWidth
+
+======================================================
+==     Check redundant duplicated PG shapes         ==
+======================================================
+
+>>> No redundant duplicated PG shapes overlap with each other.
+
+End of check_routability
+1

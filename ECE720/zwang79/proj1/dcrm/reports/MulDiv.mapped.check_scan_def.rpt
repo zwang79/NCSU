@@ -1,0 +1,30 @@
+ Checking SCANDEF...
+
+ Checking for duplication in SCANDEF...
+   Checking scan cell correspondence between SCANDEF and netlist...
+   Start scan chain checking...
+  All checks completed.
+
+****************************************
+
+Report : Scan DEF check
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:43:58 2019
+
+****************************************
+
+
+ Information from SCANDEF file:
+  Number of SCANCHAINS: 1
+
+ Checking between SCANDEF file and design:
+  Total SCANCHAINS checked: 1
+  VALIDATED :  1
+  FAILED    :  0
+
+Chain name Status  #cells  #bits  PARTITION      Scan IN        Scan OUT
+---------- ------  ------  -----  ---------      -------        --------
+1          V       213     213    clock_45_45_0.720000 test_si  req_tag_reg_4_/SI
+
+1

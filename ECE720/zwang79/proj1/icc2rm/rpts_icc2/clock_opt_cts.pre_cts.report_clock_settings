@@ -1,0 +1,157 @@
+Information: RDE mode is turned on. (TIM-124)
+Information: Corner mode_norm.worst_low.RCmax: no PVT mismatches. (PVT-032)
+Information: Corner mode_norm.fast.RCmin: no PVT mismatches. (PVT-032)
+Information: Corner mode_norm.fast.RCmin_bc: no PVT mismatches. (PVT-032)
+Information: Corner mode_norm.worst_low.RCmax_bc: no PVT mismatches. (PVT-032)
+Information: Corner mode_norm.slow.RCmax: no PVT mismatches. (PVT-032)
+Information: Corner mode_norm.slow.RCmax_bc: no PVT mismatches. (PVT-032)
+****************************************
+ Report : clock settings
+ Design : MulDiv
+ Date   : Tue Oct 15 17:46:28 2019
+****************************************
+
+
+======================================
+Configurations 
+======================================
+
+##Global
+Mode = mode_norm.slow.RCmax
+  Corner = mode_norm.slow.RCmax
+    Max transition: 500.000
+    Max capacitance: 600.000
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+Mode = mode_norm.worst_low.RCmax
+  Corner = mode_norm.worst_low.RCmax
+    Max transition: 500.000
+    Max capacitance: 600.000
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+Mode = mode_norm.fast.RCmin_bc
+  Corner = mode_norm.fast.RCmin_bc
+    Max transition: 500.000
+    Max capacitance: 600.000
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+Mode = mode_norm.slow.RCmax
+##clock
+  Corner = mode_norm.slow.RCmax
+    Max transition: 10.000
+    Max capacitance: 600.000
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+
+Mode = mode_norm.worst_low.RCmax
+##clock
+  Corner = mode_norm.worst_low.RCmax
+    Max transition: 10.000
+    Max capacitance: 600.000
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+
+Mode = mode_norm.fast.RCmin_bc
+##clock
+  Corner = mode_norm.fast.RCmin_bc
+    Max transition: 10.000
+    Max capacitance: 600.000
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+
+======================================
+Routing Rules 
+======================================
+
+##Global
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+Mode = mode_norm.slow.RCmax
+
+##clock
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+Mode = mode_norm.worst_low.RCmax
+
+##clock
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+Mode = mode_norm.fast.RCmin_bc
+
+##clock
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+
+======================================
+Buffers and Inverters 
+======================================
+
+##Buffers
+Name                                   Area      Max Transition       Max Load
+------------------------------------------------------------------------------
+NanGate_15nm_OCL/BUF_X1               0.246             480.000        100.000
+NanGate_15nm_OCL/BUF_X2               0.246             480.000        200.000
+NanGate_15nm_OCL/BUF_X4               0.393             480.000        400.000
+NanGate_15nm_OCL/BUF_X8               0.688             480.000        800.000
+NanGate_15nm_OCL/BUF_X12              0.983             480.000       1200.000
+NanGate_15nm_OCL/BUF_X16              1.278             480.000       1600.000
+NanGate_15nm_OCL/CLKBUF_X1            0.246             480.000        100.000
+NanGate_15nm_OCL/CLKBUF_X2            0.246             480.000        200.000
+NanGate_15nm_OCL/CLKBUF_X4            0.393             480.000        400.000
+NanGate_15nm_OCL/CLKBUF_X8            0.688             480.000        800.000
+NanGate_15nm_OCL/CLKBUF_X12           0.983             480.000        586.643
+NanGate_15nm_OCL/CLKBUF_X16           1.278             480.000       1600.000
+
+##Inverters
+Name                                   Area      Max Transition       Max Load
+------------------------------------------------------------------------------
+NanGate_15nm_OCL/INV_X1               0.147             480.000        100.000
+NanGate_15nm_OCL/INV_X2               0.197             480.000        200.000
+NanGate_15nm_OCL/INV_X4               0.295             480.000        400.000
+NanGate_15nm_OCL/INV_X8               0.492             480.000        800.000
+NanGate_15nm_OCL/INV_X12              0.688             480.000       1200.000
+NanGate_15nm_OCL/INV_X16              0.885             480.000       1600.000
+
+
+======================================
+Spacing Rules 
+======================================
+
+##By design
+No by design spacing rule is specified
+
+##By clock
+No by clock spacing rule is specified
+
+##By libcell
+No by libcell spacing rule is specified
+
+##By clock and libcell
+No by clock and libcell spacing rule is specified
+1

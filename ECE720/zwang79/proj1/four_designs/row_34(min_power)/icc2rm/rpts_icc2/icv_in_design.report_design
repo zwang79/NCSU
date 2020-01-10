@@ -1,0 +1,506 @@
+****************************************
+Report : design
+        -library
+        -netlist
+        -floorplan
+        -routing
+        -nosplit
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:35:37 2019
+****************************************
+--------------------------------------------------------------------------------
+                              LIBRARY INFORMATION
+--------------------------------------------------------------------------------
+
+Search path : ./rm_icc2_pnr_scripts ./rm_setup ./templates {} .
+
+Units : 
+    time                : 1.00ps
+    resistance          : 1.00kOhm
+    capacitance         : 1.00fF
+    voltage             : 1.00V
+    current             : 1.00uA
+    power               : 1.00pW
+
+Tech file : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/Nangate_15nm_OCL_Milkyway_v2014_06/FreePDK15.tf
+
+Number of active scenarios 	= 6
+Number of inactive scenarios 	= 0
+
+Total number of standard cells 	= 76
+
+Total number of dont_use lib cells 	= 9
+Total number of dont_touch lib cells 	= 9
+
+Total number of buffers 	= 12
+Total number of inverters 	= 6
+Total number of flip-flops 	= 4
+Total number of latches 	= 1
+Total number of ICGs 		= 1
+
+
+Library : NanGate_15nm_OCL
+  File path : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/Nangate_15nm_OCL_ICC2_LibPrep_v2014_06/icc2_cell_lib/NanGate_15nm_OCL.ndm
+  Source .db libs :
+    NanGate_15nm_OCL : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_fast_conditional_ccs.db
+    NanGate_15nm_OCL : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_slow_conditional_ccs.db
+    NanGate_15nm_OCL : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_typical_conditional_ccs.db
+    NanGate_15nm_OCL : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_worst_low_conditional_ccs.db
+    NanGate_15nm_OCL : /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_low_temp_conditional_ccs.db
+
+--------------------------------------------------------------------------------
+                              NETLIST INFORMATION
+--------------------------------------------------------------------------------
+
+CELL INSTANCE INFORMATION
+-----------------------------------------------------------------------------
+Cell Instance Type          Count % of         Area  % of siteAreaPerSite
+                                  total             total
+-----------------------------------------------------------------------------
+TOTAL LEAF CELLS             4081  100     1709.408   100 unit:34778  
+
+  Standard cells             4081  100     1709.408   100 unit:34778  
+  Filler cells                  0    0        0.000     0 
+  Diode cells                   0    0        0.000     0 
+  Hard macro cells              0    0        0.000     0 
+  Soft macro cells              0    0        0.000     0 
+    Black box cells             0    0        0.000     0 
+  Analog block cells            0    0        0.000     0 
+  Pad cells                     0    0        0.000     0 
+    Flip-chip pad cells         0    0        0.000     0 
+  Cover cells                   0    0        0.000     0 
+  Flip-chip driver cells        0    0        0.000     0 
+  Corner pad cells              0    0        0.000     0 
+  Pad spacer cells              0    0        0.000     0 
+  Others                        0    0        0.000     0 
+
+Special cells                   0    0        0.000     0 
+  Level shifter                 0    0        0.000     0 
+  Isolation                     0    0        0.000     0 
+  Switch                        0    0        0.000     0 
+  Always on                     0    0        0.000     0 
+  Retention                     0    0        0.000     0 
+  Tie off                       0    0        0.000     0 
+
+LVT                             0    0        0.000     0 
+HVT                             0    0        0.000     0 
+Normal VT                       0    0        0.000     0 
+Others                       4081  100     1709.408   100 unit:34778  
+
+Netlist cells                4081  100     1709.408   100 unit:34778  
+Physical only                   0    0        0.000     0 
+
+Fixed cells                     0    0        0.000     0 
+Moveable cells               4081  100     1709.408   100 unit:34778  
+
+Combinational                3862   94     1389.674    81 unit:28273  
+Sequential                    219    5      319.734    18 unit:6505  
+Others                          0    0        0.000     0 
+
+Buffer                        328    8       87.687     5 unit:1784  
+Inverter                      431   10       65.520     3 unit:1333  
+Buffer/inverter               759   18      153.207     8 unit:3117  
+
+Spare cells                     0    0        0.000     0 
+ICG cells                       5    0        4.178     0 unit:85  
+Flip-flop cells               214    5      315.556    18 unit:6420  
+Latch cells                     0    0        0.000     0 
+Antenna cells                   0    0        0.000     0 
+
+Mux logic                       0    0        0.000     0 
+Double height                   0    0        0.000     0 
+Triple height                   0    0        0.000     0 
+More than triple height         0    0        0.000     0 
+
+Logic Hierarchies          5
+
+REFERENCE DESIGN INFORMATION
+----------------------------------------------------------------------------------------------
+Number of reference designs used:33   
+----------------------------------------------------------------------------------------------
+Name           Type          Count     Width    Height        Area   PinDens SiteName siteArea
+----------------------------------------------------------------------------------------------
+AOI22_X1       lib_cell       1037      0.45      0.77       0.344    26.158 unit            7
+NAND2_X1       lib_cell        505      0.26      0.77       0.197    35.604 unit            4
+INV_X1         lib_cell        417      0.19      0.77       0.147    40.690 unit            3
+FA_X1          lib_cell        322      1.54      0.77       1.180     7.629 unit           24
+CLKBUF_X1      lib_cell        293      0.32      0.77       0.246    24.414 unit            5
+OAI21_X1       lib_cell        251      0.38      0.77       0.295    27.127 unit            6
+OAI22_X1       lib_cell        227      0.45      0.77       0.344    26.158 unit            7
+SDFFSNQ_X1     lib_cell        214      1.92      0.77       1.475     6.782 unit           30
+XNOR2_X1       lib_cell        200      0.58      0.77       0.442    15.824 unit            9
+AOI21_X1       lib_cell        198      0.38      0.77       0.295    27.127 unit            6
+NOR2_X1        lib_cell        149      0.26      0.77       0.197    35.604 unit            4
+NAND4_X1       lib_cell         80      0.45      0.77       0.344    26.158 unit            7
+NOR4_X1        lib_cell         50      0.45      0.77       0.344    26.158 unit            7
+NOR3_X1        lib_cell         29      0.38      0.77       0.295    27.127 unit            6
+NAND3_X1       lib_cell         17      0.38      0.77       0.295    27.127 unit            6
+OR2_X1         lib_cell         10      0.38      0.77       0.295    23.736 unit            6
+AND2_X1        lib_cell          9      0.38      0.77       0.295    23.736 unit            6
+AND4_X1        lib_cell          8      0.58      0.77       0.442    20.345 unit            9
+CLKBUF_X2      lib_cell          8      0.32      0.77       0.246    24.414 unit            5
+INV_X4         lib_cell          7      0.38      0.77       0.295    20.345 unit            6
+CLKBUF_X4      lib_cell          7      0.51      0.77       0.393    15.259 unit            8
+XOR2_X1        lib_cell          6      0.58      0.77       0.442    15.824 unit            9
+CLKGATETST_X1  lib_cell          5      1.09      0.77       0.836    10.771 unit           17
+CLKBUF_X12     lib_cell          5      1.28      0.77       0.983     6.104 unit           20
+INV_X2         lib_cell          5      0.26      0.77       0.197    30.518 unit            4
+BUF_X2         lib_cell          5      0.32      0.77       0.246    24.414 unit            5
+BUF_X4         lib_cell          4      0.51      0.77       0.393    15.259 unit            8
+OR4_X1         lib_cell          4      0.58      0.77       0.442    20.345 unit            9
+CLKBUF_X8      lib_cell          3      0.90      0.77       0.688     8.719 unit           14
+BUF_X1         lib_cell          2      0.32      0.77       0.246    24.414 unit            5
+INV_X8         lib_cell          2      0.64      0.77       0.492    12.207 unit           10
+BUF_X8         lib_cell          1      0.90      0.77       0.688     8.719 unit           14
+AND3_X1        lib_cell          1      0.51      0.77       0.393    20.345 unit            8
+
+NET INFORMATION
+------------------------------------------------------------------
+NetType                 Count FloatingNets         Vias Nets/Cells
+------------------------------------------------------------------
+Total                    4550            1        46038      1.115
+Signal                   4469            1        35328      1.095
+Power                       1            0         5156      0.000
+Ground                      1            0         4480      0.000
+Analog Signal               0            0            0      0.000
+Analog Ground               0            0            0      0.000
+Analog Power                0            0            0      0.000
+Clock                      79            0         1074      0.019
+Tie Low                     0            0            0      0.000
+Tie High                    0            0            0      0.000
+Others                      0            0            0      0.000
+
+NET FANOUT AND PIN COUNT INFORMATION
+---------------------------------------------------
+Fanout        Netcount     netPinCount     NetCount
+---------------------------------------------------
+<2                3338     <2                     1
+2                  303     2                   3337
+3                  334     3                    303
+4                  202     4                    334
+5                   41     5                    202
+6-10                89     6-10                 108
+11-20              148     11-20                167
+21-30               53     21-30                 52
+31-50               40     31-50                 44
+51-100               0     51-100                 0
+101-500              0     101-500                0
+501-1000             0     501-1000               0
+>1000                2     >1000                  2
+
+PORT AND PIN INFORMATION
+------------------------------------------------------------------------------
+Type         Total     Input    Output     Inout      3-st     Power    Ground
+------------------------------------------------------------------------------
+Total        32412     28004     12565      8162         0      4081      4081
+Macro            0         0         0         0         0         0         0
+Ports          218       147        71         0         0         1         1
+------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                              FLOORPLAN INFORMATION
+--------------------------------------------------------------------------------
+
+CORE AND CHIP AREA INFORMATION
+---------------------------
+Core Area is :     3182.641
+Chip Area is :     3299.328
+---------------------------
+
+SITE ROW INFORMATION
+-----------------------------------------------------------------------
+Site Name    Width    Height   Total Rows     Total Tiles          Area
+-----------------------------------------------------------------------
+unit          0.06      0.77           73           64751      3182.641
+-----------------------------------------------------------------------
+
+BLOCKAGE INFORMATION
+------------------------------------------------
+Blockage Type                Count          Area
+------------------------------------------------
+Hard placement                   0         0.000
+Soft placement                   0         0.000
+Hard macro                       0         0.000
+Partial placement                0         0.000
+Register                         0         0.000
+Placement allow Buffer Only      0         0.000
+Placement allow RP Group Only    0         0.000
+RP Group                         0         0.000
+Category                         0         0.000
+Routing                          0         0.000
+Routing for Top                  0         0.000
+Routing For Design Rule          0         0.000
+Shaping                          0         0.000
+------------------------------------------------
+
+POWER DOMAIN INFORMATION
+--------------------------------------------------------------------
+Power Domain Name    VA Name         Primary Power Net Primary Ground Net
+--------------------------------------------------------------------
+DEFAULT_POWER_DOMAIN DEFAULT_VA      VDD               VSS
+--------------------------------------------------------------------
+
+VOLTAGE AREA INFORMATION
+-------------------------------------------------------------------------------------
+VA Name          Number             Area       Target    bbox    bbox    bbox    bbox
+              of shapes                   Utilization     llx     lly     urx     ury
+-------------------------------------------------------------------------------------
+DEFAULT_VA            1         3182.641         1.00    0.26    0.77   57.02   56.83
+-------------------------------------------------------------------------------------
+
+GROUP BOUND INFORMATION
+----------------------------------------
+No Group Bound exists
+
+EXCLUSIVE MOVEBOUND INFORMATION
+----------------------------------------
+No Exclusive MoveBound exists.
+
+HARD AND SOFT MOVEBOUND INFORMATION
+----------------------------------------
+No Hard Or Soft MoveBound exists.
+
+ROUTE GUIDE INFORMATION
+------------------------------------------------
+Route Guide Type             Count          Area
+------------------------------------------------
+Extra Detour Region              0         0.000
+Over icovl CellLayers            0         0.000
+River Routing                    0         0.000
+Area Double Via                  0         0.000
+Access Preference                0         0.000
+Default                          0         0.000
+Switched Direction Only          0         0.000
+Max Patterns                     0         0.000
+Others                           0         0.000
+------------------------------------------------
+
+MULTIBIT REGISTER INFORMATION
+-----------------------------------------------
+No Multibit cells exist
+
+MULTIBIT LS/ISO CELLS INFORMATION
+-----------------------------------------------
+No Multibit cells exist
+
+RP GROUP INFORMATION
+----------------------------------------
+No RP Group exists
+
+LAYER INFORMATION
+--------------------------------------------------------------------------
+Layer Name Direction Ignored Pitch  default minWidth minSpacing    sameNet
+                                      Width                     MinSpacing
+--------------------------------------------------------------------------
+M1         Ver       NO       0.06     0.03     0.03       0.04       0.04
+MINT1      Hor       NO       0.06     0.03     0.03       0.04       0.00
+MINT2      Ver       NO       0.06     0.03     0.03       0.04       0.04
+MINT3      Hor       NO       0.06     0.03     0.03       0.04       0.04
+MINT4      Ver       NO       0.06     0.03     0.03       0.04       0.04
+MINT5      Hor       NO       0.06     0.03     0.03       0.04       0.04
+MSMG1      Ver       NO       0.11     0.06     0.06       0.06       0.00
+MSMG2      Hor       NO       0.11     0.06     0.06       0.06       0.00
+MSMG3      Ver       NO       0.11     0.06     0.06       0.06       0.00
+MSMG4      Hor       NO       0.11     0.06     0.06       0.06       0.00
+MSMG5      Ver       NO       0.11     0.06     0.06       0.06       0.00
+MG1        Hor       YES      0.22     0.11     0.11       0.11       0.00
+MG2        Ver       YES      0.22     0.11     0.11       0.11       0.00
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+                              ROUTING INFORMATION
+--------------------------------------------------------------------------------
+
+Total wire length = 30643.21 micron
+Total number of wires = 28876
+Total number of contacts = 46038
+
+FINAL WIRING STATISTICS
+
+Signal Wiring Statistics
+
+Metal layer     Num wires  % of total#  Wire length % of total length
+M1                   1540        5.46%       166.95             0.56%
+MINT1               13634       48.36%      9578.98            32.34%
+MINT2               10695       37.93%     11012.52            37.18%
+MINT3                1843        6.54%      5542.46            18.71%
+MINT4                 437        1.55%      2990.65            10.10%
+MINT5                  29        0.10%       233.65             0.79%
+MSMG1                  11        0.04%        33.17             0.11%
+MSMG2                   6        0.02%        64.45             0.22%
+MSMG3                   0        0.00%         0.00             0.00%
+MSMG4                   0        0.00%         0.00             0.00%
+MSMG5                   0        0.00%         0.00             0.00%
+MG1                     0        0.00%         0.00             0.00%
+MG2                     0        0.00%         0.00             0.00%
+
+Clock Wiring Statistics
+
+Metal layer     Num wires  % of total#  Wire length % of total length
+M1                     19        2.79%         1.67             0.16%
+MINT1                 150       22.03%        56.22             5.51%
+MINT2                 300       44.05%       458.74            44.96%
+MINT3                 210       30.84%       502.21            49.22%
+MINT4                   2        0.29%         1.54             0.15%
+MINT5                   0        0.00%         0.00             0.00%
+MSMG1                   0        0.00%         0.00             0.00%
+MSMG2                   0        0.00%         0.00             0.00%
+MSMG3                   0        0.00%         0.00             0.00%
+MSMG4                   0        0.00%         0.00             0.00%
+MSMG5                   0        0.00%         0.00             0.00%
+MG1                     0        0.00%         0.00             0.00%
+MG2                     0        0.00%         0.00             0.00%
+
+P/G Wiring Statistics
+
+Metal layer     Num wires  % of total#  Wire length % of total length
+M1                    115       20.57%      4214.72            55.98%
+MINT1                 272       48.66%        53.24             0.71%
+MINT2                 116       20.75%        44.96             0.60%
+MINT3                   0        0.00%         0.00             0.00%
+MINT4                   0        0.00%         0.00             0.00%
+MINT5                   0        0.00%         0.00             0.00%
+MSMG1                   0        0.00%         0.00             0.00%
+MSMG2                   0        0.00%         0.00             0.00%
+MSMG3                   0        0.00%         0.00             0.00%
+MSMG4                   0        0.00%         0.00             0.00%
+MSMG5                   0        0.00%         0.00             0.00%
+MG1                    28        5.01%      1603.84            21.30%
+MG2                    28        5.01%      1612.80            21.42%
+
+Shape Pattern Wiring Statistics
+
+Metal layer     Num shapePatterns % of total# Wire length % of total length
+M1                      0        0.00%         0.00             0.00%
+MINT1                   0        0.00%         0.00             0.00%
+MINT2                   0        0.00%         0.00             0.00%
+MINT3                   0        0.00%         0.00             0.00%
+MINT4                   0        0.00%         0.00             0.00%
+MINT5                   0        0.00%         0.00             0.00%
+MSMG1                   0        0.00%         0.00             0.00%
+MSMG2                   0        0.00%         0.00             0.00%
+MSMG3                   0        0.00%         0.00             0.00%
+MSMG4                   0        0.00%         0.00             0.00%
+MSMG5                   0        0.00%         0.00             0.00%
+MG1                     0        0.00%         0.00             0.00%
+MG2                     0        0.00%         0.00             0.00%
+
+All the PG shape patterns stand for 0 shapes.
+
+Horizontal/Vertical Wire Distribution
+
+Metal layer  Hor. length  % of hor.    Ver. length  % of ver.
+M1                  58.61        0.38%       108.34        0.76%
+MINT1             9420.24       61.27%       158.75        1.11%
+MINT2               59.42        0.39%     10953.09       76.87%
+MINT3             5537.05       36.01%         5.41        0.04%
+MINT4                1.09        0.01%      2989.56       20.98%
+MINT5              233.65        1.52%         0.00        0.00%
+MSMG1                0.11        0.00%        33.06        0.23%
+MSMG2               64.45        0.42%         0.00        0.00%
+MSMG3                0.00        0.00%         0.00        0.00%
+MSMG4                0.00        0.00%         0.00        0.00%
+MSMG5                0.00        0.00%         0.00        0.00%
+MG1                  0.00        0.00%         0.00        0.00%
+MG2                  0.00        0.00%         0.00        0.00%
+
+FINAL VIA STATISTICS
+
+Via layer    Via def name                Count        % of layer vias
+V1           V1_0                                2891       17.68%
+V1           V1_0(1X7)                            756        4.62%
+V1           V1_0(2X1)                           7455       45.59%
+V1           V1_0(1X2)                           5041       30.83%
+V1           V1_0(rot)(2X1)                       153        0.94%
+V1           V1_0(rot)(1X2)                        55        0.34%
+  Double via conversion rate for layer V1 = 82.32% (13460 / 16351 vias)
+    Among them, double via conversion rate of detail route vias for layer V1 = 81.46% (12704 / 15595 vias)
+
+VINT1        VINT1_0                             1631        9.24%
+VINT1        VINT1_0(1X7)                         756        4.28%
+VINT1        VINT1_0(2X1)                        5114       28.97%
+VINT1        VINT1_0(1X2)                       10061       56.99%
+VINT1        VINT1_0(rot)(1X2)                     53        0.30%
+VINT1        VINT1_0(rot)(2X1)                     40        0.23%
+  Double via conversion rate for layer VINT1 = 90.76% (16024 / 17655 vias)
+    Among them, double via conversion rate of detail route vias for layer VINT1 = 90.35% (15268 / 16899 vias)
+
+VINT2        VINT2_0                              144        3.49%
+VINT2        VINT2_0(1X7)                         756       18.32%
+VINT2        VINT2_0(1X2)                         540       13.08%
+VINT2        VINT2_0(2X1)                        2675       64.82%
+VINT2        VINT2_0(rot)(1X2)                      7        0.17%
+VINT2        VINT2_0(rot)(2X1)                      5        0.12%
+  Double via conversion rate for layer VINT2 = 96.51% (3983 / 4127 vias)
+    Among them, double via conversion rate of detail route vias for layer VINT2 = 95.73% (3227 / 3371 vias)
+
+VINT3        VINT3_0                                5        0.32%
+VINT3        VINT3_0(1X7)                         756       48.84%
+VINT3        VINT3_0(1X2)                         736       47.55%
+VINT3        VINT3_0(2X1)                          49        3.17%
+VINT3        VINT3_0(rot)(2X1)                      2        0.13%
+  Double via conversion rate for layer VINT3 = 99.68% (1543 / 1548 vias)
+    Among them, double via conversion rate of detail route vias for layer VINT3 = 99.37% (787 / 792 vias)
+
+VINT4        VINT4_0(1X7)                         756       92.53%
+VINT4        VINT4_0(2X1)                          60        7.34%
+VINT4        VINT4_0(1X2)                           1        0.12%
+  Double via conversion rate for layer VINT4 = 100.00% (817 / 817 vias)
+    Among them, double via conversion rate of detail route vias for layer VINT4 = 100.00% (61 / 61 vias)
+
+VINT5        VINT5_0(1X7)                         756       97.93%
+VINT5        VINT5_0(1X2)                          15        1.94%
+VINT5        VINT5_0(2X1)                           1        0.13%
+  Double via conversion rate for layer VINT5 = 100.00% (772 / 772 vias)
+    Among them, double via conversion rate of detail route vias for layer VINT5 = 100.00% (16 / 16 vias)
+
+VSMG1        VSMG1_0(1X3)                         756       98.95%
+VSMG1        VSMG1_0(2X1)                           8        1.05%
+  Double via conversion rate for layer VSMG1 = 100.00% (764 / 764 vias)
+    Among them, double via conversion rate of detail route vias for layer VSMG1 = 100.00% (8 / 8 vias)
+
+VSMG2        VSMG2_0(1X3)                         756      100.00%
+  Double via conversion rate for layer VSMG2 = 100.00% (756 / 756 vias)
+    Among them, double via conversion rate of detail route vias for layer VSMG2 = 0.00% (0 / 0 vias)
+
+VSMG3        VSMG3_0(1X3)                         756      100.00%
+  Double via conversion rate for layer VSMG3 = 100.00% (756 / 756 vias)
+    Among them, double via conversion rate of detail route vias for layer VSMG3 = 0.00% (0 / 0 vias)
+
+VSMG4        VSMG4_0(1X3)                         756      100.00%
+  Double via conversion rate for layer VSMG4 = 100.00% (756 / 756 vias)
+    Among them, double via conversion rate of detail route vias for layer VSMG4 = 0.00% (0 / 0 vias)
+
+VSMG5        VSMG5_0(1X3)                         756      100.00%
+  Double via conversion rate for layer VSMG5 = 100.00% (756 / 756 vias)
+    Among them, double via conversion rate of detail route vias for layer VSMG5 = 0.00% (0 / 0 vias)
+
+VG1          VG1_0(2X2)                           392       40.00%
+VG1          VG1_0(1X2)                           588       60.00%
+  Double via conversion rate for layer VG1 = 100.00% (980 / 980 vias)
+    Among them, double via conversion rate of detail route vias for layer VG1 = 0.00% (0 / 0 vias)
+
+
+Custom Via Statistics
+
+No custom vias found in the design.
+Overall double via conversion rate = 89.85%
+  Among them, overall double via conversion rate of detail route vias = 87.29% (32071 / 36742 vias)
+  *Detail route vias are vias whose shape_use is detail_route.
+
+Via Matrix Statistics
+
+No via matrices found in the design.
+
+FINAL DRC STATISTICS
+
+DRC-SUMMARY:
+Total number of nets = 4550, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = no antenna rules defined
+Total number of tie to rail violations = not checked
+1

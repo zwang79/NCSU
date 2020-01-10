@@ -1,0 +1,150 @@
+Information: Corner mode_norm.fast.RCmin: no PVT mismatches. (PVT-032)
+Warning: Network of supply net VDD has no early voltage defined in corner mode_norm.fast.RCmin. (PVT-014)
+Warning: Network of supply net VDD has no late voltage defined in corner mode_norm.fast.RCmin. (PVT-014)
+Information: Corner mode_norm.worst_low.RCmax_bc: no PVT mismatches. (PVT-032)
+Warning: Network of supply net VDD has no early voltage defined in corner mode_norm.worst_low.RCmax_bc. (PVT-014)
+Warning: Network of supply net VDD has no late voltage defined in corner mode_norm.worst_low.RCmax_bc. (PVT-014)
+Information: Corner mode_norm.fast.RCmin_bc: no PVT mismatches. (PVT-032)
+Warning: Network of supply net VDD has no early voltage defined in corner mode_norm.fast.RCmin_bc. (PVT-014)
+Warning: Network of supply net VDD has no late voltage defined in corner mode_norm.fast.RCmin_bc. (PVT-014)
+Information: Corner mode_norm.worst_low.RCmax: no PVT mismatches. (PVT-032)
+Warning: Network of supply net VDD has no early voltage defined in corner mode_norm.worst_low.RCmax. (PVT-014)
+Warning: Network of supply net VDD has no late voltage defined in corner mode_norm.worst_low.RCmax. (PVT-014)
+Information: Corner mode_norm.slow.RCmax_bc: no PVT mismatches. (PVT-032)
+Warning: Network of supply net VDD has no early voltage defined in corner mode_norm.slow.RCmax_bc. (PVT-014)
+Warning: Network of supply net VDD has no late voltage defined in corner mode_norm.slow.RCmax_bc. (PVT-014)
+Information: Corner mode_norm.slow.RCmax: no PVT mismatches. (PVT-032)
+Warning: Network of supply net VDD has no early voltage defined in corner mode_norm.slow.RCmax. (PVT-014)
+Warning: Network of supply net VDD has no late voltage defined in corner mode_norm.slow.RCmax. (PVT-014)
+****************************************
+ Report : clock settings
+ Design : xbar
+ Date   : Thu Sep 12 22:03:57 2019
+****************************************
+
+
+======================================
+Configurations 
+======================================
+
+##Global
+Mode = mode_norm.slow.RCmax
+  Corner = mode_norm.slow.RCmax
+    Max transition: 0.500
+    Max capacitance: 0.600
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+Mode = mode_norm.worst_low.RCmax
+  Corner = mode_norm.worst_low.RCmax
+    Max transition: 0.500
+    Max capacitance: 0.600
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+Mode = mode_norm.fast.RCmin_bc
+  Corner = mode_norm.fast.RCmin_bc
+    Max transition: 0.500
+    Max capacitance: 0.600
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+Mode = mode_norm.slow.RCmax
+##clk
+  Corner = mode_norm.slow.RCmax
+    Max transition: 0.500
+    Max capacitance: 0.600
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+
+Mode = mode_norm.worst_low.RCmax
+##clk
+  Corner = mode_norm.worst_low.RCmax
+    Max transition: 0.500
+    Max capacitance: 0.600
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+
+Mode = mode_norm.fast.RCmin_bc
+##clk
+  Corner = mode_norm.fast.RCmin_bc
+    Max transition: 0.500
+    Max capacitance: 0.600
+    Target skew: 0 (default)
+    Target latency: Not specified
+
+
+======================================
+Routing Rules 
+======================================
+
+##Global
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+Mode = mode_norm.slow.RCmax
+
+##clk
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+Mode = mode_norm.worst_low.RCmax
+
+##clk
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+Mode = mode_norm.fast.RCmin_bc
+
+##clk
+Routing rule for sink nets: Not specified
+Routing rule for internal nets: Not specified
+Routing rule for root nets: Not specified
+Routing rule for all nets: Not specified
+Net-based routing rules (by set_clock_routing_rule): Not specified
+Net-based routing rules (by set_routing_rule): Not specified
+
+
+======================================
+Buffers and Inverters 
+======================================
+
+##Buffers
+Name                                   Area      Max Transition       Max Load
+------------------------------------------------------------------------------
+
+##Inverters
+Name                                   Area      Max Transition       Max Load
+------------------------------------------------------------------------------
+
+
+======================================
+Spacing Rules 
+======================================
+
+##By design
+No by design spacing rule is specified
+
+##By clock
+No by clock spacing rule is specified
+
+##By libcell
+No by libcell spacing rule is specified
+
+##By clock and libcell
+No by clock and libcell spacing rule is specified
+1

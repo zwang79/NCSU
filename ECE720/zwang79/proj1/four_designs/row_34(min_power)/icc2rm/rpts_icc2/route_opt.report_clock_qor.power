@@ -1,0 +1,46 @@
+****************************************
+Report : report clock qor
+        -type power
+        -nosplit
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:34:35 2019
+****************************************
+Information: Doing activity propagation for mode 'mode_norm.fast.RCmin' and corner 'mode_norm.fast.RCmin' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario mode_norm.fast.RCmin (POW-052)
+Information: Doing activity propagation for mode 'mode_norm.fast.RCmin_bc' and corner 'mode_norm.fast.RCmin_bc' with effort level 'medium'. (POW-024)
+Scenario mode_norm.fast.RCmin, iteration 1: expecting at least 5
+Information: Timer-derived activity data is cached on scenario mode_norm.fast.RCmin_bc (POW-052)
+Scenario mode_norm.fast.RCmin_bc, iteration 1: expecting at least 5
+Scenario mode_norm.fast.RCmin, iteration 2: expecting at least 6
+Scenario mode_norm.fast.RCmin_bc, iteration 2: expecting at least 6
+Scenario mode_norm.fast.RCmin, iteration 3: expecting at least 6
+Scenario mode_norm.fast.RCmin_bc, iteration 3: expecting at least 6
+Scenario mode_norm.fast.RCmin, iteration 4: expecting at least 6
+Scenario mode_norm.fast.RCmin_bc, iteration 4: expecting at least 6
+Scenario mode_norm.fast.RCmin, iteration 5: expecting at least 6
+Scenario mode_norm.fast.RCmin_bc, iteration 5: expecting at least 6
+Scenario mode_norm.fast.RCmin, iteration 6: expecting at least 6
+Scenario mode_norm.fast.RCmin_bc, iteration 6: expecting at least 6
+
+
+==============================
+==== Power (per scenario) ====
+==============================
+
+Clock                               ClkTree        ClkTree           Sink            Net          Total
+                                    Leakage       Internal       Internal      Switching        Dynamic          Total
+                                  (stdcell)      (stdcell)      (stdcell)         (nets)          Power          Power
+                                       (pW)           (pW)           (pW)           (pW)           (pW)           (pW)
+------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Corner: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+clock                             716015.94    30148102.93    73563829.03    48608813.11   152320745.07   153036761.01
+------------------------------------------------------------------------------------------------------------------------
+Total                             716015.94    30148102.93    73563829.03    48608813.11   152320745.07   153036761.01
+
+### Mode: mode_norm.fast.RCmin_bc, Corner: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+clock                             716015.94            N/A            N/A            N/A            N/A            N/A
+------------------------------------------------------------------------------------------------------------------------
+Total                             716015.94            N/A            N/A            N/A            N/A            N/A
+
+1

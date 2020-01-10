@@ -1,0 +1,23 @@
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+****************************************
+Report : global timing
+        -format { narrow }
+        -report_by design
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:27:48 2019
+****************************************
+
+No setup violations found.
+
+
+Hold violations
+--------------------------------------------------------------
+          Total   reg->reg    in->reg   reg->out    in->out
+--------------------------------------------------------------
+WNS      -24.19     -24.19       0.00       0.00       0.00
+TNS     -213.66    -213.66       0.00       0.00       0.00
+NUM          48         48          0          0          0
+--------------------------------------------------------------
+
+1

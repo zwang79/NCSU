@@ -1,0 +1,168 @@
+****************************************
+Report : qor
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:35:35 2019
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
+
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'clock'
+----------------------------------------
+Worst Hold Violation:             -0.01
+Total Hold Violation:             -0.01
+No. of Hold Violations:               1
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     89
+Critical Path Length:            899.41
+Critical Path Slack:            4059.06
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      5
+Critical Path Length:            266.84
+Critical Path Slack:            4695.81
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            225.33
+Critical Path Slack:            4656.47
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     89
+Critical Path Length:           1067.05
+Critical Path Slack:            3887.55
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      5
+Critical Path Length:            275.93
+Critical Path Slack:            4684.28
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            269.39
+Critical Path Slack:            4619.05
+Critical Path Clk Period:       5000.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              5
+Hierarchical Port Count:             37
+Leaf Cell Count:                   4081
+Buf/Inv Cell Count:                 759
+Buf Cell Count:                     328
+Inv Cell Count:                     431
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          3862
+Sequential Cell Count:              219
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             1389.67
+Noncombinational Area:           319.73
+Buf/Inv Area:                    153.21
+Total Buffer Area:                87.69
+Total Inverter Area:              65.52
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                           1709.41
+Cell Area (netlist and physical only):         1709.41
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              4550
+Nets with Violations:                 4
+Max Trans Violations:                 4
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:35:36 2019
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+mode_norm.slow.RCmax (Setup)        4059.06           0.00              0
+mode_norm.worst_low.RCmax (Setup)        3887.55           0.00              0
+Design             (Setup)          3887.55           0.00              0
+
+mode_norm.fast.RCmin_bc (Hold)          -0.01          -0.01              1
+Design             (Hold)             -0.01          -0.01              1
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                           1709.41
+Cell Area (netlist and physical only):         1709.41
+Nets with DRC Violations:        4
+1

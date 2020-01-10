@@ -1,0 +1,47 @@
+****************************************
+ Report : check_design 
+ Options: { pre_clock_tree_stage }
+ Design : MulDiv
+ Version: P-2019.03-SP1
+ Date   : Tue Oct 15 17:46:13 2019
+****************************************
+
+Running mega-check 'pre_clock_tree_stage': 
+    Running atomic-check 'design_mismatch'
+    Running atomic-check 'scan_chain'
+    Running atomic-check 'mv_design'
+    Running atomic-check 'legality'
+    Running atomic-check 'design_extraction'
+    Running atomic-check 'timing'
+    Running atomic-check 'clock_trees'
+    Running atomic-check 'hier_pre_clock_tree'
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  CTS-904      Warn   2          Clock reference cell %libcell(cell %cell) have no LEQ cell speci...
+  DMM-104      Info   6          Mismatch type %mmtype is detected on object type %objtype at obj...
+  NEX-048      Error  1          Port shape or size is abnormal for port '%portName'.
+  TCK-001      Warn   880        The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  TCK-012      Warn   8          The input port '%port' has no clock_relative delay specified. Mo...
+  ----------------------------------------------------------------------------------------------------
+  Total 897 EMS messages : 1 errors, 890 warnings, 6 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  CTS-101             1          %s will work on the following scenarios.
+  CTS-107             1          %s will work on all clocks in active scenarios, including %d mas...
+  LGL-050             2          Library cell %s is missing supply pins. Its power structure cann...
+  ----------------------------------------------------------------------------------------------------
+  Total 4 non-EMS messages : 0 errors, 2 warnings, 2 info.
+  ----------------------------------------------------------------------------------------------------
+
+Warning: EMS database "check_design.pre_clock_tree_stage.ems" already exists, over-writing it. (EMS-040)
+
+Information: EMS database is saved to file 'check_design.pre_clock_tree_stage.ems'.
+Information: Non-EMS messages are saved into file 'check_design2019Oct15174613.log'.
+1

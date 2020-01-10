@@ -1,0 +1,182 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:29:47 2019
+****************************************
+
+
+
+   Mode: mode_norm.slow.RCmax Corner: mode_norm.slow.RCmax
+   Scenario: mode_norm.slow.RCmax
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   cts87                       10.00          12.09          -2.10  (VIOLATED) 
+     PIN : u_logic_A933z4_reg/CLK    10.00    12.09          -2.10  (VIOLATED) 
+     PIN : u_logic_Zjg3z4_reg/CLK    10.00    12.04          -2.04  (VIOLATED) 
+     PIN : u_logic_Pa33z4_reg/CLK    10.00    12.04          -2.04  (VIOLATED) 
+     PIN : u_logic_Exd3z4_reg/CLK    10.00    12.00          -2.00  (VIOLATED) 
+     PIN : u_logic_Tjf3z4_reg/CLK    10.00    11.88          -1.89  (VIOLATED) 
+     PIN : u_logic_Td33z4_reg/CLK    10.00    11.81          -1.81  (VIOLATED) 
+     PIN : u_logic_Bk33z4_reg/CLK    10.00    11.75          -1.75  (VIOLATED) 
+
+   p_abuf5                     10.00          11.04          -1.05  (VIOLATED) 
+     PIN : u_logic_Avg3z4_reg/CLK    10.00    11.04          -1.05  (VIOLATED) 
+     PIN : u_logic_Pw03z4_reg/CLK    10.00    11.01          -1.01  (VIOLATED) 
+     PIN : u_logic_F8e3z4_reg/CLK    10.00    11.01          -1.01  (VIOLATED) 
+     PIN : u_logic_P9h3z4_reg/CLK    10.00    10.97          -0.97  (VIOLATED) 
+     PIN : u_logic_I113z4_reg/CLK    10.00    10.78          -0.78  (VIOLATED) 
+     PIN : u_logic_Fli3z4_reg/CLK    10.00    10.76          -0.76  (VIOLATED) 
+     PIN : u_logic_Wo03z4_reg/CLK    10.00    10.74          -0.74  (VIOLATED) 
+     PIN : u_logic_Skh3z4_reg/CLK    10.00    10.68          -0.69  (VIOLATED) 
+     PIN : u_logic_Arh3z4_reg/CLK    10.00    10.62          -0.63  (VIOLATED) 
+     PIN : u_logic_Hn03z4_reg/CLK    10.00    10.49          -0.50  (VIOLATED) 
+     PIN : u_logic_M413z4_reg/CLK    10.00    10.24          -0.25  (VIOLATED) 
+     PIN : u_logic_Ftf3z4_reg/CLK    10.00    10.17          -0.17  (VIOLATED) 
+     PIN : u_logic_Ixh3z4_reg/CLK    10.00    10.07          -0.08  (VIOLATED) 
+
+   cts60                       10.00          10.76          -0.76  (VIOLATED) 
+     PIN : u_logic_Duu2z4_reg/CLK    10.00    10.76          -0.76  (VIOLATED) 
+     PIN : u_logic_Rvu2z4_reg/CLK    10.00    10.72          -0.72  (VIOLATED) 
+     PIN : u_logic_Psv2z4_reg/CLK    10.00    10.70          -0.71  (VIOLATED) 
+     PIN : u_logic_Hmv2z4_reg/CLK    10.00    10.11          -0.11  (VIOLATED) 
+
+   cts145                      10.00          10.38          -0.38  (VIOLATED) 
+     PIN : u_logic_Kf23z4_reg/CLK    10.00    10.38          -0.38  (VIOLATED) 
+     PIN : u_logic_Hc23z4_reg/CLK    10.00    10.36          -0.36  (VIOLATED) 
+     PIN : u_logic_Yg23z4_reg/CLK    10.00    10.24          -0.25  (VIOLATED) 
+     PIN : u_logic_Wd23z4_reg/CLK    10.00    10.11          -0.11  (VIOLATED) 
+
+   u_logic_net7481             10.00          10.17          -0.17  (VIOLATED) 
+     PIN : u_logic_Jca3z4_reg/CLK    10.00    10.17          -0.17  (VIOLATED) 
+     PIN : u_logic_Qfa3z4_reg/CLK    10.00    10.17          -0.17  (VIOLATED) 
+     PIN : u_logic_D4a3z4_reg/CLK    10.00    10.15          -0.15  (VIOLATED) 
+     PIN : u_logic_Cma3z4_reg/CLK    10.00    10.13          -0.13  (VIOLATED) 
+     PIN : u_logic_Aea3z4_reg/CLK    10.00    10.11          -0.11  (VIOLATED) 
+     PIN : u_logic_Bge3z4_reg/CLK    10.00    10.07          -0.08  (VIOLATED) 
+     PIN : u_logic_Ieh3z4_reg/CLK    10.00    10.07          -0.08  (VIOLATED) 
+
+   cts15                       10.00          10.17          -0.17  (VIOLATED) 
+     PIN : u_logic_Yx73z4_reg/CLK    10.00    10.17          -0.17  (VIOLATED) 
+     PIN : u_logic_Sg83z4_reg/CLK    10.00    10.15          -0.15  (VIOLATED) 
+     PIN : u_logic_Ft83z4_reg/CLK    10.00    10.13          -0.13  (VIOLATED) 
+     PIN : u_logic_Nz73z4_reg/CLK    10.00    10.03          -0.04  (VIOLATED) 
+     PIN : u_logic_C183z4_reg/CLK    10.00    10.01          -0.02  (VIOLATED) 
+
+   p_abuf11                    10.00          10.09          -0.10  (VIOLATED) 
+     PIN : u_logic_Wor2z4_reg/CLK    10.00    10.09          -0.10  (VIOLATED) 
+     PIN : u_logic_Psn2z4_reg/CLK    10.00    10.09          -0.10  (VIOLATED) 
+
+   cts68                       10.00          10.03          -0.04  (VIOLATED) 
+     PIN : u_logic_J773z4_reg/CLK    10.00    10.03          -0.04  (VIOLATED) 
+     PIN : u_logic_Po63z4_reg/CLK    10.00    10.01          -0.02  (VIOLATED) 
+
+   cts120                      10.00          10.01          -0.02  (VIOLATED) 
+     PIN : u_logic_Cgu2z4_reg/CLK    10.00    10.01          -0.02  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 9
+
+   Mode: mode_norm.worst_low.RCmax Corner: mode_norm.worst_low.RCmax
+   Scenario: mode_norm.worst_low.RCmax
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   cts87                       10.00          11.94          -1.95  (VIOLATED) 
+     PIN : u_logic_Zjg3z4_reg/CLK    10.00    11.94          -1.95  (VIOLATED) 
+     PIN : u_logic_Pa33z4_reg/CLK    10.00    11.92          -1.93  (VIOLATED) 
+     PIN : u_logic_A933z4_reg/CLK    10.00    11.90          -1.91  (VIOLATED) 
+     PIN : u_logic_Exd3z4_reg/CLK    10.00    11.86          -1.87  (VIOLATED) 
+     PIN : u_logic_Tjf3z4_reg/CLK    10.00    11.81          -1.81  (VIOLATED) 
+     PIN : u_logic_Bk33z4_reg/CLK    10.00    11.67          -1.68  (VIOLATED) 
+     PIN : u_logic_Td33z4_reg/CLK    10.00    11.60          -1.60  (VIOLATED) 
+
+   p_abuf5                     10.00          11.01          -1.01  (VIOLATED) 
+     PIN : u_logic_Pw03z4_reg/CLK    10.00    11.01          -1.01  (VIOLATED) 
+     PIN : u_logic_F8e3z4_reg/CLK    10.00    11.01          -1.01  (VIOLATED) 
+     PIN : u_logic_Avg3z4_reg/CLK    10.00    11.01          -1.01  (VIOLATED) 
+     PIN : u_logic_P9h3z4_reg/CLK    10.00    10.95          -0.95  (VIOLATED) 
+     PIN : u_logic_I113z4_reg/CLK    10.00    10.76          -0.76  (VIOLATED) 
+     PIN : u_logic_Fli3z4_reg/CLK    10.00    10.74          -0.74  (VIOLATED) 
+     PIN : u_logic_Wo03z4_reg/CLK    10.00    10.74          -0.74  (VIOLATED) 
+     PIN : u_logic_Skh3z4_reg/CLK    10.00    10.68          -0.69  (VIOLATED) 
+     PIN : u_logic_Arh3z4_reg/CLK    10.00    10.59          -0.59  (VIOLATED) 
+     PIN : u_logic_Hn03z4_reg/CLK    10.00    10.53          -0.53  (VIOLATED) 
+     PIN : u_logic_M413z4_reg/CLK    10.00    10.30          -0.31  (VIOLATED) 
+     PIN : u_logic_Ftf3z4_reg/CLK    10.00    10.20          -0.21  (VIOLATED) 
+     PIN : u_logic_Ixh3z4_reg/CLK    10.00    10.19          -0.19  (VIOLATED) 
+
+   cts60                       10.00          10.57          -0.57  (VIOLATED) 
+     PIN : u_logic_Duu2z4_reg/CLK    10.00    10.57          -0.57  (VIOLATED) 
+     PIN : u_logic_Rvu2z4_reg/CLK    10.00    10.53          -0.53  (VIOLATED) 
+     PIN : u_logic_Psv2z4_reg/CLK    10.00    10.49          -0.50  (VIOLATED) 
+
+   cts112                      10.00          10.34          -0.34  (VIOLATED) 
+     PIN : u_logic_Oir2z4_reg/CLK    10.00    10.34          -0.34  (VIOLATED) 
+     PIN : u_logic_S2p2z4_reg/CLK    10.00    10.32          -0.32  (VIOLATED) 
+     PIN : u_logic_Uuf3z4_reg/CLK    10.00    10.30          -0.31  (VIOLATED) 
+     PIN : u_logic_M0i3z4_reg/CLK    10.00    10.20          -0.21  (VIOLATED) 
+     PIN : u_logic_Eyg3z4_reg/CLK    10.00    10.19          -0.19  (VIOLATED) 
+     PIN : u_logic_Tch3z4_reg/CLK    10.00    10.17          -0.17  (VIOLATED) 
+
+   u_logic_net7481             10.00          10.24          -0.25  (VIOLATED) 
+     PIN : u_logic_Qfa3z4_reg/CLK    10.00    10.24          -0.25  (VIOLATED) 
+     PIN : u_logic_Jca3z4_reg/CLK    10.00    10.22          -0.23  (VIOLATED) 
+     PIN : u_logic_Cma3z4_reg/CLK    10.00    10.20          -0.21  (VIOLATED) 
+     PIN : u_logic_D4a3z4_reg/CLK    10.00    10.20          -0.21  (VIOLATED) 
+     PIN : u_logic_Bge3z4_reg/CLK    10.00    10.15          -0.15  (VIOLATED) 
+     PIN : u_logic_Aea3z4_reg/CLK    10.00    10.15          -0.15  (VIOLATED) 
+     PIN : u_logic_Ieh3z4_reg/CLK    10.00    10.13          -0.13  (VIOLATED) 
+
+   u_logic_net7422             10.00          10.17          -0.17  (VIOLATED) 
+     PIN : u_logic_Grl2z4_reg/CLK    10.00    10.17          -0.17  (VIOLATED) 
+
+   u_logic_clk_gate_Glj2z4_reg/ctsbuf_net_5110308    10.00    10.15    -0.15 (VIOLATED)
+     PIN : u_logic_clk_gate_Glj2z4_reg/cts_inv_196113604/ZN    10.00    10.15    -0.15 (VIOLATED)
+     PIN : u_logic_clk_gate_Glj2z4_reg/cts_inv_194313586/I    10.00    10.15    -0.15 (VIOLATED)
+
+   cts45                       10.00          10.15          -0.15  (VIOLATED) 
+     PIN : u_logic_Koj2z4_reg/CLK    10.00    10.15          -0.15  (VIOLATED) 
+     PIN : u_logic_Rro2z4_reg/CLK    10.00    10.13          -0.13  (VIOLATED) 
+
+   cts145                      10.00          10.15          -0.15  (VIOLATED) 
+     PIN : u_logic_Kf23z4_reg/CLK    10.00    10.15          -0.15  (VIOLATED) 
+     PIN : u_logic_Hc23z4_reg/CLK    10.00    10.11          -0.11  (VIOLATED) 
+     PIN : u_logic_Yg23z4_reg/CLK    10.00    10.09          -0.10  (VIOLATED) 
+
+   cts15                       10.00          10.11          -0.11  (VIOLATED) 
+     PIN : u_logic_Sg83z4_reg/CLK    10.00    10.11          -0.11  (VIOLATED) 
+     PIN : u_logic_Ft83z4_reg/CLK    10.00    10.09          -0.10  (VIOLATED) 
+     PIN : u_logic_Yx73z4_reg/CLK    10.00    10.09          -0.10  (VIOLATED) 
+
+   cts68                       10.00          10.09          -0.10  (VIOLATED) 
+     PIN : u_logic_J773z4_reg/CLK    10.00    10.09          -0.10  (VIOLATED) 
+     PIN : u_logic_Po63z4_reg/CLK    10.00    10.05          -0.06  (VIOLATED) 
+
+   p_abuf11                    10.00          10.03          -0.04  (VIOLATED) 
+     PIN : u_logic_Wor2z4_reg/CLK    10.00    10.03          -0.04  (VIOLATED) 
+
+   u_logic_net7528             10.00          10.01          -0.02  (VIOLATED) 
+     PIN : u_logic_W0b3z4_reg/CLK    10.00    10.01          -0.02  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 13
+
+   Mode: mode_norm.slow.RCmax Corner: mode_norm.slow.RCmax
+   Scenario: mode_norm.slow.RCmax
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Mode: mode_norm.worst_low.RCmax Corner: mode_norm.worst_low.RCmax
+   Scenario: mode_norm.worst_low.RCmax
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 22
+1

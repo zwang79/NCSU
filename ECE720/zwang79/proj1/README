@@ -1,0 +1,113 @@
+Project source files are in src/rtl/proj1
+Top Module Name: MulDiv
+Source File List: plusarg_reader.v AsyncResetReg.v rocketchip_default.v
+
+########################################################################################
+########################################################################################
+
+
+
+ECE 720 Project1 
+
+Name:         Zhiping Wang
+Unity ID:     zwang79
+Student ID:   200265085
+
+
+
+#######  Uploaded files clarification  #######
+Four designs reside in "four_designs" folder. Subfolder names are CSV file row numbers.
+
+Paretofront images reside in "pareto_image" folder.
+
+Files in "template" folder are for configeration.
+
+#######  How to generate my result  #######
+1 Make sure a "out.csv" file is already exist in zwang79 folder. The results will NOT be extracted, if "out.csv" does not exist. 
+  It doesn't matter if it is empty or not.
+
+2 "add synopsys2019"
+
+3 Run makefile with commands like:
+  "make CLKPER=400 UTIL=0.5 MAXLYR=MINT5 MAXTRANS=10 CLKUNCERT=12".
+  Variables will be set with default values if not specified.
+
+4 Result for each run will be written into "out.csv".
+
+5 "source /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tools/anaconda3/setup.sh"
+
+6 "make pareto"
+
+#######  Makefile clarification:  #######
+
+Here is my makefile:
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.PHONY: all set
+
+CLKPER=400
+UTIL=0.5
+MAXLYR=MINT5
+MAXTRANS=10
+CLKUNCERT=12
+
+
+
+all : set dc icc date result
+
+set :
+	python set_constraints.py $(CLKPER) $(UTIL) $(MAXLYR) $(MAXTRANS) $(CLKUNCERT)
+
+dc  :
+	cd dcrm;\
+	dc_shell -topographical_mode -f rm_dc_scripts/dc.tcl |& tee dc.log
+
+icc :
+	cd icc2rm;\
+	make -f rm_setup/Makefile_pnr clean |& tee make_pnr.log;\
+	make -f rm_setup/Makefile_pnr all |& tee make_pnr.log
+
+timing :
+	time --format="DC and ICC flow totally took %E" make all
+
+date :
+	date > flow_date.txt
+
+result :
+	python print.py
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+There are 5 constraints to be set: 
+clock period: CLKPER
+target utilization: UTIL
+max routing layer: MAXLYR
+target max transition time: MAXTRANS
+clock uncertainty: CLKUNCERT
+
+They are set by "make set"
+
+#######  Python scripts clarification:  #######
+There are 5 Python scripts in my folder: set_constraints.py, print.py, paretofront_clkdepth_power.py, paretofront_clkper_area.py, paretofront_tgtclkper_power.py
+
+set_constraints is used to set 5 constraints. It has a similar structure to the script in HW3 solution.
+
+print.py extracts data from reports and setup files.
+
+The other three are for plotting the paretofront.
+
+#######  CSV file clarification:  #######
+Everything required is extracted. However, for data_1 to data_24, I didn't extract largest positive setup slack and keep "wns" column as "0". After you mentioned this in class, I started to extract positive slack from route_opt.report_timing.max. The reason that I didn't add a other row for this(max positive setup slack is not "wns") is that I do not want to mess up your grading script.
+
+My "out.csv" file is basically a record of my runs. I did not filter any failed design out(I did this in my python script for paretofront plotting).
+
+#######  4 designs clarification:  #######
+I chose 4 designs that can demonstrate my paretofronts. "Min. clock period", "Largest area", "Min. dynamic power", "Max. dynamic power".
+
+#######  Paretofront clarification:  ####### 
+Plots are pretty straight-forward. The only thing I would like to mention is that I filtered out failed designs(with the python scripts) before I plot them.
+
+
+
+
+
+
+

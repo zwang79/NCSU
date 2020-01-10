@@ -1,0 +1,41 @@
+****************************************
+ Report : check_design 
+ Options: { pre_placement_stage }
+ Design : MulDiv
+ Version: P-2019.03-SP1
+ Date   : Tue Oct 15 17:09:13 2019
+****************************************
+
+Running mega-check 'pre_placement_stage': 
+    Running atomic-check 'design_mismatch'
+    Running atomic-check 'scan_chain'
+    Running atomic-check 'mv_design'
+    Running atomic-check 'rp_constraints'
+    Running atomic-check 'timing'
+    Running atomic-check 'hier_pre_placement'
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DMM-104      Info   6          Mismatch type %mmtype is detected on object type %objtype at obj...
+  TCK-001      Warn   880        The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  TCK-012      Warn   8          The input port '%port' has no clock_relative delay specified. Mo...
+  ----------------------------------------------------------------------------------------------------
+  Total 894 EMS messages : 0 errors, 888 warnings, 6 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  NDMUI-173           1          There are no relative placement groups in the design.
+  ----------------------------------------------------------------------------------------------------
+  Total 1 non-EMS messages : 0 errors, 0 warnings, 1 info.
+  ----------------------------------------------------------------------------------------------------
+
+Warning: EMS database "check_design.pre_placement_stage.ems" already exists, over-writing it. (EMS-040)
+
+Information: EMS database is saved to file 'check_design.pre_placement_stage.ems'.
+Information: Non-EMS messages are saved into file 'check_design2019Oct15170913.log'.
+1

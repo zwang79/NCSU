@@ -1,0 +1,25 @@
+<Database>
+Name/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/zwang79/zwang79/hw02/icc2rm/check_design.pre_clock_tree_stage.ems
+Creation TimeThu Sep 12 21:55:42 2019
+Modified TimeThu Sep 12 21:55:42 2019
+Design Namexbar
+Library Namexbar
+</Database>
+<RuleCount>
+CTS-9042
+DFT-0111
+DMM-1046
+</RuleCount>
+<UserDefinedRules>
+</UserDefinedRules>
+<Messages>
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/CLKGATETST_X1_CLK10mmtypelib_port_type10objnameCLK (NanGate_15nm_OCL/CLKGATETST_X1)10objtypelib_pin10repairedstateaccepted10
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/DFFRNQ_X1_CLK10mmtypelib_port_type10objnameCLK (NanGate_15nm_OCL/DFFRNQ_X1)10objtypelib_pin10repairedstateaccepted10
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/DFFSNQ_X1_CLK10mmtypelib_port_type10objnameCLK (NanGate_15nm_OCL/DFFSNQ_X1)10objtypelib_pin10repairedstateaccepted10
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/LHQ_X1_E10mmtypelib_port_type10objnameE (NanGate_15nm_OCL/LHQ_X1)10objtypelib_pin10repairedstateaccepted10
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/SDFFRNQ_X1_CLK10mmtypelib_port_type10objnameCLK (NanGate_15nm_OCL/SDFFRNQ_X1)10objtypelib_pin10repairedstateaccepted10
+DMM-104mmactionaccept10mmhandlerchange_lib_port_type10mmobjnamelib_port_type_NanGate_15nm_OCL/SDFFSNQ_X1_CLK10mmtypelib_port_type10objnameCLK (NanGate_15nm_OCL/SDFFSNQ_X1)10objtypelib_pin10repairedstateaccepted10
+DFT-011reason10
+CTS-904cellclk_gate_out_reg/latch10libcellNanGate_15nm_OCL/CLKGATETST_X110
+CTS-904cellvalid_reg_11_10libcellNanGate_15nm_OCL/SDFFSNQ_X110
+</Messages>

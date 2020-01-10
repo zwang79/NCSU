@@ -1,0 +1,15 @@
+****************************************
+Report : app_option
+           -non_default
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:50 2019
+****************************************
+Name                          Type       Value      User-default System-default Scope      Status     Source
+----------------------------- ---------- ---------- ------------ -------------- ---------- ---------- ----------------------------------------------------------------------------------------------------
+design.on_disk_operation      bool       true       true         false          global     normal     /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/zwang79/zwang79/hw03/icc2rm/rm_setup/icc2_pnr_setup.tcl:552
+lib.setting.on_disk_operation bool       true       true         false          global     normal     /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/zwang79/zwang79/hw03/icc2rm/rm_icc2_pnr_scripts/init_design.from_ascii.tcl:30
+----------------------------- ---------- ---------- ------------ -------------- ---------- ---------- ----------------------------------------------------------------------------------------------------
+
+There are additional internal differences with no available TBC source.
+1

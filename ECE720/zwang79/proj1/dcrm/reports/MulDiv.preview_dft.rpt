@@ -1,0 +1,425 @@
+
+********************************************
+Report    : Scenario Reduction Summary
+Design    : MulDiv
+Scenarios :
+	    mode_norm.slow.RCmax (dominant)
+	    mode_norm.worst_low.RCmax
+	    mode_norm.fast.RCmin (Leakage-Only)
+********************************************
+
+Information: Layer MSMG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG2 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG3 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG4 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG5 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG2 is ignored for resistance and capacitance computation. (RCEX-019)
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer M1 : 0.16 0.16 (RCEX-011)
+Information: Library Derived Res for layer M1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT1 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT2 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT2 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT3 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT3 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT4 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT4 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT5 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT5 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MSMG1 : 0.22 0.22 (RCEX-011)
+Information: Library Derived Res for layer MSMG1 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG2 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG3 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG3 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG4 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG4 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG5 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG5 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MG1 : 0.21 0.21 (RCEX-011)
+Information: Library Derived Res for layer MG1 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Cap for layer MG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MG2 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.046 0.046 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Vertical Res : 0.046 0.046 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.005 0.005 (RCEX-011)
+
+Running DFT insertion in topographical mode.
+  Information: Using test design rule information from previous dft_drc run.
+  Architecting Scan Chains
+
+****************************************
+Preview_dft report
+For    : 'Insert_dft' command
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:43:06 2019
+****************************************
+
+Number of chains: 1
+Scan methodology: full_scan
+Scan style: multiplexed_flip_flop
+Clock domain: mix_clocks
+Voltage Mixing: False
+Power Domain Mixing: False
+
+  (l) shows cell scan-out drives a lockup latch
+  (s) shows cell is a scan segment
+  (t) shows cell has a true scan attribute
+  (w) shows cell scan-out drives a wire
+
+
+Scan chain '1' (test_si --> io_resp_bits_tag[4]) contains 214 cells:
+
+  count_reg[0]   (voltage 0.72) (clock, 45.0, rising) 
+  count_reg[1]                  
+  count_reg[2]                  
+  count_reg[3]                  
+  count_reg[4]                  
+  count_reg[5]                  
+  count_reg[6]                  
+  divisor_reg[0]                
+  divisor_reg[1]                
+  divisor_reg[2]                
+  divisor_reg[3]                
+  divisor_reg[4]                
+  divisor_reg[5]                
+  divisor_reg[6]                
+  divisor_reg[7]                
+  divisor_reg[8]                
+  divisor_reg[9]                
+  divisor_reg[10]               
+  divisor_reg[11]               
+  divisor_reg[12]               
+  divisor_reg[13]               
+  divisor_reg[14]               
+  divisor_reg[15]               
+  divisor_reg[16]               
+  divisor_reg[17]               
+  divisor_reg[18]               
+  divisor_reg[19]               
+  divisor_reg[20]               
+  divisor_reg[21]               
+  divisor_reg[22]               
+  divisor_reg[23]               
+  divisor_reg[24]               
+  divisor_reg[25]               
+  divisor_reg[26]               
+  divisor_reg[27]               
+  divisor_reg[28]               
+  divisor_reg[29]               
+  divisor_reg[30]               
+  divisor_reg[31]               
+  divisor_reg[32]               
+  divisor_reg[33]               
+  divisor_reg[34]               
+  divisor_reg[35]               
+  divisor_reg[36]               
+  divisor_reg[37]               
+  divisor_reg[38]               
+  divisor_reg[39]               
+  divisor_reg[40]               
+  divisor_reg[41]               
+  divisor_reg[42]               
+  divisor_reg[43]               
+  divisor_reg[44]               
+  divisor_reg[45]               
+  divisor_reg[46]               
+  divisor_reg[47]               
+  divisor_reg[48]               
+  divisor_reg[49]               
+  divisor_reg[50]               
+  divisor_reg[51]               
+  divisor_reg[52]               
+  divisor_reg[53]               
+  divisor_reg[54]               
+  divisor_reg[55]               
+  divisor_reg[56]               
+  divisor_reg[57]               
+  divisor_reg[58]               
+  divisor_reg[59]               
+  divisor_reg[60]               
+  divisor_reg[61]               
+  divisor_reg[62]               
+  divisor_reg[63]               
+  divisor_reg[64]               
+  isHi_reg                      
+  neg_out_reg                   
+  remainder_reg[0]              
+  remainder_reg[1]              
+  remainder_reg[2]              
+  remainder_reg[3]              
+  remainder_reg[4]              
+  remainder_reg[5]              
+  remainder_reg[6]              
+  remainder_reg[7]              
+  remainder_reg[8]              
+  remainder_reg[9]              
+  remainder_reg[10]             
+  remainder_reg[11]             
+  remainder_reg[12]             
+  remainder_reg[13]             
+  remainder_reg[14]             
+  remainder_reg[15]             
+  remainder_reg[16]             
+  remainder_reg[17]             
+  remainder_reg[18]             
+  remainder_reg[19]             
+  remainder_reg[20]             
+  remainder_reg[21]             
+  remainder_reg[22]             
+  remainder_reg[23]             
+  remainder_reg[24]             
+  remainder_reg[25]             
+  remainder_reg[26]             
+  remainder_reg[27]             
+  remainder_reg[28]             
+  remainder_reg[29]             
+  remainder_reg[30]             
+  remainder_reg[31]             
+  remainder_reg[32]             
+  remainder_reg[33]             
+  remainder_reg[34]             
+  remainder_reg[35]             
+  remainder_reg[36]             
+  remainder_reg[37]             
+  remainder_reg[38]             
+  remainder_reg[39]             
+  remainder_reg[40]             
+  remainder_reg[41]             
+  remainder_reg[42]             
+  remainder_reg[43]             
+  remainder_reg[44]             
+  remainder_reg[45]             
+  remainder_reg[46]             
+  remainder_reg[47]             
+  remainder_reg[48]             
+  remainder_reg[49]             
+  remainder_reg[50]             
+  remainder_reg[51]             
+  remainder_reg[52]             
+  remainder_reg[53]             
+  remainder_reg[54]             
+  remainder_reg[55]             
+  remainder_reg[56]             
+  remainder_reg[57]             
+  remainder_reg[58]             
+  remainder_reg[59]             
+  remainder_reg[60]             
+  remainder_reg[61]             
+  remainder_reg[62]             
+  remainder_reg[63]             
+  remainder_reg[64]             
+  remainder_reg[65]             
+  remainder_reg[66]             
+  remainder_reg[67]             
+  remainder_reg[68]             
+  remainder_reg[69]             
+  remainder_reg[70]             
+  remainder_reg[71]             
+  remainder_reg[72]             
+  remainder_reg[73]             
+  remainder_reg[74]             
+  remainder_reg[75]             
+  remainder_reg[76]             
+  remainder_reg[77]             
+  remainder_reg[78]             
+  remainder_reg[79]             
+  remainder_reg[80]             
+  remainder_reg[81]             
+  remainder_reg[82]             
+  remainder_reg[83]             
+  remainder_reg[84]             
+  remainder_reg[85]             
+  remainder_reg[86]             
+  remainder_reg[87]             
+  remainder_reg[88]             
+  remainder_reg[89]             
+  remainder_reg[90]             
+  remainder_reg[91]             
+  remainder_reg[92]             
+  remainder_reg[93]             
+  remainder_reg[94]             
+  remainder_reg[95]             
+  remainder_reg[96]             
+  remainder_reg[97]             
+  remainder_reg[98]             
+  remainder_reg[99]             
+  remainder_reg[100]            
+  remainder_reg[101]            
+  remainder_reg[102]            
+  remainder_reg[103]            
+  remainder_reg[104]            
+  remainder_reg[105]            
+  remainder_reg[106]            
+  remainder_reg[107]            
+  remainder_reg[108]            
+  remainder_reg[109]            
+  remainder_reg[110]            
+  remainder_reg[111]            
+  remainder_reg[112]            
+  remainder_reg[113]            
+  remainder_reg[114]            
+  remainder_reg[115]            
+  remainder_reg[116]            
+  remainder_reg[117]            
+  remainder_reg[118]            
+  remainder_reg[119]            
+  remainder_reg[120]            
+  remainder_reg[121]            
+  remainder_reg[122]            
+  remainder_reg[123]            
+  remainder_reg[124]            
+  remainder_reg[125]            
+  remainder_reg[126]            
+  remainder_reg[127]            
+  remainder_reg[128]            
+  remainder_reg[129]            
+  req_dw_reg                    
+  req_tag_reg[0]                
+  req_tag_reg[1]                
+  req_tag_reg[2]                
+  req_tag_reg[3]                
+  resHi_reg                     
+  state_reg[0]                  
+  state_reg[1]                  
+  state_reg[2]                  
+  req_tag_reg[4]                
+
+  Scan signals:
+    test_scan_out: io_resp_bits_tag[4] (no hookup pin)
+
+
+****************************************
+
+No user-defined segments
+
+
+No multibit segments
+
+
+****************************************
+
+No cells have scan true
+
+No cells have scan false
+
+
+No tristate nets.
+
+No bidirectionals.
+
+
+************ Test Point Plan Report ************
+Total number of test points  : 0
+Number of Autofix test points: 0
+Number of Wrapper test points: 0
+Number of test modes         : 0
+Number of test point enables : 0
+Number of data sources       : 0
+Number of data sinks         : 0
+**************************************************
+
+No test points.
+
+Information: Layer MSMG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG2 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG3 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG4 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG5 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG2 is ignored for resistance and capacitance computation. (RCEX-019)
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer M1 : 0.16 0.16 (RCEX-011)
+Information: Library Derived Res for layer M1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT1 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT2 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT2 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT3 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT3 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT4 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT4 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT5 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT5 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MSMG1 : 0.22 0.22 (RCEX-011)
+Information: Library Derived Res for layer MSMG1 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG2 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG3 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG3 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG4 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG4 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG5 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG5 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MG1 : 0.21 0.21 (RCEX-011)
+Information: Library Derived Res for layer MG1 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Cap for layer MG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MG2 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.046 0.046 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Vertical Res : 0.046 0.046 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.005 0.005 (RCEX-011)
+Information: Layer MSMG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG2 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG3 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG4 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MSMG5 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG1 is ignored for resistance and capacitance computation. (RCEX-019)
+Information: Layer MG2 is ignored for resistance and capacitance computation. (RCEX-019)
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer M1 : 0.16 0.16 (RCEX-011)
+Information: Library Derived Res for layer M1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT1 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT1 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT2 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT2 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT3 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT3 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT4 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT4 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MINT5 : 0.17 0.17 (RCEX-011)
+Information: Library Derived Res for layer MINT5 : 0.046 0.046 (RCEX-011)
+Information: Library Derived Cap for layer MSMG1 : 0.22 0.22 (RCEX-011)
+Information: Library Derived Res for layer MSMG1 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG2 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG3 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG3 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG4 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG4 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MSMG5 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MSMG5 : 0.008 0.008 (RCEX-011)
+Information: Library Derived Cap for layer MG1 : 0.21 0.21 (RCEX-011)
+Information: Library Derived Res for layer MG1 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Cap for layer MG2 : 0.2 0.2 (RCEX-011)
+Information: Library Derived Res for layer MG2 : 0.00089 0.00089 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.046 0.046 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.17 0.17 (RCEX-011)
+Information: Library Derived Vertical Res : 0.046 0.046 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.005 0.005 (RCEX-011)
+1

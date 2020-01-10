@@ -1,0 +1,168 @@
+****************************************
+Report : qor
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:27:47 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'HCLK'
+----------------------------------------
+Worst Hold Violation:            -24.19
+Total Hold Violation:           -213.66
+No. of Hold Violations:              48
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'HCLK'
+----------------------------------------
+Levels of Logic:                     55
+Critical Path Length:            416.87
+Critical Path Slack:              68.57
+Critical Path Clk Period:        500.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            288.53
+Critical Path Slack:             199.99
+Critical Path Clk Period:        500.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                     39
+Critical Path Length:            330.96
+Critical Path Slack:              48.97
+Critical Path Clk Period:        500.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'HCLK'
+----------------------------------------
+Levels of Logic:                     62
+Critical Path Length:            484.01
+Critical Path Slack:               0.08
+Critical Path Clk Period:        500.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            305.81
+Critical Path Slack:             182.26
+Critical Path Clk Period:        500.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                     46
+Critical Path Length:            379.83
+Critical Path Slack:               0.11
+Critical Path Clk Period:        500.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:             36
+Hierarchical Port Count:            216
+Leaf Cell Count:                   7313
+Buf/Inv Cell Count:                1343
+Buf Cell Count:                      94
+Inv Cell Count:                    1249
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          6436
+Sequential Cell Count:              877
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             1646.54
+Noncombinational Area:          1270.19
+Buf/Inv Area:                    212.93
+Total Buffer Area:                26.35
+Total Inverter Area:             186.58
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                           2916.73
+Cell Area (netlist and physical only):         2916.73
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              7381
+Nets with Violations:                 0
+Max Trans Violations:                 0
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:27:48 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+mode_norm.slow.RCmax (Setup)          48.97           0.00              0
+mode_norm.worst_low.RCmax (Setup)           0.08           0.00              0
+Design             (Setup)             0.08           0.00              0
+
+mode_norm.fast.RCmin_bc (Hold)         -24.19        -213.66             48
+Design             (Hold)            -24.19        -213.66             48
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                           2916.73
+Cell Area (netlist and physical only):         2916.73
+Nets with DRC Violations:        0
+1

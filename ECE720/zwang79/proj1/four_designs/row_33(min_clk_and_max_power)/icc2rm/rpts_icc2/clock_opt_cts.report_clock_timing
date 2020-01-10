@@ -1,0 +1,109 @@
+****************************************
+Report : clock timing
+        -type summary
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:11:55 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+Scenario mode_norm.fast.RCmin is not configured for setup or hold analysis
+Mode mode_norm.fast.RCmin has no active scenarios.
+
+  Mode: mode_norm.fast.RCmin_bc
+  Clock: clock
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      remainder_reg_129_/CLK                                  77.92       rp-+   mode_norm.fast.RCmin_bc
+
+  Minimum setup capture latency:
+      req_tag_reg_4_/CLK                                      48.07       rp-+   mode_norm.fast.RCmin_bc
+
+  Minimum hold launch latency:
+      req_tag_reg_4_/CLK                                      48.07       rp-+   mode_norm.fast.RCmin_bc
+
+  Maximum hold capture latency:
+      remainder_reg_129_/CLK                                  77.92       rp-+   mode_norm.fast.RCmin_bc
+
+  Maximum active transition:
+      remainder_reg_14_/CLK                                    9.00       rp-+   mode_norm.fast.RCmin_bc
+
+  Minimum active transition:
+      remainder_reg_46_/CLK                                    4.12       rp-+   mode_norm.fast.RCmin_bc
+
+  Maximum setup skew:
+      remainder_reg_129_/CLK                                              rp-+   mode_norm.fast.RCmin_bc
+      req_tag_reg_2_/CLK                                      29.53       rp-+   mode_norm.fast.RCmin_bc
+
+  Maximum hold skew:
+      remainder_reg_95_/CLK                                               rp-+   mode_norm.fast.RCmin_bc
+      remainder_reg_129_/CLK                                  25.69       rp-+   mode_norm.fast.RCmin_bc
+
+
+
+  Mode: mode_norm.slow.RCmax
+  Clock: clock
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      remainder_reg_2_/CLK                                    80.20       rp-+   mode_norm.slow.RCmax
+
+  Minimum setup capture latency:
+      req_tag_reg_4_/CLK                                      49.13       rp-+   mode_norm.slow.RCmax
+
+  Minimum hold launch latency:
+      req_tag_reg_4_/CLK                                      49.13       rp-+   mode_norm.slow.RCmax
+
+  Maximum hold capture latency:
+      remainder_reg_2_/CLK                                    80.20       rp-+   mode_norm.slow.RCmax
+
+  Maximum active transition:
+      remainder_reg_12_/CLK                                   10.20       rp-+   mode_norm.slow.RCmax
+
+  Minimum active transition:
+      remainder_reg_46_/CLK                                    4.71       rp-+   mode_norm.slow.RCmax
+
+  Maximum setup skew:
+      remainder_reg_129_/CLK                                              rp-+   mode_norm.slow.RCmax
+      req_tag_reg_2_/CLK                                      30.27       rp-+   mode_norm.slow.RCmax
+
+  Maximum hold skew:
+      remainder_reg_95_/CLK                                               rp-+   mode_norm.slow.RCmax
+      remainder_reg_2_/CLK                                    27.03       rp-+   mode_norm.slow.RCmax
+
+
+Mode mode_norm.slow.RCmax_bc has no active scenarios.
+
+  Mode: mode_norm.worst_low.RCmax
+  Clock: clock
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      remainder_reg_129_/CLK                                  99.95       rp-+   mode_norm.worst_low.RCmax
+
+  Minimum setup capture latency:
+      req_tag_reg_4_/CLK                                      62.37       rp-+   mode_norm.worst_low.RCmax
+
+  Minimum hold launch latency:
+      req_tag_reg_4_/CLK                                      62.37       rp-+   mode_norm.worst_low.RCmax
+
+  Maximum hold capture latency:
+      remainder_reg_129_/CLK                                  99.95       rp-+   mode_norm.worst_low.RCmax
+
+  Maximum active transition:
+      remainder_reg_12_/CLK                                    9.90       rp-+   mode_norm.worst_low.RCmax
+
+  Minimum active transition:
+      remainder_reg_46_/CLK                                    4.79       rp-+   mode_norm.worst_low.RCmax
+
+  Maximum setup skew:
+      remainder_reg_129_/CLK                                              rp-+   mode_norm.worst_low.RCmax
+      req_tag_reg_2_/CLK                                      37.17       rp-+   mode_norm.worst_low.RCmax
+
+  Maximum hold skew:
+      remainder_reg_95_/CLK                                               rp-+   mode_norm.worst_low.RCmax
+      remainder_reg_129_/CLK                                  32.23       rp-+   mode_norm.worst_low.RCmax
+
+
+Mode mode_norm.worst_low.RCmax_bc has no active scenarios.
+1

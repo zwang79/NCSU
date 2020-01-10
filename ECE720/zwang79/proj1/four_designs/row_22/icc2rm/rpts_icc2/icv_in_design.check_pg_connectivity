@@ -1,0 +1,32 @@
+Loading cell instances...
+Number of Standard Cells: 5495
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 500
+Number of VDD Vias: 4197
+Number of VDD Terminals: 50
+Number of VSS Wires: 57
+Number of VSS Vias: 3396
+Number of VSS Terminals: 48
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 144
+  Number of floating vias: 118
+  Number of floating std cells: 1429
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 10
+  Number of floating vias: 0
+  Number of floating std cells: 1764
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 0 seconds.
+{PATH_3_2 PATH_3_9 PATH_3_10 PATH_3_12 PATH_3_15 PATH_3_22 PATH_3_23 PATH_3_25 PATH_3_28 PATH_3_35 PATH_3_36 PATH_3_38 PATH_3_41 PATH_3_48 PATH_3_49 PATH_3_51 PATH_3_54 PATH_3_62 PATH_3_2067 PATH_3_2068 PATH_3_2072 PATH_3_2073 PATH_3_2075 PATH_3_2076 PATH_3_2078 PATH_3_2079 PATH_3_2084 PATH_3_2086 PATH_3_2088 PATH_3_2090 PATH_3_2097 PATH_3_2101 PATH_3_2102 PATH_5_14590 PATH_5_14591 PATH_5_14592 PATH_5_14594 PATH_5_14595 PATH_5_14596 PATH_5_14599 PATH_5_14604 PATH_5_14606 PATH_5_14608 PATH_5_14624 PATH_5_14625 PATH_5_14626 PATH_5_14627 PATH_5_14628 PATH_5_14633 PATH_5_14634 PATH_5_14635 PATH_5_14636 PATH_5_14639 PATH_5_14640 PATH_5_14641 PATH_5_14643 PATH_5_14644 PATH_5_14654 PATH_5_14655 PATH_5_14656 PATH_5_14657 PATH_5_14658 PATH_5_14660 PATH_5_14663 PATH_5_14664 PATH_5_14710 PATH_5_14711 PATH_5_14726 PATH_5_14755 PATH_5_14756 PATH_5_14757 PATH_5_14758 PATH_5_14761 PATH_5_14762 PATH_5_14763 PATH_5_14764 PATH_5_14768 PATH_5_14769 PATH_5_14770 PATH_5_14811 PATH_5_14812 PATH_5_14813 PATH_5_14818 PATH_5_14819 PATH_5_14824 PATH_5_14825 PATH_5_14828 PATH_5_14831 PATH_5_14832 PATH_5_14838 PATH_5_14839 PATH_5_14842 PATH_5_14843 PATH_5_14845 PATH_5_14846 PATH_5_14847 PATH_5_14848 PATH_5_14854 PATH_5_14855 PATH_5_14864 ...}

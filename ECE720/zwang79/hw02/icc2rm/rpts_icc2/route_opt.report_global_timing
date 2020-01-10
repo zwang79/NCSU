@@ -1,0 +1,17 @@
+Information: Timer using 'SI, Timing Window Analysis, AWP, CRPR'. (TIM-050)
+****************************************
+Report : global timing
+        -format { narrow }
+        -report_by design
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:05:01 2019
+****************************************
+
+No setup violations found.
+
+
+No hold violations found.
+
+
+1

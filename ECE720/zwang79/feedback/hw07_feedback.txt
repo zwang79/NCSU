@@ -1,0 +1,16 @@
+ECE720 hw07 Feedback for Wang,Zhiping
+
+(35/35) 1 Were expected delays for 3 xacts. demonstrated?  Did the simulation behave as expected?
+correct
+
+(35/35) 2 Does the modified simulation sequentially execute transactions with the same start-time?
+correct
+
+(30/30) 3 Were the CPI and performance simulated and calculated correctly?
+correct
+
+
+Total:
+(0/0) Late Penalty
+(100/100) Total
+

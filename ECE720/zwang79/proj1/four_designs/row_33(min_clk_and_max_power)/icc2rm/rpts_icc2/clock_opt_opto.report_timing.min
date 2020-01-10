@@ -1,0 +1,174 @@
+Warning: Scenario mode_norm.fast.RCmin is not configured for hold analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.slow.RCmax is not configured for hold analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.slow.RCmax_bc is not configured for hold analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.worst_low.RCmax is not configured for hold analysis: skipping. (UIC-058)
+Warning: Scenario mode_norm.worst_low.RCmax_bc is not configured for hold analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by group
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+        -derate
+        -attributes
+        -physical
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:13:28 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+  Startpoint: divisor_reg_29_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: divisor_reg_26_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: mode_norm.fast.RCmin_bc
+  Corner: mode_norm.fast.RCmin_bc
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: clock
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (propagated)                                                      66.22     66.22
+
+  divisor_reg_29_/CLK (SDFFSNQ_X1)                                   6.54      1.00      0.00     66.22 r    (28.74,36.49)     s, n
+  divisor_reg_29_/Q (SDFFSNQ_X1)                                    36.32      1.00     23.56     89.78 f    (30.53,36.48)     s, n
+  n_T_56[29] (net)                                 15     24.74
+  divisor_reg_26_/SI (SDFFSNQ_X1)                                   36.28      1.00      0.04     89.82 f    (29.38,37.19)     s, n
+  data arrival time                                                                               89.82
+
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (propagated)                                                      67.10     67.10
+  clock reconvergence pessimism                                                         -0.95     66.15
+  divisor_reg_26_/CLK (SDFFSNQ_X1)                                   6.71      1.00      0.00     66.15 r    (29.70,37.24)     s, n
+  clock uncertainty                                                                     12.00     78.15
+  library hold time                                                            1.00     26.67    104.82
+  data required time                                                                             104.81
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             104.81
+  data arrival time                                                                              -89.82
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                               -15.00
+
+
+
+  Startpoint: io_req_bits_in2[36] (input port clocked by clock)
+  Endpoint: divisor_reg_36_ (rising edge-triggered flip-flop clocked by clock)
+  Mode: mode_norm.fast.RCmin_bc
+  Corner: mode_norm.fast.RCmin_bc
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: REGIN
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                           61.94     61.94
+  input external delay                                                                 120.00    181.94
+
+  io_req_bits_in2[36] (in)                                           2.69      1.00      1.19    183.13 f    (33.60,0.01)
+  io_req_bits_in2[36] (net)                         1      1.15
+  U4567/A2 (AOI22_X1)                                                2.69      1.00      0.19    183.32 f    (31.74,2.64)
+  U4567/ZN (AOI22_X1)                                                3.70      1.00      2.90    186.22 r    (31.60,2.65)
+  n3923 (net)                                       1      1.06
+  U4568/A2 (NAND2_X1)                                                3.70      1.00      0.04    186.26 r    (32.38,2.72)
+  U4568/ZN (NAND2_X1)                                                2.42      1.00      2.27    188.53 f    (32.48,2.65)
+  n7080 (net)                                       1      0.56
+  divisor_reg_36_/D (SDFFSNQ_X1)                                     2.42      1.00      0.04    188.56 f    (33.22,1.85)      s, n
+  data arrival time                                                                              188.56
+
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (propagated)                                                      71.03     71.03
+  clock reconvergence pessimism                                                         -0.00     71.03
+  divisor_reg_36_/CLK (SDFFSNQ_X1)                                   7.74      1.00      0.00     71.03 r    (32.77,1.91)      s, n
+  clock uncertainty                                                                     12.00     83.03
+  library hold time                                                            1.00      1.37     84.40
+  data required time                                                                              84.40
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                              84.40
+  data arrival time                                                                              -188.56
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    104.17
+
+
+
+  Startpoint: req_tag_reg_4_ (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: io_resp_bits_tag[4] (output port clocked by clock)
+  Mode: mode_norm.fast.RCmin_bc
+  Corner: mode_norm.fast.RCmin_bc
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: REGOUT
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                          Fanout    Cap      Trans     Derate     Incr      Path          Location       Attributes
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (propagated)                                                      48.33     48.33
+
+  req_tag_reg_4_/CLK (SDFFSNQ_X1)                                    7.53      1.00      0.00     48.33 r    (48.32,41.85)     s, n
+  req_tag_reg_4_/Q (SDFFSNQ_X1)                                      4.46      1.00     11.94     60.27 r    (50.11,41.86)     s, n
+  io_resp_bits_tag[4] (net)                         1      2.58
+  io_resp_bits_tag[4] (out)                                          4.46      1.00      0.04     60.31 r    (50.42,41.92)
+  data arrival time                                                                               60.31
+
+  clock clock (rise edge)                                                                0.00      0.00
+  clock network delay (ideal)                                                           63.00     63.00
+  clock reconvergence pessimism                                                         -0.00     63.00
+  clock uncertainty                                                                     12.00     75.00
+  output external delay                                                                -120.00   -45.00
+  data required time                                                                             -45.00
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                             -45.00
+  data arrival time                                                                              -60.31
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                    105.31
+
+
+1

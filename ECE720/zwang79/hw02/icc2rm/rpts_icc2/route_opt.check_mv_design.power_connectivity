@@ -1,0 +1,110 @@
+****************************************
+Report : check_mv_design
+        -power_connectivity
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 21:51:09 2019
+****************************************
+
+---------- Power domain rule ----------
+No errors or warnings.
+
+---------- Supply set rule ----------
+No errors or warnings.
+
+---------- Supply net rule ----------
+No errors or warnings.
+
+---------- Supply port rule ----------
+No errors or warnings.
+
+---------- Isolation strategy rule ----------
+No errors or warnings.
+
+---------- Level shifter strategy rule ----------
+No errors or warnings.
+
+---------- Retention strategy rule ----------
+No errors or warnings.
+
+---------- Power switch strategy rule ----------
+No errors or warnings.
+
+---------- Repeater rule ----------
+No errors or warnings.
+
+---------- Terminal boundary rule ----------
+No errors or warnings.
+
+---------- Isolation cell rule ----------
+No errors or warnings.
+
+---------- Level shifter cell rule ----------
+No errors or warnings.
+
+---------- Retention cell rule ----------
+No errors or warnings.
+
+---------- Switch cell rule ----------
+No errors or warnings.
+
+---------- PGMUX rule ----------
+No errors or warnings.
+
+---------- Diode cell rule ----------
+No errors or warnings.
+
+---------- Model rule ----------
+No errors or warnings.
+
+---------- Isolation rule ----------
+No errors or warnings.
+
+---------- Voltage shifting rule ----------
+No errors or warnings.
+
+---------- Tie-off connection rule ----------
+No errors or warnings.
+
+---------- PG net rule ----------
+No errors or warnings.
+
+---------- Analog net rule ----------
+No errors or warnings.
+
+---------- Physical block pin rule ----------
+No errors or warnings.
+
+---------- PG pin rule ----------
+No errors or warnings.
+
+---------- Power connectivity rule ----------
+Warning: PG pin 'valid_reg_0_/VPW' is unconnected. (MV-005)
+Warning: PG pin 'valid_reg_0_/VNW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_31_/VPW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_31_/VNW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_30_/VPW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_30_/VNW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_29_/VPW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_29_/VNW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_28_/VPW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_28_/VNW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_27_/VPW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_27_/VNW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_26_/VPW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_26_/VNW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_25_/VPW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_25_/VNW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_24_/VPW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_24_/VNW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_23_/VPW' is unconnected. (MV-005)
+Warning: PG pin 'out_reg_23_/VNW' is unconnected. (MV-005)
+Information: Message 'MV-005' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 7904 MV-005 violations. (MV-080)
+
+---------- Signal pin rule ----------
+No errors or warnings.
+
+---------- Summary ----------
+Information: Total 0 error(s) and 7904 warning(s) from check_mv_design. (MV-082)
+1

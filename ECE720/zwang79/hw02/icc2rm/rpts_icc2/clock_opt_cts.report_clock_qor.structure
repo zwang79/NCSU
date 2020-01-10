@@ -1,0 +1,23 @@
+****************************************
+Report : report clock qor
+        -type structure
+        -nosplit
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:03:59 2019
+****************************************
+
+C5 is corner mode_norm.fast.RCmin
+C6 is corner mode_norm.fast.RCmin_bc
+C1 is corner mode_norm.slow.RCmax
+C3 is corner mode_norm.worst_low.RCmax
+
+Printing structure of clk (mode mode_norm.slow.RCmax) at root pin clk:
+(0) clk [in Port] [Location (0.00, 0.00)] [Net: clk] [IMPLICIT IGNORE PIN] [Fanout: 24] 
+
+Printing structure of clk (mode mode_norm.worst_low.RCmax) at root pin clk:
+(0) clk [in Port] [Location (0.00, 0.00)] [Net: clk] [IMPLICIT IGNORE PIN] [Fanout: 24] 
+
+Printing structure of clk (mode mode_norm.fast.RCmin_bc) at root pin clk:
+(0) clk [in Port] [Location (0.00, 0.00)] [Net: clk] [IMPLICIT IGNORE PIN] [Fanout: 24] 
+1

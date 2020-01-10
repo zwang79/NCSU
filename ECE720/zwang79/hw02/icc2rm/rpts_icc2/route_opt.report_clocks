@@ -1,0 +1,109 @@
+****************************************
+Report : clock
+Design : xbar
+Mode   : mode_norm.slow.RCmax
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:05:01 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk            5000.00  {0 2500}                      {clk}
+
+****************************************
+Report : clock
+Design : xbar
+Mode   : mode_norm.slow.RCmax_bc
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:05:01 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk            5000.00  {0 2500}                      {clk}
+
+****************************************
+Report : clock
+Design : xbar
+Mode   : mode_norm.worst_low.RCmax
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:05:01 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk            5000.00  {0 2500}                      {clk}
+
+****************************************
+Report : clock
+Design : xbar
+Mode   : mode_norm.worst_low.RCmax_bc
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:05:01 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk            5000.00  {0 2500}                      {clk}
+
+****************************************
+Report : clock
+Design : xbar
+Mode   : mode_norm.fast.RCmin
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:05:01 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk            5000.00  {0 2500}                      {clk}
+
+****************************************
+Report : clock
+Design : xbar
+Mode   : mode_norm.fast.RCmin_bc
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 22:05:01 2019
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    U - Unexpanded generated clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk            5000.00  {0 2500}                      {clk}
+
+1

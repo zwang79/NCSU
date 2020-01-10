@@ -1,0 +1,157 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+****************************************
+Report : clock qor
+        -type local_skew
+        -nosplit
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:32:32 2019
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+==============================================================
+==== Local Skew Reporting for Corner mode_norm.fast.RCmin ====
+==============================================================
+
+================================= Summary Table for Corner mode_norm.fast.RCmin ==================================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+clock                                   M,D       214      0.00      0.00            --        0.00        0.00
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214      0.00      0.00                      0.00        0.00
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+======================================== Details Table for Corner mode_norm.fast.RCmin =========================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin, Scenario: mode_norm.fast.RCmin
+
+
+=================================================================
+==== Local Skew Reporting for Corner mode_norm.fast.RCmin_bc ====
+=================================================================
+
+================================ Summary Table for Corner mode_norm.fast.RCmin_bc ================================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+clock                                   M,D       214     40.63     75.51         32441          --       40.63
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214     40.63     75.51                        --       40.63
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+======================================= Details Table for Corner mode_norm.fast.RCmin_bc =======================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.fast.RCmin_bc, Scenario: mode_norm.fast.RCmin_bc
+clock
+                               (H) L   state_reg_1_/CLK remainder_reg_65_/CLK     34.89 r     75.51 r        --        --     40.63
+                               (H) L   state_reg_1_/CLK remainder_reg_84_/CLK     34.89 r     75.51 r        --        --     40.63
+                               (H) L   state_reg_1_/CLK remainder_reg_72_/CLK     34.89 r     75.49 r        --        --     40.61
+                               (H) L   state_reg_0_/CLK remainder_reg_65_/CLK     35.02 r     75.51 r        --        --     40.49
+                               (H) L   state_reg_0_/CLK remainder_reg_84_/CLK     35.02 r     75.51 r        --        --     40.49
+                               (H) S   remainder_reg_45_/CLK resHi_reg/CLK     73.74 r     35.11 r        --        --    -38.62
+                               (H) S   remainder_reg_38_/CLK resHi_reg/CLK     73.64 r     35.11 r        --        --    -38.53
+                               (H) S   remainder_reg_40_/CLK resHi_reg/CLK     70.38 r     35.11 r        --        --    -35.27
+                               (H) S   remainder_reg_58_/CLK resHi_reg/CLK     69.73 r     35.11 r        --        --    -34.62
+                               (H) S   remainder_reg_84_/CLK neg_out_reg/CLK     75.51 r     40.91 r        --        --    -34.60
+
+
+==============================================================
+==== Local Skew Reporting for Corner mode_norm.slow.RCmax ====
+==============================================================
+
+================================= Summary Table for Corner mode_norm.slow.RCmax ==================================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+clock                                   M,D       214     41.58     77.72         32441       39.31          --
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214     41.58     77.72                     39.31          --
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+======================================== Details Table for Corner mode_norm.slow.RCmax =========================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.slow.RCmax, Scenario: mode_norm.slow.RCmax
+clock
+                                   L   remainder_reg_45_/CLK resHi_reg/CLK     75.70 r     36.39 r        --        --     39.31
+                                   L   remainder_reg_38_/CLK resHi_reg/CLK     75.61 r     36.39 r        --        --     39.22
+                                   L   remainder_reg_40_/CLK resHi_reg/CLK     72.02 r     36.39 r        --        --     35.63
+                                   L   remainder_reg_84_/CLK neg_out_reg/CLK     77.72 r     42.34 r        --        --     35.38
+                                   L   remainder_reg_65_/CLK neg_out_reg/CLK     77.71 r     42.34 r        --        --     35.36
+                                   S   state_reg_1_/CLK remainder_reg_84_/CLK     36.14 r     77.72 r        --        --    -41.58
+                                   S   state_reg_1_/CLK remainder_reg_65_/CLK     36.14 r     77.71 r        --        --    -41.56
+                                   S   state_reg_1_/CLK remainder_reg_72_/CLK     36.14 r     77.69 r        --        --    -41.54
+                                   S   state_reg_0_/CLK remainder_reg_84_/CLK     36.28 r     77.72 r        --        --    -41.45
+                                   S   state_reg_0_/CLK remainder_reg_65_/CLK     36.28 r     77.71 r        --        --    -41.43
+
+
+===================================================================
+==== Local Skew Reporting for Corner mode_norm.worst_low.RCmax ====
+===================================================================
+
+=============================== Summary Table for Corner mode_norm.worst_low.RCmax ===============================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+clock                                   M,D       214     52.22     97.22         32441       49.97          --
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                        214     52.22     97.22                     49.97          --
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+====================================== Details Table for Corner mode_norm.worst_low.RCmax ======================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: mode_norm.worst_low.RCmax, Scenario: mode_norm.worst_low.RCmax
+clock
+                                   L   remainder_reg_45_/CLK resHi_reg/CLK     95.21 r     45.24 r        --        --     49.97
+                                   L   remainder_reg_38_/CLK resHi_reg/CLK     95.12 r     45.24 r        --        --     49.88
+                                   L   remainder_reg_40_/CLK resHi_reg/CLK     90.94 r     45.24 r        --        --     45.70
+                                   L   remainder_reg_84_/CLK neg_out_reg/CLK     97.22 r     52.41 r        --        --     44.80
+                                   L   remainder_reg_65_/CLK neg_out_reg/CLK     97.20 r     52.41 r        --        --     44.78
+                                   S   state_reg_1_/CLK remainder_reg_84_/CLK     45.01 r     97.22 r        --        --    -52.20
+                                   S   state_reg_1_/CLK remainder_reg_65_/CLK     45.01 r     97.20 r        --        --    -52.19
+                                   S   state_reg_1_/CLK remainder_reg_72_/CLK     45.01 r     97.18 r        --        --    -52.17
+                                   S   state_reg_0_/CLK remainder_reg_84_/CLK     45.17 r     97.22 r        --        --    -52.05
+                                   S   state_reg_0_/CLK remainder_reg_65_/CLK     45.17 r     97.20 r        --        --    -52.03
+
+
+1

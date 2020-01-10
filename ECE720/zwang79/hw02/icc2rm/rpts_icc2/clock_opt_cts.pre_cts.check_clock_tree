@@ -1,0 +1,8 @@
+Information: CTS will work on the following scenarios. (CTS-101)
+   mode_norm.slow.RCmax	(Mode: mode_norm.slow.RCmax; Corner: mode_norm.slow.RCmax)
+   mode_norm.worst_low.RCmax	(Mode: mode_norm.worst_low.RCmax; Corner: mode_norm.worst_low.RCmax)
+   mode_norm.fast.RCmin_bc	(Mode: mode_norm.fast.RCmin_bc; Corner: mode_norm.fast.RCmin_bc)
+Error: The core area of this design is invalid. (CTS-118)
+ Fail to initialize clocks
+Error: 0
+      	Use error_info for more info. (CMD-013)

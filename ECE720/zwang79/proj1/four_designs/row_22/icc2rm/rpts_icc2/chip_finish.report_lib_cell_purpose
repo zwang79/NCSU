@@ -1,0 +1,85 @@
+****************************************
+Report : lib_cell
+Version: P-2019.03-SP1
+Date   : Sat Oct  5 20:07:42 2019
+****************************************
+
+full_name            valid_purposes             
+-------------------- ---------------------------
+NanGate_15nm_OCL/AND2_X1 power hold cts optimization
+NanGate_15nm_OCL/AND2_X2 power hold cts optimization
+NanGate_15nm_OCL/AND3_X1 power hold cts optimization
+NanGate_15nm_OCL/AND3_X2 power hold cts optimization
+NanGate_15nm_OCL/AND4_X1 power hold cts optimization
+NanGate_15nm_OCL/AND4_X2 power hold cts optimization
+NanGate_15nm_OCL/ANTENNA                            
+NanGate_15nm_OCL/AOI21_X1 power hold cts optimization
+NanGate_15nm_OCL/AOI21_X2 power hold cts optimization
+NanGate_15nm_OCL/AOI22_X1 power hold cts optimization
+NanGate_15nm_OCL/AOI22_X2 power hold cts optimization
+NanGate_15nm_OCL/BUF_X1 power hold cts optimization
+NanGate_15nm_OCL/BUF_X2 power hold cts optimization
+NanGate_15nm_OCL/BUF_X4 power hold cts optimization
+NanGate_15nm_OCL/BUF_X8 power hold cts optimization
+NanGate_15nm_OCL/BUF_X12 power hold cts optimization
+NanGate_15nm_OCL/BUF_X16 power hold cts optimization
+NanGate_15nm_OCL/CLKBUF_X1 power hold cts optimization
+NanGate_15nm_OCL/CLKBUF_X2 power hold cts optimization
+NanGate_15nm_OCL/CLKBUF_X4 power hold cts optimization
+NanGate_15nm_OCL/CLKBUF_X8 power hold cts optimization
+NanGate_15nm_OCL/CLKBUF_X12 power hold cts optimization
+NanGate_15nm_OCL/CLKBUF_X16 power hold cts optimization
+NanGate_15nm_OCL/CLKGATETST_X1 power hold cts optimization
+NanGate_15nm_OCL/DFFRNQ_X1 power hold cts optimization
+NanGate_15nm_OCL/DFFSNQ_X1 power hold cts optimization
+NanGate_15nm_OCL/FA_X1 power hold cts optimization
+NanGate_15nm_OCL/FILLTIE                            
+NanGate_15nm_OCL/FILL_X1                            
+NanGate_15nm_OCL/FILL_X2                            
+NanGate_15nm_OCL/FILL_X4                            
+NanGate_15nm_OCL/FILL_X8                            
+NanGate_15nm_OCL/FILL_X16                            
+NanGate_15nm_OCL/HA_X1 power hold cts optimization
+NanGate_15nm_OCL/INV_X1 power hold cts optimization
+NanGate_15nm_OCL/INV_X2 power hold cts optimization
+NanGate_15nm_OCL/INV_X4 power hold cts optimization
+NanGate_15nm_OCL/INV_X8 power hold cts optimization
+NanGate_15nm_OCL/INV_X12 power hold cts optimization
+NanGate_15nm_OCL/INV_X16 power hold cts optimization
+NanGate_15nm_OCL/LHQ_X1 power hold cts optimization
+NanGate_15nm_OCL/MUX2_X1 power hold cts optimization
+NanGate_15nm_OCL/NAND2_X1 power hold cts optimization
+NanGate_15nm_OCL/NAND2_X2 power hold cts optimization
+NanGate_15nm_OCL/NAND3_X1 power hold cts optimization
+NanGate_15nm_OCL/NAND3_X2 power hold cts optimization
+NanGate_15nm_OCL/NAND4_X1 power hold cts optimization
+NanGate_15nm_OCL/NAND4_X2 power hold cts optimization
+NanGate_15nm_OCL/NOR2_X1 power hold cts optimization
+NanGate_15nm_OCL/NOR2_X2 power hold cts optimization
+NanGate_15nm_OCL/NOR3_X1 power hold cts optimization
+NanGate_15nm_OCL/NOR3_X2 power hold cts optimization
+NanGate_15nm_OCL/NOR4_X1 power hold cts optimization
+NanGate_15nm_OCL/NOR4_X2 power hold cts optimization
+NanGate_15nm_OCL/OAI21_X1 power hold cts optimization
+NanGate_15nm_OCL/OAI21_X2 power hold cts optimization
+NanGate_15nm_OCL/OAI22_X1 power hold cts optimization
+NanGate_15nm_OCL/OAI22_X2 power hold cts optimization
+NanGate_15nm_OCL/OR2_X1 power hold cts optimization
+NanGate_15nm_OCL/OR2_X2 power hold cts optimization
+NanGate_15nm_OCL/OR3_X1 power hold cts optimization
+NanGate_15nm_OCL/OR3_X2 power hold cts optimization
+NanGate_15nm_OCL/OR4_X1 power hold cts optimization
+NanGate_15nm_OCL/OR4_X2 power hold cts optimization
+NanGate_15nm_OCL/SDFFRNQ_X1 power hold cts optimization
+NanGate_15nm_OCL/SDFFSNQ_X1 power hold cts optimization
+NanGate_15nm_OCL/TBUF_X1 power hold cts optimization
+NanGate_15nm_OCL/TBUF_X2 power hold cts optimization
+NanGate_15nm_OCL/TBUF_X4 power hold cts optimization
+NanGate_15nm_OCL/TBUF_X8 power hold cts optimization
+NanGate_15nm_OCL/TBUF_X12 power hold cts optimization
+NanGate_15nm_OCL/TBUF_X16 power hold cts optimization
+NanGate_15nm_OCL/TIEH                            
+NanGate_15nm_OCL/TIEL                            
+NanGate_15nm_OCL/XNOR2_X1 power hold cts optimization
+NanGate_15nm_OCL/XOR2_X1 power hold cts optimization
+1

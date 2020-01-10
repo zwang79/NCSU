@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : resources
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:44:05 2019
+****************************************
+
+
+Resource Report for this hierarchy in file
+        ../src/rtl/proj1/rocketchip_default.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| sub_x_7        | DW01_sub       | width=65   | sub_213462 (rocketchip_default.v:213462) |
+| sub_x_9        | DW01_sub       | width=64   | sub_213466 (rocketchip_default.v:213466) |
+| ashr_10        | DW_rightsh     | A_width=65 | sra_213494 (rocketchip_default.v:213494) |
+   |                | SH_width=6 |                            |
+| sub_x_11       | DW01_sub       | width=6    | sub_213505 (rocketchip_default.v:213505) |
+| ashr_12        | DW_rightsh     | A_width=127 | srl_213507 (rocketchip_default.v:213507) |
+  |                | SH_width=6 |                            |
+| add_x_14       | DW01_inc       | width=7    | add_213515 (rocketchip_default.v:213515) |
+| sub_x_110      | DW01_sub       | width=6    | sub_213839 (rocketchip_default.v:213839) |
+| ash_111        | DW_leftsh      | A_width=127 | sll_213846 (rocketchip_default.v:213846) |
+  |                | SH_width=6 |                            |
+| DP_OP_269J1_122_314             |            |                            |
+|                | DP_OP_269J1_122_314 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_269J1_122_314
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_269J1_122_314  | mult_213483 (rocketchip_default.v:213483)           |
+|                      | add_213485 (rocketchip_default.v:213485)            |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Signed   | 9     |                                          |
+| I2    | PI   | Signed   | 65    |                                          |
+| I3    | PI   | Signed   | 65    |                                          |
+| T7    | IFO  | Signed   | 73    | I1 * I2 (rocketchip_default.v:213483)    |
+| O1    | PO   | Signed   | 73    | T7 + I3 (rocketchip_default.v:213485)    |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_x_7            | DW01_sub         | pparch (area,speed)                 |
+| sub_x_9            | DW01_sub         | pparch (area,speed)                 |
+| ashr_10            | DW_rightsh       | astr (area)        |                |
+| sub_x_11           | DW01_sub         | apparch (area)     |                |
+| ashr_12            | DW_rightsh       | astr (area)        |                |
+| add_x_14           | DW01_inc         | apparch (area)     |                |
+| sub_x_110          | DW01_sub         | apparch (area)     |                |
+| ash_111            | DW_leftsh        | astr (area)        |                |
+| DP_OP_269J1_122_314                   |                    |                |
+|                    | DP_OP_269J1_122_314 | str (area,speed)                 |
+|                    |                  | mult_arch: benc_radix4              |
+===============================================================================
+
+1

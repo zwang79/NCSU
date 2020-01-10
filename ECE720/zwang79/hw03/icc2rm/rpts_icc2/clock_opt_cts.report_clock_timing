@@ -1,0 +1,109 @@
+****************************************
+Report : clock timing
+        -type summary
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:29:41 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+Scenario mode_norm.fast.RCmin is not configured for setup or hold analysis
+Mode mode_norm.fast.RCmin has no active scenarios.
+
+  Mode: mode_norm.fast.RCmin_bc
+  Clock: HCLK
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      u_logic_Jxs2z4_reg/CLK                                  81.86       rp-+   mode_norm.fast.RCmin_bc
+
+  Minimum setup capture latency:
+      u_logic_Umi3z4_reg/CLK                                  44.67       rp-+   mode_norm.fast.RCmin_bc
+
+  Minimum hold launch latency:
+      u_logic_Umi3z4_reg/CLK                                  44.67       rp-+   mode_norm.fast.RCmin_bc
+
+  Maximum hold capture latency:
+      u_logic_Jxs2z4_reg/CLK                                  81.86       rp-+   mode_norm.fast.RCmin_bc
+
+  Maximum active transition:
+      u_logic_A933z4_reg/CLK                                  10.62       rp-+   mode_norm.fast.RCmin_bc
+
+  Minimum active transition:
+      u_logic_Arn2z4_reg/CLK                                   2.48       rp-+   mode_norm.fast.RCmin_bc
+
+  Maximum setup skew:
+      u_logic_Jxs2z4_reg/CLK                                              rp-+   mode_norm.fast.RCmin_bc
+      u_logic_Umi3z4_reg/CLK                                  37.16       rp-+   mode_norm.fast.RCmin_bc
+
+  Maximum hold skew:
+      u_logic_Vuo2z4_reg/CLK                                              rp-+   mode_norm.fast.RCmin_bc
+      u_logic_Jxs2z4_reg/CLK                                  36.75       rp-+   mode_norm.fast.RCmin_bc
+
+
+
+  Mode: mode_norm.slow.RCmax
+  Clock: HCLK
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      u_logic_Jxs2z4_reg/CLK                                  85.60       rp-+   mode_norm.slow.RCmax
+
+  Minimum setup capture latency:
+      u_logic_Umi3z4_reg/CLK                                  46.94       rp-+   mode_norm.slow.RCmax
+
+  Minimum hold launch latency:
+      u_logic_Umi3z4_reg/CLK                                  46.94       rp-+   mode_norm.slow.RCmax
+
+  Maximum hold capture latency:
+      u_logic_Jxs2z4_reg/CLK                                  85.60       rp-+   mode_norm.slow.RCmax
+
+  Maximum active transition:
+      u_logic_A933z4_reg/CLK                                  12.09       rp-+   mode_norm.slow.RCmax
+
+  Minimum active transition:
+      u_logic_Arn2z4_reg/CLK                                   2.90       rp-+   mode_norm.slow.RCmax
+
+  Maximum setup skew:
+      u_logic_Jxs2z4_reg/CLK                                              rp-+   mode_norm.slow.RCmax
+      u_logic_Umi3z4_reg/CLK                                  38.64       rp-+   mode_norm.slow.RCmax
+
+  Maximum hold skew:
+      u_logic_Vuo2z4_reg/CLK                                              rp-+   mode_norm.slow.RCmax
+      u_logic_Jxs2z4_reg/CLK                                  38.11       rp-+   mode_norm.slow.RCmax
+
+
+Mode mode_norm.slow.RCmax_bc has no active scenarios.
+
+  Mode: mode_norm.worst_low.RCmax
+  Clock: HCLK
+                                                                                 Corner
+------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      u_logic_Jxs2z4_reg/CLK                                 106.01       rp-+   mode_norm.worst_low.RCmax
+
+  Minimum setup capture latency:
+      u_logic_Umi3z4_reg/CLK                                  56.69       rp-+   mode_norm.worst_low.RCmax
+
+  Minimum hold launch latency:
+      u_logic_Umi3z4_reg/CLK                                  56.69       rp-+   mode_norm.worst_low.RCmax
+
+  Maximum hold capture latency:
+      u_logic_Jxs2z4_reg/CLK                                 106.01       rp-+   mode_norm.worst_low.RCmax
+
+  Maximum active transition:
+      u_logic_Zjg3z4_reg/CLK                                  11.94       rp-+   mode_norm.worst_low.RCmax
+
+  Minimum active transition:
+      u_logic_Arn2z4_reg/CLK                                   3.03       rp-+   mode_norm.worst_low.RCmax
+
+  Maximum setup skew:
+      u_logic_Jxs2z4_reg/CLK                                              rp-+   mode_norm.worst_low.RCmax
+      u_logic_Umi3z4_reg/CLK                                  49.29       rp-+   mode_norm.worst_low.RCmax
+
+  Maximum hold skew:
+      u_logic_Vuo2z4_reg/CLK                                              rp-+   mode_norm.worst_low.RCmax
+      u_logic_Jxs2z4_reg/CLK                                  48.56       rp-+   mode_norm.worst_low.RCmax
+
+
+Mode mode_norm.worst_low.RCmax_bc has no active scenarios.
+1

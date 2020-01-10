@@ -1,0 +1,272 @@
+ 
+****************************************
+Report : Scan path
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:43:58 2019
+****************************************
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Specification
+========================================
+No scan path defined in this mode.
+
+ 
+****************************************
+Report : Scan path
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:43:58 2019
+****************************************
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path    Len   ScanDataIn  ScanDataOut ScanEnable  MasterClock SlaveClock
+-----------  ----- ----------- ----------- ----------- ----------- -----------
+I 1          214   test_si     io_resp_bits_tag[4] test_se clock   -
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path     Cell_#    Instance_name            Clocks
+---------     ------    -------------            ------
+I 1           0         divisor_reg_21_          clock 
+              1         divisor_reg_22_
+              2         divisor_reg_23_
+              3         divisor_reg_45_
+              4         divisor_reg_43_
+              5         divisor_reg_42_
+              6         divisor_reg_40_
+              7         divisor_reg_41_
+              8         divisor_reg_36_
+              9         divisor_reg_38_
+              10        divisor_reg_24_
+              11        divisor_reg_25_
+              12        divisor_reg_34_
+              13        divisor_reg_32_
+              14        divisor_reg_27_
+              15        divisor_reg_29_
+              16        divisor_reg_26_
+              17        remainder_reg_96_
+              18        remainder_reg_94_
+              19        remainder_reg_93_
+              20        remainder_reg_92_
+              21        remainder_reg_90_
+              22        remainder_reg_45_
+              23        remainder_reg_41_
+              24        remainder_reg_46_
+              25        remainder_reg_60_
+              26        remainder_reg_37_
+              27        remainder_reg_47_
+              28        remainder_reg_57_
+              29        remainder_reg_40_
+              30        remainder_reg_39_
+              31        remainder_reg_55_
+              32        remainder_reg_56_
+              33        remainder_reg_110_
+              34        remainder_reg_87_
+              35        remainder_reg_102_
+              36        remainder_reg_43_
+              37        remainder_reg_88_
+              38        remainder_reg_44_
+              39        remainder_reg_42_
+              40        remainder_reg_89_
+              41        remainder_reg_104_
+              42        remainder_reg_103_
+              43        remainder_reg_91_
+              44        remainder_reg_98_
+              45        remainder_reg_97_
+              46        remainder_reg_95_
+              47        divisor_reg_28_
+              48        state_reg_0_
+              49        state_reg_1_
+              50        state_reg_2_
+              51        neg_out_reg
+              52        count_reg_6_
+              53        count_reg_5_
+              54        count_reg_3_
+              55        count_reg_1_
+              56        count_reg_0_
+              57        remainder_reg_58_
+              58        remainder_reg_63_
+              59        remainder_reg_59_
+              60        remainder_reg_62_
+              61        remainder_reg_61_
+              62        resHi_reg
+              63        count_reg_2_
+              64        count_reg_4_
+              65        req_dw_reg
+              66        isHi_reg
+              67        remainder_reg_99_
+              68        remainder_reg_100_
+              69        remainder_reg_101_
+              70        remainder_reg_106_
+              71        remainder_reg_105_
+              72        remainder_reg_108_
+              73        remainder_reg_107_
+              74        remainder_reg_109_
+              75        remainder_reg_112_
+              76        remainder_reg_111_
+              77        remainder_reg_85_
+              78        remainder_reg_7_
+              79        remainder_reg_113_
+              80        remainder_reg_0_
+              81        remainder_reg_114_
+              82        remainder_reg_84_
+              83        remainder_reg_115_
+              84        remainder_reg_81_
+              85        remainder_reg_83_
+              86        remainder_reg_79_
+              87        remainder_reg_77_
+              88        remainder_reg_74_
+              89        remainder_reg_72_
+              90        remainder_reg_68_
+              91        remainder_reg_69_
+              92        remainder_reg_67_
+              93        remainder_reg_65_
+              94        remainder_reg_50_
+              95        remainder_reg_49_
+              96        remainder_reg_33_
+              97        remainder_reg_3_
+              98        remainder_reg_5_
+              99        remainder_reg_8_
+              100       remainder_reg_11_
+              101       remainder_reg_12_
+              102       remainder_reg_13_
+              103       remainder_reg_14_
+              104       remainder_reg_9_
+              105       remainder_reg_10_
+              106       remainder_reg_15_
+              107       remainder_reg_16_
+              108       remainder_reg_19_
+              109       remainder_reg_17_
+              110       remainder_reg_18_
+              111       remainder_reg_22_
+              112       remainder_reg_20_
+              113       remainder_reg_23_
+              114       remainder_reg_27_
+              115       remainder_reg_29_
+              116       remainder_reg_30_
+              117       remainder_reg_24_
+              118       remainder_reg_28_
+              119       remainder_reg_21_
+              120       remainder_reg_25_
+              121       remainder_reg_26_
+              122       remainder_reg_31_
+              123       remainder_reg_38_
+              124       remainder_reg_54_
+              125       remainder_reg_53_
+              126       remainder_reg_52_
+              127       remainder_reg_66_
+              128       remainder_reg_36_
+              129       remainder_reg_35_
+              130       remainder_reg_51_
+              131       remainder_reg_48_
+              132       remainder_reg_32_
+              133       remainder_reg_34_
+              134       remainder_reg_1_
+              135       remainder_reg_2_
+              136       remainder_reg_4_
+              137       remainder_reg_6_
+              138       remainder_reg_70_
+              139       divisor_reg_2_
+              140       divisor_reg_1_
+              141       divisor_reg_3_
+              142       divisor_reg_4_
+              143       divisor_reg_5_
+              144       divisor_reg_6_
+              145       divisor_reg_7_
+              146       divisor_reg_8_
+              147       divisor_reg_9_
+              148       divisor_reg_10_
+              149       divisor_reg_11_
+              150       divisor_reg_12_
+              151       divisor_reg_14_
+              152       remainder_reg_64_
+              153       remainder_reg_120_
+              154       remainder_reg_78_
+              155       remainder_reg_73_
+              156       divisor_reg_0_
+              157       remainder_reg_71_
+              158       remainder_reg_76_
+              159       remainder_reg_75_
+              160       remainder_reg_82_
+              161       remainder_reg_86_
+              162       remainder_reg_118_
+              163       divisor_reg_18_
+              164       remainder_reg_80_
+              165       remainder_reg_116_
+              166       remainder_reg_117_
+              167       remainder_reg_121_
+              168       remainder_reg_124_
+              169       remainder_reg_119_
+              170       divisor_reg_64_
+              171       remainder_reg_123_
+              172       remainder_reg_126_
+              173       remainder_reg_125_
+              174       remainder_reg_122_
+              175       divisor_reg_15_
+              176       remainder_reg_129_
+              177       remainder_reg_128_
+              178       remainder_reg_127_
+              179       divisor_reg_13_
+              180       divisor_reg_61_
+              181       divisor_reg_17_
+              182       divisor_reg_62_
+              183       divisor_reg_60_
+              184       divisor_reg_57_
+              185       divisor_reg_55_
+              186       divisor_reg_59_
+              187       divisor_reg_58_
+              188       divisor_reg_56_
+              189       divisor_reg_53_
+              190       divisor_reg_54_
+              191       divisor_reg_52_
+              192       divisor_reg_51_
+              193       divisor_reg_49_
+              194       divisor_reg_50_
+              195       divisor_reg_16_
+              196       divisor_reg_63_
+              197       divisor_reg_19_
+              198       divisor_reg_20_
+              199       divisor_reg_48_
+              200       divisor_reg_47_
+              201       divisor_reg_46_
+              202       divisor_reg_44_
+              203       divisor_reg_39_
+              204       divisor_reg_37_
+              205       divisor_reg_35_
+              206       divisor_reg_33_
+              207       divisor_reg_30_
+              208       divisor_reg_31_
+              209       req_tag_reg_3_
+              210       req_tag_reg_2_
+              211       req_tag_reg_0_
+              212       req_tag_reg_1_
+              213       req_tag_reg_4_
+
+1

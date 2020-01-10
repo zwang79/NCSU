@@ -1,0 +1,369 @@
+ 
+****************************************
+Report : timing
+        -path full_clock
+        -delay min
+        -physical
+        -derate
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -crosstalk_delta
+        -capacitance
+Design : MulDiv
+Scenario(s): mode_norm.slow.RCmax mode_norm.worst_low.RCmax mode_norm.fast.RCmin
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:44:05 2019
+****************************************
+
+ * Some/all delay information is back-annotated.
+Wire Load Model Mode: Inactive.
+
+  Startpoint: io_req_bits_dw
+              (input port clocked by clock)
+  Endpoint: req_dw_reg (rising edge-triggered flip-flop clocked by clock)
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGIN
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  input external delay                                                                     120.000    120.000 f                                          
+  io_req_bits_dw (in)                                        10.651                          5.543    125.543 f    (26.02, 0.01)                         
+  io_req_bits_dw (net)           6        7.219                                              0.000    125.543 f    [1.90,7.22]                           
+  req_dw_reg/D (SDFFSNQ_X1)                         0.000    10.651     0.000                0.543 *  126.086 f    (26.78, 3.48)                         0.72
+  data arrival time                                                                                   126.086                                            
+
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                         20.000     20.000                                            
+  req_dw_reg/CLK (SDFFSNQ_X1)                                                                0.000     20.000 r                                          
+  library hold time                                                                          6.300     26.300                                            
+  data required time                                                                                   26.300                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   26.300                                            
+  data arrival time                                                                                  -126.086                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                          99.786                                            
+
+
+  Startpoint: req_tag_reg_4_
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: io_resp_bits_tag[4]
+            (output port clocked by clock)
+  Scenario: mode_norm.slow.RCmax
+  Path Group: REGOUT
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  req_tag_reg_4_/CLK (SDFFSNQ_X1)                   0.000     0.000     0.000                0.000      0.000 r    ( 7.45, 2.74)                         0.72
+  req_tag_reg_4_/Q (SDFFSNQ_X1)                               5.025                         10.283     10.283 r    ( 9.24, 2.73)                         0.72
+  io_resp_bits_tag[4] (net)      1        2.757                                              0.000     10.283 r    [0.21,2.76]                           
+  io_resp_bits_tag[4] (out)                         0.000     5.025     0.000                0.355 *   10.638 r    ( 9.25, 0.01)                         
+  data arrival time                                                                                    10.638                                            
+
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                         20.000     20.000                                            
+  output external delay                                                                   -120.000   -100.000                                            
+  data required time                                                                                 -100.000                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                 -100.000                                            
+  data arrival time                                                                                   -10.638                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                         110.638                                            
+
+
+  Startpoint: divisor_reg_63_
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: divisor_reg_19_
+            (rising edge-triggered flip-flop clocked by clock)
+  Scenario: mode_norm.slow.RCmax
+  Path Group: clock
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  divisor_reg_63_/CLK (SDFFSNQ_X1)                  0.000     0.000     0.000                0.000      0.000 r    (14.47,38.20)                         0.72
+  divisor_reg_63_/Q (SDFFSNQ_X1)                             41.679                         28.004     28.004 r    (16.26,38.19)                         0.72
+  n_T_56[63] (net)              16       28.916                                              0.000     28.004 r    [8.43,28.92]                          
+  divisor_reg_19_/SI (SDFFSNQ_X1)                   0.000    41.679     0.000                1.379 *   29.383 r    (14.92,36.86)                         0.72
+  data arrival time                                                                                    29.383                                            
+
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                         20.000     20.000                                            
+  divisor_reg_19_/CLK (SDFFSNQ_X1)                                                           0.000     20.000 r                                          
+  library hold time                                                                         28.525     48.525                                            
+  data required time                                                                                   48.525                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   48.525                                            
+  data arrival time                                                                                   -29.383                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                    -19.141                                            
+
+
+  Startpoint: io_req_bits_tag[1]
+              (input port clocked by clock)
+  Endpoint: req_tag_reg_1_
+            (rising edge-triggered flip-flop clocked by clock)
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGIN
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  input external delay                                                                     120.000    120.000 f                                          
+  io_req_bits_tag[1] (in)                                     2.430                          0.763    120.763 f    ( 7.07, 0.01)                         
+  io_req_bits_tag[1] (net)       1        0.516                                              0.000    120.763 f    [0.13,0.52]                           
+  req_tag_reg_1_/D (SDFFSNQ_X1)                     0.000     2.430     0.000                0.041 *  120.804 f    ( 7.09, 1.75)                         0.72
+  data arrival time                                                                                   120.804                                            
+
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                         20.000     20.000                                            
+  req_tag_reg_1_/CLK (SDFFSNQ_X1)                                                            0.000     20.000 r                                          
+  library hold time                                                                          0.598     20.598                                            
+  data required time                                                                                   20.598                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   20.598                                            
+  data arrival time                                                                                  -120.804                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                         100.207                                            
+
+
+  Startpoint: req_tag_reg_4_
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: io_resp_bits_tag[4]
+            (output port clocked by clock)
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: REGOUT
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  req_tag_reg_4_/CLK (SDFFSNQ_X1)                   0.000     0.000     0.000                0.000      0.000 r    ( 7.45, 2.74)                         0.72
+  req_tag_reg_4_/Q (SDFFSNQ_X1)                               5.794                         13.565     13.565 r    ( 9.24, 2.73)                         0.72
+  io_resp_bits_tag[4] (net)      1        2.757                                              0.000     13.565 r    [0.21,2.76]                           
+  io_resp_bits_tag[4] (out)                         0.000     5.794     0.000                0.355 *   13.920 r    ( 9.25, 0.01)                         
+  data arrival time                                                                                    13.920                                            
+
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                         20.000     20.000                                            
+  output external delay                                                                   -120.000   -100.000                                            
+  data required time                                                                                 -100.000                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                 -100.000                                            
+  data arrival time                                                                                   -13.920                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                         113.920                                            
+
+
+  Startpoint: state_reg_0_
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: state_reg_1_
+            (rising edge-triggered flip-flop clocked by clock)
+  Scenario: mode_norm.worst_low.RCmax
+  Path Group: clock
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  state_reg_0_/CLK (SDFFSNQ_X1)                     0.000     0.000     0.000                0.000      0.000 r    (25.47, 6.46)                         0.72
+  state_reg_0_/Q (SDFFSNQ_X1)                                41.224                         35.473     35.473 f    (27.27, 6.45)                         0.72
+  n_T_460_0_ (net)              17       27.201                                              0.000     35.473 f    [11.77,27.20]                         
+  state_reg_1_/SI (SDFFSNQ_X1)                      0.000    41.224     0.000                0.775 *   36.248 f    (26.39, 5.57)                         0.72
+  data arrival time                                                                                    36.248                                            
+
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                         20.000     20.000                                            
+  state_reg_1_/CLK (SDFFSNQ_X1)                                                              0.000     20.000 r                                          
+  library hold time                                                                         26.852     46.852                                            
+  data required time                                                                                   46.852                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   46.852                                            
+  data arrival time                                                                                   -36.248                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                    -10.604                                            
+
+
+  Startpoint: io_req_bits_dw
+              (input port clocked by clock)
+  Endpoint: req_dw_reg (rising edge-triggered flip-flop clocked by clock)
+  Scenario: mode_norm.fast.RCmin
+  Path Group: REGIN
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  input external delay                                                                     120.000    120.000 f                                          
+  io_req_bits_dw (in)                                         9.833                          5.430    125.430 f    (26.02, 0.01)                         
+  io_req_bits_dw (net)           6        7.229                                              0.000    125.430 f    [1.70,7.23]                           
+  req_dw_reg/D (SDFFSNQ_X1)                         0.000     9.833     0.000                0.472 *  125.903 f    (26.78, 3.48)                         0.88
+  data arrival time                                                                                   125.903                                            
+
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                         20.000     20.000                                            
+  req_dw_reg/CLK (SDFFSNQ_X1)                                                                0.000     20.000 r                                          
+  library hold time                                                                          6.315     26.315                                            
+  data required time                                                                                   26.315                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   26.315                                            
+  data arrival time                                                                                  -125.903                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                          99.588                                            
+
+
+  Startpoint: req_tag_reg_4_
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: io_resp_bits_tag[4]
+            (output port clocked by clock)
+  Scenario: mode_norm.fast.RCmin
+  Path Group: REGOUT
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  req_tag_reg_4_/CLK (SDFFSNQ_X1)                   0.000     0.000     0.000                0.000      0.000 r    ( 7.45, 2.74)                         0.88
+  req_tag_reg_4_/Q (SDFFSNQ_X1)                               4.733                         10.450     10.450 r    ( 9.24, 2.73)                         0.88
+  io_resp_bits_tag[4] (net)      1        2.734                                              0.000     10.450 r    [0.19,2.73]                           
+  io_resp_bits_tag[4] (out)                         0.000     4.733     0.000                0.301 *   10.751 r    ( 9.25, 0.01)                         
+  data arrival time                                                                                    10.751                                            
+
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                         20.000     20.000                                            
+  output external delay                                                                   -120.000   -100.000                                            
+  data required time                                                                                 -100.000                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                 -100.000                                            
+  data arrival time                                                                                   -10.751                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                         110.751                                            
+
+
+  Startpoint: divisor_reg_63_
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: divisor_reg_19_
+            (rising edge-triggered flip-flop clocked by clock)
+  Scenario: mode_norm.fast.RCmin
+  Path Group: clock
+  Path Type: min
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout       Cap     DTran     Trans     Delta     Derate      Incr       Path      Location / Load        Attributes     Voltage
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  divisor_reg_63_/CLK (SDFFSNQ_X1)                  0.000     0.000     0.000                0.000      0.000 r    (14.47,38.20)                         0.88
+  divisor_reg_63_/Q (SDFFSNQ_X1)                             39.905                         28.747     28.747 r    (16.26,38.19)                         0.88
+  n_T_56[63] (net)              16       28.954                                              0.000     28.747 r    [7.52,28.95]                          
+  divisor_reg_19_/SI (SDFFSNQ_X1)                   0.000    39.905     0.000                1.172 *   29.919 r    (14.92,36.86)                         0.88
+  data arrival time                                                                                    29.919                                            
+
+  clock clock (rise edge)                                                                    0.000      0.000                                            
+  clock network delay (ideal)                                                                0.000      0.000                                            
+  clock uncertainty                                                                         20.000     20.000                                            
+  divisor_reg_19_/CLK (SDFFSNQ_X1)                                                           0.000     20.000 r                                          
+  library hold time                                                                         26.507     46.507                                            
+  data required time                                                                                   46.507                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                   46.507                                            
+  data arrival time                                                                                   -29.919                                            
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                    -16.587                                            
+
+
+1

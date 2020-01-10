@@ -1,0 +1,20 @@
+****************************************
+Report : check_netlist
+        -cells
+        -nets
+        -ports
+        -summary
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:44:36 2019
+****************************************
+             Name                                                          Total
+--------------------------------------------------------------------------------
+Port                                                                           1
+             (DCHK-017) Input port unloaded                                    1
+Net                                                                            2
+             (DCHK-009) Net has no load                                        1
+             (DCHK-010) Net has no driver                                      1
+--------------------------------------------------------------------------------
+Information: Use the related options for more information about warnings. (DCHK-042)
+1

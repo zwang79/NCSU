@@ -1,0 +1,482 @@
+
+Running global router for congestion map ...
+Info: Set app option 'route.global.deterministic' to on
+
+Generating Timing information  
+Design  Scenario mode_norm.slow.RCmax (Mode mode_norm.slow.RCmax Corner mode_norm.slow.RCmax)
+Estimated unitRes/unitCap :
+Layer M1 : Res  46.4286 ohm/um Cap  0.148637 ff/um
+Layer MINT1 : Res  46.4286 ohm/um Cap  0.154683 ff/um
+Layer MINT2 : Res  46.4286 ohm/um Cap  0.154827 ff/um
+Layer MINT3 : Res  46.4286 ohm/um Cap  0.154839 ff/um
+Layer MINT4 : Res  46.4286 ohm/um Cap  0.154828 ff/um
+Layer MINT5 : Res  46.4286 ohm/um Cap  0.154674 ff/um
+Layer MSMG1 : Res  8.03571 ohm/um Cap  0.196653 ff/um
+Layer MSMG2 : Res  8.03571 ohm/um Cap  0.184306 ff/um
+Layer MSMG3 : Res  8.03571 ohm/um Cap  0.18422 ff/um
+Layer MSMG4 : Res  8.03571 ohm/um Cap  0.184207 ff/um
+Layer MSMG5 : Res  8.03571 ohm/um Cap  0.184091 ff/um
+Layer MG1 : Res  0.892857 ohm/um Cap  0.194736 ff/um
+Layer MG2 : Res  0.892857 ohm/um Cap  0.177243 ff/um
+Generating Timing information  ... Done
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used    5  Alloctr    5  Proc 2328 
+Printing options for 'route.common.*'
+
+Printing options for 'route.global.*'
+global.deterministic                                    :	 on                  
+global.timing_driven                                    :	 true                
+
+Begin global routing.
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MINT3
+Warning: The step 0.064 of horizontal track TRACK_13 is less than the pitch 0.112 of layer MSMG1. (ZRT-642)
+Warning: The step 0.112 of vertical track TRACK_23 is less than the pitch 0.224 of layer MG1. (ZRT-642)
+Warning: 779 horizontal tracks are found in area (0, 0, 49.472, 49.92) of layer MSMG1. The quantity of tracks is unreasonably high. (ZRT-642)
+Warning: 441 vertical tracks are found in area (0, 0, 49.472, 49.92) of layer MG1. The quantity of tracks is unreasonably high. (ZRT-642)
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Skipping 1 internal pins that are not physical. Set route.common.verbose_level to > 0 and run routing command to get skipped pin names.
+Info: number of net_type_blockage: 0 
+Current Stage stats:
+[End of Read DB] Elapsed real time: 0:00:00 
+[End of Read DB] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Read DB] Stage (MB): Used  140  Alloctr  140  Proc    0 
+[End of Read DB] Total (MB): Used  145  Alloctr  146  Proc 2328 
+Loading timing information to the router from design
+Timing information loaded to the router.
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (0.00,0.00,49.47,49.92)
+Number of routing layers = 13
+layer M1, dir Ver, min width = 0.028, min space = 0.036 pitch = 0.064
+layer MINT1, dir Hor, min width = 0.028, min space = 0.036 pitch = 0.064
+layer MINT2, dir Ver, min width = 0.028, min space = 0.036 pitch = 0.064
+layer MINT3, dir Hor, min width = 0.028, min space = 0.036 pitch = 0.064
+layer MINT4, dir Ver, min width = 0.028, min space = 0.036 pitch = 0.064
+layer MINT5, dir Hor, min width = 0.028, min space = 0.036 pitch = 0.064
+layer MSMG1, dir Ver, min width = 0.056, min space = 0.056 pitch = 0.112
+layer MSMG2, dir Hor, min width = 0.056, min space = 0.056 pitch = 0.112
+layer MSMG3, dir Ver, min width = 0.056, min space = 0.056 pitch = 0.112
+layer MSMG4, dir Hor, min width = 0.056, min space = 0.056 pitch = 0.112
+layer MSMG5, dir Ver, min width = 0.056, min space = 0.056 pitch = 0.112
+layer MG1, dir Hor, min width = 0.112, min space = 0.112 pitch = 0.224
+layer MG2, dir Ver, min width = 0.112, min space = 0.112 pitch = 0.224
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Tech Data] Total (MB): Used  147  Alloctr  148  Proc 2328 
+Warning: Power net VDD has no power preroutes, skip tie-off. (ZRT-101)
+Warning: Power net VSS has no power preroutes, skip tie-off. (ZRT-101)
+Net statistics:
+Total number of nets     = 4484
+Number of nets to route  = 4470
+14 nets are fully connected,
+ of which 14 are detail routed and 0 are global routed.
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    1  Alloctr    1  Proc    0 
+[End of Build All Nets] Total (MB): Used  148  Alloctr  150  Proc 2328 
+Average gCell capacity  0.75	 on layer (1)	 M1
+Average gCell capacity  11.18	 on layer (2)	 MINT1
+Average gCell capacity  11.95	 on layer (3)	 MINT2
+Average gCell capacity  11.93	 on layer (4)	 MINT3
+Average gCell capacity  12.06	 on layer (5)	 MINT4
+Average gCell capacity  0.00	 on layer (6)	 MINT5
+Average gCell capacity  0.00	 on layer (7)	 MSMG1
+Average gCell capacity  0.00	 on layer (8)	 MSMG2
+Average gCell capacity  0.00	 on layer (9)	 MSMG3
+Average gCell capacity  0.00	 on layer (10)	 MSMG4
+Average gCell capacity  0.00	 on layer (11)	 MSMG5
+Average gCell capacity  0.00	 on layer (12)	 MG1
+Average gCell capacity  0.00	 on layer (13)	 MG2
+Average number of tracks per gCell 12.09	 on layer (1)	 M1
+Average number of tracks per gCell 12.02	 on layer (2)	 MINT1
+Average number of tracks per gCell 12.09	 on layer (3)	 MINT2
+Average number of tracks per gCell 12.02	 on layer (4)	 MINT3
+Average number of tracks per gCell 12.09	 on layer (5)	 MINT4
+Average number of tracks per gCell 12.02	 on layer (6)	 MINT5
+Average number of tracks per gCell 6.92	 on layer (7)	 MSMG1
+Average number of tracks per gCell 6.88	 on layer (8)	 MSMG2
+Average number of tracks per gCell 6.92	 on layer (9)	 MSMG3
+Average number of tracks per gCell 6.88	 on layer (10)	 MSMG4
+Average number of tracks per gCell 6.92	 on layer (11)	 MSMG5
+Average number of tracks per gCell 3.45	 on layer (12)	 MG1
+Average number of tracks per gCell 3.47	 on layer (13)	 MG2
+Number of gCells = 54080
+Current Stage stats:
+[End of Build Congestion map] Elapsed real time: 0:00:00 
+[End of Build Congestion map] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Congestion map] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Build Congestion map] Total (MB): Used  149  Alloctr  150  Proc 2328 
+Information: RC layer preference is turned off for this design. (ZRT-613)
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:00 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Data] Stage (MB): Used    3  Alloctr    3  Proc    0 
+[End of Build Data] Total (MB): Used  150  Alloctr  151  Proc 2328 
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:00 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Blocked Pin Detection] Stage (MB): Used   32  Alloctr   32  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used  182  Alloctr  183  Proc 2328 
+Information: Using 8 threads for routing. (ZRT-444)
+multi gcell levels ON
+
+Start GR phase 0
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:01 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Initial Routing] Stage (MB): Used    3  Alloctr    3  Proc    0 
+[End of Initial Routing] Total (MB): Used  185  Alloctr  186  Proc 2328 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =  6098 Max = 13 GRCs =  2090 (25.12%)
+Initial. H routing: Overflow =   135 Max =  5 (GRCs =  2) GRCs =   131 (3.15%)
+Initial. V routing: Overflow =  5963 Max = 13 (GRCs =  1) GRCs =  1959 (47.09%)
+Initial. M1         Overflow =    27 Max =  2 (GRCs =  3) GRCs =    24 (0.58%)
+Initial. MINT1      Overflow =   135 Max =  5 (GRCs =  2) GRCs =   131 (3.15%)
+Initial. MINT2      Overflow =  5936 Max = 13 (GRCs =  1) GRCs =  1935 (46.51%)
+Initial. MINT3      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MINT4      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MINT5      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MSMG1      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MSMG2      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MSMG3      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MSMG4      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MSMG5      Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MG1        Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MG2        Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       90.6 1.83 0.65 1.42 0.00 1.68 0.38 0.05 0.00 0.00 2.74 0.00 0.00 0.58
+MINT1    10.7 9.95 6.78 6.83 5.48 19.0 12.2 9.81 8.68 6.15 3.82 0.22 0.12 0.05
+MINT2    1.47 2.45 2.57 2.52 3.70 8.73 5.02 5.24 5.70 6.88 20.0 11.3 8.53 15.7
+MINT3    11.6 11.4 10.9 13.0 15.1 25.1 7.24 3.41 1.37 0.41 0.17 0.00 0.00 0.00
+MINT4    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MINT5    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG1    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG2    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG3    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG4    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG5    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MG1      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MG2      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    78.0 1.97 1.61 1.83 1.87 4.20 1.92 1.42 1.21 1.03 2.06 0.89 0.67 1.26
+
+
+Initial. Total Wire Length = 53310.82
+Initial. Layer M1 wire length = 326.13
+Initial. Layer MINT1 wire length = 10346.50
+Initial. Layer MINT2 wire length = 29640.01
+Initial. Layer MINT3 wire length = 12997.22
+Initial. Layer MINT4 wire length = 0.96
+Initial. Layer MINT5 wire length = 0.00
+Initial. Layer MSMG1 wire length = 0.00
+Initial. Layer MSMG2 wire length = 0.00
+Initial. Layer MSMG3 wire length = 0.00
+Initial. Layer MSMG4 wire length = 0.00
+Initial. Layer MSMG5 wire length = 0.00
+Initial. Layer MG1 wire length = 0.00
+Initial. Layer MG2 wire length = 0.00
+Initial. Total Number of Contacts = 35080
+Initial. Via V1_0 count = 16351
+Initial. Via VINT1_0 count = 14313
+Initial. Via VINT2_0 count = 4414
+Initial. Via VINT3_0 count = 2
+Initial. Via VINT4_0 count = 0
+Initial. Via VINT5_0 count = 0
+Initial. Via VSMG1_0 count = 0
+Initial. Via VSMG2_0 count = 0
+Initial. Via VSMG3_0 count = 0
+Initial. Via VSMG4_0 count = 0
+Initial. Via VSMG5_0 count = 0
+Initial. Via VG1_0 count = 0
+Initial. completed.
+
+Start GR phase 1
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:02 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  186  Alloctr  187  Proc 2328 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =  3674 Max = 5 GRCs =  2115 (25.42%)
+phase1. H routing: Overflow =   205 Max = 3 (GRCs =  6) GRCs =   244 (5.87%)
+phase1. V routing: Overflow =  3469 Max = 5 (GRCs = 23) GRCs =  1871 (44.98%)
+phase1. M1         Overflow =   169 Max = 4 (GRCs =  1) GRCs =   121 (2.91%)
+phase1. MINT1      Overflow =   203 Max = 3 (GRCs =  6) GRCs =   242 (5.82%)
+phase1. MINT2      Overflow =  3300 Max = 5 (GRCs = 23) GRCs =  1750 (42.07%)
+phase1. MINT3      Overflow =     2 Max = 1 (GRCs =  2) GRCs =     2 (0.05%)
+phase1. MINT4      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MINT5      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MSMG1      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MSMG2      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MSMG3      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MSMG4      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MSMG5      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MG1        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MG2        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       85.9 1.01 0.82 1.71 0.12 1.44 1.06 0.17 0.36 0.00 4.42 0.02 0.05 2.84
+MINT1    6.11 9.35 7.38 7.52 2.74 13.2 11.0 12.3 11.6 10.5 7.81 0.31 0.00 0.00
+MINT2    0.65 1.44 2.02 2.88 4.88 9.52 3.56 3.15 4.64 8.89 35.2 13.4 6.85 2.81
+MINT3    9.33 9.11 10.0 9.78 12.1 29.4 9.50 4.98 3.29 1.66 0.84 0.00 0.00 0.00
+MINT4    99.9 0.05 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MINT5    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG1    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG2    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG3    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG4    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG5    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MG1      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MG2      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    77.0 1.61 1.56 1.68 1.53 4.12 1.93 1.59 1.53 1.63 3.72 1.06 0.53 0.43
+
+
+phase1. Total Wire Length = 56321.07
+phase1. Layer M1 wire length = 619.94
+phase1. Layer MINT1 wire length = 12552.05
+phase1. Layer MINT2 wire length = 28351.39
+phase1. Layer MINT3 wire length = 14788.15
+phase1. Layer MINT4 wire length = 9.54
+phase1. Layer MINT5 wire length = 0.00
+phase1. Layer MSMG1 wire length = 0.00
+phase1. Layer MSMG2 wire length = 0.00
+phase1. Layer MSMG3 wire length = 0.00
+phase1. Layer MSMG4 wire length = 0.00
+phase1. Layer MSMG5 wire length = 0.00
+phase1. Layer MG1 wire length = 0.00
+phase1. Layer MG2 wire length = 0.00
+phase1. Total Number of Contacts = 36137
+phase1. Via V1_0 count = 16802
+phase1. Via VINT1_0 count = 13972
+phase1. Via VINT2_0 count = 5337
+phase1. Via VINT3_0 count = 26
+phase1. Via VINT4_0 count = 0
+phase1. Via VINT5_0 count = 0
+phase1. Via VSMG1_0 count = 0
+phase1. Via VSMG2_0 count = 0
+phase1. Via VSMG3_0 count = 0
+phase1. Via VSMG4_0 count = 0
+phase1. Via VSMG5_0 count = 0
+phase1. Via VG1_0 count = 0
+phase1. completed.
+
+Start GR phase 2
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:01 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  186  Alloctr  187  Proc 2328 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =  3270 Max = 5 GRCs =  2117 (25.44%)
+phase2. H routing: Overflow =   181 Max = 3 (GRCs =  1) GRCs =   247 (5.94%)
+phase2. V routing: Overflow =  3089 Max = 5 (GRCs =  2) GRCs =  1870 (44.95%)
+phase2. M1         Overflow =   149 Max = 4 (GRCs =  1) GRCs =   111 (2.67%)
+phase2. MINT1      Overflow =   177 Max = 3 (GRCs =  1) GRCs =   243 (5.84%)
+phase2. MINT2      Overflow =  2940 Max = 5 (GRCs =  2) GRCs =  1759 (42.28%)
+phase2. MINT3      Overflow =     4 Max = 1 (GRCs =  4) GRCs =     4 (0.10%)
+phase2. MINT4      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MINT5      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MSMG1      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MSMG2      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MSMG3      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MSMG4      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MSMG5      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MG1        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MG2        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       85.5 1.35 0.79 1.68 0.12 1.39 1.13 0.14 0.38 0.00 4.81 0.00 0.14 2.52
+MINT1    4.47 8.39 7.69 8.20 2.88 10.6 11.1 13.3 12.5 12.3 8.22 0.24 0.00 0.00
+MINT2    0.62 1.37 1.37 3.34 4.83 9.83 3.29 2.81 3.89 6.78 40.3 15.9 4.86 0.62
+MINT3    8.34 8.39 9.09 9.35 12.4 29.4 9.76 5.94 3.99 1.92 1.35 0.00 0.00 0.00
+MINT4    99.9 0.10 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MINT5    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG1    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG2    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG3    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG4    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG5    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MG1      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MG2      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    76.8 1.51 1.46 1.74 1.56 3.94 1.95 1.71 1.60 1.62 4.21 1.25 0.38 0.24
+
+
+phase2. Total Wire Length = 58661.85
+phase2. Layer M1 wire length = 662.93
+phase2. Layer MINT1 wire length = 14586.99
+phase2. Layer MINT2 wire length = 28068.87
+phase2. Layer MINT3 wire length = 15291.14
+phase2. Layer MINT4 wire length = 51.92
+phase2. Layer MINT5 wire length = 0.00
+phase2. Layer MSMG1 wire length = 0.00
+phase2. Layer MSMG2 wire length = 0.00
+phase2. Layer MSMG3 wire length = 0.00
+phase2. Layer MSMG4 wire length = 0.00
+phase2. Layer MSMG5 wire length = 0.00
+phase2. Layer MG1 wire length = 0.00
+phase2. Layer MG2 wire length = 0.00
+phase2. Total Number of Contacts = 36458
+phase2. Via V1_0 count = 16816
+phase2. Via VINT1_0 count = 13993
+phase2. Via VINT2_0 count = 5515
+phase2. Via VINT3_0 count = 134
+phase2. Via VINT4_0 count = 0
+phase2. Via VINT5_0 count = 0
+phase2. Via VSMG1_0 count = 0
+phase2. Via VSMG2_0 count = 0
+phase2. Via VSMG3_0 count = 0
+phase2. Via VSMG4_0 count = 0
+phase2. Via VSMG5_0 count = 0
+phase2. Via VG1_0 count = 0
+phase2. completed.
+
+Start GR phase 3
+Current Stage stats:
+[End of Phase3 Routing] Elapsed real time: 0:00:00 
+[End of Phase3 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Phase3 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase3 Routing] Total (MB): Used  186  Alloctr  187  Proc 2328 
+phase3. Routing result:
+phase3. Both Dirs: Overflow =  3115 Max = 4 GRCs =  2150 (25.84%)
+phase3. H routing: Overflow =   200 Max = 3 (GRCs =  6) GRCs =   283 (6.80%)
+phase3. V routing: Overflow =  2915 Max = 4 (GRCs = 14) GRCs =  1867 (44.88%)
+phase3. M1         Overflow =   143 Max = 3 (GRCs =  7) GRCs =   105 (2.52%)
+phase3. MINT1      Overflow =   197 Max = 3 (GRCs =  6) GRCs =   280 (6.73%)
+phase3. MINT2      Overflow =  2772 Max = 4 (GRCs = 14) GRCs =  1762 (42.36%)
+phase3. MINT3      Overflow =     3 Max = 1 (GRCs =  3) GRCs =     3 (0.07%)
+phase3. MINT4      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. MINT5      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. MSMG1      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. MSMG2      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. MSMG3      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. MSMG4      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. MSMG5      Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. MG1        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. MG2        Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       85.5 1.30 0.72 1.80 0.10 1.42 1.06 0.14 0.36 0.05 5.00 0.00 0.12 2.40
+MINT1    4.25 8.49 8.22 7.45 2.69 9.57 10.3 13.1 13.1 12.8 9.66 0.19 0.00 0.00
+MINT2    0.65 1.39 1.39 3.03 4.81 9.95 3.65 2.62 3.56 6.61 42.6 15.6 3.75 0.29
+MINT3    8.32 8.20 8.51 8.58 12.8 28.8 9.54 6.01 4.59 2.67 1.95 0.00 0.00 0.00
+MINT4    98.8 0.89 0.22 0.02 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MINT5    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG1    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG2    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG3    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG4    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MSMG5    100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MG1      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+MG2      100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    76.7 1.56 1.47 1.61 1.57 3.83 1.89 1.69 1.66 1.71 4.56 1.21 0.30 0.21
+
+
+phase3. Total Wire Length = 59288.79
+phase3. Layer M1 wire length = 667.15
+phase3. Layer MINT1 wire length = 14981.35
+phase3. Layer MINT2 wire length = 27880.89
+phase3. Layer MINT3 wire length = 15575.30
+phase3. Layer MINT4 wire length = 184.09
+phase3. Layer MINT5 wire length = 0.00
+phase3. Layer MSMG1 wire length = 0.00
+phase3. Layer MSMG2 wire length = 0.00
+phase3. Layer MSMG3 wire length = 0.00
+phase3. Layer MSMG4 wire length = 0.00
+phase3. Layer MSMG5 wire length = 0.00
+phase3. Layer MG1 wire length = 0.00
+phase3. Layer MG2 wire length = 0.00
+phase3. Total Number of Contacts = 36787
+phase3. Via V1_0 count = 16821
+phase3. Via VINT1_0 count = 13956
+phase3. Via VINT2_0 count = 5658
+phase3. Via VINT3_0 count = 352
+phase3. Via VINT4_0 count = 0
+phase3. Via VINT5_0 count = 0
+phase3. Via VSMG1_0 count = 0
+phase3. Via VSMG2_0 count = 0
+phase3. Via VSMG3_0 count = 0
+phase3. Via VSMG4_0 count = 0
+phase3. Via VSMG5_0 count = 0
+phase3. Via VG1_0 count = 0
+phase3. completed.
+Warning: Net VDD has unused floating user-enter shapes. (ZRT-113)
+Warning: Net VSS has unused floating user-enter shapes. (ZRT-113)
+[End of Whole Chip Routing] Elapsed real time: 0:00:06 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:06 total=0:00:06
+[End of Whole Chip Routing] Stage (MB): Used   39  Alloctr   39  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used  186  Alloctr  187  Proc 2328 
+
+Congestion utilization per direction:
+Average vertical track utilization   = 45.66 %
+Peak    vertical track utilization   = 75.00 %
+Average horizontal track utilization = 58.09 %
+Peak    horizontal track utilization = 108.33 %
+
+Current Stage stats:
+[GR: Done] Elapsed real time: 0:00:00 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[GR: Done] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[GR: Done] Total (MB): Used  185  Alloctr  186  Proc 2328 
+GR Total stats:
+[GR: Done] Elapsed real time: 0:00:06 
+[GR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:06 total=0:00:06
+[GR: Done] Stage (MB): Used  180  Alloctr  181  Proc    0 
+[GR: Done] Total (MB): Used  185  Alloctr  186  Proc 2328 
+Writing out congestion map...
+Updating congestion ...
+Updating congestion ...
+[DBOUT] Elapsed real time: 0:00:00 
+[DBOUT] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DBOUT] Stage (MB): Used -145  Alloctr -146  Proc    0 
+[DBOUT] Total (MB): Used   36  Alloctr   37  Proc 2328 
+Final total stats:
+[End of Global Routing] Elapsed real time: 0:00:06 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:06 total=0:00:06
+[End of Global Routing] Stage (MB): Used   31  Alloctr   31  Proc    0 
+[End of Global Routing] Total (MB): Used   36  Alloctr   37  Proc 2328 
+
+****************************************
+Report : congestion
+Design : xbar
+Version: P-2019.03-SP1
+Date   : Thu Sep 12 21:56:31 2019
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+M1        |     143 |     3 |     105  ( 2.52%) |       7
+MINT1     |     339 |     3 |     280  ( 6.73%) |       6
+MINT2     |    2839 |     4 |    1762  (42.36%) |      14
+MINT3     |       3 |     1 |       3  ( 0.07%) |       3
+MINT4     |       0 |     0 |       0  ( 0.00%) |       0
+MINT5     |       0 |     0 |       0  ( 0.00%) |       0
+MSMG1     |       0 |     0 |       0  ( 0.00%) |       0
+MSMG2     |       0 |     0 |       0  ( 0.00%) |       0
+MSMG3     |       0 |     0 |       0  ( 0.00%) |       0
+MSMG4     |       0 |     0 |       0  ( 0.00%) |       0
+MSMG5     |       0 |     0 |       0  ( 0.00%) |       0
+MG1       |       0 |     0 |       0  ( 0.00%) |       0
+MG2       |       0 |     0 |       0  ( 0.00%) |       0
+---------------------------------------------------------------
+Both Dirs |    3324 |     4 |    2150  (25.84%) |      14
+H routing |     342 |     3 |     283  ( 6.80%) |       6
+V routing |    2982 |     4 |    1867  (44.88%) |      14
+
+1

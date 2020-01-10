@@ -1,0 +1,798 @@
+
+          Library grouping table
+---------------------------------------------------------------------------------------
+Group#  Library name	       Library file name
+---------------------------------------------------------------------------------------
+  1     NanGate_15nm_OCL      /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_fast_conditional_ccs.db
+  1     NanGate_15nm_OCL      /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_low_temp_conditional_ccs.db
+  1     NanGate_15nm_OCL      /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_slow_conditional_ccs.db
+  1     NanGate_15nm_OCL      /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_worst_low_conditional_ccs.db
+---------------------------------------------------------------------------------------
+Cross checking libraries NanGate_15nm_OCL NanGate_15nm_OCL NanGate_15nm_OCL NanGate_15nm_OCL ...
+
+#BEGIN_XCHECK_LIBRARY
+
+Logic Library #1:
+    Library name              NanGate_15nm_OCL
+    File name                 /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_fast_conditional_ccs.db
+    Library type              pg_pin based db
+    Library Version           revision 1.0
+    Tool Created              O-2018.06-SP2
+    Data Created              Wed, 28 May 2014, 17:47:53
+    Time unit                 1ps
+    Capacitance unit          1ff
+    Leakage power unit        1pW
+    Current unit              1uA
+Logic Library #2:
+    Library name              NanGate_15nm_OCL
+    File name                 /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_low_temp_conditional_ccs.db
+    Library type              pg_pin based db
+    Library Version           revision 1.0
+    Tool Created              O-2018.06-SP2
+    Data Created              Wed, 28 May 2014, 17:47:58
+Logic Library #3:
+    Library name              NanGate_15nm_OCL
+    File name                 /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_slow_conditional_ccs.db
+    Library type              pg_pin based db
+    Library Version           revision 1.0
+    Tool Created              O-2018.06-SP2
+    Data Created              Wed, 28 May 2014, 17:48:03
+Logic Library #4:
+    Library name              NanGate_15nm_OCL
+    File name                 /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_worst_low_conditional_ccs.db
+    Library type              pg_pin based db
+    Library Version           revision 1.0
+    Tool Created              O-2018.06-SP2
+    Data Created              Wed, 28 May 2014, 17:47:43
+check_library options         -mcmm 
+Version                       P-2019.03-SP1
+Check date and time           Thu Sep 12 22:01:08 2019
+
+
+#BEGIN_LIBSCREEN_UPF
+
+Library#1 (NanGate_15nm_OCL):
+PG checking passed.
+No power management cells in library#1.
+Library#2 (NanGate_15nm_OCL):
+PG checking passed.
+No power management cells in library#2.
+Library#3 (NanGate_15nm_OCL):
+PG checking passed.
+No power management cells in library#3.
+Library#4 (NanGate_15nm_OCL):
+PG checking passed.
+No power management cells in library#4.
+
+#END_LIBSCREEN_UPF
+
+#BEGIN_XCHECK_LOGICCELLS
+
+Number of cells missing in library 1:   0 (out of 76)
+Number of cells missing in library 2:   0 (out of 76)
+Number of cells missing in library 3:   0 (out of 76)
+Number of cells missing in library 4:   0 (out of 76)
+
+#END_XCHECK_LOGICCELLS
+
+#BEGIN_XCHECK_LOGICPINS
+
+Number of cells missing pins in library 1:   0 (out of 76)
+Number of cells missing pins in library 2:   0 (out of 76)
+Number of cells missing pins in library 3:   0 (out of 76)
+Number of cells missing pins in library 4:   0 (out of 76)
+
+
+#END_XCHECK_LOGICPINS
+
+#BEGIN_XCHECK_LOGICPGPINS
+
+Number of cells missing pg_pins in library 1:   0 (out of 76)
+Number of cells missing pg_pins in library 2:   0 (out of 76)
+Number of cells missing pg_pins in library 3:   0 (out of 76)
+Number of cells missing pg_pins in library 4:   0 (out of 76)
+
+#END_XCHECK_LOGICPGPINS
+
+#BEGIN_XCHECK_ARCS
+
+Number of cells with missing arcs in library 1:   0 (out of 76)
+Number of cells with missing arcs in library 2:   0 (out of 76)
+Number of cells with missing arcs in library 3:   0 (out of 76)
+Number of cells with missing arcs in library 4:   0 (out of 76)
+
+#END_XCHECK_ARCS
+
+
+Logic vs. logic library check summary: 
+Logic library consistency check PASSED for MCMM.
+
+#END_XCHECK_LIBRARY
+
+Memory usage for this session 66 Mbytes.
+CPU usage for this session 2 seconds ( 0.00 hours ).
+
+Thank you...
+
+#BEGIN_XCHECK_LIBRARY
+
+Logic Library:    NanGate_15nm_OCL 
+                  NanGate_15nm_OCL 
+                  NanGate_15nm_OCL 
+                  NanGate_15nm_OCL 
+Physical Library: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece720/Nangate_15nm_OCL_Milkyway_v2014_06/Nangate_15nm_OCL_v2014_06 
+check_library options: 	
+Version: 				P-2019.03-SP1
+Check date and time:	Thu Sep 12 22:01:10 2019
+
+          List of logic library and file names
+------------------------------------------------------------------------------
+Logic library name           Logic library file name
+------------------------------------------------------------------------------
+NanGate_15nm_OCL             /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_fast_conditional_ccs.db
+NanGate_15nm_OCL             /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_low_temp_conditional_ccs.db
+NanGate_15nm_OCL             /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_slow_conditional_ccs.db
+NanGate_15nm_OCL             /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NanGate_15nm_OCL_v0.1_2014_06.A/front_end/timing_power_noise/CCS/NanGate_15nm_OCL_worst_low_conditional_ccs.db
+------------------------------------------------------------------------------
+
+#BEGIN_XCHECK_LOGICCELLS
+
+Number of cells missing in logic library:	0 (out of 304)
+
+#END_XCHECK_LOGICCELLS
+
+#BEGIN_XCHECK_PHYSICALCELLS
+
+Number of cells missing in physical library:	0 (out of 76)
+
+#END_XCHECK_PHYSICALCELLS
+
+#BEGIN_XCHECK_PINS
+
+Number of cells with missing or mismatched pins in libraries:	304
+
+Warning: List of pins missing in physical library (LIBCHK-212)
+------------------------------------------------------------------------------
+Logic library              Cell name             Pin name  Pin direction/type
+------------------------------------------------------------------------------
+NanGate_15nm_OCL           SDFFSNQ_X1            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           SDFFSNQ_X1            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           SDFFSNQ_X1            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           SDFFSNQ_X1            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X4               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X4               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X4               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X4               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X8               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X8               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X8               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X8               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X12              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X12              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X12              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X12              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X16              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X16              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X16              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TBUF_X16              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TIEH                  VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TIEH                  VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TIEH                  VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TIEH                  VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TIEL                  VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TIEL                  VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TIEL                  VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           TIEL                  VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           XNOR2_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           XNOR2_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           XNOR2_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           XNOR2_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           XOR2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           XOR2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           XOR2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           XOR2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X16               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X16               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X16               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X16               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           LHQ_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           LHQ_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           LHQ_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           LHQ_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           MUX2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           MUX2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           MUX2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           MUX2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND2_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND2_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND2_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND2_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND2_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND2_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND2_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND2_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND3_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND3_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND3_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND3_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND3_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND3_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND3_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND3_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND4_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND4_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND4_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND4_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND4_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND4_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND4_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NAND4_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR2_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR2_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR2_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR2_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR3_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR3_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR3_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR3_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR3_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR3_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR3_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR3_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR4_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR4_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR4_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR4_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR4_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR4_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR4_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           NOR4_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI21_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI21_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI21_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI21_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI21_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI21_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI21_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI21_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI22_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI22_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI22_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI22_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI22_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI22_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI22_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OAI22_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR2_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR2_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR2_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR2_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR2_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR2_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR2_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR2_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR3_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR3_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR3_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR3_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR3_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR3_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR3_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR3_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR4_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR4_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR4_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR4_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR4_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR4_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR4_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           OR4_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           SDFFRNQ_X1            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           SDFFRNQ_X1            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           SDFFRNQ_X1            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           SDFFRNQ_X1            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X4                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X4                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X4                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X4                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X8                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X8                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X8                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X8                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X12               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X12               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X12               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X12               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X16               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X16               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X16               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X16               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X2             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X2             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X2             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X2             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X4             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X4             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X4             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X4             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X8             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X8             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X8             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X8             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X12            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X12            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X12            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X12            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X16            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X16            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X16            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKBUF_X16            VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKGATETST_X1         VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKGATETST_X1         VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKGATETST_X1         VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           CLKGATETST_X1         VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           DFFRNQ_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           DFFRNQ_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           DFFRNQ_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           DFFRNQ_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           DFFSNQ_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           DFFSNQ_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           DFFSNQ_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           DFFSNQ_X1             VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FA_X1                 VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FA_X1                 VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FA_X1                 VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FA_X1                 VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILLTIE               VDD         primary power
+                                                 VNW         nwell
+                                                 VPW         pwell
+                                                 VSS         primary ground
+NanGate_15nm_OCL           FILLTIE               VDD         primary power
+                                                 VNW         nwell
+                                                 VPW         pwell
+                                                 VSS         primary ground
+NanGate_15nm_OCL           FILLTIE               VDD         primary power
+                                                 VNW         nwell
+                                                 VPW         pwell
+                                                 VSS         primary ground
+NanGate_15nm_OCL           FILLTIE               VDD         primary power
+                                                 VNW         nwell
+                                                 VPW         pwell
+                                                 VSS         primary ground
+NanGate_15nm_OCL           FILL_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X4               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X4               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X4               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X4               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X8               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X8               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X8               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X8               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X16              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X16              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X16              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           FILL_X16              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           HA_X1                 VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           HA_X1                 VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           HA_X1                 VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           HA_X1                 VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X4                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X4                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X4                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X4                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X8                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X8                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X8                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X8                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X12               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X12               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X12               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           INV_X12               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND2_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND2_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND2_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND2_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND2_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND3_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND3_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND3_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND3_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND3_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND3_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND3_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND3_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND4_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND4_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND4_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND4_X1               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND4_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND4_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND4_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AND4_X2               VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           ANTENNA               VDD         primary power
+                                                 VNW         nwell
+                                                 VPW         pwell
+                                                 VSS         primary ground
+NanGate_15nm_OCL           ANTENNA               VDD         primary power
+                                                 VNW         nwell
+                                                 VPW         pwell
+                                                 VSS         primary ground
+NanGate_15nm_OCL           ANTENNA               VDD         primary power
+                                                 VNW         nwell
+                                                 VPW         pwell
+                                                 VSS         primary ground
+NanGate_15nm_OCL           ANTENNA               VDD         primary power
+                                                 VNW         nwell
+                                                 VPW         pwell
+                                                 VSS         primary ground
+NanGate_15nm_OCL           AOI21_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI21_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI21_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI21_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI21_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI21_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI21_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI21_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI22_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI22_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI22_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI22_X1              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI22_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI22_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI22_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           AOI22_X2              VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X1                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X2                VNW         nwell
+                                                 VPW         pwell
+NanGate_15nm_OCL           BUF_X2                VNW         nwell
+                                                 VPW         pwell
+------------------------------------------------------------------------------
+
+#END_XCHECK_PINS
+
+#BEGIN_XCHECK_CELLANTENNADIODETYPE
+
+Number of cells with inconsistent antenna_diode_type:	0
+
+#END_XCHECK_CELLANTENNADIODETYPE
+
+Logic vs. physical library check summary:
+Number of cells with missing or mismatched pins in libraries:	304
+Information: Logic library is INCONSISTENT with physical library (LIBCHK-220)
+
+#END_XCHECK_LIBRARY
+
+0

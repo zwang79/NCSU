@@ -1,0 +1,109 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:16:07 2019
+****************************************
+Warning: Power analysis is disabled for scenario 'mode_norm.slow.RCmax' as leakage/swcap/internal mode power app options can be off and/or leakage_power/dynamic_power scenario flags are set to false. (POW-009)
+Warning: Power analysis is disabled for scenario 'mode_norm.slow.RCmax_bc' as leakage/swcap/internal mode power app options can be off and/or leakage_power/dynamic_power scenario flags are set to false. (POW-009)
+Warning: Power analysis is disabled for scenario 'mode_norm.worst_low.RCmax' as leakage/swcap/internal mode power app options can be off and/or leakage_power/dynamic_power scenario flags are set to false. (POW-009)
+Warning: Power analysis is disabled for scenario 'mode_norm.worst_low.RCmax_bc' as leakage/swcap/internal mode power app options can be off and/or leakage_power/dynamic_power scenario flags are set to false. (POW-009)
+Information: Activity for scenario mode_norm.fast.RCmin was cached, no propagation required. (POW-005)
+Information: Activity for scenario mode_norm.fast.RCmin_bc was cached, no propagation required. (POW-005)
+Mode: mode_norm.fast.RCmin
+Corner: mode_norm.fast.RCmin
+Scenario: mode_norm.fast.RCmin
+Voltage: 0.88
+Temperature: 0.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ps
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell clk_gate_divisor_reg/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.005665 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell clk_gate_req_dw_reg/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.003891 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Z on cell cts_buf_8554460 for parameter Tinp. Lowest table value = 0.000400, highest table value = 0.480000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell clk_gate_count_reg/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.004730 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell clk_gate_state_reg/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.004730 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell clk_gate_remainder_reg/latch for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.005913 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port ZN on cell HFSINV_9173_964 for parameter Tinp. Lowest table value = 0.000400, highest table value = 0.480000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell remainder_reg_0_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.007534 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell remainder_reg_32_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.007286 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell remainder_reg_16_ for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.004978 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 5.12e+09 pW ( 52.9%)
+  Net Switching Power    = 4.56e+09 pW ( 47.1%)
+Total Dynamic Power      = 9.68e+09 pW (100.0%)
+
+Cell Leakage Power       = 3.02e+07 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+clock_network             1.42e+09               7.61e+08               9.28e+05               2.18e+09    ( 22.5%)      
+register                  4.35e+08               5.76e+08               3.80e+06               1.01e+09    ( 10.5%)      
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)      
+combinational             3.26e+09               3.22e+09               2.55e+07               6.51e+09    ( 67.0%)      
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     5.12e+09 pW            4.56e+09 pW            3.02e+07 pW            9.71e+09 pW
+Mode: mode_norm.fast.RCmin_bc
+Corner: mode_norm.fast.RCmin_bc
+Scenario: mode_norm.fast.RCmin_bc
+Voltage: 0.88
+Temperature: 0.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ps
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = N/A ( N/A )
+  Net Switching Power    = N/A ( N/A )
+Total Dynamic Power      = N/A (  0.0%)
+
+Cell Leakage Power       = 3.02e+07 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                         N/A                    N/A               0.00e+00               0.00e+00    (  0.0%)      
+memory                         N/A                    N/A               0.00e+00               0.00e+00    (  0.0%)      
+black_box                      N/A                    N/A               0.00e+00               0.00e+00    (  0.0%)      
+clock_network                  N/A                    N/A               9.28e+05               9.28e+05    (  3.1%)      
+register                       N/A                    N/A               3.80e+06               3.80e+06    ( 12.6%)      
+sequential                     N/A                    N/A               0.00e+00               0.00e+00    (  0.0%)      
+combinational                  N/A                    N/A               2.55e+07               2.55e+07    ( 84.3%)      
+-----------------------------------------------------------------------------------------------------------------------------
+Total                          N/A                    N/A               3.02e+07 pW            3.02e+07 pW
+1

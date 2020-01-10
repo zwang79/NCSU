@@ -1,0 +1,219 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:33:28 2019
+****************************************
+
+
+
+   Mode: mode_norm.slow.RCmax Corner: mode_norm.slow.RCmax
+   Scenario: mode_norm.slow.RCmax
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   clk_gate_remainder_reg/ctsbuf_net_142577    10.00    15.54    -5.55 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4083748/I    10.00    15.54    -5.55 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4453785/ZN    10.00    12.80    -2.80 (VIOLATED)
+
+   clk_gate_remainder_reg/ctsbuf_net_232586    10.00    14.78    -4.79 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4823822/I    10.00    14.78    -4.79 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4813821/I    10.00    10.85    -0.86 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4953835/ZN    10.00    10.38    -0.38 (VIOLATED)
+
+   clk_gate_remainder_reg/cts8    10.00       12.42          -2.42  (VIOLATED) 
+     PIN : clk_gate_remainder_reg/cts_inv_4043744/I    10.00    12.42    -2.42 (VIOLATED)
+
+   cts31                       10.00          12.11          -2.12  (VIOLATED) 
+     PIN : cto_buf_drc_4614/I    10.00        12.11          -2.12  (VIOLATED) 
+
+   cts26                       10.00          11.81          -1.81  (VIOLATED) 
+     PIN : divisor_reg_5_/CLK    10.00        11.81          -1.81  (VIOLATED) 
+     PIN : divisor_reg_4_/CLK    10.00        11.81          -1.81  (VIOLATED) 
+     PIN : divisor_reg_3_/CLK    10.00        11.77          -1.77  (VIOLATED) 
+     PIN : divisor_reg_2_/CLK    10.00        11.63          -1.64  (VIOLATED) 
+
+   p_abuf6                     10.00          11.79          -1.79  (VIOLATED) 
+     PIN : remainder_reg_117_/CLK    10.00    11.79          -1.79  (VIOLATED) 
+     PIN : remainder_reg_64_/CLK    10.00     11.79          -1.79  (VIOLATED) 
+     PIN : remainder_reg_118_/CLK    10.00    11.79          -1.79  (VIOLATED) 
+     PIN : remainder_reg_63_/CLK    10.00     11.67          -1.68  (VIOLATED) 
+     PIN : remainder_reg_120_/CLK    10.00    11.63          -1.64  (VIOLATED) 
+     PIN : clk_gate_remainder_reg/cts_inv_4103750/ZN    10.00    10.45    -0.46 (VIOLATED)
+
+   p_abuf0                     10.00          11.73          -1.74  (VIOLATED) 
+     PIN : remainder_reg_102_/CLK    10.00    11.73          -1.74  (VIOLATED) 
+     PIN : remainder_reg_97_/CLK    10.00     11.69          -1.70  (VIOLATED) 
+     PIN : remainder_reg_103_/CLK    10.00    11.63          -1.64  (VIOLATED) 
+     PIN : remainder_reg_98_/CLK    10.00     11.60          -1.60  (VIOLATED) 
+     PIN : remainder_reg_106_/CLK    10.00    11.54          -1.54  (VIOLATED) 
+     PIN : remainder_reg_94_/CLK    10.00     11.44          -1.45  (VIOLATED) 
+     PIN : remainder_reg_107_/CLK    10.00    10.99          -0.99  (VIOLATED) 
+     PIN : remainder_reg_105_/CLK    10.00    10.41          -0.42  (VIOLATED) 
+     PIN : remainder_reg_104_/CLK    10.00    10.09          -0.10  (VIOLATED) 
+     PIN : remainder_reg_101_/CLK    10.00    10.09          -0.10  (VIOLATED) 
+     PIN : remainder_reg_99_/CLK    10.00     10.09          -0.10  (VIOLATED) 
+     PIN : remainder_reg_108_/CLK    10.00    10.07          -0.08  (VIOLATED) 
+
+   p_abuf5                     10.00          11.62          -1.62  (VIOLATED) 
+     PIN : remainder_reg_69_/CLK    10.00     11.62          -1.62  (VIOLATED) 
+     PIN : remainder_reg_37_/CLK    10.00     11.46          -1.47  (VIOLATED) 
+     PIN : remainder_reg_77_/CLK    10.00     11.41          -1.41  (VIOLATED) 
+     PIN : remainder_reg_49_/CLK    10.00     10.59          -0.59  (VIOLATED) 
+
+   clk_gate_remainder_reg/cts6    10.00       11.48          -1.49  (VIOLATED) 
+     PIN : clk_gate_remainder_reg/cts_inv_4073747/I    10.00    11.48    -1.49 (VIOLATED)
+
+   cts37                       10.00          11.25          -1.26  (VIOLATED) 
+     PIN : req_tag_reg_2_/CLK    10.00        11.25          -1.26  (VIOLATED) 
+     PIN : req_tag_reg_1_/CLK    10.00        11.25          -1.26  (VIOLATED) 
+     PIN : req_tag_reg_0_/CLK    10.00        11.23          -1.24  (VIOLATED) 
+
+   p_abuf2                     10.00          11.14          -1.14  (VIOLATED) 
+     PIN : remainder_reg_10_/CLK    10.00     11.14          -1.14  (VIOLATED) 
+     PIN : remainder_reg_2_/CLK    10.00      11.12          -1.13  (VIOLATED) 
+     PIN : remainder_reg_5_/CLK    10.00      11.10          -1.11  (VIOLATED) 
+     PIN : remainder_reg_18_/CLK    10.00     11.01          -1.01  (VIOLATED) 
+     PIN : remainder_reg_9_/CLK    10.00      10.83          -0.84  (VIOLATED) 
+     PIN : remainder_reg_3_/CLK    10.00      10.74          -0.74  (VIOLATED) 
+     PIN : remainder_reg_19_/CLK    10.00     10.41          -0.42  (VIOLATED) 
+
+   clk_gate_remainder_reg/ctsbuf_net_102573    10.00    10.93    -0.93 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4063746/I    10.00    10.93    -0.93 (VIOLATED)
+
+   p_abuf4                     10.00          10.47          -0.48  (VIOLATED) 
+     PIN : remainder_reg_73_/CLK    10.00     10.47          -0.48  (VIOLATED) 
+     PIN : remainder_reg_70_/CLK    10.00     10.43          -0.44  (VIOLATED) 
+     PIN : remainder_reg_75_/CLK    10.00     10.43          -0.44  (VIOLATED) 
+
+   cts9                        10.00          10.41          -0.42  (VIOLATED) 
+     PIN : divisor_reg_54_/CLK    10.00       10.41          -0.42  (VIOLATED) 
+     PIN : divisor_reg_53_/CLK    10.00       10.41          -0.42  (VIOLATED) 
+     PIN : divisor_reg_52_/CLK    10.00       10.41          -0.42  (VIOLATED) 
+     PIN : divisor_reg_51_/CLK    10.00       10.40          -0.40  (VIOLATED) 
+     PIN : divisor_reg_48_/CLK    10.00       10.36          -0.36  (VIOLATED) 
+     PIN : divisor_reg_50_/CLK    10.00       10.34          -0.34  (VIOLATED) 
+     PIN : divisor_reg_47_/CLK    10.00       10.32          -0.32  (VIOLATED) 
+     PIN : divisor_reg_49_/CLK    10.00       10.30          -0.31  (VIOLATED) 
+
+   cts1                        10.00          10.36          -0.36  (VIOLATED) 
+     PIN : remainder_reg_20_/CLK    10.00     10.36          -0.36  (VIOLATED) 
+     PIN : remainder_reg_28_/CLK    10.00     10.34          -0.34  (VIOLATED) 
+     PIN : remainder_reg_22_/CLK    10.00     10.32          -0.32  (VIOLATED) 
+     PIN : remainder_reg_6_/CLK    10.00      10.30          -0.31  (VIOLATED) 
+
+   p_abuf1                     10.00          10.15          -0.15  (VIOLATED) 
+     PIN : remainder_reg_41_/CLK    10.00     10.15          -0.15  (VIOLATED) 
+     PIN : remainder_reg_42_/CLK    10.00     10.15          -0.15  (VIOLATED) 
+     PIN : remainder_reg_0_/CLK    10.00      10.15          -0.15  (VIOLATED) 
+     PIN : remainder_reg_34_/CLK    10.00     10.13          -0.13  (VIOLATED) 
+     PIN : remainder_reg_32_/CLK    10.00     10.13          -0.13  (VIOLATED) 
+     PIN : remainder_reg_44_/CLK    10.00     10.13          -0.13  (VIOLATED) 
+
+   cts33                       10.00          10.05          -0.06  (VIOLATED) 
+     PIN : divisor_reg_11_/CLK    10.00       10.05          -0.06  (VIOLATED) 
+     PIN : divisor_reg_14_/CLK    10.00       10.03          -0.04  (VIOLATED) 
+
+   cts11                       10.00          10.01          -0.02  (VIOLATED) 
+     PIN : divisor_reg_64_/CLK    10.00       10.01          -0.02  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 18
+
+   Mode: mode_norm.worst_low.RCmax Corner: mode_norm.worst_low.RCmax
+   Scenario: mode_norm.worst_low.RCmax
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   clk_gate_remainder_reg/ctsbuf_net_142577    10.00    15.53    -5.53 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4083748/I    10.00    15.53    -5.53 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4453785/ZN    10.00    12.68    -2.69 (VIOLATED)
+
+   clk_gate_remainder_reg/ctsbuf_net_232586    10.00    14.36    -4.37 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4823822/I    10.00    14.36    -4.37 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4813821/I    10.00    10.51    -0.51 (VIOLATED)
+
+   clk_gate_remainder_reg/cts8    10.00       12.44          -2.44  (VIOLATED) 
+     PIN : clk_gate_remainder_reg/cts_inv_4043744/I    10.00    12.44    -2.44 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cto_buf_drc_4684/Z    10.00    10.41    -0.42 (VIOLATED)
+
+   p_abuf6                     10.00          12.13          -2.14  (VIOLATED) 
+     PIN : remainder_reg_117_/CLK    10.00    12.13          -2.14  (VIOLATED) 
+     PIN : remainder_reg_64_/CLK    10.00     12.11          -2.12  (VIOLATED) 
+     PIN : remainder_reg_118_/CLK    10.00    12.11          -2.12  (VIOLATED) 
+     PIN : remainder_reg_63_/CLK    10.00     12.05          -2.06  (VIOLATED) 
+     PIN : remainder_reg_120_/CLK    10.00    12.02          -2.02  (VIOLATED) 
+     PIN : clk_gate_remainder_reg/cts_inv_4103750/ZN    10.00    10.95    -0.95 (VIOLATED)
+
+   cts31                       10.00          11.67          -1.68  (VIOLATED) 
+     PIN : cto_buf_drc_4614/I    10.00        11.67          -1.68  (VIOLATED) 
+
+   p_abuf0                     10.00          11.27          -1.28  (VIOLATED) 
+     PIN : remainder_reg_102_/CLK    10.00    11.27          -1.28  (VIOLATED) 
+     PIN : remainder_reg_97_/CLK    10.00     11.25          -1.26  (VIOLATED) 
+     PIN : remainder_reg_103_/CLK    10.00    11.20          -1.20  (VIOLATED) 
+     PIN : remainder_reg_98_/CLK    10.00     11.18          -1.18  (VIOLATED) 
+     PIN : remainder_reg_106_/CLK    10.00    11.10          -1.11  (VIOLATED) 
+     PIN : remainder_reg_94_/CLK    10.00     11.02          -1.03  (VIOLATED) 
+     PIN : remainder_reg_107_/CLK    10.00    10.62          -0.63  (VIOLATED) 
+     PIN : remainder_reg_105_/CLK    10.00    10.13          -0.13  (VIOLATED) 
+
+   cts26                       10.00          11.25          -1.26  (VIOLATED) 
+     PIN : divisor_reg_5_/CLK    10.00        11.25          -1.26  (VIOLATED) 
+     PIN : divisor_reg_4_/CLK    10.00        11.25          -1.26  (VIOLATED) 
+     PIN : divisor_reg_3_/CLK    10.00        11.20          -1.20  (VIOLATED) 
+     PIN : divisor_reg_2_/CLK    10.00        11.14          -1.14  (VIOLATED) 
+
+   clk_gate_remainder_reg/cts6    10.00       11.25          -1.26  (VIOLATED) 
+     PIN : clk_gate_remainder_reg/cts_inv_4073747/I    10.00    11.25    -1.26 (VIOLATED)
+
+   p_abuf5                     10.00          10.45          -0.46  (VIOLATED) 
+     PIN : remainder_reg_69_/CLK    10.00     10.45          -0.46  (VIOLATED) 
+     PIN : remainder_reg_37_/CLK    10.00     10.34          -0.34  (VIOLATED) 
+     PIN : remainder_reg_77_/CLK    10.00     10.30          -0.31  (VIOLATED) 
+
+   p_abuf2                     10.00          10.41          -0.42  (VIOLATED) 
+     PIN : remainder_reg_10_/CLK    10.00     10.41          -0.42  (VIOLATED) 
+     PIN : remainder_reg_2_/CLK    10.00      10.40          -0.40  (VIOLATED) 
+     PIN : remainder_reg_5_/CLK    10.00      10.36          -0.36  (VIOLATED) 
+     PIN : remainder_reg_18_/CLK    10.00     10.28          -0.29  (VIOLATED) 
+     PIN : remainder_reg_9_/CLK    10.00      10.11          -0.11  (VIOLATED) 
+
+   cts37                       10.00          10.28          -0.29  (VIOLATED) 
+     PIN : req_tag_reg_2_/CLK    10.00        10.28          -0.29  (VIOLATED) 
+     PIN : req_tag_reg_1_/CLK    10.00        10.26          -0.27  (VIOLATED) 
+     PIN : req_tag_reg_0_/CLK    10.00        10.22          -0.23  (VIOLATED) 
+
+   clk_gate_remainder_reg/ctsbuf_net_102573    10.00    10.19    -0.19 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4063746/I    10.00    10.19    -0.19 (VIOLATED)
+
+   clk_gate_remainder_reg/ctsbuf_net_122575    10.00    10.11    -0.11 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4033743/I    10.00    10.11    -0.11 (VIOLATED)
+     PIN : clk_gate_remainder_reg/cts_inv_4103750/I    10.00    10.11    -0.11 (VIOLATED)
+
+   cts39                       10.00          10.05          -0.06  (VIOLATED) 
+     PIN : count_reg_1_/CLK    10.00          10.05          -0.06  (VIOLATED) 
+     PIN : count_reg_0_/CLK    10.00          10.05          -0.06  (VIOLATED) 
+     PIN : count_reg_3_/CLK    10.00          10.03          -0.04  (VIOLATED) 
+     PIN : count_reg_2_/CLK    10.00          10.01          -0.02  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 14
+
+   Mode: mode_norm.slow.RCmax Corner: mode_norm.slow.RCmax
+   Scenario: mode_norm.slow.RCmax
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Mode: mode_norm.worst_low.RCmax Corner: mode_norm.worst_low.RCmax
+   Scenario: mode_norm.worst_low.RCmax
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 32
+1

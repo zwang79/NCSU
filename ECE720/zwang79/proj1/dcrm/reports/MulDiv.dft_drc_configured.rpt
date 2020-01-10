@@ -1,0 +1,272 @@
+In mode: all_dft...
+  Pre-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  	...checking for scan equivalents...
+  ...checking vector rules...
+  ...checking pre-dft rules...
+
+-----------------------------------------------------------------
+Begin Pre-DFT violations...
+
+ Warning: Clock reset cannot capture data with other clocks off. (D8-1)
+ Warning: Clock reset connects to data input (D) of DFF state_reg[0]. (D10-1)
+ Warning: Clock reset connects to data input (D) of DFF state_reg[1]. (D10-2)
+ Warning: Clock reset connects to data input (D) of DFF state_reg[2]. (D10-3)
+Warning: Clock gating cell clk_gate_divisor_reg has unconnected test pin. (TEST-130)
+Information: Cells with this violation : clk_gate_count_reg, clk_gate_divisor_reg, clk_gate_remainder_reg, clk_gate_req_dw_reg, clk_gate_state_reg. (TEST-283)
+
+Pre-DFT violations completed...
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 14
+
+-----------------------------------------------------------------
+
+9 PRE-DFT VIOLATIONS
+     1 Clock not able to capture violation (D8)
+     3 Clock feeding data input violations (D10)
+     5 Test pin of clock gating cell is unconnected violations (TEST-130)
+
+
+Warning: Violations occurred during test design rule checking. (TEST-124)
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  5 out of 219 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITH VIOLATIONS
+      *   5 cells are clock gating cells
+         clk_gate_divisor_reg/latch
+         clk_gate_remainder_reg/latch
+         clk_gate_state_reg/latch
+         clk_gate_count_reg/latch
+         clk_gate_req_dw_reg/latch
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      * 214 cells are valid scan cells
+         remainder_reg[0]
+         remainder_reg[32]
+         remainder_reg[16]
+         remainder_reg[8]
+         remainder_reg[10]
+         remainder_reg[2]
+         remainder_reg[18]
+         remainder_reg[34]
+         remainder_reg[26]
+         remainder_reg[58]
+         remainder_reg[42]
+         remainder_reg[100]
+         remainder_reg[43]
+         remainder_reg[11]
+         remainder_reg[3]
+         remainder_reg[14]
+         remainder_reg[6]
+         remainder_reg[12]
+         remainder_reg[4]
+         remainder_reg[27]
+         remainder_reg[19]
+         remainder_reg[51]
+         remainder_reg[35]
+         remainder_reg[67]
+         remainder_reg[50]
+         remainder_reg[108]
+         remainder_reg[59]
+         remainder_reg[116]
+         remainder_reg[117]
+         remainder_reg[60]
+         remainder_reg[44]
+         remainder_reg[28]
+         remainder_reg[20]
+         remainder_reg[52]
+         remainder_reg[36]
+         remainder_reg[68]
+         remainder_reg[69]
+         remainder_reg[70]
+         remainder_reg[13]
+         remainder_reg[5]
+         state_reg[0]
+         req_dw_reg
+         isHi_reg
+         req_tag_reg[4]
+         req_tag_reg[3]
+         req_tag_reg[2]
+         req_tag_reg[1]
+         req_tag_reg[0]
+         neg_out_reg
+         state_reg[1]
+         state_reg[2]
+         count_reg[1]
+         count_reg[0]
+         count_reg[2]
+         count_reg[3]
+         count_reg[4]
+         count_reg[5]
+         count_reg[6]
+         remainder_reg[64]
+         remainder_reg[65]
+         remainder_reg[48]
+         remainder_reg[24]
+         remainder_reg[56]
+         remainder_reg[40]
+         remainder_reg[72]
+         remainder_reg[15]
+         remainder_reg[7]
+         remainder_reg[45]
+         remainder_reg[29]
+         remainder_reg[21]
+         remainder_reg[53]
+         remainder_reg[37]
+         remainder_reg[38]
+         remainder_reg[30]
+         remainder_reg[22]
+         remainder_reg[54]
+         remainder_reg[46]
+         remainder_reg[104]
+         remainder_reg[47]
+         remainder_reg[31]
+         remainder_reg[23]
+         remainder_reg[55]
+         remainder_reg[39]
+         remainder_reg[101]
+         remainder_reg[102]
+         remainder_reg[61]
+         remainder_reg[92]
+         remainder_reg[93]
+         remainder_reg[94]
+         remainder_reg[95]
+         remainder_reg[62]
+         remainder_reg[85]
+         remainder_reg[86]
+         remainder_reg[87]
+         remainder_reg[88]
+         remainder_reg[63]
+         remainder_reg[129]
+         remainder_reg[96]
+         remainder_reg[110]
+         remainder_reg[111]
+         remainder_reg[112]
+         remainder_reg[113]
+         remainder_reg[114]
+         remainder_reg[57]
+         remainder_reg[115]
+         remainder_reg[66]
+         remainder_reg[17]
+         remainder_reg[1]
+         remainder_reg[49]
+         remainder_reg[97]
+         remainder_reg[98]
+         remainder_reg[105]
+         remainder_reg[106]
+         remainder_reg[107]
+         remainder_reg[109]
+         remainder_reg[25]
+         remainder_reg[73]
+         remainder_reg[41]
+         remainder_reg[99]
+         remainder_reg[71]
+         remainder_reg[103]
+         remainder_reg[33]
+         remainder_reg[74]
+         remainder_reg[75]
+         remainder_reg[76]
+         remainder_reg[77]
+         remainder_reg[78]
+         remainder_reg[79]
+         remainder_reg[80]
+         remainder_reg[89]
+         remainder_reg[90]
+         remainder_reg[91]
+         remainder_reg[81]
+         remainder_reg[82]
+         remainder_reg[83]
+         remainder_reg[84]
+         remainder_reg[9]
+         remainder_reg[118]
+         remainder_reg[119]
+         remainder_reg[120]
+         remainder_reg[121]
+         remainder_reg[122]
+         remainder_reg[123]
+         remainder_reg[124]
+         remainder_reg[125]
+         remainder_reg[126]
+         remainder_reg[127]
+         remainder_reg[128]
+         divisor_reg[63]
+         divisor_reg[62]
+         divisor_reg[61]
+         divisor_reg[60]
+         divisor_reg[59]
+         divisor_reg[58]
+         divisor_reg[57]
+         divisor_reg[56]
+         divisor_reg[55]
+         divisor_reg[54]
+         divisor_reg[53]
+         divisor_reg[52]
+         divisor_reg[51]
+         divisor_reg[50]
+         divisor_reg[49]
+         divisor_reg[48]
+         divisor_reg[47]
+         divisor_reg[46]
+         divisor_reg[45]
+         divisor_reg[44]
+         divisor_reg[43]
+         divisor_reg[42]
+         divisor_reg[41]
+         divisor_reg[40]
+         divisor_reg[39]
+         divisor_reg[38]
+         divisor_reg[37]
+         divisor_reg[36]
+         divisor_reg[35]
+         divisor_reg[34]
+         divisor_reg[33]
+         divisor_reg[32]
+         divisor_reg[31]
+         divisor_reg[30]
+         divisor_reg[29]
+         divisor_reg[28]
+         divisor_reg[27]
+         divisor_reg[26]
+         divisor_reg[25]
+         divisor_reg[24]
+         divisor_reg[23]
+         divisor_reg[22]
+         divisor_reg[21]
+         divisor_reg[20]
+         divisor_reg[19]
+         divisor_reg[18]
+         divisor_reg[17]
+         divisor_reg[16]
+         divisor_reg[15]
+         divisor_reg[14]
+         divisor_reg[13]
+         divisor_reg[12]
+         divisor_reg[11]
+         divisor_reg[10]
+         divisor_reg[9]
+         divisor_reg[8]
+         divisor_reg[7]
+         divisor_reg[6]
+         divisor_reg[5]
+         divisor_reg[4]
+         divisor_reg[3]
+         divisor_reg[2]
+         divisor_reg[1]
+         divisor_reg[0]
+         divisor_reg[64]
+         resHi_reg
+
+Information: Test design rule checking completed. (TEST-123)
+1

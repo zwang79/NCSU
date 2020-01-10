@@ -1,0 +1,30 @@
+ Checking SCANDEF...
+
+ Checking for duplication in SCANDEF...
+   Checking scan cell correspondence between SCANDEF and netlist...
+   Start scan chain checking...
+  All checks completed.
+
+****************************************
+
+Report : Scan DEF check
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:06 2019
+
+****************************************
+
+
+ Information from SCANDEF file:
+  Number of SCANCHAINS: 1
+
+ Checking between SCANDEF file and design:
+  Total SCANCHAINS checked: 1
+  VALIDATED :  1
+  FAILED    :  0
+
+Chain name Status  #cells  #bits  PARTITION      Scan IN        Scan OUT
+---------- ------  ------  -----  ---------      -------        --------
+1          V       840     840    HCLK_45_45_0.720000 test_si   u_logic_Ypi3z4_reg/SI
+
+1

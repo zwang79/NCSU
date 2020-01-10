@@ -1,0 +1,30 @@
+****************************************
+Report : user_units
+Design : CORTEXM0DS
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:50 2019
+****************************************
+
+Input Units (set by technology library)
+----------------------------------------------
+time                         : 1.00ps
+resistance                   : 1.00kOhm
+capacitance                  : 1.00fF
+voltage                      : 1.00V
+current                      : 1.00uA
+power                        : 1.00pW
+length                       : 1.00um
+energy                       : 1.00pj/t
+
+Output Units (set by technology library)
+----------------------------------------------
+time                         : 1.00ps
+resistance                   : 1.00kOhm
+capacitance                  : 1.00fF
+voltage                      : 1.00V
+current                      : 1.00uA
+power                        : 1.00pW
+length                       : 1.00um
+energy                       : 1.00pj/t
+
+1

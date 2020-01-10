@@ -1,0 +1,168 @@
+****************************************
+Report : qor
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:13:28 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'clock'
+----------------------------------------
+Worst Hold Violation:            -15.00
+Total Hold Violation:            -15.15
+No. of Hold Violations:               4
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGIN'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.fast.RCmin_bc'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     44
+Critical Path Length:            306.15
+Critical Path Slack:              52.17
+Critical Path Clk Period:        380.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      6
+Critical Path Length:            241.38
+Critical Path Slack:             102.53
+Critical Path Clk Period:        380.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.slow.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      5
+Critical Path Length:            180.15
+Critical Path Slack:              65.72
+Critical Path Clk Period:        380.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'clock'
+----------------------------------------
+Levels of Logic:                     40
+Critical Path Length:            330.03
+Critical Path Slack:              -0.05
+Critical Path Clk Period:        380.00
+Total Negative Slack:             -0.05
+No. of Violating Paths:               1
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGIN'
+----------------------------------------
+Levels of Logic:                      8
+Critical Path Length:            262.36
+Critical Path Slack:              79.64
+Critical Path Clk Period:        380.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'mode_norm.worst_low.RCmax'
+Timing Path Group  'REGOUT'
+----------------------------------------
+Levels of Logic:                      5
+Critical Path Length:            223.05
+Critical Path Slack:              23.26
+Critical Path Clk Period:        380.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              5
+Hierarchical Port Count:             44
+Leaf Cell Count:                   5516
+Buf/Inv Cell Count:                1089
+Buf Cell Count:                     289
+Inv Cell Count:                     800
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:          5297
+Sequential Cell Count:              219
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             1726.96
+Noncombinational Area:           319.73
+Buf/Inv Area:                    203.54
+Total Buffer Area:                77.37
+Total Inverter Area:             126.17
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                       0.00
+Net YLength:                       0.00
+----------------------------------------
+Cell Area (netlist):                           2046.69
+Cell Area (netlist and physical only):         2046.69
+Net Length:                        0.00
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:              5968
+Nets with Violations:                 1
+Max Trans Violations:                 1
+Max Cap Violations:                   0
+----------------------------------------
+
+1
+****************************************
+Report : qor
+        -summary
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:13:28 2019
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+mode_norm.slow.RCmax (Setup)          52.17           0.00              0
+mode_norm.worst_low.RCmax (Setup)          -0.05          -0.05              1
+Design             (Setup)            -0.05          -0.05              1
+
+mode_norm.fast.RCmin_bc (Hold)         -15.00         -15.15              4
+Design             (Hold)            -15.00         -15.15              4
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                           2046.69
+Cell Area (netlist and physical only):         2046.69
+Nets with DRC Violations:        1
+1

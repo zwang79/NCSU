@@ -1,0 +1,128 @@
+****************************************
+Report : Violation analysis
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:48:28 2019
+****************************************
+
+  Detect 5 violating paths.
+      Worst: -0.263      Total: -0.603      Average: -0.121
+  0 violating paths are categorized.
+      Worst: 0.000      Total: 0.000      Average: 0.000
+  5 violating paths are uncategorized.
+      Worst: -0.263      Total: -0.603      Average: -0.121
+
+****** Summary of Path Analysis ******
+
+  ****** Hold timing categories ******
+  category                                                      Count      Worst      Total   Percentage
+  -----------------                                            -------    -------    -------    ----- 
+  * category  H1: Large clock skew(LCS)                              0
+  * category  H2: Large clock uncertainty(LCU)                       0
+  * category  H3: Large hold time of end point(LLH)                  0
+  * category  H4: Large external output delay(LOD)                   0
+  * category  H5: Delay setting is illegal(ID)                       0
+  * category  H6: Conflict with setup at endpoint(CSE)               0
+  * category  H7: Small violations(SM)                               5     -0.263     -0.603  100.00%
+  * category  H8: Remaining violating paths(OT)                      0
+
+  ****** Remaining violations distributed by slack ******
+
+  ****** Net analysis categories ******
+
+### Following metrics will be used for net based analysis. ###
+  * category  H1: Entire net is dont_touch(D)                        0
+  * category  H2: Net between pad cell and port(PAD)                 0
+  * category  H3: Tristate nets(TR)                                  0
+  * category  H4: Nets with multiple drivers(MD)                     0
+  * category  H5: Nets in read-only sub blocks(RO)                   0
+  * category  H6: Nets are highly blocked(BLK)                       0
+  * category  H7: Nets with port far from the core area(FP)          0
+  * category  H8: Nets with setup violation(CS)                      0
+  * category  H9: Nets with max_trans violation(CT)                  0
+
+  ****** Clock network ******
+  * category  H10: Nets on clock network(CK)                         0
+
+  ****** Remaining uncategorized fixable violations ******
+  * category  H11: Net is crossing high density area(DEN)            0
+  * category  H12: Net is partially blocked(PB)                      0
+  * category  H13: Connect to excluded cell of XMB(XME)              0
+  * category  H14: Connect to excluded cell of HMB(HME)              0
+  * category  H15: Nets across different exclusive MBs(DXM)          0
+  * category  H16: Nets across different hard MBs(DHM)               0
+  * category  H17: Some segments of net are dont_touch(PD)           0
+  * category  H18: High fanout nets(> 40)(HF)                        0
+  * category  H19: Nets crossing different voltage areas(MV)         0
+  * category  H20: Nets are too short(TS)                            0
+  * category  H21: Nets are long(> 400.0um)(LN)                      0
+  * category  H22: Net with new generated violation after fix(NEW)       0
+  * category  H23: Other violations(OV)                              0
+
+
+### Detailed analysis results ###
+
+***************************************************************************
+  # 1:EP-remainder_reg_58_/SI, -0.263,(SM)
+  Startpoint: count_reg_0_/CLK
+  Endpoint: remainder_reg_58_/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: clock
+  Slack: -0.263,  Require Time: 83.652, Num of Nets: 4
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 2:EP-remainder_reg_61_/SI, -0.161,(SM)
+  Startpoint: count_reg_2_/CLK
+  Endpoint: remainder_reg_61_/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: clock
+  Slack: -0.161,  Require Time: 84.961, Num of Nets: 4
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 3:EP-remainder_reg_94_/SI, -0.105,(SM)
+  Startpoint: count_reg_5_/CLK
+  Endpoint: remainder_reg_94_/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: clock
+  Slack: -0.105,  Require Time: 82.788, Num of Nets: 4
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 4:EP-remainder_reg_97_/SI, -0.053,(SM)
+  Startpoint: divisor_reg_34_/CLK
+  Endpoint: remainder_reg_97_/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: clock
+  Slack: -0.053,  Require Time: 83.042, Num of Nets: 3
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******
+
+***************************************************************************
+  # 5:EP-remainder_reg_95_/SI, -0.021,(SM)
+  Startpoint: count_reg_6_/CLK
+  Endpoint: remainder_reg_95_/SI
+  Scenario: mode_norm.fast.RCmin_bc
+  Path Group: clock
+  Slack: -0.021,  Require Time: 82.953, Num of Nets: 5
+  Path analysis result: Small violations
+
+  Nets analysis result: 
+
+  ****** Net analysis categories ******

@@ -1,0 +1,17 @@
+ECE720 proj1 Feedback for Wang,Zhiping
+
+(7/20) (objectives) Did the performance of the submitted designs lie on or near the pareto front?
+Delay within 200% of minimum, Area within 50% of minimum
+
+(15/15) (hold-margin) Did the submitted designs have sufficient hold margin?
+Constraint met
+
+(15/15) (routing) Were the submitted designs routed with no violations?
+Constraint met
+
+(50/50) (report) Did the CSV files include all statistics, and did they match the submitted ICC2 libraries?  Were the scripts and Makefiles submitted, and do they look original?
+
+Total:
+(0/0) Late Penalty
+(87/100) Total
+

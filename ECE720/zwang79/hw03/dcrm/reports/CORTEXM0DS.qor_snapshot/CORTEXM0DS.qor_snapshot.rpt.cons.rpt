@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -max_delay
+        -min_delay
+        -max_capacitance
+        -max_transition
+Design : CORTEXM0DS
+Scenario(s): mode_norm.slow.RCmax mode_norm.worst_low.RCmax mode_norm.fast.RCmin
+Version: P-2019.03-SP1
+Date   : Thu Sep 26 23:25:15 2019
+****************************************
+
+
+   min_delay/hold ('HCLK' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack             Scenario
+   -----------------------------------------------------------------
+   u_logic_Zoy2z4_reg/SI      53.065         44.138 r       -8.927  (VIOLATED) mode_norm.slow.RCmax
+   u_logic_Dvy2z4_reg/SI      34.206         32.929 r       -1.278  (VIOLATED) mode_norm.slow.RCmax
+
+
+   min_delay/hold ('HCLK' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack             Scenario
+   -----------------------------------------------------------------
+   u_logic_Zoy2z4_reg/SI      47.966         44.491 r       -3.475  (VIOLATED) mode_norm.fast.RCmin
+
+
+1

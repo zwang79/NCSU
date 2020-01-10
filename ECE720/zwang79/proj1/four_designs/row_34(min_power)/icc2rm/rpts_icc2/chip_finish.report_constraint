@@ -1,0 +1,81 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : MulDiv
+Version: P-2019.03-SP1
+Date   : Tue Oct 15 17:35:09 2019
+****************************************
+
+
+
+   Mode: mode_norm.slow.RCmax Corner: mode_norm.slow.RCmax
+   Scenario: mode_norm.slow.RCmax
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   p_abuf2                     10.00          10.66          -0.67  (VIOLATED) 
+     PIN : remainder_reg_14_/CLK    10.00     10.66          -0.67  (VIOLATED) 
+     PIN : remainder_reg_29_/CLK    10.00     10.66          -0.67  (VIOLATED) 
+     PIN : remainder_reg_15_/CLK    10.00     10.66          -0.67  (VIOLATED) 
+     PIN : remainder_reg_7_/CLK    10.00      10.66          -0.67  (VIOLATED) 
+     PIN : remainder_reg_21_/CLK    10.00     10.66          -0.67  (VIOLATED) 
+     PIN : remainder_reg_12_/CLK    10.00     10.59          -0.59  (VIOLATED) 
+     PIN : remainder_reg_17_/CLK    10.00     10.59          -0.59  (VIOLATED) 
+     PIN : remainder_reg_27_/CLK    10.00     10.59          -0.59  (VIOLATED) 
+     PIN : remainder_reg_1_/CLK    10.00      10.49          -0.50  (VIOLATED) 
+     PIN : remainder_reg_26_/CLK    10.00     10.45          -0.46  (VIOLATED) 
+     PIN : remainder_reg_35_/CLK    10.00     10.45          -0.46  (VIOLATED) 
+
+   clk_gate_remainder_reg/cts1    10.00       10.24          -0.25  (VIOLATED) 
+     PIN : clk_gate_remainder_reg/cts_inv_4953835/I    10.00    10.24    -0.25 (VIOLATED)
+
+   cts11                       10.00          10.03          -0.04  (VIOLATED) 
+     PIN : divisor_reg_64_/CLK    10.00       10.03          -0.04  (VIOLATED) 
+     PIN : divisor_reg_63_/CLK    10.00       10.01          -0.02  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 3
+
+   Mode: mode_norm.worst_low.RCmax Corner: mode_norm.worst_low.RCmax
+   Scenario: mode_norm.worst_low.RCmax
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   clk_gate_remainder_reg/cts1    10.00       10.19          -0.19  (VIOLATED) 
+     PIN : clk_gate_remainder_reg/cts_inv_4953835/I    10.00    10.19    -0.19 (VIOLATED)
+
+   p_abuf2                     10.00          10.09          -0.10  (VIOLATED) 
+     PIN : remainder_reg_14_/CLK    10.00     10.09          -0.10  (VIOLATED) 
+     PIN : remainder_reg_29_/CLK    10.00     10.09          -0.10  (VIOLATED) 
+     PIN : remainder_reg_7_/CLK    10.00      10.09          -0.10  (VIOLATED) 
+     PIN : remainder_reg_21_/CLK    10.00     10.09          -0.10  (VIOLATED) 
+     PIN : remainder_reg_15_/CLK    10.00     10.07          -0.08  (VIOLATED) 
+     PIN : remainder_reg_12_/CLK    10.00     10.05          -0.06  (VIOLATED) 
+     PIN : remainder_reg_17_/CLK    10.00     10.05          -0.06  (VIOLATED) 
+     PIN : remainder_reg_27_/CLK    10.00     10.05          -0.06  (VIOLATED) 
+
+   cts39                       10.00          10.05          -0.06  (VIOLATED) 
+     PIN : count_reg_1_/CLK    10.00          10.05          -0.06  (VIOLATED) 
+     PIN : count_reg_0_/CLK    10.00          10.03          -0.04  (VIOLATED) 
+     PIN : count_reg_3_/CLK    10.00          10.03          -0.04  (VIOLATED) 
+     PIN : count_reg_2_/CLK    10.00          10.01          -0.02  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 3
+
+   Mode: mode_norm.slow.RCmax Corner: mode_norm.slow.RCmax
+   Scenario: mode_norm.slow.RCmax
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Mode: mode_norm.worst_low.RCmax Corner: mode_norm.worst_low.RCmax
+   Scenario: mode_norm.worst_low.RCmax
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 6
+1
