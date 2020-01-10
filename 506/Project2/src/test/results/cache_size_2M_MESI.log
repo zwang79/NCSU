@@ -1,0 +1,12 @@
+===== 506 Personal information =====
+Name:            Zhiping Wang
+UnityID:         zwang79
+ECE492 Students? NO
+===== 506 SMP Simulator configuration =====
+L1_SIZE: 2097152
+L1_ASSOC: 8
+L1_BLOCKSIZE: 64
+NUMBER OF PROCESSORS: 4
+COHERENCE PROTOCOL: MESI
+TRACE FILE: trace/canneal.04t.longTrace
+Trace file problem
